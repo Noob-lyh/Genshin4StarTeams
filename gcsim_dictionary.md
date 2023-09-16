@@ -1,37 +1,8 @@
-# gcsim_tutorial_cn
-
-## 模板
-
-只展示常用功能，详见：<https://docs.gcsim.app/guides/>
-
-```text
-# simulation time
-options iteration=1000 duration=90 swap_delay=4;
-
-# enemy setting
-target lvl=100 resist=0.1 particle_threshold=250000 particle_drop_count=1;
-
-# character
-CH char lvl=90/90 cons=0 talent=10,10,10;
-CH add weapon="" refine=1 lvl=90/90;
-CH add set="" count=4;
-CH add stats hp=4780 atk=311 [??] [pyro%=0.466] [cr=0.311];
-CH add stats hp= hp%= atk= atk%= def= def%= er= em= cr= cd=;
-
-# starting character
-active CH;
-
-# rotation
-while 1 {
- [rotation]
-}
-```
-
-## 词典
+# gcsim中英文对照词典
 
 详见：<https://docs.gcsim.app/reference>  
 
-### 元素及角色
+## 元素及角色
 
 注：部分角色名为简称/多种可用名称之一，程序中用全小写即可
 
@@ -55,7 +26,7 @@ while 1 {
 另：物理(Phys)
 ```
 
-### 武器
+## 武器
 
 注：代码中只输入小写字母。  
 
@@ -131,7 +102,7 @@ while 1 {
 法器：口袋魔导书(pocket grimoire)，学徒笔记(apprentice's notes)
 ```
 
-### 圣遗物
+## 圣遗物
 
 注：代码中只输入小写字母。  
 
@@ -171,7 +142,7 @@ while 1 {
 游医()
 ```
 
-### 其他游戏名词
+## 其他游戏名词
 
 注：所有百分比的数据均转化为小数
 
@@ -190,8 +161,9 @@ while 1 {
 普攻(attack)，普攻n次(attack:n)
 重击(charge)，瞄准射击(aim)
 低空下落攻击(low_plunge)，高空下落攻击(high_plunge)
+下落攻击擦伤(xxx_plunge[collision=1])
 冲刺(dash)，跳跃(jump)，步行(walk)，等待(wait)
-元素战技(skill)
+元素战技(skill)，长按元素战技1次(skill[hold=1])
 元素爆发(burst)
 切人(swap)
 ```
