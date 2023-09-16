@@ -61,11 +61,11 @@ while 1 {
 
 ```text
 // 五星-限定
-单手剑：斫峰之刃(summit shaper)，磐岩结绿(primordial jade cutter)，苍古自由之誓(freedom-sworn)，雾切之回光(mistsplitter reforged)，波乱月白经津(haran geppaku futsu)，圣显之钥(key of khaj-nisut)
-双手剑：无工之剑(the unforged)，松籁响起之时(song of broken pines)，赤角石溃杵(redhorn stonethresher)
+单手剑：斫峰之刃(summit shaper)，磐岩结绿(primordial jade cutter)，苍古自由之誓(freedom-sworn)，雾切之回光(mistsplitter reforged)，波乱月白经津(haran geppaku futsu)，圣显之钥(key of khaj-nisut)，裁叶萃光(light of foliar incision)
+双手剑：无工之剑(the unforged)，松籁响起之时(song of broken pines)，赤角石溃杵(redhorn stonethresher)，苇海信标(beacon of the reed sea)
 长柄武器：贯虹之槊(vortex vanquisher)，护摩之杖(staff of homa)，息灾(calamity queller)，薙草之稻光(engulfing lightning)，赤沙之杖(staff of the scarlet sands)
-弓：终末嗟叹之诗(elegy for the end)，冬极白星(polar star)，飞雷之弦振(thundering pulse)，若水(aqua simulacra)，猎人之径(hunter's path)
-法器：尘世之锁(memory of dust)，神乐之真意(kagura's verity)，不灭月华(everlasting moonglow)，千夜浮梦(a thousand floating dreams)，图莱杜拉的回忆(tulaytullah's remembrance)
+弓：终末嗟叹之诗(elegy for the end)，冬极白星(polar star)，飞雷之弦振(thundering pulse)，若水(aqua simulacra)，猎人之径(hunter's path)，最初的大魔术(the first great magic)
+法器：尘世之锁(memory of dust)，神乐之真意(kagura's verity)，不灭月华(everlasting moonglow)，千夜浮梦(a thousand floating dreams)，图莱杜拉的回忆(tulaytullah's remembrance)，碧落之珑(jadefall's splendor)
 
 // 五星-常驻
 单手剑：天空之刃(skyward blade)，风鹰剑(aquila favonia)
@@ -75,11 +75,11 @@ while 1 {
 法器：天空之卷(skyward atlas)，四风原典(lost prayer to the sacred winds)
 
 // 四星-月卡
-单手剑：黑剑(the black sword)，狼牙()
-双手剑：螭骨剑(serpent spine)，聊聊棒()
-长柄武器：决斗之枪(deathmatch)，峡湾长歌()
-弓：苍翠猎弓(the viridescent hunt)，烈阳之嗣()
-法器：匣里日月(solar pearl)，遗祀玉珑()
+单手剑：黑剑(the black sword)，狼牙(wolf-fang)
+双手剑：螭骨剑(serpent spine)，聊聊棒(talking stick)
+长柄武器：决斗之枪(deathmatch)，峡湾长歌(ballad of the fjords)
+弓：苍翠猎弓(the viridescent hunt)，烈阳之嗣(scion of the blazing sun)
+法器：匣里日月(solar pearl)，遗祀玉珑(sacrificial jade)
 
 // 四星-限定
 单手剑：暗巷闪光(the alley flash)，西福斯的月光(xiphos' moonlight)
@@ -96,18 +96,18 @@ while 1 {
 法器：西风秘典(favonius codex)，祭礼残章(sacrificial fragments)，流浪乐章(the widsith)，昭心(eye of perception)
 
 // 四星-活动&钓鱼
-单手剑：降临之剑(sword of descension)，腐殖之剑(festering desire)，辰砂之纺锤(cinnabar spindle)，笼钓瓶一心(kagotsurube isshin)，东花坊时雨(toukabou shigure)
-双手剑：衔珠海皇(luxurious sea-lord)
+单手剑：降临之剑(sword of descension)，腐殖之剑(festering desire)，辰砂之纺锤(cinnabar spindle)，笼钓瓶一心(kagotsurube isshin)，东花坊时雨(toukabou shigure)，灰河渡手(fleuve cendre ferryman)
+双手剑：衔珠海皇(luxurious sea-lord)，饰铁之花(mailed flower)
 长柄武器：“渔获”(the catch)，风信之锋(missive Windspear)
-弓：掠食者(predator)，落霞(fading twilight)，竭泽(end of the line)，风花之颂(windblume ode)，幽夜华尔兹(mitternachts waltz)
+弓：掠食者(predator)，落霞(fading twilight)，竭泽(end of the line)，风花之颂(windblume ode)，幽夜华尔兹(mitternachts waltz)，鹮穿之喙(ibis piercer)
 法器：证誓之明瞳(oathsworn eye)，嘟嘟可故事集(dodoco tales)
 
 // 四星-锻造
-单手剑：铁蜂刺(iron sting)，试作斩岩(prototype rancour)，天目影打刀(amenoma kageuchi)，原木刀(sapwood blade)，海渊终曲()
-双手剑：白影剑(whiteblind)，试作古华(prototype archaic)，桂木斩长正(katsuragikiri nagamasa)，森林王器(forest regalia)，浪影阔剑()，雪葬的星银(snow-tombed starsilver)
-长柄武器：流月针(crescent pike)，试作星镰(prototype starglitter)，喜多院十文字(kitain cross spear)，贯月矢(moonpiercer)，公义的酬报()，龙脊长枪(dragonspine spear)
-弓：钢轮弓(compound bow)，试作澹月(prototype crescent)，破魔之弓(hamayumi)，王下近侍(king's squire)，静谧之曲(songofstillness)
-法器：万国诸海图谱(mappa mare)，试作金珀(prototype amber)，白辰之环(hakushin ring)，盈满之实(fruit of fulfillment)，纯水流华()，忍冬之果(frostbearer)
+单手剑：铁蜂刺(iron sting)，试作斩岩(prototype rancour)，天目影打刀(amenoma kageuchi)，原木刀(sapwood blade)，海渊终曲(finale of the deep)
+双手剑：白影剑(whiteblind)，试作古华(prototype archaic)，桂木斩长正(katsuragikiri nagamasa)，森林王器(forest regalia)，浪影阔剑(tidal shadow)，雪葬的星银(snow-tombed starsilver)
+长柄武器：流月针(crescent pike)，试作星镰(prototype starglitter)，喜多院十文字(kitain cross spear)，贯月矢(moonpiercer)，公义的酬报(rightful reward)，龙脊长枪(dragonspine spear)
+弓：钢轮弓(compound bow)，试作澹月(prototype crescent)，破魔之弓(hamayumi)，王下近侍(king's squire)，静谧之曲(song of stillness)
+法器：万国诸海图谱(mappa mare)，试作金珀(prototype amber)，白辰之环(hakushin ring)，盈满之实(fruit of fulfillment)，纯水流华(flowing purity)，忍冬之果(frostbearer)
 
 // 四星-商城
 单手剑：宗室长剑(royal longsword)，黑岩长剑(blackcliff longsword)
