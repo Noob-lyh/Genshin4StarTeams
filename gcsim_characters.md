@@ -8,10 +8,11 @@
 ## 班尼特
 
 ```text
-# 通用-宗室半输出，5命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能
+# 通用-半输出，5命，精1原木刀/精5西风剑，4宗室/4教官充火暴，(5+7)双暴+6生命+6充能
+# 注：教官是四星圣遗物数值较低，为了严谨理论上应当扣除部分属性
 bennett char lvl=90/90 cons=5 talent=9,9,9;
-bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
-bennett add set="noblesseoblige" count=4;
+bennett add weapon="favoniussword/sapwoodblade" refine=1 lvl=90/90;
+bennett add set="noblesseoblige/instructor" count=4;
 bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
 bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
 ```
@@ -30,10 +31,10 @@ xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.
 ## 行秋
 
 ```text
-# 通用-祭礼绝缘攻击沙，6命，精5祭礼剑，4绝缘攻水暴，(9+11)双暴+2攻击+2充能
+# 通用-祭礼攻击沙，6命，精5祭礼剑，4绝缘/4宗室攻水暴，(9+11)双暴+2攻击+2充能
 xingqiu char lvl=90/90 cons=6 talent=9,9,9;
 xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
-xingqiu add set="emblemofseveredfate" count=4;
+xingqiu add set="emblemofseveredfate/noblesseoblige" count=4;
 xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
 xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
 ```
@@ -108,10 +109,10 @@ layla add stats hp=0 hp%=0.196 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
 ## 砂糖
 
 ```text
-# 通用-精通风套驾驶员，6命，精5试作金珀，4风套精精精，4精通+6充能
+# 通用-精通风套驾驶员，6命，精5试作金珀/讨龙英杰谭，4风套精精精，4精通+6充能
 sucrose char lvl=90/90 cons=6 talent=9,9,9;
-sucrose add weapon="prototypeamber" refine=5 lvl=90/90;
-sucrose add set="viridescent" count=4;
+sucrose add weapon="prototypeamber/thrillingtalesofdragonslayers" refine=5 lvl=90/90;
+sucrose add set="viridescentvenerer" count=4;
 sucrose add stats hp=4780 atk=311 em=187 em=187 em=187;
 sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
 ```
