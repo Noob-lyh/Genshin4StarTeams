@@ -117,7 +117,7 @@
 苍白(pale flame)，千岩(tenacity of the millelith)
 磐岩(archaic petra)，流星(retracing bolide)
 辰砂(vermillion hereafter)，余响(echoes of an offering)
-绝缘(emblem of severed fate)，追忆(shimenawa's seminiscence)
+绝缘(emblem of severed fate)，追忆(shimenawa's reminiscence)
 华馆(husk of opulent dreams)，海染(ocean-hued clam)
 草套(deepwood memories)，饰金(gilded dreams)
 楼阁(desert pavilion chronicle)，乐园(flower of paradise lost)
