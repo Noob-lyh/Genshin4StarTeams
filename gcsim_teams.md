@@ -183,5 +183,75 @@ while 1{
  heizou burst, attack, charge, skill[hold=1];
  faruzan aim, skill, aim, aim;
 }
+```
 
+## 柯莱 行秋 久岐忍 菲谢尔
+
+柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
+行秋6命，精5祭礼剑，4绝缘攻水暴，(9+11)双暴+2攻击+2充能  
+久岐忍6命，精5东花坊时雨，4乐园精精精，4精通+8生命  
+菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2充能  
+
+DPS：  
+0金 4.35w  
+
+```text
+collei char lvl=90/90 cons=6 talent=9,9,9;
+collei add weapon="favoniuswarbow" refine=5 lvl=90/90;
+collei add set="deepwoodmemories" count=4;
+collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+xingqiu char lvl=90/90 cons=6 talent=9,9,9;
+xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
+xingqiu add set="emblemofseveredfate" count=4;
+xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
+
+kuki char lvl=90/90 cons=6 talent=9,9,9;
+kuki add weapon="toukaboushigure" refine=5 lvl=90/90;
+kuki add set="flowerofparadiselost" count=4;
+kuki add stats hp=4780 atk=311 em=187 em=187 em=187;
+kuki add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
+
+fischl char lvl=90/90 cons=6 talent=9,9,9; 
+fischl add weapon="stringless" refine=5 lvl=90/90;
+fischl add set="goldentroupe" count=4;
+fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
+fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
+
+active xingqiu;
+xingqiu burst, attack;
+fischl skill, attack;
+collei skill, attack;
+kuki skill, attack;
+xingqiu skill, attack;
+if .xingqiu.skill.ready {
+  xingqiu skill, attack;
+}
+collei burst, attack;
+while 1 {
+  if .xingqiu.burst.ready {
+    xingqiu burst, attack;
+  } else if .fischl.oz == 0 {
+    if .fischl.skill.ready {
+      fischl skill, attack;
+    } else if .fischl.burst.ready {
+      fischl burst, attack;
+    }
+  } else if .kuki.skill.ready {
+    kuki skill, attack;
+  } else if .xingqiu.skill.ready {
+    xingqiu skill, attack;
+    if .xingqiu.skill.ready {
+      xingqiu skill, attack;
+    }
+  } else if .collei.burst.ready {
+    collei burst, attack;
+  } else if .collei.skill.ready {
+    collei skill, attack;
+  } else {
+    kuki attack;
+  }
+}
 ```

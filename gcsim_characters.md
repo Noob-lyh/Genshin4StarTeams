@@ -83,6 +83,17 @@ beidou add stats hp=4780 atk=311 er=0.518 electro%=0.466 cr=0.311;
 beidou add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
 ```
 
+## 久岐忍
+
+```text
+# 超绽-伞剑乐园三精，6命，精5东花坊时雨，4乐园精精精，4精通+8生命
+kuki char lvl=90/90 cons=6 talent=9,9,9;
+kuki add weapon="toukaboushigure" refine=5 lvl=90/90;
+kuki add set="flowerofparadiselost" count=4;
+kuki add stats hp=4780 atk=311 em=187 em=187 em=187;
+kuki add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
+```
+
 ## 莱伊拉
 
 ```text
@@ -137,4 +148,15 @@ lynette add set="gladiatorsfinale" count=2;
 lynette add set="shimenawasreminiscence" count=2;
 lynette add stats hp=4780 atk=311 atk%=0.466 anemo%=0.466 cr=0.311;
 lynette add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0 em=0 cr=0.297 cd=0.726;
+```
+
+## 柯莱
+
+```text
+# 通用-草套工具人，6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能
+collei char lvl=90/90 cons=6 talent=9,9,9;
+collei add weapon="favoniuswarbow" refine=5 lvl=90/90;
+collei add set="deepwoodmemories" count=4;
+collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
 ```
