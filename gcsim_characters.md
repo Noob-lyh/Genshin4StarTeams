@@ -1,12 +1,36 @@
 # gcsim角色面板示例
 
 均为在队伍代码中使用的配置，每个配置前的备注会指明用于哪个队伍中  
-默认6命90级角色+精5四星90级武器，天赋9/9/9(计算命座前)，输出角色一般取20词条双暴+少量其他有效词条
+默认6命90级角色+精5四星90级武器，天赋9/9/9(计算命座前)  
+常见特殊情况：班尼特5命、凯亚2命，月卡与限定武器精炼酌情  
+输出角色一般取20词条双暴(一般9+11)+4条左右其他有效词条  
+
+## 班尼特
+
+```text
+# 通用-宗室半输出，5命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能
+bennett char lvl=90/90 cons=5 talent=9,9,9;
+bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
+bennett add set="noblesseoblige" count=4;
+bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
+```
+
+## 香菱
+
+```text
+# 通用-渔获绝缘充能沙，6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能
+xiangling char lvl=90/90 cons=6 talent=9,9,9;
+xiangling add weapon="thecatch" refine=5 lvl=90/90;
+xiangling add set="emblemofseveredfate" count=4;
+xiangling add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+```
 
 ## 行秋
 
 ```text
-# 砂糖武装-输出，6命，精5祭礼剑，绝缘套攻水暴，(9+11)双暴+2攻击+2充能
+# 通用-祭礼绝缘攻击沙，6命，精5祭礼剑，4绝缘攻水暴，(9+11)双暴+2攻击+2充能
 xingqiu char lvl=90/90 cons=6 talent=9,9,9;
 xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
 xingqiu add set="emblemofseveredfate" count=4;
@@ -14,10 +38,33 @@ xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
 xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
 ```
 
+## 凯亚
+
+```text
+# 融化-龙吟绝缘充能沙，2命，精5匣里龙吟，4绝缘充冰暴，(9+11)双暴+2攻击+2精通+2充能
+kaeya char lvl=90/90 cons=2 talent=9,9,9;
+kaeya add weapon="lionsroar" refine=5 lvl=90/90;
+kaeya add set="emblemofseveredfate" count=4;
+kaeya add stats hp=4780 atk=311 er=0.518 cryo%=0.466 cr=0.311;
+kaeya add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+```
+
+## 罗莎莉亚
+
+```text
+# 融化-西风散件精通沙，6命，精5西风长枪，2冰2宗室精冰暴，(9+11)双暴+2攻击+2精通+2充能
+rosaria char lvl=90/90 cons=6 talent=9,9,9;
+rosaria add weapon="favoniuslance" refine=5 lvl=90/90;
+rosaria add set="blizzardstrayer" count=2;
+rosaria add set="noblesseoblige" count=2;
+rosaria add stats hp=4780 atk=311 em=187 cryo%=0.466 cr=0.311;
+rosaria add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+```
+
 ## 菲谢尔
 
 ```text
-# 砂糖武装-输出，6命，精5绝弦，战技套攻雷暴，(9+11)双暴+2攻击+2充能
+# 砂糖武装-直伤，6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2充能
 fischl char lvl=90/90 cons=6 talent=9,9,9; 
 fischl add weapon="stringless" refine=5 lvl=90/90;
 fischl add set="goldentroupe" count=4;
@@ -28,7 +75,7 @@ fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 
 ## 北斗
 
 ```text
-# 砂糖武装-输出，6命，精5浪影阔剑，绝缘充雷暴，(9+11)双暴+2攻击+2充能
+# 砂糖武装-直伤，6命，精5浪影阔剑，4绝缘充雷暴，(9+11)双暴+2攻击+2充能
 beidou char lvl=90/90 cons=6 talent=9,9,9;
 beidou add weapon="finaleofthedeep" refine=5 lvl=90/90;
 beidou add set="emblemofseveredfate" count=4;
@@ -39,7 +86,7 @@ beidou add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 
 ## 莱伊拉
 
 ```text
-# 珐鹿琳莱-千岩挂冰盾辅，6命，精5天目影打刀，千岩生生生，4生命+10充能
+# 通用-千岩挂冰盾辅，6命，精5天目影打刀，4千岩生生生，4生命+10充能
 layla char lvl=90/90 cons=6 talent=9,9,9;
 layla add weapon="amenomakageuchi" refine=5 lvl=90/90;
 layla add set="tenacityofthemillelith" count=4;
@@ -50,7 +97,7 @@ layla add stats hp=0 hp%=0.196 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
 ## 砂糖
 
 ```text
-# 砂糖武装-驾驶员，6命，精5试作金珀，风套三精通，4精通+6充能
+# 通用-精通风套驾驶员，6命，精5试作金珀，4风套精精精，4精通+6充能
 sucrose char lvl=90/90 cons=6 talent=9,9,9;
 sucrose add weapon="prototypeamber" refine=5 lvl=90/90;
 sucrose add set="viridescent" count=4;
@@ -61,7 +108,7 @@ sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
 ## 鹿野院平藏
 
 ```text
-# 珐鹿琳莱-速切治疗，6命，精5试作金珀，宗室套攻风暴，(9+11)双暴+4攻击
+# 珐鹿琳莱-充能速切治疗，6命，精5试作金珀，4宗室攻风暴，(9+11)双暴+4攻击
 heizou char lvl=90/90 cons=6 talent=9,9,9;
 heizou add weapon="prototypeamber" refine=5 lvl=90/90;
 heizou add set="noblesseoblige" count=4;
@@ -72,7 +119,7 @@ heizou add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0 em=0 cr=0.297 cd=
 ## 珐露珊
 
 ```text
-# 珐鹿琳莱-站场输出，6命，精5静谧之曲，战技套攻风暴，(12+8)双暴+4充能
+# 珐鹿琳莱-站场输出，6命，精5静谧之曲，4剧团攻风暴，(12+8)双暴+4充能
 faruzan char lvl=90/90 cons=6 talent=9,9,9;
 faruzan add weapon="songofstillness" refine=5 lvl=90/90;
 faruzan add set="goldentroupe" count=4;

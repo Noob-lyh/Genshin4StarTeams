@@ -2,15 +2,73 @@
 
 只包含队伍与循环部分，场景设置请看gcsim模板一节
 
+## 班尼特 香菱 凯亚 罗莎莉亚
+
+班尼特5命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
+香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
+凯亚2命，精5匣里龙吟，4绝缘充冰暴，(9+11)双暴+2攻击+2精通+2充能  
+罗莎莉亚6命，精5西风长枪，2冰2宗室精冰暴，(9+11)双暴+2攻击+2精通+2充能  
+
+DPS：  
+0金冗余充能 3.21w （代码使用）  
+0金压低充能 3.63w （班尼特香菱攻击沙，凯亚精通沙）  
+
+```text
+bennett char lvl=90/90 cons=5 talent=9,9,9;
+bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
+bennett add set="noblesseoblige" count=4;
+bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
+
+xiangling char lvl=90/90 cons=6 talent=9,9,9;
+xiangling add weapon="thecatch" refine=5 lvl=90/90;
+xiangling add set="emblemofseveredfate" count=4;
+xiangling add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+kaeya char lvl=90/90 cons=2 talent=9,9,9;
+kaeya add weapon="lionsroar" refine=5 lvl=90/90;
+kaeya add set="emblemofseveredfate" count=4;
+kaeya add stats hp=4780 atk=311 er=0.518 cryo%=0.466 cr=0.311;
+kaeya add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+rosaria char lvl=90/90 cons=2 talent=9,9,9;
+rosaria add weapon="favoniuslance" refine=5 lvl=90/90;
+rosaria add set="blizzardstrayer" count=2;
+rosaria add set="noblesseoblige" count=2;
+rosaria add stats hp=4780 atk=311 em=187 cryo%=0.466 cr=0.311;
+rosaria add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+active rosaria;
+while 1 {
+  rosaria skill;
+  bennett burst, skill;
+  rosaria burst;
+  xiangling burst, skill;
+  kaeya skill, burst;
+  rosaria skill, attack;
+  bennett attack, skill;
+  xiangling attack:2;
+  kaeya attack, skill;
+  rosaria attack, skill;
+  bennett attack, skill;
+  xiangling attack:2;
+  kaeya skill;
+}
+```
+
 ## 砂糖 北斗 菲谢尔 行秋
 
-金箔风套三精通砂糖  
-浪影绝缘攻雷暴北斗  
-绝弦剧团攻雷暴菲谢尔  
-祭礼绝缘攻水暴行秋  
+砂糖6命，精5试作金珀，4风套精精精，4精通+6充能  
+北斗6命，精5浪影阔剑，4绝缘充雷暴，(9+11)双暴+2攻击+2充能  
+菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2充能  
+行秋6命，精5祭礼剑，4绝缘攻水暴，(9+11)双暴+2攻击+2充能  
   
 DPS：  
-0金对单 3.82w，对双 3.34w，对三 2.87w，对四 2.59w
+0金对单 3.82w
+0金对双 3.34w
+0金对三 2.87w
+0金对四 2.59w
 
 ```text
 sucrose char lvl=90/90 cons=6 talent=9,9,9;
@@ -72,15 +130,15 @@ while 1 {
 
 ## 珐露珊 鹿野院平藏 琳妮特 莱依拉
 
-剧团(XX)攻风暴珐露珊  
-宗室金珀攻风暴鹿野院平藏  
-2角斗2追忆西风攻风暴琳妮特  
-千岩天目三生命莱依拉  
+珐露珊6命，精5静谧之曲，4剧团攻风暴，(12+8)双暴+4充能  
+鹿野院平藏6命，精5试作金珀，4宗室攻风暴，(9+11)双暴+4攻击  
+琳妮特6命，精5西风剑，2角斗2追忆攻风暴，(9+11)双暴+4攻击  
+莱依拉6命，精5天目影打刀，4千岩生生生，4生命+10充能  
   
 DPS：  
 0金试作 3.04w (无特效)  
 0金绝弦 3.11w  
-0金静谧 3.23w  
+0金静谧 3.23w (代码使用)  
 1金若水 3.44w  
 1金天空 3.48w  
 1金魔术 3.66w  
