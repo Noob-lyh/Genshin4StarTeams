@@ -39,6 +39,17 @@ xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
 xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
 ```
 
+## 芭芭拉
+
+```text
+# 通用-祭礼海染，6命，精5祭礼残章/试作金珀，4海染生生治，4精通+6生命
+barbara char lvl=90/90 cons=6 talent=9,9,9;
+barbara add weapon="acrificialfragments/prototypeamber" refine=5 lvl=90/90;
+barbara add set="oceanhuedclam" count=4;
+barbara add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
+barbara add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
+```
+
 ## 凯亚
 
 ```text
@@ -65,7 +76,7 @@ rosaria add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.29
 ## 菲谢尔
 
 ```text
-# 砂糖武装-直伤，6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2充能
+# 通用-剧团绝弦，6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2充能
 fischl char lvl=90/90 cons=6 talent=9,9,9; 
 fischl add weapon="stringless" refine=5 lvl=90/90;
 fischl add set="goldentroupe" count=4;
@@ -149,6 +160,17 @@ lynette add set="gladiatorsfinale" count=2;
 lynette add set="shimenawasreminiscence" count=2;
 lynette add stats hp=4780 atk=311 atk%=0.466 anemo%=0.466 cr=0.311;
 lynette add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0 em=0 cr=0.297 cd=0.726;
+```
+
+## 草主
+
+```text
+# 通用-草套工具人，6命，精5西风剑，4草套充草暴，(7+9)双爆+4攻击+4充能
+travelerdendro char lvl=90/90 cons=6 talent=9,9,9;
+travelerdendro add weapon="favoniussword" refine=5 lvl=90/90;
+travelerdendro add set="deepwoodmemories" count=4;
+travelerdendro add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+travelerdendro add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
 ```
 
 ## 柯莱

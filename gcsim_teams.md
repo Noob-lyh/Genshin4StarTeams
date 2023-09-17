@@ -242,6 +242,68 @@ while 1{
 }
 ```
 
+## 草主 柯莱 芭芭拉 久岐忍
+
+草主6命，精5西风剑，4草套充草暴，(7+9)双爆+4攻击+4充能  
+柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
+芭芭拉6命，精5试作金珀，4海染生生治，4精通+6生命  
+久岐忍6命，精5东花坊时雨，4乐园精精精，4精通+8生命  
+
+注：代码中手法难度较大且全程贴身，对实战DPS的参考价值有限  
+
+DPS：  
+0金对单 4.28w  
+
+```text
+travelerdendro char lvl=90/90 cons=6 talent=9,9,9;
+travelerdendro add weapon="favoniussword" refine=5 lvl=90/90;
+travelerdendro add set="deepwoodmemories" count=4;
+travelerdendro add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+travelerdendro add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+collei char lvl=90/90 cons=6 talent=9,9,9;
+collei add weapon="favoniuswarbow" refine=5 lvl=90/90;
+collei add set="deepwoodmemories" count=4;
+collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+barbara char lvl=90/90 cons=6 talent=9,9,9;
+barbara add weapon="prototypeamber" refine=5 lvl=90/90;
+barbara add set="oceanhuedclam" count=4;
+barbara add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
+barbara add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
+
+kuki char lvl=90/90 cons=6 talent=9,9,9;
+kuki add weapon="toukaboushigure" refine=5 lvl=90/90;
+kuki add set="flowerofparadiselost" count=4;
+kuki add stats hp=4780 atk=311 em=187 em=187 em=187;
+kuki add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
+
+active travelerdendro;
+travelerdendro skill, burst;
+barbara attack, skill, jump;
+kuki skill, dash;
+barbara attack:4;
+travelerdendro skill;
+while 1{
+    if .kuki.skill.ready {
+        kuki skill, dash;
+    } else if .barbara.skill.ready {
+        barbara skill, jump;
+    } else if .travelerdendro.skill.ready {
+        travelerdendro skill;
+    } else if .collei.skill.ready {
+        collei skill;
+    } else if .travelerdendro.burst.ready {
+        travelerdendro burst;
+    } else if .collei.burst.ready {
+        collei burst;
+    } else {
+        barbara attack:4;
+    }
+}
+```
+
 ## 柯莱 行秋 久岐忍 菲谢尔
 
 柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
