@@ -4,7 +4,7 @@
 
 部分队伍对技能释放顺序要求较高，而轴又比较复杂，gcsim直接循环掉伤害很严重，  
 因此这些队伍会在手工确认第二轮循环能成立的情况下，只模拟第一个循环的DPS，  
-此时对应DPS数值后面会标注循环时长。
+此时对应DPS会标注循环时长。
 
 ## 班尼特 香菱 行秋 砂糖
 
@@ -13,10 +13,9 @@
 行秋6命，精5祭礼剑，4宗室攻水暴，(9+11)双暴+2攻击+2充能  
 砂糖6命，精5讨龙英杰谭，4风套精精精，4精通+6充能  
 
-DPS：
-0金 4.77w (20s，砂糖有Q)
-0金 4.50w (20s，平均)  
-0金 4.23w (20s，砂糖无Q)
+DPS：(20s)
+1金 4.61w = 4.35w ~ 4.87w (砂糖两轮一Q，薙刀香菱)
+0金 4.50w = 4.23w ~ 4.77w (砂糖两轮一Q)
 
 ```text
 bennett char lvl=90/90 cons=5 talent=9,9,9;
@@ -67,6 +66,39 @@ while 1 {
 }
 ```
 
+备注：雷国，用雷电将军替代砂糖  
+雷电将军0命，精5西风枪，4绝缘充雷暴，(9+11)双暴+2攻击+2充能  
+
+DPS：(20s)  
+1金 5.27w (教官班尼特，攻击沙香菱，宗室行秋，雷国极致配装)  
+1金 5.11w (教官班尼特，充能沙香菱，宗室行秋，即只换砂糖其他不变)  
+1金 5.00w (宗室班尼特，攻击沙香菱，绝缘行秋，雷国常见配装)  
+1金 4.86w (宗室班尼特，充能沙香菱，绝缘行秋)  
+
+```text
+raiden char lvl=90/90 cons=0 talent=9,9,9;
+raiden add weapon="favoniuslance" refine=5 lvl=90/90;
+raiden add set="emblemofseveredfate" count=4;
+raiden add stats hp=4780 atk=311 er=0.518 electro%=0.466 cr=0.311;
+raiden add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
+
+options duration=20;
+active raiden;
+while 1 {
+  raiden skill;
+  xingqiu burst, attack;
+  bennett burst, attack, skill;
+  xiangling burst, attack, skill;
+  xingqiu attack, skill, dash;
+  if .xingqiu.skill.ready {
+    xingqiu attack, skill, dash;
+  }
+  raiden burst;
+  raiden attack:3, charge, attack:3, charge, attack:3, charge, attack:2;
+  bennett attack, skill;
+}
+```
+
 ## 班尼特 香菱 凯亚 罗莎莉亚
 
 班尼特5命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
@@ -74,8 +106,8 @@ while 1 {
 凯亚2命，精5匣里龙吟，4绝缘充冰暴，(9+11)双暴+2攻击+2精通+2充能  
 罗莎莉亚6命，精5西风长枪，2冰2宗室精冰暴，(9+11)双暴+2攻击+2精通+2充能  
 
-DPS：  
-0金 3.35w (15s)  
+DPS：(15s)  
+0金 3.35w  
 
 ```text
 bennett char lvl=90/90 cons=5 talent=9,9,9;
@@ -199,8 +231,8 @@ while 1 {
 琳妮特6命，精5西风剑，2角斗2追忆攻风暴，(9+11)双暴+4攻击  
 莱依拉6命，精5天目影打刀，4千岩生生生，4生命+10充能  
   
-DPS：  
-0金 3.10w (24s)  
+DPS：(24s)  
+0金 3.10w  
 
 ```text
 faruzan char lvl=90/90 cons=6 talent=9,9,9;
@@ -315,7 +347,7 @@ while 1{
 菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2充能  
 
 DPS：  
-0金 4.35w  
+0金对单 4.35w  
 
 ```text
 collei char lvl=90/90 cons=6 talent=9,9,9;
