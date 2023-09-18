@@ -8,17 +8,19 @@
 
 ## 班尼特 香菱 行秋 砂糖
 
-班尼特5命，精5西风剑，4教官充火暴，(5+7)双暴+6生命+6充能  
+班尼特5命，精5原木刀，4教官充火暴，(5+7)双暴+6生命+6充能  
 香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
 行秋6命，精5祭礼剑，4宗室攻水暴，(9+11)双暴+2攻击+2充能  
 砂糖6命，精5讨龙英杰谭，4风套精精精，4精通+6充能  
 
 DPS：
-0金 4.58w (20s)  
+0金 4.77w (20s，砂糖有Q)
+0金 4.50w (20s，平均)  
+0金 4.23w (20s，砂糖无Q)
 
 ```text
 bennett char lvl=90/90 cons=5 talent=9,9,9;
-bennett add weapon="favoniussword" refine=5 lvl=90/90;
+bennett add weapon="sapwoodblade" refine=5 lvl=90/90;
 bennett add set="instructor" count=4;
 bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
 bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
@@ -45,22 +47,23 @@ options duration=20;
 active xingqiu;
 while 1 {
   xingqiu burst, attack;
-  bennett burst, skill;
-  sucrose attack, skill;
+  bennett burst, attack;
+  sucrose attack, skill, dash;
   if .sucrose.burst.ready {
     sucrose burst;
   }
   xiangling attack, burst, skill;
-  sucrose skill;
+  sucrose skill, dash;
   xingqiu attack, skill, dash;
   if .xingqiu.skill.ready {
     xingqiu attack, skill, dash;
   }
-  xiangling attack:3;
-  sucrose attack:4;
+  xingqiu attack:3;
+  sucrose attack:4, attack;
   bennett attack, skill;
   xiangling attack:3;
-  sucrose attack:4, attack:4;
+  bennett attack, skill;
+  xiangling attack:3;
 }
 ```
 
