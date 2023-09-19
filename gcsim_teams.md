@@ -13,9 +13,11 @@
 行秋6命，精5祭礼剑，4宗室攻水暴，(9+11)双暴+2攻击+2充能  
 砂糖6命，精5讨龙英杰谭，4风套精精精，4精通+6充能  
 
-DPS：(20s)
-1金 4.61w = 4.35w ~ 4.87w (砂糖两轮一Q，薙刀香菱)
-0金 4.50w = 4.23w ~ 4.77w (砂糖两轮一Q)
+DPS：(20s)  
+1金 4.61w = 4.35w ~ 4.87w (砂糖两轮一Q，薙刀香菱)  
+0金 4.50w = 4.23w ~ 4.77w (砂糖两轮一Q)  
+
+注：增加敌人半径至2.5，DPS增加约0.2w，但是不一定准确。  
 
 ```text
 bennett char lvl=90/90 cons=5 talent=9,9,9;
@@ -287,7 +289,7 @@ while 1{
 注：代码中手法难度较大且全程贴身，对实战DPS的参考价值有限  
 
 DPS：  
-0金对单 4.28w  
+0金 4.28w  
 
 ```text
 travelerdendro char lvl=90/90 cons=6 talent=9,9,9;
@@ -347,7 +349,8 @@ while 1{
 菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2充能  
 
 DPS：  
-0金对单 4.35w  
+0金对单 4.35w (小体积怪，皇女抢种子)  
+0金对单 5.49w (大体积怪，皇女不抢种子)  
 
 ```text
 collei char lvl=90/90 cons=6 talent=9,9,9;
@@ -406,6 +409,56 @@ while 1 {
     collei skill, attack;
   } else {
     kuki attack;
+  }
+}
+```
+
+备注：草行久皇，草神换柯莱  
+纳西妲0命，精5祭礼书残章，4草套精精精，(3+5)双暴+4精通  
+
+DPS：  
+1金对单 5.24w (小体积怪，皇女抢种子)  
+1金对单 6.50w (大体积怪，皇女不抢种子)  
+
+```text
+nahida char lvl=90/90 cons=0 talent=9,9,9;
+nahida add weapon="sacrificialfragments" refine=5 lvl=90/90;
+nahida add set="deepwoodmemories" count=4;
+nahida add stats hp=4780 atk=311 em=187 em=187 em=187;
+nahida add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0.099 cd=0.33;
+
+active nahida;
+nahida skill, burst;
+fischl skill;
+xingqiu burst, attack;
+kuki skill, attack;
+nahida attack:3, dash, attack:3, dash;
+xingqiu skill, attack, dash;
+if .xingqiu.skill.ready {
+  xingqiu skill, attack, dash;
+}
+while 1 {
+  if .xingqiu.burst.ready {
+    xingqiu burst, attack;
+  } else if .fischl.oz == 0 {
+    if .fischl.skill.ready {
+      fischl skill, attack;
+    } else if .fischl.burst.ready {
+      fischl burst, attack;
+    }
+  } else if .kuki.skill.ready {
+    kuki skill, attack;
+  } else if .xingqiu.skill.ready {
+    xingqiu skill, attack;
+    if .xingqiu.skill.ready {
+      xingqiu skill, attack;
+    }
+  } else if .nahida.skill.ready {
+    nahida attack:3, skill;
+  } else if .nahida.burst.ready {
+    nahida attack, burst;
+  } else {
+    nahida attack:3, dash;
   }
 }
 ```
