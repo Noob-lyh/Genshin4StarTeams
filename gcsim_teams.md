@@ -4,7 +4,7 @@
 
 部分队伍对技能释放顺序要求较高，而轴又比较复杂，gcsim直接循环掉伤害很严重，  
 因此这些队伍会在手工确认第二轮循环能成立的情况下，只模拟第一个循环的DPS，  
-此时对应DPS会标注循环时长。
+此时对应DPS会标注循环时长。  
 
 ## 班尼特 香菱 行秋 砂糖
 
@@ -14,10 +14,7 @@
 砂糖6命，精5讨龙英杰谭，4风套精精精，4精通+6充能  
 
 DPS：(20s)  
-1金 4.61w = 4.35w ~ 4.87w (砂糖两轮一Q，薙刀香菱)  
-0金 4.50w = 4.23w ~ 4.77w (砂糖两轮一Q)  
-
-注：增加敌人半径至2.5，DPS增加约0.2w，但是不一定准确。  
+0金 4.50w = 4.23w ~ 4.77w (砂糖两轮一Q，单判，行秋不凹蒸发)  
 
 ```text
 bennett char lvl=90/90 cons=5 talent=9,9,9;
@@ -47,24 +44,24 @@ sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
 options duration=20;
 active xingqiu;
 while 1 {
-  xingqiu burst, attack;
-  bennett burst, attack;
-  sucrose attack, skill, dash;
-  if .sucrose.burst.ready {
-    sucrose burst;
-  }
-  xiangling attack, burst, skill;
-  sucrose skill, dash;
-  xingqiu attack, skill, dash;
-  if .xingqiu.skill.ready {
+    xingqiu burst, attack;
+    bennett burst, attack;
+    sucrose attack, skill, dash;
+    if .sucrose.burst.ready {
+        sucrose burst;
+    }
+    xiangling attack, burst, skill;
+    sucrose skill, dash;
     xingqiu attack, skill, dash;
-  }
-  xingqiu attack:3;
-  sucrose attack:4, attack;
-  bennett attack, skill;
-  xiangling attack:3;
-  bennett attack, skill;
-  xiangling attack:3;
+    if .xingqiu.skill.ready {
+      xingqiu attack, skill, dash;
+    }
+    xingqiu attack:3;
+    sucrose attack:4, attack;
+    bennett attack, skill;
+    xiangling attack:3;
+    bennett attack, skill;
+    xiangling attack:3;
 }
 ```
 
@@ -87,17 +84,17 @@ raiden add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 
 options duration=20;
 active raiden;
 while 1 {
-  raiden skill;
-  xingqiu burst, attack;
-  bennett burst, attack, skill;
-  xiangling burst, attack, skill;
-  xingqiu attack, skill, dash;
-  if .xingqiu.skill.ready {
+    raiden skill;
+    xingqiu burst, attack;
+    bennett burst, attack, skill;
+    xiangling burst, attack, skill;
     xingqiu attack, skill, dash;
-  }
-  raiden burst;
-  raiden attack:3, charge, attack:3, charge, attack:3, charge, attack:2;
-  bennett attack, skill;
+    if .xingqiu.skill.ready {
+        xingqiu attack, skill, dash;
+    }
+    raiden burst;
+    raiden attack:3, charge, attack:3, charge, attack:3, charge, attack:2;
+    bennett attack, skill;
 }
 ```
 
@@ -139,19 +136,19 @@ rosaria add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.29
 
 active rosaria;
 while 1 {
-  rosaria skill;
-  bennett burst, skill;
-  rosaria burst;
-  xiangling burst, skill;
-  kaeya skill, burst;
-  rosaria skill, attack;
-  bennett attack, skill;
-  xiangling attack:2;
-  kaeya attack, skill;
-  rosaria attack, skill;
-  bennett attack, skill;
-  xiangling attack:2;
-  kaeya skill;
+    rosaria skill;
+    bennett burst, skill;
+    rosaria burst;
+    xiangling burst, skill;
+    kaeya skill, burst;
+    rosaria skill, attack;
+    bennett attack, skill;
+    xiangling attack:2;
+    kaeya attack, skill;
+    rosaria attack, skill;
+    bennett attack, skill;
+    xiangling attack:2;
+    kaeya skill;
 }
 ```
 
@@ -199,30 +196,30 @@ fischl skill, attack;
 sucrose attack, skill, dash, attack, burst, dash;
 beidou attack, skill, attack, burst;
 while 1 {
-  if .xingqiu.burst.ready {
-    xingqiu burst, attack;
-  } else if .beidou.burst.ready {
-    beidou burst, attack;
-  } else if .sucrose.burst.ready {
-    sucrose burst, attack;
-  } else if .fischl.oz == 0 {
-    if .fischl.skill.ready {
-      fischl skill, attack;
-    } else if .fischl.burst.ready {
-      fischl burst, attack;
+    if .xingqiu.burst.ready {
+        xingqiu burst, attack;
+    } else if .beidou.burst.ready {
+        beidou burst, attack;
+    } else if .sucrose.burst.ready {
+        sucrose burst, attack;
+    } else if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl skill, attack;
+        } else if .fischl.burst.ready {
+            fischl burst, attack;
+        }
+    } else if .xingqiu.skill.ready {
+        xingqiu attack, skill, dash;
+        if .xingqiu.skill.ready {
+            xingqiu attack, skill, dash;
+        }
+    } else if .beidou.skill.ready {
+        beidou skill, attack;
+    } else if .sucrose.skill.ready {
+        sucrose attack, skill, dash;
+    } else {
+        sucrose attack:3, dash;
     }
-  } else if .xingqiu.skill.ready {
-    xingqiu attack, skill, dash;
-    if .xingqiu.skill.ready {
-      xingqiu attack, skill, dash;
-    }
-  } else if .beidou.skill.ready {
-    beidou skill, attack;
-  } else if .sucrose.skill.ready {
-    sucrose attack, skill, dash;
-  } else {
-    sucrose attack:3, dash;
-  }
 }
 ```
 
@@ -265,17 +262,85 @@ layla add stats hp=0 hp%=0.196 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
 options duration=24;
 active layla;
 while 1{
- layla skill;
- lynette burst, skill;
- faruzan burst, skill;
- heizou burst, attack, charge, skill[hold=1];
- faruzan aim, aim, skill, aim, aim;
+    layla skill;
+    lynette burst, skill;
+    faruzan burst, skill;
+    heizou burst, attack, charge, skill[hold=1];
+    faruzan aim, aim, skill, aim, aim;
+    layla skill, burst;
+    lynette skill;
+    faruzan skill;
+    heizou burst, attack, charge, skill[hold=1];
+    faruzan aim, aim, skill, aim, aim;
+}
+```
 
- layla skill, burst;
- lynette skill;
- faruzan skill;
- heizou burst, attack, charge, skill[hold=1];
- faruzan aim, aim, skill, aim, aim;
+## 草主 柯莱 行秋 久岐忍
+
+草主6命，精5西风剑，4草套充草暴，(7+9)双爆+4攻击+4充能  
+柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
+行秋6命，精5祭礼剑，4绝缘攻水暴，(9+11)双暴+2攻击+2充能  
+久岐忍6命，精5东花坊时雨，4乐园精精精，4精通+8生命  
+
+DPS：  
+0金 5.15w  
+
+```text
+travelerdendro char lvl=90/90 cons=6 talent=9,9,9;
+travelerdendro add weapon="favoniussword" refine=5 lvl=90/90;
+travelerdendro add set="deepwoodmemories" count=4;
+travelerdendro add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+travelerdendro add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+collei char lvl=90/90 cons=6 talent=9,9,9;
+collei add weapon="favoniuswarbow" refine=5 lvl=90/90;
+collei add set="deepwoodmemories" count=4;
+collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+xingqiu char lvl=90/90 cons=6 talent=9,9,9;
+xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
+xingqiu add set="emblemofseveredfate" count=4;
+xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
+
+kuki char lvl=90/90 cons=6 talent=9,9,9;
+kuki add weapon="toukaboushigure" refine=5 lvl=90/90;
+kuki add set="flowerofparadiselost" count=4;
+kuki add stats hp=4780 atk=311 em=187 em=187 em=187;
+kuki add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
+
+active travelerdendro;
+travelerdendro skill, burst;
+xingqiu burst, attack;
+kuki skill, dash, attack;
+collei skill, attack;
+xingqiu attack, skill, dash;
+if .xingqiu.skill.ready {
+    xingqiu attack, skill, dash;
+}
+travelerdendro skill;
+while 1{
+    if .kuki.skill.ready {
+        kuki skill, dash, attack;
+    } else if .xingqiu.burst.ready {
+        xingqiu burst, attack;
+    } else if .travelerdendro.skill.ready {
+        travelerdendro skill;
+    } else if .collei.skill.ready {
+        collei skill;
+    } else if .travelerdendro.burst.ready {
+        travelerdendro burst;
+    } else if .collei.burst.ready {
+        collei burst;
+    } else if .xingqiu.skill.ready {
+        xingqiu attack, skill, dash;
+        if .xingqiu.skill.ready {
+            xingqiu attack, skill, dash;
+        }
+    } else {
+        kuki attack;
+    }
 }
 ```
 
@@ -289,7 +354,7 @@ while 1{
 注：代码中手法难度较大且全程贴身，对实战DPS的参考价值有限  
 
 DPS：  
-0金 4.28w  
+0金 4.12w  
 
 ```text
 travelerdendro char lvl=90/90 cons=6 talent=9,9,9;
@@ -326,7 +391,7 @@ while 1{
     if .kuki.skill.ready {
         kuki skill, dash;
     } else if .barbara.skill.ready {
-        barbara skill, jump;
+        barbara attack, skill, jump;
     } else if .travelerdendro.skill.ready {
         travelerdendro skill;
     } else if .collei.skill.ready {
@@ -349,8 +414,8 @@ while 1{
 菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2充能  
 
 DPS：  
-0金对单 4.35w (小体积怪，皇女抢种子)  
-0金对单 5.49w (大体积怪，皇女不抢种子)  
+0金对单 4.46w (小体积怪，皇女抢种子)  
+0金对单 5.72w (大体积怪，皇女不抢种子)  
 
 ```text
 collei char lvl=90/90 cons=6 talent=9,9,9;
@@ -388,28 +453,28 @@ if .xingqiu.skill.ready {
 }
 collei burst, attack;
 while 1 {
-  if .xingqiu.burst.ready {
-    xingqiu burst, attack;
-  } else if .fischl.oz == 0 {
-    if .fischl.skill.ready {
-      fischl skill, attack;
-    } else if .fischl.burst.ready {
-      fischl burst, attack;
+    if .xingqiu.burst.ready {
+        xingqiu burst, attack;
+    } else if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl skill, attack;
+        } else if .fischl.burst.ready {
+            fischl burst, attack;
+        }
+    } else if .kuki.skill.ready {
+        kuki skill, attack;
+    } else if .xingqiu.skill.ready {
+        xingqiu attack, skill, dash;
+        if .xingqiu.skill.ready {
+            xingqiu attack, skill, dash;
+        }
+    } else if .collei.burst.ready {
+        collei burst, attack;
+    } else if .collei.skill.ready {
+        collei skill, attack;
+    } else {
+        kuki attack;
     }
-  } else if .kuki.skill.ready {
-    kuki skill, attack;
-  } else if .xingqiu.skill.ready {
-    xingqiu skill, attack;
-    if .xingqiu.skill.ready {
-      xingqiu skill, attack;
-    }
-  } else if .collei.burst.ready {
-    collei burst, attack;
-  } else if .collei.skill.ready {
-    collei skill, attack;
-  } else {
-    kuki attack;
-  }
 }
 ```
 
@@ -417,8 +482,8 @@ while 1 {
 纳西妲0命，精5祭礼书残章，4草套精精精，(3+5)双暴+4精通  
 
 DPS：  
-1金对单 5.24w (小体积怪，皇女抢种子)  
-1金对单 6.50w (大体积怪，皇女不抢种子)  
+1金对单 5.30w (小体积怪，皇女抢种子)  
+1金对单 6.65w (大体积怪，皇女不抢种子)  
 
 ```text
 nahida char lvl=90/90 cons=0 talent=9,9,9;
@@ -438,27 +503,27 @@ if .xingqiu.skill.ready {
   xingqiu skill, attack, dash;
 }
 while 1 {
-  if .xingqiu.burst.ready {
-    xingqiu burst, attack;
-  } else if .fischl.oz == 0 {
-    if .fischl.skill.ready {
-      fischl skill, attack;
-    } else if .fischl.burst.ready {
-      fischl burst, attack;
+    if .xingqiu.burst.ready {
+        xingqiu burst, attack;
+    } else if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl skill, attack;
+        } else if .fischl.burst.ready {
+            fischl burst, attack;
+        }
+    } else if .kuki.skill.ready {
+        kuki skill, attack;
+    } else if .xingqiu.skill.ready {
+        xingqiu attack, skill, dash;
+        if .xingqiu.skill.ready {
+            xingqiu attack, skill, dash;
+        }
+    } else if .nahida.skill.ready {
+        nahida attack:3, skill;
+    } else if .nahida.burst.ready {
+        nahida attack, burst;
+    } else {
+        nahida attack:3, dash;
     }
-  } else if .kuki.skill.ready {
-    kuki skill, attack;
-  } else if .xingqiu.skill.ready {
-    xingqiu skill, attack;
-    if .xingqiu.skill.ready {
-      xingqiu skill, attack;
-    }
-  } else if .nahida.skill.ready {
-    nahida attack:3, skill;
-  } else if .nahida.burst.ready {
-    nahida attack, burst;
-  } else {
-    nahida attack:3, dash;
-  }
 }
 ```

@@ -431,7 +431,8 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，3.5深渊上半（1金），<https://www.bilibili.com/video/BV1mv4y1L7nu>  
+> 弹药福娃，3.5深渊上半（0金，低配），<https://www.bilibili.com/video/BV18Y4y1X7BG>  
+ Nickess，3.5深渊上半（1金），<https://www.bilibili.com/video/BV1mv4y1L7nu>  
  Nickess，3.2深渊上半（2金），<https://www.bilibili.com/video/BV1EK411d7CT>  
 
 DPS参考：
@@ -461,7 +462,8 @@ DPS参考：
 > 修E，班QE，修Q，香QE，凯EQ（+班修凯E充能直到下一个循环）  
 
 视频参考：
-> 评论区说客，3.8深渊下半（0金，1命凯），<https://www.bilibili.com/video/BV1Mm4y1J7FH>  
+> 弹药福娃，4.0深渊下半（0金，低配），<https://www.bilibili.com/video/BV1z8411z7Zj>  
+ 评论区说客，3.8深渊下半（0金，1命凯），<https://www.bilibili.com/video/BV1Mm4y1J7FH>  
  评论区说客，3.7深渊下半（0金，1命凯），<https://www.bilibili.com/video/BV1wN411y7tu>  
 
 DPS参考：
@@ -711,7 +713,8 @@ DPS参考：
 > 0
 
 视频参考：
-> 凛疯1f，4.0深渊上半&下半（0金），<https://www.bilibili.com/video/BV1Nh4y1P7RQ>  
+> 弹药福娃，4.0深渊上半（0金，低配），<https://www.bilibili.com/video/BV1z8411z7Zj>  
+ 凛疯1f，4.0深渊上半&下半（0金），<https://www.bilibili.com/video/BV1Nh4y1P7RQ>  
  评论区说客，3.8深渊上半（0金，低练），<https://www.bilibili.com/video/BV1Mm4y1J7FH>  
  凛疯1f，3.7深渊上半&下半（0金），<https://www.bilibili.com/video/BV1e8411f7XK>  
  JackTRipper，3.6深渊上半（0金），<https://www.bilibili.com/video/BV1do4y187Ay>  
@@ -950,7 +953,7 @@ DPS参考：
 > 0
 
 视频参考：
-> 0
+> 枕头ツ，4.0深渊下半（2金），<https://www.bilibili.com/video/BV11p4y1A7tH>  
 
 DPS参考：
 > 0
@@ -1308,7 +1311,7 @@ DPS参考：
 
 ### （四）种门
 
-#### 1. 超绽放（草水雷+草/雷/冰/风）
+#### 1. 超绽放（草水雷+草/水/雷/冰/风）
 
 由于四星草系都是卧龙凤雏，第四人为水/岩的情况下很难保证产种效率，因此不考虑。  
 第四人为火的情况归入超+烈绽放中。
@@ -1337,6 +1340,7 @@ DPS参考：
  Nickess，3.6深渊上半（柯莱瑶瑶，0金），<https://www.bilibili.com/video/BV17c411H79Y>  
  持灵，3.5深渊下半（柯莱瑶瑶，0金），<https://www.bilibili.com/video/BV1hT411B7yv>  
  lyh逗比，3.5深渊下半（草主瑶瑶，0金），<https://www.bilibili.com/video/BV1Sh41137XM>  
+ 弹药福娃，3.4深渊上半（柯莱瑶瑶，0金），<https://www.bilibili.com/video/BV1Qx4y1L7Fc>  
 
 DPS参考：
 > 0
@@ -1366,7 +1370,32 @@ DPS参考：
 
 ---
 
-##### ② 草X+水Y+雷Z+雷N（双雷超绽）
+##### ② 草X+水Y+水Z+雷N（双水超绽）
+
+---
+
+###### 柯莱/草主/瑶瑶 行秋 坎蒂丝 久岐忍
+
+> 四星双水超绽
+
+评分参考：
+> 输出： （环境-，配置-，练度-，手部-）  
+ 生存：  
+ 破盾：  
+ 成本：
+
+手法参考：
+> 0
+
+视频参考：
+> 枕头ツ，4.0深渊上半（瑶瑶，0金），<https://www.bilibili.com/video/BV11p4y1A7tH>  
+
+DPS参考：
+> 0
+
+---
+
+##### ③ 草X+水Y+雷Z+雷N（双雷超绽）
 
 ---
 
@@ -1435,7 +1464,7 @@ DPS参考：
 
 ---
 
-##### ③ 草X+水Y+雷Z+冰N（带冰超绽）
+##### ④ 草X+水Y+雷Z+冰N（带冰超绽）
 
 绽放带冰的原理：草冰可共存，上水时，水先和冰反应生成二倍元素量的冻元素，剩余水元素和其一半元素量的草元素反应生成一颗种子。  
 因此，同样生成一颗种子，带冰时对草元素的消耗量低，即所谓“冻结护草”。
@@ -1461,7 +1490,7 @@ DPS参考：
 DPS参考：
 > 0
 
-##### ④ 草X+水Y+雷Z+风N（带风超绽）
+##### ⑤ 草X+水Y+雷Z+风N（带风超绽）
 
 ---
 
@@ -1662,7 +1691,7 @@ iii) “冻结护草”
 
 ---
 
-###### 瑶瑶 草主/柯莱 芭芭拉 罗莎莉亚
+###### 瑶瑶/绮良良 草主/柯莱 芭芭拉 罗莎莉亚
 
 > 0
 
@@ -1676,8 +1705,9 @@ iii) “冻结护草”
 > 0
 
 视频参考：
-> Nickess，3.8深渊上半（柯莱，0金），<https://www.bilibili.com/video/BV1v8411U7Su>  
- Nickess，3.6深渊下半（柯莱，0金），<https://www.bilibili.com/video/BV1bh4y1p7b9>  
+> 弹药福娃，3.8深渊上半（绮良良柯莱，0金），<https://www.bilibili.com/video/BV1Ju4y1d7dX>  
+ Nickess，3.8深渊上半（瑶瑶柯莱，0金），<https://www.bilibili.com/video/BV1v8411U7Su>  
+ Nickess，3.6深渊下半（瑶瑶柯莱，0金），<https://www.bilibili.com/video/BV1bh4y1p7b9>  
 
 DPS参考：
 > 0
