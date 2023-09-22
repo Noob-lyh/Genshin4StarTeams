@@ -14,7 +14,7 @@
 砂糖6命，精5讨龙英杰谭，4风套精精精，4精通+6充能  
 
 DPS：(20s)  
-0金 4.50w = 4.23w ~ 4.77w (砂糖两轮一Q，单判，行秋不凹蒸发)  
+0金 4.50w = 4.23w ~ 4.77w (砂糖两轮一Q平均，香菱火轮单判，行秋不凹蒸发)  
 
 ```text
 bennett char lvl=90/90 cons=5 talent=9,9,9;
@@ -100,19 +100,20 @@ while 1 {
 
 ## 班尼特 香菱 凯亚 罗莎莉亚
 
-班尼特5命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
+班尼特5命，精1原木刀，4宗室攻火暴，(5+7)双暴+6生命+6充能  
 香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
-凯亚2命，精5匣里龙吟，4绝缘充冰暴，(9+11)双暴+2攻击+2精通+2充能  
+凯亚2命，精5匣里龙吟，4绝缘精冰暴，(9+11)双暴+2攻击+2精通+2充能  
 罗莎莉亚6命，精5西风长枪，2冰2宗室精冰暴，(9+11)双暴+2攻击+2精通+2充能  
 
-DPS：(15s)  
-0金 3.35w  
+DPS：
+0金 3.45w (班尼特6命)  
+0金 3.34w  
 
 ```text
 bennett char lvl=90/90 cons=5 talent=9,9,9;
 bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
 bennett add set="noblesseoblige" count=4;
-bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+bennett add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
 bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
 
 xiangling char lvl=90/90 cons=6 talent=9,9,9;
@@ -124,10 +125,10 @@ xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.
 kaeya char lvl=90/90 cons=2 talent=9,9,9;
 kaeya add weapon="lionsroar" refine=5 lvl=90/90;
 kaeya add set="emblemofseveredfate" count=4;
-kaeya add stats hp=4780 atk=311 er=0.518 cryo%=0.466 cr=0.311;
+kaeya add stats hp=4780 atk=311 em=187 cryo%=0.466 cr=0.311;
 kaeya add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
-rosaria char lvl=90/90 cons=2 talent=9,9,9;
+rosaria char lvl=90/90 cons=6 talent=9,9,9;
 rosaria add weapon="favoniuslance" refine=5 lvl=90/90;
 rosaria add set="blizzardstrayer" count=2;
 rosaria add set="noblesseoblige" count=2;
@@ -277,7 +278,7 @@ while 1{
 
 ## 班尼特 香菱 珐露珊 鹿野院平藏
 
-班尼特5命，精5原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
+班尼特5命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
 香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
 珐露珊6命，精5西风猎弓，4风套充风暴，(12+8)双暴+4充能  
 鹿野院平藏6命，精5流浪乐章，2风套2角斗攻风暴，(9+11)双暴+4攻击 

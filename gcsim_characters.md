@@ -8,23 +8,23 @@
 ## 班尼特
 
 ```text
-# 通用-半输出，5命，精1原木刀/精5西风剑，4宗室/4教官充火暴，(5+7)双暴+6生命+6充能
+# 通用-半输出，5命，精1原木刀/精5西风剑，4宗室/4教官充/攻火暴，(5+7)双暴+6生命+6充能
 # 注：教官是四星圣遗物数值较低，为了严谨理论上应当扣除部分属性
 bennett char lvl=90/90 cons=5 talent=9,9,9;
-bennett add weapon="favoniussword/sapwoodblade" refine=1 lvl=90/90;
+bennett add weapon="sapwoodblade/favoniussword" refine=1/5 lvl=90/90;
 bennett add set="noblesseoblige/instructor" count=4;
-bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+bennett add stats hp=4780 atk=311 er=0.518/atk%=0.466 pyro%=0.466 cr=0.311;
 bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
 ```
 
 ## 香菱
 
 ```text
-# 通用-渔获绝缘充能沙，6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能
+# 通用-渔获绝缘，6命，精5渔获，4绝缘充/攻火暴，(9+11)双暴+2攻击+2精通+2充能
 xiangling char lvl=90/90 cons=6 talent=9,9,9;
 xiangling add weapon="thecatch" refine=5 lvl=90/90;
 xiangling add set="emblemofseveredfate" count=4;
-xiangling add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+xiangling add stats hp=4780 atk=311 er=0.518/atk%=0.466 pyro%=0.466 cr=0.311;
 xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 ```
 
@@ -53,18 +53,18 @@ barbara add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
 ## 凯亚
 
 ```text
-# 融化-龙吟绝缘充能沙，2命，精5匣里龙吟，4绝缘充冰暴，(9+11)双暴+2攻击+2精通+2充能
+# 融化-龙吟绝缘，2命，精5匣里龙吟，4绝缘充/精/攻冰暴，(9+11)双暴+2攻击+2精通+2充能
 kaeya char lvl=90/90 cons=2 talent=9,9,9;
 kaeya add weapon="lionsroar" refine=5 lvl=90/90;
 kaeya add set="emblemofseveredfate" count=4;
-kaeya add stats hp=4780 atk=311 er=0.518 cryo%=0.466 cr=0.311;
+kaeya add stats hp=4780 atk=311 er=0.518/atk%=0.466/em=187 cryo%=0.466 cr=0.311;
 kaeya add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 ```
 
 ## 罗莎莉亚
 
 ```text
-# 融化-西风散件精通沙，6命，精5西风长枪，2冰2宗室精冰暴，(9+11)双暴+2攻击+2精通+2充能
+# 融化-西风散件，6命，精5西风长枪，2冰2宗室精冰暴，(9+11)双暴+2攻击+2精通+2充能
 rosaria char lvl=90/90 cons=6 talent=9,9,9;
 rosaria add weapon="favoniuslance" refine=5 lvl=90/90;
 rosaria add set="blizzardstrayer" count=2;
