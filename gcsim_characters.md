@@ -131,6 +131,13 @@ sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
 ## 鹿野院平藏
 
 ```text
+# 通用-速切输出，6命，精5流浪乐章，2风套2角斗攻风暴，(9+11)双暴+4攻击
+heizou char lvl=90/90 cons=6 talent=9,9,9;
+heizou add weapon="thewidsith" refine=5 lvl=90/90;
+heizou add set="viridescentvenerer" count=2;
+heizou add set="gladiatorsfinale" count=2;
+heizou add stats hp=4780 atk=311 atk%=0.466 anemo%=0.466 cr=0.311;
+heizou add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0 em=0 cr=0.297 cd=0.726;
 # 珐鹿琳莱-充能速切治疗，6命，精5试作金珀，4宗室攻风暴，(9+11)双暴+4攻击
 heizou char lvl=90/90 cons=6 talent=9,9,9;
 heizou add weapon="prototypeamber" refine=5 lvl=90/90;
@@ -142,6 +149,12 @@ heizou add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0 em=0 cr=0.297 cd=
 ## 珐露珊
 
 ```text
+# 通用-后台风辅，6命，精5西风猎弓，4千岩/4风套攻/充风暴，(12+8)双暴+4充能
+faruzan char lvl=90/90 cons=6 talent=9,9,9;
+faruzan add weapon="favoniuswarbow" refine=5 lvl=90/90;
+faruzan add set="tenacityofthemillelith/viridescentvenerer" count=4;
+faruzan add stats hp=4780 atk=311 atk%=0.466/er=0.518 anemo%=0.466 cr=0.311;
+faruzan add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.22 em=0 cr=0.396 cd=0.528;
 # 珐鹿琳莱-站场输出，6命，精5静谧之曲，4剧团攻风暴，(12+8)双暴+4充能
 faruzan char lvl=90/90 cons=6 talent=9,9,9;
 faruzan add weapon="songofstillness" refine=5 lvl=90/90;

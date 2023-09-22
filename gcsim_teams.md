@@ -275,6 +275,56 @@ while 1{
 }
 ```
 
+## 班尼特 香菱 珐露珊 鹿野院平藏
+
+班尼特5命，精5原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
+香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
+珐露珊6命，精5西风猎弓，4风套充风暴，(12+8)双暴+4充能  
+鹿野院平藏6命，精5流浪乐章，2风套2角斗攻风暴，(9+11)双暴+4攻击 
+  
+DPS：(20s)  
+0金 3.69w  
+
+```text
+bennett char lvl=90/90 cons=5 talent=9,9,9;
+bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
+bennett add set="noblesseoblige" count=4;
+bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
+
+xiangling char lvl=90/90 cons=6 talent=9,9,9;
+xiangling add weapon="thecatch" refine=5 lvl=90/90;
+xiangling add set="emblemofseveredfate" count=4;
+xiangling add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+heizou char lvl=90/90 cons=6 talent=9,9,9;
+heizou add weapon="thewidsith" refine=5 lvl=90/90;
+heizou add set="viridescentvenerer" count=2;
+heizou add set="gladiatorsfinale" count=2;
+heizou add stats hp=4780 atk=311 atk%=0.466 anemo%=0.466 cr=0.311;
+heizou add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0 em=0 cr=0.297 cd=0.726;
+
+faruzan char lvl=90/90 cons=6 talent=9,9,9;
+faruzan add weapon="favoniuswarbow" refine=5 lvl=90/90;
+faruzan add set="viridescentvenerer" count=4;
+faruzan add stats hp=4780 atk=311 er=0.518 anemo%=0.466 cr=0.311;
+faruzan add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.22 em=0 cr=0.396 cd=0.528;
+
+active bennett;
+while 1{
+    bennett skill, burst;
+    faruzan skill, burst;
+    xiangling burst, skill;
+    heizou attack, charge, burst, skill;
+    bennett attack, skill;
+    xiangling attack:2;
+    bennett attack, skill;
+    xiangling attack:2;
+    heizou attack, charge, attack:3, skill;
+}
+```
+
 ## 草主 柯莱 行秋 久岐忍
 
 草主6命，精5西风剑，4草套充草暴，(7+9)双爆+4攻击+4充能  
