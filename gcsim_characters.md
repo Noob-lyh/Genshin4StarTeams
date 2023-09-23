@@ -202,7 +202,7 @@ collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 
 ```text
 # 通用-千岩治疗，6命，精5公义的酬报，4千岩生生治，4精通+6生命+6充能
 yaoyao char lvl=90/90 cons=6 talent=9,9,9;
-yaoyao add weapon="rightful reward" refine=5 lvl=90/90;
+yaoyao add weapon="rightfulreward" refine=5 lvl=90/90;
 yaoyao add set="tenacityofthemillelith" count=4;
 yaoyao add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
 yaoyao add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;

@@ -105,7 +105,7 @@ while 1 {
 凯亚2命，精5匣里龙吟，4绝缘精冰暴，(9+11)双暴+2攻击+2精通+2充能  
 罗莎莉亚6命，精5西风长枪，2冰2宗室精冰暴，(9+11)双暴+2攻击+2精通+2充能  
 
-DPS：
+DPS：  
 0金 3.45w (班尼特6命)  
 0金 3.34w  
 
@@ -150,6 +150,71 @@ while 1 {
     bennett attack, skill;
     xiangling attack:2;
     kaeya skill;
+}
+```
+
+## 砂糖 北斗 菲谢尔 瑶瑶
+
+砂糖6命，精5祭礼残章，4风套精精精，4精通+6充能  
+北斗6命，精5浪影阔剑，4绝缘充雷暴，(9+11)双暴+2攻击+2充能  
+菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2充能  
+瑶瑶6命，精5公义的酬报，4千岩生生治，4精通+6生命+6充能  
+
+DPS：  
+0金 3.84w  
+
+```text
+sucrose char lvl=90/90 cons=6 talent=9,9,9;
+sucrose add weapon="sacrificialfragments" refine=5 lvl=90/90;
+sucrose add set="viridescent" count=4;
+sucrose add stats hp=4780 atk=311 em=187 em=187 em=187;
+sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
+
+beidou char lvl=90/90 cons=6 talent=9,9,9;
+beidou add weapon="finaleofthedeep" refine=5 lvl=90/90;
+beidou add set="emblemofseveredfate" count=4;
+beidou add stats hp=4780 atk=311 er=0.518 electro%=0.466 cr=0.311;
+beidou add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
+
+fischl char lvl=90/90 cons=6 talent=9,9,9; 
+fischl add weapon="stringless" refine=5 lvl=90/90;
+fischl add set="goldentroupe" count=4;
+fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
+fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
+
+yaoyao char lvl=90/90 cons=6 talent=9,9,9;
+yaoyao add weapon="rightfulreward" refine=5 lvl=90/90;
+yaoyao add set="tenacityofthemillelith" count=4;
+yaoyao add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
+yaoyao add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
+
+active yaoyao;
+yaoyao skill;
+fischl skill;
+sucrose attack, skill, burst;
+beidou burst, skill, attack;
+while 1 {
+    if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl skill, attack;
+        } else if .fischl.burst.ready {
+            fischl burst, attack;
+        } else {
+            sucrose attack:3, dash;
+        }
+    } else if .beidou.burst.ready {
+        beidou burst, attack;
+    } else if .sucrose.burst.ready {
+        sucrose burst, attack;
+    } else if .yaoyao.skill.ready {
+        yaoyao skill, attack;
+    } else if .beidou.skill.ready {
+        beidou skill, attack;
+    } else if .sucrose.skill.ready {
+        sucrose attack, skill, dash;
+    } else {
+        sucrose attack:3, dash;
+    }
 }
 ```
 
