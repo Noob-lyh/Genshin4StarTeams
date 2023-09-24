@@ -8,9 +8,9 @@
 ## 班尼特
 
 ```text
-# 通用-半输出，5命，精1原木刀/精5西风剑，4宗室/4教官充/攻火暴，(5+7)双暴+6生命+6充能
+# 通用-半输出，5/6命，精1原木刀/精5西风剑，4宗室/4教官充/攻火暴，(5+7)双暴+6生命+6充能
 # 注：教官是四星圣遗物数值较低，为了严谨理论上应当扣除部分属性
-bennett char lvl=90/90 cons=5 talent=9,9,9;
+bennett char lvl=90/90 cons=5/6 talent=9,9,9;
 bennett add weapon="sapwoodblade/favoniussword" refine=1/5 lvl=90/90;
 bennett add set="noblesseoblige/instructor" count=4;
 bennett add stats hp=4780 atk=311 er=0.518/atk%=0.466 pyro%=0.466 cr=0.311;
@@ -89,7 +89,7 @@ fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 
 ```text
 # 砂糖武装-直伤，6命，精5浪影阔剑，4绝缘充雷暴，(9+11)双暴+2攻击+2充能
 beidou char lvl=90/90 cons=6 talent=9,9,9;
-beidou add weapon="finaleofthedeep" refine=5 lvl=90/90;
+beidou add weapon="tidalshadow" refine=5 lvl=90/90;
 beidou add set="emblemofseveredfate" count=4;
 beidou add stats hp=4780 atk=311 er=0.518 electro%=0.466 cr=0.311;
 beidou add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
@@ -200,10 +200,10 @@ collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 
 ## 瑶瑶
 
 ```text
-# 通用-千岩治疗，6命，精5公义的酬报，4千岩生生治，4精通+6生命+6充能
+# 通用-治疗，6命，精5公义的酬报，4千岩/4草套生生治，4精通+6生命+6充能
 yaoyao char lvl=90/90 cons=6 talent=9,9,9;
 yaoyao add weapon="rightfulreward" refine=5 lvl=90/90;
-yaoyao add set="tenacityofthemillelith" count=4;
+yaoyao add set="tenacityofthemillelith/deepwoodmemories" count=4;
 yaoyao add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
 yaoyao add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
 ```

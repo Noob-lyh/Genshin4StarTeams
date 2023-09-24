@@ -2,9 +2,24 @@
 
 只包含队伍与循环部分，场景设置请看gcsim模板一节  
 
-部分队伍对技能释放顺序要求较高，而轴又比较复杂，gcsim直接循环掉伤害很严重，  
-因此这些队伍会在手工确认第二轮循环能成立的情况下，只模拟第一个循环的DPS，  
-此时对应DPS会标注循环时长。  
+关于队伍手法/循环：  
+
+1. 对于一般有轴的队伍，会设计一套能循环的手法，使其长度约等于队伍中CD最长的动作，同时牺牲一些对不上轴的小技能，如香班凯修循环长度为香菱Q的20秒，而每个20秒循环中香菱12秒冷却的E只放一次。此时DPS标注为(xx秒循环)。  
+2. 部分队伍轴复杂、技能释放顺序要求较高、随机性大或随机性造成的影响大，gcsim直接循环90秒掉伤害非常严重，不能反映队伍真实DPS，如祭礼剑行秋的砂国，如果压了充能祭礼没刷新会严重影响循环和伤害。对于这些队伍，会在手工确认第二轮循环能成立的情况下，只模拟第一个循环的DPS，此时其DPS标注为(xx秒单循环)。  
+3. 部分队伍轴非常难排，例如各种带皇女的配队(因为E+Q续奥兹的轴长为25秒)，以及一些各技能冷却不一且没有倍数关系的队伍，如草主+柯莱+水+久岐忍的双草超绽。此时手法为固定起手式+while死循环，每个循环中按照一定的优先级执行某一个已就绪的动作，且DPS标注为(无轴循环)。  
+
+## 0金配队标准练度理论DPS排行榜(施工中)
+
+注：低金配队DPS参考，1金雷国约5w，1金草行久皇约6.65w。  
+
+1. 柯莱 行秋 久岐忍 菲谢尔，5.72w（皇女不抢种子）
+2. 草主 柯莱 行秋 久岐忍，5.12w
+3. 班尼特 香菱 行秋 砂糖，4.49w（香菱火轮单判，行秋不凹蒸发）
+4. 草主 柯莱 芭芭拉 久岐忍，4.12w
+5. 砂糖 北斗 菲谢尔 瑶瑶/行秋，3.83w
+6. 班尼特 香菱 珐露珊 鹿野院平藏，3.69w
+7. 班尼特 香菱 凯亚 罗莎莉亚，3.34w
+8. 珐露珊 鹿野院平藏 琳妮特 莱依拉，3.10w
 
 ## 班尼特 香菱 行秋 砂糖
 
@@ -13,8 +28,10 @@
 行秋6命，精5祭礼剑，4宗室攻水暴，(9+11)双暴+2攻击+2充能  
 砂糖6命，精5讨龙英杰谭，4风套精精精，4精通+6充能  
 
-DPS：(20s)  
-0金 4.50w = 4.23w ~ 4.77w (砂糖两轮一Q平均，香菱火轮单判，行秋不凹蒸发)  
+DPS：(20秒单循环，香菱火轮单判，行秋不凹蒸发)  
+0金 4.69w (砂糖有Q)  
+0金 4.49w (砂糖三轮一Q平均值)  
+0金 4.39w (砂糖无Q，用E冲刺代替)  
 
 ```text
 bennett char lvl=90/90 cons=5 talent=9,9,9;
@@ -47,17 +64,18 @@ while 1 {
     xingqiu burst, attack;
     bennett burst, attack;
     sucrose attack, skill, dash;
-    if .sucrose.burst.ready {
-        sucrose burst;
-    }
+    sucrose burst;                  # sucrose burst ready
+    #sucrose skill, dash;           # sucrose burst not ready
     xiangling attack, burst, skill;
-    sucrose skill, dash;
+    sucrose attack, dash;
     xingqiu attack, skill, dash;
     if .xingqiu.skill.ready {
       xingqiu attack, skill, dash;
     }
     xingqiu attack:3;
-    sucrose attack:4, attack;
+    sucrose attack;
+    bennett attack, skill;
+    xiangling attack:3;
     bennett attack, skill;
     xiangling attack:3;
     bennett attack, skill;
@@ -68,7 +86,7 @@ while 1 {
 备注：雷国，用雷电将军替代砂糖  
 雷电将军0命，精5西风枪，4绝缘充雷暴，(9+11)双暴+2攻击+2充能  
 
-DPS：(20s)  
+DPS：(20秒单循环，香菱火轮单判，行秋不凹蒸发)  
 1金 5.27w (教官班尼特，攻击沙香菱，宗室行秋，雷国极致配装)  
 1金 5.11w (教官班尼特，充能沙香菱，宗室行秋，即只换砂糖其他不变)  
 1金 5.00w (宗室班尼特，攻击沙香菱，绝缘行秋，雷国常见配装)  
@@ -100,17 +118,17 @@ while 1 {
 
 ## 班尼特 香菱 凯亚 罗莎莉亚
 
-班尼特5命，精1原木刀，4宗室攻火暴，(5+7)双暴+6生命+6充能  
+班尼特5/6命，精1原木刀，4宗室攻火暴，(5+7)双暴+6生命+6充能  
 香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
 凯亚2命，精5匣里龙吟，4绝缘精冰暴，(9+11)双暴+2攻击+2精通+2充能  
 罗莎莉亚6命，精5西风长枪，2冰2宗室精冰暴，(9+11)双暴+2攻击+2精通+2充能  
 
-DPS：  
+DPS：(20秒循环)  
 0金 3.45w (班尼特6命)  
-0金 3.34w  
+0金 3.34w (班尼特5命)  
 
 ```text
-bennett char lvl=90/90 cons=5 talent=9,9,9;
+bennett char lvl=90/90 cons=5/6 talent=9,9,9;
 bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
 bennett add set="noblesseoblige" count=4;
 bennett add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
@@ -160,8 +178,8 @@ while 1 {
 菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2充能  
 瑶瑶6命，精5公义的酬报，4千岩生生治，4精通+6生命+6充能  
 
-DPS：  
-0金 3.84w  
+DPS：(无轴循环)  
+0金 3.83w  
 
 ```text
 sucrose char lvl=90/90 cons=6 talent=9,9,9;
@@ -194,15 +212,16 @@ fischl skill;
 sucrose attack, skill, burst;
 beidou burst, skill, attack;
 while 1 {
+
     if .fischl.oz == 0 {
         if .fischl.skill.ready {
             fischl skill, attack;
         } else if .fischl.burst.ready {
             fischl burst, attack;
-        } else {
-            sucrose attack:3, dash;
         }
-    } else if .beidou.burst.ready {
+    } 
+    
+    if .beidou.burst.ready {
         beidou burst, attack;
     } else if .sucrose.burst.ready {
         sucrose burst, attack;
@@ -225,11 +244,8 @@ while 1 {
 菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2充能  
 行秋6命，精5祭礼剑，4绝缘攻水暴，(9+11)双暴+2攻击+2充能  
   
-DPS：  
-0金对单 3.82w
-0金对双 3.34w
-0金对三 2.87w
-0金对四 2.59w
+DPS：(无轴循环)  
+0金 3.83w  
 
 ```text
 sucrose char lvl=90/90 cons=6 talent=9,9,9;
@@ -239,7 +255,7 @@ sucrose add stats hp=4780 atk=311 em=187 em=187 em=187;
 sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
 
 beidou char lvl=90/90 cons=6 talent=9,9,9;
-beidou add weapon="finaleofthedeep" refine=5 lvl=90/90;
+beidou add weapon="tidalshadow" refine=5 lvl=90/90;
 beidou add set="emblemofseveredfate" count=4;
 beidou add stats hp=4780 atk=311 er=0.518 electro%=0.466 cr=0.311;
 beidou add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
@@ -262,18 +278,21 @@ fischl skill, attack;
 sucrose attack, skill, dash, attack, burst, dash;
 beidou attack, skill, attack, burst;
 while 1 {
+
+    if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl skill, attack;
+        } else if .fischl.burst.ready {
+            fischl burst, attack;
+        }
+    }
+
     if .xingqiu.burst.ready {
         xingqiu burst, attack;
     } else if .beidou.burst.ready {
         beidou burst, attack;
     } else if .sucrose.burst.ready {
         sucrose burst, attack;
-    } else if .fischl.oz == 0 {
-        if .fischl.skill.ready {
-            fischl skill, attack;
-        } else if .fischl.burst.ready {
-            fischl burst, attack;
-        }
     } else if .xingqiu.skill.ready {
         xingqiu attack, skill, dash;
         if .xingqiu.skill.ready {
@@ -296,7 +315,7 @@ while 1 {
 琳妮特6命，精5西风剑，2角斗2追忆攻风暴，(9+11)双暴+4攻击  
 莱依拉6命，精5天目影打刀，4千岩生生生，4生命+10充能  
   
-DPS：(24s)  
+DPS：(24秒单循环)  
 0金 3.10w  
 
 ```text
@@ -346,9 +365,9 @@ while 1{
 班尼特5命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
 香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
 珐露珊6命，精5西风猎弓，4风套充风暴，(12+8)双暴+4充能  
-鹿野院平藏6命，精5流浪乐章，2风套2角斗攻风暴，(9+11)双暴+4攻击 
+鹿野院平藏6命，精5流浪乐章，2风套2角斗攻风暴，(9+11)双暴+4攻击  
   
-DPS：(20s)  
+DPS：(20秒循环)  
 0金 3.69w  
 
 ```text
@@ -398,7 +417,7 @@ while 1{
 行秋6命，精5祭礼剑，4绝缘攻水暴，(9+11)双暴+2攻击+2充能  
 久岐忍6命，精5东花坊时雨，4乐园精精精，4精通+8生命  
 
-DPS：  
+DPS：(无轴循环)  
 0金 5.15w  
 
 ```text
@@ -467,9 +486,9 @@ while 1{
 芭芭拉6命，精5试作金珀，4海染生生治，4精通+6生命  
 久岐忍6命，精5东花坊时雨，4乐园精精精，4精通+8生命  
 
-注：代码中手法难度较大且全程贴身，对实战DPS的参考价值有限  
+注：此无轴循环难度较大且需要全程贴身，对实战DPS的参考价值有限  
 
-DPS：  
+DPS：(无轴循环)  
 0金 4.12w  
 
 ```text
@@ -529,7 +548,7 @@ while 1{
 久岐忍6命，精5东花坊时雨，4乐园精精精，4精通+8生命  
 菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2充能  
 
-DPS：  
+DPS：(无轴循环)  
 0金对单 4.46w (小体积怪，皇女抢种子)  
 0金对单 5.72w (大体积怪，皇女不抢种子)  
 
@@ -597,7 +616,7 @@ while 1 {
 备注：草行久皇，草神换柯莱  
 纳西妲0命，精5祭礼书残章，4草套精精精，(3+5)双暴+4精通  
 
-DPS：  
+DPS：(无轴循环)  
 1金对单 5.30w (小体积怪，皇女抢种子)  
 1金对单 6.65w (大体积怪，皇女不抢种子)  
 
