@@ -10,16 +10,19 @@
 
 ## 0金配队标准练度理论DPS排行榜(施工中)
 
-注：低金配队DPS参考，1金雷国约5w，1金草行久皇约6.65w。  
+注1：主要低金配队DPS参考——1金雷国约5w，1金草行久皇约6.65w。  
+注2：主要使用通用面板，部分队伍进行针对性换装之后DPS还能提。  
 
-1. 柯莱 行秋 久岐忍 菲谢尔，5.72w（皇女不抢种子）
-2. 草主 柯莱 行秋 久岐忍，5.12w
-3. 班尼特 香菱 行秋 砂糖，4.49w（香菱火轮单判，行秋不凹蒸发）
-4. 草主 柯莱 芭芭拉 久岐忍，4.12w
-5. 砂糖 北斗 菲谢尔 瑶瑶/行秋，3.83w
-6. 班尼特 香菱 珐露珊 鹿野院平藏，3.69w
-7. 班尼特 香菱 凯亚 罗莎莉亚，3.34w
-8. 珐露珊 鹿野院平藏 琳妮特 莱依拉，3.10w
+1. 柯莱 行秋 久岐忍 菲谢尔（双雷行秋超绽1），5.72w（大体积怪，皇女不抢种子）
+2. 班尼特 香菱 行秋 砂糖（砂糖国家队1），5.22w（班6命/砂秒双扩不开Q/香双判/行秋E双蒸）
+3. 草主 柯莱 行秋 久岐忍（双草行秋超绽），5.12w
+4. 班尼特 香菱 行秋 砂糖（砂糖国家队2），4.49w（班5命/砂简易双扩三轮一Q/香单判/行秋E不凹蒸发）
+5. 柯莱 行秋 久岐忍 菲谢尔（双雷行秋超绽2），4.46w（小体积怪，皇女抢种子）
+6. 草主 柯莱 芭芭拉 久岐忍（双草芭芭拉超绽），4.12w
+7. 砂糖 北斗 菲谢尔 瑶瑶/行秋（砂糖武装/激化），3.83w
+8. 班尼特 香菱 珐露珊 鹿野院平藏（双风双火），3.69w
+9. 班尼特 香菱 凯亚 罗莎莉亚（双冰双火），3.34w
+10. 珐露珊 鹿野院平藏 琳妮特 莱依拉（新四星三风队），3.10w
 
 ## 班尼特 香菱 行秋 砂糖
 
@@ -28,7 +31,7 @@
 行秋6命，精5祭礼剑，4宗室攻水暴，(9+11)双暴+2攻击+2充能  
 砂糖6命，精5讨龙英杰谭，4风套精精精，4精通+6充能  
 
-DPS：(20秒单循环，香菱火轮单判，行秋不凹蒸发)  
+DPS：(20秒单循环，简易双扩手法，香菱火轮单判，行秋不凹蒸发)  
 0金 4.69w (砂糖有Q)  
 0金 4.49w (砂糖三轮一Q平均值)  
 0金 4.39w (砂糖无Q，用E冲刺代替)  
@@ -83,7 +86,53 @@ while 1 {
 }
 ```
 
-备注：雷国，用雷电将军替代砂糖  
+备注1：砂糖秒双扩不开Q + 6命班 + 火轮双判 + 行秋E双蒸，来源<https://gcsim.app/db/hQBtQgpwhp6w#>  
+使用时要去掉默认的90秒模拟时长以及默认敌人设定。  
+
+DPS：(~24秒循环)  
+0金 5.22w  
+
+```text
+options swap_delay=12;
+target lvl=100 resist=0.1 pos=-2.4,0 radius=2;
+active xingqiu;
+for let i = 0; i < 4; i = i + 1 {
+    set_player_pos(1.2,0);# 0.8 < 1.2 ≤ 1.6
+    xingqiu burst,attack;
+    wait(3);
+    bennett burst,attack,skill;
+    sucrose attack;
+    wait(7);
+    sucrose skill,dash;
+    xiangling attack,skill,dash,attack,burst;
+    xingqiu skill;
+    let e = .xingqiu.skill.ready;
+    if(e) {
+        xingqiu skill;
+    }
+    xingqiu dash;
+    set_player_pos(0,0);
+    if(!e) {
+        xingqiu attack:3;
+    }
+    bennett attack:3,skill;
+    xingqiu attack:2;
+    bennett attack:2,skill,attack;
+    xiangling attack:3,skill,dash,attack;
+    bennett skill,attack;
+    xiangling attack:3;
+    bennett attack:3,skill;
+    if(e) {
+        xiangling attack,dash;
+    }else {
+        xingqiu attack:2;
+        sucrose skill,dash,attack;
+        xingqiu attack,dash;
+    }
+}
+```
+
+备注2：雷国，用雷电将军替代砂糖  
 雷电将军0命，精5西风枪，4绝缘充雷暴，(9+11)双暴+2攻击+2充能  
 
 DPS：(20秒单循环，香菱火轮单判，行秋不凹蒸发)  
