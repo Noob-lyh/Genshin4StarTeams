@@ -1,5 +1,9 @@
 # Genshin4StarTeams
 
+本篇为项目主体，即尽可能收集原神纯四星角色的配队，包含简介、评分、手法参考、视频参考、DPS参考等。  
+其中DPS参考使用gcsim模拟，对应的角色和队伍代码在 gcsim_characters.md 和 gcsim_teams.md 中。  
+此外 gcsim_dictionary.md 为gcsim中各游戏名词的中文翻译，gcsim_templates.md为gcsim代码的模板。  
+
 ## 一、纯四星配队思路特点
 
 1. 经常围绕少数老四星建队
