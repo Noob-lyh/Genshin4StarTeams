@@ -13,22 +13,24 @@
 注1：经典低金配队DPS参考——1金雷国约5w，1金草行久皇约6.65w。  
 注2：主要使用通用面板，部分队伍进行针对性换装之后DPS还能提。  
 
-1. 柯莱 行秋 久岐忍 菲谢尔（双雷行秋超绽1），5.72w（大体积怪，皇女不抢种子）
+1. 柯莱 行秋 久岐忍 菲谢尔（双雷行秋超绽1），5.78w（大体积怪，皇女不抢种子）
 2. 班尼特 香菱 行秋 砂糖（砂糖国家队1），5.22w（班6命/砂秒双扩不开Q/香双判/行秋E双蒸）
 3. 草主 柯莱 行秋 久岐忍（双草行秋超绽），5.12w
-4. 班尼特 香菱 行秋 砂糖（砂糖国家队2），4.49w（班5命/砂简易双扩三轮一Q/香单判/行秋E不凹蒸发）
-5. 柯莱 行秋 久岐忍 菲谢尔（双雷行秋超绽2），4.46w（小体积怪，皇女抢种子）
+4. 柯莱 行秋 久岐忍 菲谢尔（双雷行秋超绽2），4.59w（小体积怪，皇女抢种子）
+5. 班尼特 香菱 行秋 砂糖（砂糖国家队2），4.49w（班5命/砂简易双扩三轮一Q/香单判/行秋E不凹蒸发）
 6. 草主 柯莱 芭芭拉 久岐忍（双草芭芭拉超绽），4.12w
-7. 砂糖 北斗 菲谢尔 瑶瑶/行秋（砂糖武装/激化），3.83w
-8. 班尼特 香菱 珐露珊 鹿野院平藏（双风双火），3.69w
-9. 班尼特 香菱 凯亚 罗莎莉亚（双冰双火），3.34w ~ 3.45w（班5命/6命）
-10. 珐露珊 鹿野院平藏 琳妮特 莱依拉（新四星三风队），3.10w
+7. 砂糖 北斗 菲谢尔 瑶瑶（砂糖激化），3.90w
+8. 砂糖 北斗 菲谢尔 行秋（砂糖武装），3.89w
+9. 班尼特 香菱 珐露珊 鹿野院平藏（双风双火），3.69w
+10. 班尼特 香菱 凯亚 罗莎莉亚（双冰双火），3.34w ~ 3.45w（班5命/6命）
+11. 珐露珊 鹿野院平藏 琳妮特 莱依拉（新四星三风队），3.10w
+12. 凯亚 罗莎莉亚 行秋 砂糖（四星永冻），2.31w（砂糖讨龙）
 
 ## 班尼特 香菱 行秋 砂糖
 
 班尼特5命，精5原木刀，4教官充火暴，(5+7)双暴+6生命+6充能  
 香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
-行秋6命，精5祭礼剑，4宗室攻水暴，(9+11)双暴+2攻击+2充能  
+行秋6命，精5祭礼剑，4宗室攻水暴，(9+11)双暴+2攻击+2精通+2充能  
 砂糖6命，精5讨龙英杰谭，4风套精精精，4精通+6充能  
 
 DPS：(20秒单循环，简易双扩手法，香菱火轮单判，行秋不凹蒸发)  
@@ -53,7 +55,7 @@ xingqiu char lvl=90/90 cons=6 talent=9,9,9;
 xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
 xingqiu add set="noblesseoblige" count=4;
 xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
-xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
 sucrose char lvl=90/90 cons=6 talent=9,9,9;
 sucrose add weapon="thrillingtalesofdragonslayers" refine=5 lvl=90/90;
@@ -223,12 +225,12 @@ while 1 {
 ## 砂糖 北斗 菲谢尔 瑶瑶
 
 砂糖6命，精5祭礼残章，4风套精精精，4精通+6充能  
-北斗6命，精5浪影阔剑，4绝缘充雷暴，(9+11)双暴+2攻击+2充能  
-菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2充能  
+北斗6命，精5浪影阔剑，4绝缘充雷暴，(9+11)双暴+2攻击+2精通+2充能  
+菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
 瑶瑶6命，精5公义的酬报，4千岩生生治，4精通+6生命+6充能  
 
 DPS：(无轴循环)  
-0金 3.83w  
+0金 3.90w  
 
 ```text
 sucrose char lvl=90/90 cons=6 talent=9,9,9;
@@ -241,13 +243,13 @@ beidou char lvl=90/90 cons=6 talent=9,9,9;
 beidou add weapon="finaleofthedeep" refine=5 lvl=90/90;
 beidou add set="emblemofseveredfate" count=4;
 beidou add stats hp=4780 atk=311 er=0.518 electro%=0.466 cr=0.311;
-beidou add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
+beidou add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
 fischl char lvl=90/90 cons=6 talent=9,9,9; 
 fischl add weapon="stringless" refine=5 lvl=90/90;
 fischl add set="goldentroupe" count=4;
 fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
-fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
+fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
 yaoyao char lvl=90/90 cons=6 talent=9,9,9;
 yaoyao add weapon="rightfulreward" refine=5 lvl=90/90;
@@ -289,12 +291,12 @@ while 1 {
 ## 砂糖 北斗 菲谢尔 行秋
 
 砂糖6命，精5试作金珀，4风套精精精，4精通+6充能  
-北斗6命，精5浪影阔剑，4绝缘充雷暴，(9+11)双暴+2攻击+2充能  
-菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2充能  
-行秋6命，精5祭礼剑，4绝缘攻水暴，(9+11)双暴+2攻击+2充能  
+北斗6命，精5浪影阔剑，4绝缘充雷暴，(9+11)双暴+2攻击+2精通+2充能  
+菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
+行秋6命，精5祭礼剑，4绝缘攻水暴，(9+11)双暴+2攻击+2精通+2充能  
   
 DPS：(无轴循环)  
-0金 3.83w  
+0金 3.89w  
 
 ```text
 sucrose char lvl=90/90 cons=6 talent=9,9,9;
@@ -307,19 +309,19 @@ beidou char lvl=90/90 cons=6 talent=9,9,9;
 beidou add weapon="tidalshadow" refine=5 lvl=90/90;
 beidou add set="emblemofseveredfate" count=4;
 beidou add stats hp=4780 atk=311 er=0.518 electro%=0.466 cr=0.311;
-beidou add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
+beidou add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
 fischl char lvl=90/90 cons=6 talent=9,9,9; 
 fischl add weapon="stringless" refine=5 lvl=90/90;
 fischl add set="goldentroupe" count=4;
 fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
-fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
+fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
 xingqiu char lvl=90/90 cons=6 talent=9,9,9;
 xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
 xingqiu add set="emblemofseveredfate" count=4;
 xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
-xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
 active xingqiu;
 xingqiu burst, attack;
@@ -354,6 +356,63 @@ while 1 {
     } else {
         sucrose attack:3, dash;
     }
+}
+```
+
+## 凯亚 罗莎莉亚 行秋 砂糖
+
+凯亚2命，笼钓瓶一心，4冰套攻冰爆，(11+9)双暴+2攻击+2精通+2充能  
+罗莎莉亚6命，精5西风长枪，2冰2宗室精冰暴，(9+11)双暴+2攻击+2精通+2充能  
+行秋6命，精5祭礼剑，4绝缘/4宗室攻水暴，(9+11)双暴+2攻击+2精通+2充能  
+砂糖6命，精5试作金珀，4风套精精精，4精通+6充能  
+
+DPS：  
+0金 2.31w (砂糖换讨龙)  
+0金 2.22w  
+
+```text
+kaeya char lvl=90/90 cons=2 talent=9,9,9;
+kaeya add weapon="kagotsurubeisshin" refine=1 lvl=90/90;
+kaeya add set="blizzardstrayer" count=4;
+kaeya add stats hp=4780 atk=311 atk%=0.466 cryo%=0.466 cd=0.622;
+kaeya add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.363 cd=0.594;
+
+rosaria char lvl=90/90 cons=6 talent=9,9,9;
+rosaria add weapon="favoniuslance" refine=5 lvl=90/90;
+rosaria add set="noblesseoblige" count=4;
+rosaria add stats hp=4780 atk=311 atk%=0.466 cryo%=0.466 cr=0.311;
+rosaria add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+xingqiu char lvl=90/90 cons=6 talent=9,9,9;
+xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
+xingqiu add set="emblemofseveredfate" count=4;
+xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+sucrose char lvl=90/90 cons=6 talent=9,9,9;
+sucrose add weapon="prototypeamber" refine=5 lvl=90/90;
+sucrose add set="viridescentvenerer" count=4;
+sucrose add stats hp=4780 atk=311 em=187 em=187 em=187;
+sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
+
+active xingqiu;
+while 1 {
+    xingqiu burst, attack;
+    sucrose attack;
+    if .sucrose.burst.ready {
+        sucrose burst;
+    }
+    kaeya attack, skill, attack;
+    rosaria skill, attack, burst;
+    sucrose attack, skill, dash;
+    kaeya attack, skill, burst, attack;
+    xingqiu attack, skill, dash;
+    if .xingqiu.skill.ready {
+        xingqiu attack, skill, dash;
+    }
+    xingqiu attack:3;
+    rosaria skill, attack;
+    kaeya skill, attack, charge, attack, charge;
 }
 ```
 
@@ -463,7 +522,7 @@ while 1{
 
 草主6命，精5西风剑，4草套充草暴，(7+9)双爆+4攻击+4充能  
 柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
-行秋6命，精5祭礼剑，4绝缘攻水暴，(9+11)双暴+2攻击+2充能  
+行秋6命，精5祭礼剑，4绝缘攻水暴，(9+11)双暴+2攻击+2精通+2充能  
 久岐忍6命，精5东花坊时雨，4乐园精精精，4精通+8生命  
 
 DPS：(无轴循环)  
@@ -486,7 +545,7 @@ xingqiu char lvl=90/90 cons=6 talent=9,9,9;
 xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
 xingqiu add set="emblemofseveredfate" count=4;
 xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
-xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
 kuki char lvl=90/90 cons=6 talent=9,9,9;
 kuki add weapon="toukaboushigure" refine=5 lvl=90/90;
@@ -593,13 +652,13 @@ while 1{
 ## 柯莱 行秋 久岐忍 菲谢尔
 
 柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
-行秋6命，精5祭礼剑，4绝缘攻水暴，(9+11)双暴+2攻击+2充能  
+行秋6命，精5祭礼剑，4绝缘攻水暴，(9+11)双暴+2攻击+2精通+2充能  
 久岐忍6命，精5东花坊时雨，4乐园精精精，4精通+8生命  
-菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2充能  
+菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
 
 DPS：(无轴循环)  
-0金对单 4.46w (小体积怪，皇女抢种子)  
-0金对单 5.72w (大体积怪，皇女不抢种子)  
+0金对单 4.59w (小体积怪，皇女抢种子)  
+0金对单 5.78w (大体积怪，皇女不抢种子)  
 
 ```text
 collei char lvl=90/90 cons=6 talent=9,9,9;
@@ -612,7 +671,7 @@ xingqiu char lvl=90/90 cons=6 talent=9,9,9;
 xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
 xingqiu add set="emblemofseveredfate" count=4;
 xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
-xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
 kuki char lvl=90/90 cons=6 talent=9,9,9;
 kuki add weapon="toukaboushigure" refine=5 lvl=90/90;
@@ -624,7 +683,7 @@ fischl char lvl=90/90 cons=6 talent=9,9,9;
 fischl add weapon="stringless" refine=5 lvl=90/90;
 fischl add set="goldentroupe" count=4;
 fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
-fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
+fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
 active xingqiu;
 xingqiu burst, attack;

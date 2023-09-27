@@ -31,12 +31,12 @@ xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.
 ## 行秋
 
 ```text
-# 通用-祭礼攻击沙，6命，精5祭礼剑，4绝缘/4宗室攻水暴，(9+11)双暴+2攻击+2充能
+# 通用-祭礼攻击沙，6命，精5祭礼剑，4绝缘/4宗室攻水暴，(9+11)双暴+2攻击+2精通+2充能
 xingqiu char lvl=90/90 cons=6 talent=9,9,9;
 xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
 xingqiu add set="emblemofseveredfate/noblesseoblige" count=4;
 xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
-xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 ```
 
 ## 芭芭拉
@@ -59,6 +59,12 @@ kaeya add weapon="lionsroar" refine=5 lvl=90/90;
 kaeya add set="emblemofseveredfate" count=4;
 kaeya add stats hp=4780 atk=311 er=0.518/atk%=0.466/em=187 cryo%=0.466 cr=0.311;
 kaeya add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+# 永冻-妖刀冰套，2命，笼钓瓶一心，4冰套攻冰爆，(11+9)双暴+2攻击+2精通+2充能
+kaeya char lvl=90/90 cons=2 talent=9,9,9;
+kaeya add weapon="kagotsurubeisshin" refine=1 lvl=90/90;
+kaeya add set="blizzardstrayer" count=4;
+kaeya add stats hp=4780 atk=311 atk%=0.466 cryo%=0.466 cd=0.622;
+kaeya add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.363 cd=0.594;
 ```
 
 ## 罗莎莉亚
@@ -71,28 +77,34 @@ rosaria add set="blizzardstrayer" count=2;
 rosaria add set="noblesseoblige" count=2;
 rosaria add stats hp=4780 atk=311 em=187 cryo%=0.466 cr=0.311;
 rosaria add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+# 永冻-西风宗室，6命，精5西风长枪，4宗室攻冰暴，(9+11)双暴+2攻击+2精通+2充能
+rosaria char lvl=90/90 cons=6 talent=9,9,9;
+rosaria add weapon="favoniuslance" refine=5 lvl=90/90;
+rosaria add set="noblesseoblige" count=4;
+rosaria add stats hp=4780 atk=311 atk%=0.466 cryo%=0.466 cr=0.311;
+rosaria add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 ```
 
 ## 菲谢尔
 
 ```text
-# 通用-剧团绝弦，6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2充能
+# 通用-剧团绝弦，6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能
 fischl char lvl=90/90 cons=6 talent=9,9,9; 
 fischl add weapon="stringless" refine=5 lvl=90/90;
 fischl add set="goldentroupe" count=4;
 fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
-fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
+fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 ```
 
 ## 北斗
 
 ```text
-# 砂糖武装-直伤，6命，精5浪影阔剑，4绝缘充雷暴，(9+11)双暴+2攻击+2充能
+# 砂糖武装-直伤，6命，精5浪影阔剑，4绝缘充雷暴，(9+11)双暴+2攻击+2精通+2充能
 beidou char lvl=90/90 cons=6 talent=9,9,9;
 beidou add weapon="tidalshadow" refine=5 lvl=90/90;
 beidou add set="emblemofseveredfate" count=4;
 beidou add stats hp=4780 atk=311 er=0.518 electro%=0.466 cr=0.311;
-beidou add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
+beidou add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 ```
 
 ## 久岐忍
