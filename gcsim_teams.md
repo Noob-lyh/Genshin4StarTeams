@@ -1,30 +1,53 @@
 # gcsim队伍代码
 
-只包含队伍与循环部分，场景设置请看gcsim模板一节  
-
-关于队伍手法/循环：  
+**队伍手法/循环**：
 
 1. 对于一般有轴的队伍，会设计一套能循环的手法，使其长度约等于队伍中CD最长的动作，同时牺牲一些对不上轴的小技能，如香班凯修循环长度为香菱Q的20秒，而每个20秒循环中香菱12秒冷却的E只放一次。此时DPS标注为(xx秒循环)。  
 2. 部分队伍轴复杂、技能释放顺序要求较高、随机性大或随机性造成的影响大，gcsim直接循环90秒掉伤害非常严重，不能反映队伍真实DPS，如祭礼剑行秋的砂国，如果压了充能祭礼没刷新会严重影响循环和伤害。对于这些队伍，会在手工确认第二轮循环能成立的情况下，只模拟第一个循环的DPS，此时其DPS标注为(xx秒单循环)。  
 3. 部分队伍轴非常难排，例如各种带皇女的配队(因为E+Q续奥兹的轴长为25秒)，以及一些各技能冷却不一且没有倍数关系的队伍，如草主+柯莱+水+久岐忍的双草超绽。此时手法为固定起手式+while死循环，每个循环中按照一定的优先级执行某一个已就绪的动作，且DPS标注为(无轴循环)。  
 
-## 0金配队标准练度理论DPS排行榜(施工中)
-
-注1：经典低金配队DPS参考——1金雷国约5w，1金草行久皇约6.65w。  
-注2：主要使用通用面板，部分队伍进行针对性换装之后DPS还能提。  
+**0金配队标准练度理论DPS排行榜(施工中)**：
 
 1. 柯莱 行秋 久岐忍 菲谢尔（双雷行秋超绽1），5.78w（大体积怪，皇女不抢种子）
 2. 班尼特 香菱 行秋 砂糖（砂糖国家队1），5.22w（班6命/砂秒双扩不开Q/香双判/行秋E双蒸）
 3. 草主 柯莱 行秋 久岐忍（双草行秋超绽），5.12w
 4. 柯莱 行秋 久岐忍 菲谢尔（双雷行秋超绽2），4.59w（小体积怪，皇女抢种子）
-5. 班尼特 香菱 行秋 砂糖（砂糖国家队2），4.49w（班5命/砂简易双扩三轮一Q/香单判/行秋E不凹蒸发）
-6. 草主 柯莱 芭芭拉 久岐忍（双草芭芭拉超绽），4.12w
-7. 砂糖 北斗 菲谢尔 瑶瑶（砂糖激化），3.90w
-8. 砂糖 北斗 菲谢尔 行秋（砂糖武装），3.89w
-9. 班尼特 香菱 珐露珊 鹿野院平藏（双风双火），3.69w
-10. 班尼特 香菱 凯亚 罗莎莉亚（双冰双火），3.34w ~ 3.45w（班5命/6命）
-11. 珐露珊 鹿野院平藏 琳妮特 莱依拉（新四星三风队），3.10w
-12. 凯亚 罗莎莉亚 行秋 砂糖（四星永冻），2.31w（砂糖讨龙）
+5. 班尼特 香菱 行秋 皇女（皇女国家队），4.50w
+6. 班尼特 香菱 行秋 砂糖（砂糖国家队2），4.49w（砂简易双扩三轮一Q，行秋E不凹蒸发）
+7. 草主 柯莱 芭芭拉 久岐忍（双草芭芭拉超绽），4.12w
+8. 砂糖 北斗 菲谢尔 瑶瑶（砂糖激化），3.90w
+9. 砂糖 北斗 菲谢尔 行秋（砂糖武装），3.89w
+10. 班尼特 香菱 珐露珊 鹿野院平藏（双风双火），3.69w
+11. 班尼特 香菱 凯亚 罗莎莉亚（双冰双火），3.34w ~ 3.45w（班5命/6命）
+12. 珐露珊 鹿野院平藏 琳妮特 莱依拉（新四星三风队），3.10w
+13. 凯亚 罗莎莉亚 行秋 砂糖（四星永冻），2.31w（砂糖讨龙）
+
+注1：经典低金配队DPS参考——1金雷国约5w，1金草行久皇约6.65w。  
+注2：主要使用通用面板，部分队伍进行针对性换装之后DPS还能提。  
+注3：手法不一定为最优，欢迎贡献更加合理/高伤害的手法。  
+
+## gcsim模拟条件与敌人设置
+
+```text
+# gcsim模拟的条件设置
+options iteration=1000;     # 模拟次数
+options duration=90;        # 每次模拟的持续时间
+options swap_delay=4;       # 切人延迟，一般取4或12
+options workers=30;         # 并行模拟相关参数
+```
+
+```text
+# gcsim模拟的敌人设置，第一个为前方大体积敌人，第二到五个为前/右/左/后方小体积敌人，一般使用一个敌人模拟
+# 默认100级，无限血量，10%全抗
+#target lvl=100 pos=0,3 radius=2.5 pyro=0.1 dendro=0.1 hydro=0.1 electro=0.1 geo=0.1 anemo=0.1 physical=0.1 cryo=0.1;
+target lvl=100 pos=0,1 radius=0.5 pyro=0.1 dendro=0.1 hydro=0.1 electro=0.1 geo=0.1 anemo=0.1 physical=0.1 cryo=0.1;
+#target lvl=100 pos=1,0 radius=0.5 pyro=0.1 dendro=0.1 hydro=0.1 electro=0.1 geo=0.1 anemo=0.1 physical=0.1 cryo=0.1;
+#target lvl=100 pos=-1,0 radius=0.5 pyro=0.1 dendro=0.1 hydro=0.1 electro=0.1 geo=0.1 anemo=0.1 physical=0.1 cryo=0.1;
+#target lvl=100 pos=0,-1 radius=0.5 pyro=0.1 dendro=0.1 hydro=0.1 electro=0.1 geo=0.1 anemo=0.1 physical=0.1 cryo=0.1;
+energy every interval=480,720 amount=1;     # 通用掉球设置
+```
+
+将上面设置调整好后，复制粘贴到gcsim的config.txt中，再在下面粘贴队伍代码，就可以运行gcsim模拟了。  
 
 ## 班尼特 香菱 行秋 砂糖
 
@@ -91,7 +114,7 @@ while 1 {
 备注1：砂糖秒双扩不开Q + 6命班 + 火轮双判 + 行秋E双蒸，来源<https://gcsim.app/db/hQBtQgpwhp6w#>  
 使用时要去掉默认的90秒模拟时长以及默认敌人设定。  
 
-DPS：(~24秒循环)  
+DPS：(24秒循环)  
 0金 5.22w  
 
 ```text
@@ -164,6 +187,105 @@ while 1 {
     raiden burst;
     raiden attack:3, charge, attack:3, charge, attack:3, charge, attack:2;
     bennett attack, skill;
+}
+```
+
+## 班尼特 香菱 行秋 皇女
+
+班尼特5命，精5原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
+香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
+行秋6命，精5祭礼剑，4绝缘攻水暴，(9+11)双暴+2攻击+2精通+2充能  
+皇女6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
+
+DPS：(20秒循环，皇女固定时机尝试eq)  
+0金 4.50w  
+
+```text
+bennett char lvl=90/90 cons=5 talent=9,9,9;
+bennett add weapon="sapwoodblade" refine=5 lvl=90/90;
+bennett add set="instructor" count=4;
+bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
+
+xiangling char lvl=90/90 cons=6 talent=9,9,9;
+xiangling add weapon="thecatch" refine=5 lvl=90/90;
+xiangling add set="emblemofseveredfate" count=4;
+xiangling add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+xingqiu char lvl=90/90 cons=6 talent=9,9,9;
+xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
+xingqiu add set="noblesseoblige" count=4;
+xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+fischl char lvl=90/90 cons=6 talent=9,9,9; 
+fischl add weapon="stringless" refine=5 lvl=90/90;
+fischl add set="goldentroupe" count=4;
+fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
+fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+active xingqiu;
+while 1 {
+    xingqiu burst, attack;
+    bennett burst, attack, skill;
+
+    if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl attack, skill;
+        } else if .fischl.burst.ready {
+            fischl burst, attack;
+        }
+    }
+
+    xiangling attack, burst, attack, skill;
+
+    if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl attack, skill;
+        } else if .fischl.burst.ready {
+            fischl burst, attack;
+        }
+    }
+
+    xingqiu attack, skill, dash;
+    if .xingqiu.skill.ready {
+        xingqiu attack, skill, dash;
+    }
+    xingqiu attack:3;
+
+    if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl attack, skill;
+        } else if .fischl.burst.ready {
+            fischl burst, attack;
+        }
+    }
+
+    bennett attack, skill;
+    xiangling attack:3;
+
+    if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl attack, skill;
+        } else if .fischl.burst.ready {
+            fischl burst, attack;
+        }
+    }
+
+    while !.bennett.skill.ready {
+        bennett attack;
+    }
+    bennett skill;
+    xiangling attack:3;
+
+    if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl attack, skill;
+        } else if .fischl.burst.ready {
+            fischl burst, attack;
+        }
+    }
 }
 ```
 

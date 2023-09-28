@@ -43,7 +43,7 @@ d. **[上位替代]**——纯四星攻略，暂时不考虑
 **注3**：[破盾]不作为影响输出的因素，主要是因为绝大部分时候破不了盾可以换另一路
 
 **例1**：砂糖国家队（砂糖 班尼特 香菱 行秋）  
-1.[输出]——10+，纯四星没有对手  
+1.[输出]——10+，纯四星没有对手（上限）  
 [环境乘区]——低，传统带风增幅体系能应对绝大部分情况，火轮随身不怕多动  
 [配置乘区]——高，对香菱4命、行秋6命、高精祭礼剑的需求比较大  
 [练度乘区]——高，对香菱双爆要求较高，同时还要兼顾充能和精通  
@@ -134,10 +134,10 @@ a. +风
  一秒双扩——行远Q，班贴脸QE，砂AEA，香QAE，行AEAE，砂A循环  
 
 视频参考：（砂国视频较多，只挑选比较有代表性的展示）
-> 神樣Loki，砂国手法讲解，<https://www.bilibili.com/video/BV1w24y1r7DT>  
- 神樣Loki，砂国编年史，<https://www.bilibili.com/video/BV1s84y1j7xV>  
- 评论区说客，3.6深渊下半（0金低命），<https://www.bilibili.com/video/BV1vo4y1j7Ju>  
- 陆孤凡，3.5深渊换间（0金零氪22天速通），<https://www.bilibili.com/video/BV17M4y127Qx>  
+> [神樣Loki，砂国手法讲解](https://www.bilibili.com/video/BV1w24y1r7DT)  
+ [神樣Loki，砂国编年史](https://www.bilibili.com/video/BV1s84y1j7xV)  
+ [评论区说客，3.6深渊下半（0金低命）](https://www.bilibili.com/video/BV1vo4y1j7Ju)  
+ [陆孤凡，3.5深渊换间（0金零氪22天速通）](https://www.bilibili.com/video/BV17M4y127Qx)  
 
 DPS参考：
 > 0  
@@ -157,8 +157,8 @@ DPS参考：
 > 简易对群双扩——行QA，班QE后撤，鹿QA重E，香QAE，行AEAE，鹿A循环
 
 视频参考：
-> lyh逗比，3.7深渊12-1下半（等效0金，0命香菱），<https://www.bilibili.com/video/BV1hh411u7UU>  
- 评论区说客，3.5深渊换间（0金低命），<https://www.bilibili.com/video/BV1Th41137G6>  
+> [lyh逗比，3.7深渊12-1下半（等效0金，0命香菱）](https://www.bilibili.com/video/BV1hh411u7UU)  
+ [评论区说客，3.5深渊换间（0金低命）](https://www.bilibili.com/video/BV1Th41137G6)  
 
 DPS参考：
 > 0
@@ -212,11 +212,11 @@ b. +雷
 > 0
 
 视频参考：
-> 时雨琦罗，4.0深渊12-3下半（0抽），<https://www.bilibili.com/video/BV1nu4y147eP>  
- 大白突突突突，4.0深渊下半（0金），<https://www.bilibili.com/video/BV1Fp4y177TX>  
- Nickess，3.8深渊下半（0金），<https://www.bilibili.com/video/BV1Fu4y127sa>  
- Nickess，3.4深渊上半（0金），<https://www.bilibili.com/video/BV1Sb411f7eQ>  
- Nickess，3.1深渊下半（1金），<https://www.bilibili.com/video/BV1ee4y1W76d>  
+> [时雨琦罗，4.0深渊12-3下半（0抽）](https://www.bilibili.com/video/BV1nu4y147eP)  
+ [大白突突突突，4.0深渊下半（0金）](https://www.bilibili.com/video/BV1Fp4y177TX)  
+ [Nickess，3.8深渊下半（0金）](https://www.bilibili.com/video/BV1Fu4y127sa)  
+ [Nickess，3.4深渊上半（0金）](https://www.bilibili.com/video/BV1Sb411f7eQ)  
+ [Nickess，3.1深渊下半（1金）](https://www.bilibili.com/video/BV1ee4y1W76d)  
 
 DPS参考：
 > 0
@@ -236,10 +236,10 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，3.8深渊下半（0金），<https://www.bilibili.com/video/BV1Mh4y1L7bC>  
- Nickess，3.6深渊上半（0金），<https://www.bilibili.com/video/BV1ya4y1A7WZ>  
- Nickess，3.4深渊上半（0金），<https://www.bilibili.com/video/BV1iv4y1r7cK>  
- Nickess，3.3深渊下半（0金），<https://www.bilibili.com/video/BV14e411c7Jg>  
+> [Nickess，3.8深渊下半（0金）](https://www.bilibili.com/video/BV1Mh4y1L7bC)  
+ [Nickess，3.6深渊上半（0金）](https://www.bilibili.com/video/BV1ya4y1A7WZ)  
+ [Nickess，3.4深渊上半（0金）](https://www.bilibili.com/video/BV1iv4y1r7cK)  
+ [Nickess，3.3深渊下半（0金）](https://www.bilibili.com/video/BV14e411c7Jg)  
 
 DPS参考：
 > 0
@@ -259,7 +259,7 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，3.4深渊上半（1金），<https://www.bilibili.com/video/BV1Td4y1H7Pf>  
+> [Nickess，3.4深渊上半（1金）](https://www.bilibili.com/video/BV1Td4y1H7Pf)  
 
 DPS参考：
 > 0
@@ -291,9 +291,9 @@ c. +冰
 > 0
 
 视频参考：
-> Nickess，3.7深渊下半（1金），<https://www.bilibili.com/video/BV1Gs4y1v7Xw>  
- Nickess，3.2深渊下半（1金），<https://www.bilibili.com/video/BV1pP4y117ze>  
- Nickess，2.6深渊下半（0金），<https://www.bilibili.com/video/BV1xa411i7R7>  
+> [Nickess，3.7深渊下半（1金）](https://www.bilibili.com/video/BV1Gs4y1v7Xw)  
+ [Nickess，3.2深渊下半（1金）](https://www.bilibili.com/video/BV1pP4y117ze)  
+ [Nickess，2.6深渊下半（0金）](https://www.bilibili.com/video/BV1xa411i7R7)  
 
 DPS参考：
 > 0
@@ -313,7 +313,7 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，3.7深渊下半（0金），<https://www.bilibili.com/video/BV1mL411v7J6>  
+> [Nickess，3.7深渊下半（0金）](https://www.bilibili.com/video/BV1mL411v7J6)  
 
 DPS参考：
 > 0
@@ -366,7 +366,6 @@ e. +其他元素（不主流，仅简单提及）
 烟绯的倍率和附着并不比香菱差，虽然没有后台与锁面板机制，但也可以当火C输出。
 
 ---
----
 
 ###### 行秋 班尼特 烟绯 砂糖
 
@@ -382,9 +381,9 @@ e. +其他元素（不主流，仅简单提及）
 > 0
 
 视频参考：
-> Nickess，3.8深渊上半（0金），<https://www.bilibili.com/video/BV1T94y1y7Ft>  
- Nickess，3.2深渊下半（0金），<https://www.bilibili.com/video/BV1oD4y187kc>  
- Nickess，3.1深渊上半（0金），<https://www.bilibili.com/video/BV1t24y127Cp>  
+> [Nickess，3.8深渊上半（0金）](https://www.bilibili.com/video/BV1T94y1y7Ft)  
+ [Nickess，3.2深渊下半（0金）](https://www.bilibili.com/video/BV1oD4y187kc)  
+ [Nickess，3.1深渊上半（0金）](https://www.bilibili.com/video/BV1t24y127Cp)  
 
 DPS参考：
 > 0
@@ -404,14 +403,13 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，2.7深渊下半（0金），<https://www.bilibili.com/video/BV1tg411s7Ed>  
+> [Nickess，2.7深渊下半（0金）](https://www.bilibili.com/video/BV1tg411s7Ed)  
 
 DPS参考：
 > 0
 ---
 其他第四人：其他风（最好能染色）、北斗等
 
----
 ---
 
 ##### ③ 行秋+烟绯+雷X+Y
@@ -434,9 +432,9 @@ DPS参考：
 > 0
 
 视频参考：
-> 弹药福娃，3.5深渊上半（0金，低配），<https://www.bilibili.com/video/BV18Y4y1X7BG>  
- Nickess，3.5深渊上半（1金），<https://www.bilibili.com/video/BV1mv4y1L7nu>  
- Nickess，3.2深渊上半（2金），<https://www.bilibili.com/video/BV1EK411d7CT>  
+> [弹药福娃，3.5深渊上半（0金，低配）](https://www.bilibili.com/video/BV18Y4y1X7BG)  
+ [Nickess，3.5深渊上半（1金）](https://www.bilibili.com/video/BV1mv4y1L7nu)  
+ [Nickess，3.2深渊上半（2金）](https://www.bilibili.com/video/BV1EK411d7CT)  
 
 DPS参考：
 > 0
@@ -465,15 +463,13 @@ DPS参考：
 > 修E，班QE，修Q，香QE，凯EQ（+班修凯E充能直到下一个循环）  
 
 视频参考：
-> 弹药福娃，4.0深渊下半（0金，低配），<https://www.bilibili.com/video/BV1z8411z7Zj>  
- 评论区说客，3.8深渊下半（0金，1命凯），<https://www.bilibili.com/video/BV1Mm4y1J7FH>  
- 评论区说客，3.7深渊下半（0金，1命凯），<https://www.bilibili.com/video/BV1wN411y7tu>  
+> [弹药福娃，4.0深渊下半（0金，低配）](https://www.bilibili.com/video/BV1z8411z7Zj)  
+ [凛疯1f，4.0深渊上半&下半（3金，6命凯）](https://www.bilibili.com/video/BV1Y94y147sz)  
+ [评论区说客，3.8深渊下半（0金，1命凯亚）](https://www.bilibili.com/video/BV1Mm4y1J7FH)  
+ [评论区说客，3.7深渊下半（0金，1命凯亚）](https://www.bilibili.com/video/BV1wN411y7tu)  
 
 DPS参考：
 > 0  
-
-备注：
-> 凛疯1f，4.0深渊上半&下半（3金，6命凯），<https://www.bilibili.com/video/BV1Y94y147sz>
 
 ---
 
@@ -491,8 +487,8 @@ DPS参考：
 > 0
 
 视频参考：
-> 时雨琦罗，4.0深渊12-1下半&12-2下半（0抽），<https://www.bilibili.com/video/BV1nu4y147eP>  
- 评论区说客，3.2深渊下半（0金低命），<https://www.bilibili.com/video/BV1Lg411W75L/>  
+> [时雨琦罗，4.0深渊12-1下半&12-2下半（0抽）](https://www.bilibili.com/video/BV1nu4y147eP)  
+ [评论区说客，3.2深渊下半（0金低命）](https://www.bilibili.com/video/BV1Lg411W75L/)  
 
 DPS参考：
 > 0
@@ -513,11 +509,11 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，4.0深渊下半（0金高练），<https://www.bilibili.com/video/BV1fN4y1D7Vp>  
- Nickess，3.8深渊下半（0金），<https://www.bilibili.com/video/BV13h4y1w7v3>  
- Nickess，3.5深渊上半（1金），<https://www.bilibili.com/video/BV1Q24y1u7Qj>  
- Nickess，3.3深渊下半（1金），<https://www.bilibili.com/video/BV1SR4y1h7Tj>  
- 评论区说客，2.3深渊上半（0金低命低练），<https://www.bilibili.com/video/BV18L411773s>  
+> [Nickess，4.0深渊下半（0金）](https://www.bilibili.com/video/BV1fN4y1D7Vp)  
+ [Nickess，3.8深渊下半（0金）](https://www.bilibili.com/video/BV13h4y1w7v3)  
+ [Nickess，3.5深渊上半（1金）](https://www.bilibili.com/video/BV1Q24y1u7Qj)  
+ [Nickess，3.3深渊下半（1金）](https://www.bilibili.com/video/BV1SR4y1h7Tj)  
+ [评论区说客，2.3深渊上半（0金低命低练）](https://www.bilibili.com/video/BV18L411773s)  
 
 DPS参考：
 > 0
@@ -542,10 +538,10 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，3.6深渊下半（0金），<https://www.bilibili.com/video/BV17c411H79Y>  
- Nickess，3.5深渊下半（0金），<https://www.bilibili.com/video/BV1mv4y1L7nu>  
- Nickess，3.4深渊上半（0金），<https://www.bilibili.com/video/BV1L24y1p79K>  
- Nickess，3.3深渊上半（0金），<https://www.bilibili.com/video/BV1jy4y1d7hP>  
+> [Nickess，3.6深渊下半（0金）](https://www.bilibili.com/video/BV17c411H79Y)  
+ [Nickess，3.5深渊下半（0金）](https://www.bilibili.com/video/BV1mv4y1L7nu)  
+ [Nickess，3.4深渊上半（0金）](https://www.bilibili.com/video/BV1L24y1p79K)  
+ [Nickess，3.3深渊上半（0金）](https://www.bilibili.com/video/BV1jy4y1d7hP)  
 
 DPS参考：
 > 0
@@ -577,8 +573,8 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，4.0深渊上半（0金），<https://www.bilibili.com/video/BV1Sh4y1v7rJ>  
- Nickess，3.8深渊上半（0金），<https://www.bilibili.com/video/BV1194y1Y7Df>  
+> [Nickess，4.0深渊上半（0金）](https://www.bilibili.com/video/BV1Sh4y1v7rJ)  
+ [Nickess，3.8深渊上半（0金）](https://www.bilibili.com/video/BV1194y1Y7Df)  
 
 DPS参考：
 > 0
@@ -644,13 +640,13 @@ DPS参考：
 > 0
 
 视频参考：
-> 持灵，4.0深渊下半(0金)，<https://www.bilibili.com/video/BV1M94y1s7Db>  
- Nickess，3.8深渊上半（0金），<https://www.bilibili.com/video/BV1Mh4y1L7bC>  
- Nickess，3.7深渊上半（2金），<https://www.bilibili.com/video/BV1Gs4y1v7Xw>  
- Nickess，3.6深渊下半（0金），<https://www.bilibili.com/video/BV1ya4y1A7WZ>  
- 评论区说客，3.5深渊下半（0金低命），<https://www.bilibili.com/video/BV1Th41137G6>  
- Nickess，3.4深渊下半（0金），<https://www.bilibili.com/video/BV1iv4y1r7cK>  
- 评论区说客，3.3深渊下半（0金低命低练），<https://www.bilibili.com/video/BV1Wy4y197qi>  
+> [持灵，4.0深渊下半(0金)](https://www.bilibili.com/video/BV1M94y1s7Db)  
+ [Nickess，3.8深渊上半（0金）](https://www.bilibili.com/video/BV1Mh4y1L7bC)  
+ [Nickess，3.7深渊上半（2金）](https://www.bilibili.com/video/BV1Gs4y1v7Xw)  
+ [Nickess，3.6深渊下半（0金）](https://www.bilibili.com/video/BV1ya4y1A7WZ)  
+ [评论区说客，3.5深渊下半（0金低命）](https://www.bilibili.com/video/BV1Th41137G6)  
+ [Nickess，3.4深渊下半（0金）](ttps://www.bilibili.com/video/BV1iv4y1r7cK)  
+ [评论区说客，3.3深渊下半（0金低命低练）](https://www.bilibili.com/video/BV1Wy4y197qi)  
 
 DPS参考：
 > 0
@@ -717,13 +713,13 @@ DPS参考：
 > 0
 
 视频参考：
-> 弹药福娃，4.0深渊上半（0金，低配），<https://www.bilibili.com/video/BV1z8411z7Zj>  
- 凛疯1f，4.0深渊上半&下半（0金），<https://www.bilibili.com/video/BV1Nh4y1P7RQ>  
- 评论区说客，3.8深渊上半（0金，低练），<https://www.bilibili.com/video/BV1Mm4y1J7FH>  
- 凛疯1f，3.7深渊上半&下半（0金），<https://www.bilibili.com/video/BV1e8411f7XK>  
- JackTRipper，3.6深渊上半（0金），<https://www.bilibili.com/video/BV1do4y187Ay>  
- 凛疯1f，3.5深渊上半&下半（0金），<https://www.bilibili.com/video/BV1Zx4y1A7fz>  
- JackTRipper，3.4深渊上半（0金），<https://www.bilibili.com/video/BV1jG4y1D7qk>  
+> [弹药福娃，4.0深渊上半（0金，低配）](https://www.bilibili.com/video/BV1z8411z7Zj)  
+ [凛疯1f，4.0深渊上半&下半（0金）](https://www.bilibili.com/video/BV1Nh4y1P7RQ)  
+ [评论区说客，3.8深渊上半（0金，低练）](https://www.bilibili.com/video/BV1Mm4y1J7FH)  
+ [凛疯1f，3.7深渊上半&下半（0金）](https://www.bilibili.com/video/BV1e8411f7XK)  
+ [JackTRipper，3.6深渊上半（0金）](https://www.bilibili.com/video/BV1do4y187Ay)  
+ [凛疯1f，3.5深渊上半&下半（0金）](https://www.bilibili.com/video/BV1Zx4y1A7fz)  
+ [JackTRipper，3.4深渊上半（0金）](https://www.bilibili.com/video/BV1jG4y1D7qk)  
 
 DPS参考：
 > 0
@@ -746,8 +742,8 @@ DPS参考：
 > 0
 
 视频参考：
-> 凛疯1f，3.6深渊上半（0金），<https://www.bilibili.com/video/BV1Wa4y137Ld>  
- thehander，3.6深渊下半（0金），<https://www.bilibili.com/video/BV1Xs4y1B7PD>  
+> [凛疯1f，3.6深渊上半（0金）](https://www.bilibili.com/video/BV1Wa4y137Ld)  
+ [thehander，3.6深渊下半（0金）](https://www.bilibili.com/video/BV1Xs4y1B7PD)  
 
 DPS参考：
 > 0
@@ -756,7 +752,7 @@ DPS参考：
 
 ###### 北斗 皇女 芭芭拉 砂糖
 
-> 0
+> 芭芭拉武装
 
 评分参考：
 > 输出： （环境-，配置-，练度-，手部-）  
@@ -768,12 +764,12 @@ DPS参考：
 > 0
 
 视频参考：
-> thehander，4.0深渊下半（0金），<https://www.bilibili.com/video/BV1sp4y1L722>  
- thehander，3.8深渊下半（0金），<https://www.bilibili.com/video/BV1Km4y1p7TC>  
- Nickess，3.7深渊上半（2金），<https://www.bilibili.com/video/BV1mL411v7J6>  
- Nickess，3.2深渊上半（2金），<https://www.bilibili.com/video/BV1pP4y117ze>  
- Nickess，2.8深渊下半（0金），<https://www.bilibili.com/video/BV1XK411o7DT>  
- Nickess，2.6深渊上半（0金），<https://www.bilibili.com/video/BV1xa411i7R7>  
+> [thehander，4.0深渊下半（0金）](https://www.bilibili.com/video/BV1sp4y1L722)  
+ [thehander，3.8深渊下半（0金）](https://www.bilibili.com/video/BV1Km4y1p7TC)  
+ [Nickess，3.7深渊上半（2金）](https://www.bilibili.com/video/BV1mL411v7J6)  
+ [Nickess，3.2深渊上半（2金）](https://www.bilibili.com/video/BV1pP4y117ze)  
+ [Nickess，2.8深渊下半（0金）](https://www.bilibili.com/video/BV1XK411o7DT)  
+ [Nickess，2.6深渊上半（0金）](https://www.bilibili.com/video/BV1xa411i7R7)  
 
 DPS参考：
 > 0
@@ -794,7 +790,7 @@ DPS参考：
 > 0
 
 视频参考：
-> 时雨琦罗，2.7深渊12-1上半（0抽），<https://www.bilibili.com/video/BV1eB4y1S78q>  
+> [时雨琦罗，2.7深渊12-1上半（0抽）](https://www.bilibili.com/video/BV1eB4y1S78q)  
 
 DPS参考：
 > 0
@@ -814,7 +810,7 @@ DPS参考：
 
 ###### 凯亚 修女/重云 行秋 砂糖
 
-> 0
+> 当前低金勉强能玩的凯亚永冻，带行秋而不是芭芭拉，能提供不少的水系直伤输出。生存能力较弱，聚怪和冻结很吃手部乘区，伤害也很依靠命座以及凯亚的雾切。DPS较低，特别是面对无法冻结的boss，低金一般不建议使用。
 
 评分参考：
 > 输出： （环境-，配置-，练度-，手部-）  
@@ -826,8 +822,8 @@ DPS参考：
 > 0
 
 视频参考：
-> 持灵，4.0深渊上半（修女，0金，2命凯），<https://www.bilibili.com/video/BV1xF411r7G8>  
- JackTRipper，3.8深渊上半（修女，0金，3命凯），<https://www.bilibili.com/video/BV1ak4y137fU>  
+> [持灵，4.0深渊上半（修女，0金，2命凯亚）](https://www.bilibili.com/video/BV1xF411r7G8)  
+ [JackTRipper，3.8深渊上半（修女，0金，3命凯亚）](https://www.bilibili.com/video/BV1ak4y137fU)  
 
 DPS参考：
 > 0
@@ -836,7 +832,7 @@ DPS参考：
 
 ###### 凯亚 修女/重云 芭芭拉 砂糖
 
-> 0
+> 比较传统的凯亚永冻，除了生存略强之外不如带行秋的版本，现阶段低金几乎没有满星希望，但仍是一个很不错的开荒配队。
 
 评分参考：
 > 输出： （环境-，配置-，练度-，手部-）  
@@ -848,8 +844,8 @@ DPS参考：
 > 0
 
 视频参考：
-> thehander，3.8深渊上半（重云，1金，6命凯），<https://www.bilibili.com/video/BV1ru411E7t6>  
- Nickess，3.1深渊上半（修女，0金，0命凯），<https://www.bilibili.com/video/BV14g411q7zW（配置BV1XG4y1t7v2）>  
+> [thehander，3.8深渊上半（重云，1金，6命凯）](https://www.bilibili.com/video/BV1ru411E7t6)  
+ [Nickess，3.1深渊上半（修女，0金，0命凯）](https://www.bilibili.com/video/BV14g411q7zW)，[配置](https://www.bilibili.com/video/BV1XG4y1t7v2)  
 
 DPS参考：
 > 0
@@ -870,7 +866,7 @@ DPS参考：
 > 0
 
 视频参考：
-> 时雨琦罗，3.4深渊12-1下半（0抽），<https://www.bilibili.com/video/BV18M4y1D7QL>  
+> [时雨琦罗，3.4深渊12-1下半（0抽）](https://www.bilibili.com/video/BV18M4y1D7QL)  
 
 DPS参考：
 > 0
@@ -903,8 +899,8 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，3.6深渊上半（0金），<https://www.bilibili.com/video/BV1Ez4y1Y7sT>  
- Nickess，3.1深渊上半（0金），<https://www.bilibili.com/video/BV1aP411c7Cv>  
+> [Nickess，3.6深渊上半（0金）](https://www.bilibili.com/video/BV1Ez4y1Y7sT)  
+ [Nickess，3.1深渊上半（0金）](https://www.bilibili.com/video/BV1aP411c7Cv)  
 
 DPS参考：
 > 0
@@ -929,10 +925,10 @@ DPS参考：
 > 0
 
 视频参考：
-> lyh逗比，4.0深渊下半（等效1金），<https://www.bilibili.com/video/BV1ym4y1K7qP>  
- Nickess，3.7深渊下半（2金），<https://www.bilibili.com/video/BV12k4y1p72C>  
- lyh逗比，3.5深渊上半（等效0金，0命香菱），<https://www.bilibili.com/video/BV1Sh41137XM>  
- Nickess，3.4深渊下半（1金），<https://www.bilibili.com/video/BV1Ss4y187AH>  
+> [lyh逗比，4.0深渊下半（等效1金）](https://www.bilibili.com/video/BV1ym4y1K7qP)  
+ [Nickess，3.7深渊下半（2金）](https://www.bilibili.com/video/BV12k4y1p72C)  
+ [lyh逗比，3.5深渊上半（等效0金，0命香菱）](https://www.bilibili.com/video/BV1Sh41137XM)  
+ [Nickess，3.4深渊下半（1金）](https://www.bilibili.com/video/BV1Ss4y187AH)  
 
 DPS参考：
 > 0
@@ -957,7 +953,7 @@ DPS参考：
 > 0
 
 视频参考：
-> 枕头ツ，4.0深渊下半（2金），<https://www.bilibili.com/video/BV11p4y1A7tH>  
+> [枕头ツ，4.0深渊下半（2金）](https://www.bilibili.com/video/BV11p4y1A7tH)  
 
 DPS参考：
 > 0
@@ -984,7 +980,7 @@ DPS参考：
 > 0
 
 视频参考：
-> lyh逗比，4.0深渊上半（1金），<https://www.bilibili.com/video/BV1ym4y1K7qP>
+> [lyh逗比，4.0深渊上半（1金）](https://www.bilibili.com/video/BV1ym4y1K7qP)
 
 DPS参考：
 > 0
@@ -1005,7 +1001,7 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，3.7深渊上半（皇女+芭芭拉，0金），<https://www.bilibili.com/video/BV1Zj411o7My>  
+> [Nickess，3.7深渊上半（皇女+芭芭拉，0金）](https://www.bilibili.com/video/BV1Zj411o7My)  
 
 DPS参考：
 > 0
@@ -1030,7 +1026,7 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，3.8深渊上半（0金），<https://www.bilibili.com/video/BV1Fu4y127sa>  
+> [Nickess，3.8深渊上半（0金）](https://www.bilibili.com/video/BV1Fu4y127sa)  
 
 DPS参考：
 > 0
@@ -1055,7 +1051,7 @@ DPS参考：
 > 0
 
 视频参考：
-> 凛疯1f，4.0深渊上半（2金），<https://www.bilibili.com/video/BV18F411D74C>  
+> [凛疯1f，4.0深渊上半（2金）](https://www.bilibili.com/video/BV18F411D74C)  
 
 DPS参考：
 > 0
@@ -1101,10 +1097,10 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，4.0深渊下半（0金），<https://www.bilibili.com/video/BV1BG411R7jJ>  
- Nickess，3.6深渊下半（0金），<https://www.bilibili.com/video/BV1pX4y167JW>  
- Nickess，3.5深渊上半（0金），<https://www.bilibili.com/video/BV1dv4y1G7DE>  
- Nickess，3.3深渊上半（0金），<https://www.bilibili.com/video/BV1hv4y1Q75n>  
+> [Nickess，4.0深渊下半（0金）](https://www.bilibili.com/video/BV1BG411R7jJ)  
+ [Nickess，3.6深渊下半（0金）](https://www.bilibili.com/video/BV1pX4y167JW)  
+ [Nickess，3.5深渊上半（0金）](https://www.bilibili.com/video/BV1dv4y1G7DE)  
+ [Nickess，3.3深渊上半（0金）](https://www.bilibili.com/video/BV1hv4y1Q75n)  
 
 DPS参考：
 > 0
@@ -1158,7 +1154,7 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，2.7深渊上半（0金），<https://www.bilibili.com/video/BV1XK411o7vt>  
+> [Nickess，2.7深渊上半（0金）](https://www.bilibili.com/video/BV1XK411o7vt)  
 
 DPS参考：
 > 0
@@ -1206,7 +1202,7 @@ DPS参考：
 > 0
 
 视频参考：
-> 时雨琦罗，2.7深渊换间（0抽），<https://www.bilibili.com/video/BV1eB4y1S78q>  
+> [时雨琦罗，2.7深渊换间（0抽）](https://www.bilibili.com/video/BV1eB4y1S78q)  
 
 DPS参考：
 > 0
@@ -1260,7 +1256,7 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，3.1深渊下半（3金），<https://www.bilibili.com/video/BV1i84y1y7pt>  
+> [Nickess，3.1深渊下半（3金）](https://www.bilibili.com/video/BV1i84y1y7pt)  
 
 DPS参考：
 > 0
@@ -1281,7 +1277,7 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，2.7深渊下半（2金），<https://www.bilibili.com/video/BV1me4y1W7Wv>  
+> [Nickess，2.7深渊下半（2金）](https://www.bilibili.com/video/BV1me4y1W7Wv)  
 
 DPS参考：
 > 0
@@ -1326,8 +1322,8 @@ DPS参考：
 
 ###### 草主/柯莱/瑶瑶/卡维/绮良良（五选二） 行秋 久岐忍
 
-> 五个草系角色中卡维无后台挂草，绮良良基本没有后台挂草，  
- 因此选择这俩个角色时另一个草系角色最好选择柯莱/草主。  
+> 经典的纯四星种门选择，由于四星草角色的挂草能力都比较弱，因此携带两个草系角色保证草底，同时双草共鸣的精通也能加一些种子伤害。  
+ 需要注意的是五个草系角色中卡维无后台挂草，绮良良基本没有后台挂草，因此选择这俩个角色时另一个草系角色最好选择后台挂草能力稍强的柯莱/草主。  
 
 评分参考：
 > 输出： （环境-，配置-，练度-，手部-）  
@@ -1339,12 +1335,12 @@ DPS参考：
 > 0
 
 视频参考：
-> 持灵，4.0深渊上半(柯莱绮良良，0金)，<https://www.bilibili.com/video/BV1M94y1s7Db>  
- Nickess，3.8深渊下半（柯莱瑶瑶，0金），<https://www.bilibili.com/video/BV1194y1Y7Df>  
- Nickess，3.6深渊上半（柯莱瑶瑶，0金），<https://www.bilibili.com/video/BV17c411H79Y>  
- 持灵，3.5深渊下半（柯莱瑶瑶，0金），<https://www.bilibili.com/video/BV1hT411B7yv>  
- lyh逗比，3.5深渊下半（草主瑶瑶，0金），<https://www.bilibili.com/video/BV1Sh41137XM>  
- 弹药福娃，3.4深渊上半（柯莱瑶瑶，0金），<https://www.bilibili.com/video/BV1Qx4y1L7Fc>  
+> [持灵，4.0深渊上半(柯莱绮良良，0金)](https://www.bilibili.com/video/BV1M94y1s7Db)  
+ [Nickess，3.8深渊下半（柯莱瑶瑶，0金）](https://www.bilibili.com/video/BV1194y1Y7Df)  
+ [Nickess，3.6深渊上半（柯莱瑶瑶，0金）](https://www.bilibili.com/video/BV17c411H79Y)  
+ [持灵，3.5深渊下半（柯莱瑶瑶，0金）](https://www.bilibili.com/video/BV1hT411B7yv)  
+ [lyh逗比，3.5深渊下半（草主瑶瑶，0金）](https://www.bilibili.com/video/BV1Sh41137XM)  
+ [弹药福娃，3.4深渊上半（柯莱瑶瑶，0金）](https://www.bilibili.com/video/BV1Qx4y1L7Fc)  
 
 DPS参考：
 > 0
@@ -1353,7 +1349,8 @@ DPS参考：
 
 ###### 草主/柯莱/瑶瑶（三选二） 芭芭拉 久岐忍
 
-> 0
+> 用芭芭拉替换行秋的版本。因为芭芭拉需要站场挂水，所以草系角色最好选择能后台挂草的草主/柯莱/瑶瑶。  
+ 相比于带行秋的版本，操作较为繁琐，没有抗打断和高额水直伤，但是有群体治疗、更多群体挂水以及海染的群体伤害，在对付流血狗等敌人时比较有优势，最重要的是可以省下一个行秋，在输出压力不大时是一个非常不错的低成本配队选择。
 
 评分参考：
 > 输出： （环境-，配置-，练度-，手部-）  
@@ -1365,9 +1362,9 @@ DPS参考：
 > 0
 
 视频参考：
-> 大白突突突突，4.0深渊上半（草主柯莱，0金），<https://www.bilibili.com/video/BV1Fp4y177TX>  
- lyh逗比，3.6深渊12-2上半龙兽&12-3上半妙脆角（草主柯莱，0金），<https://www.bilibili.com/video/BV1hh411u7UU>  
- lyh逗比，3.4深渊12-2上半武士+雷火蝎（草主柯莱，0金），<https://www.bilibili.com/video/BV1JM411s7KX>  
+> [大白突突突突，4.0深渊上半（草主柯莱，0金）](https://www.bilibili.com/video/BV1Fp4y177TX)  
+ [lyh逗比，3.6深渊12-2上半龙兽&12-3上半妙脆角（草主柯莱，0金](https://www.bilibili.com/video/BV1hh411u7UU)  
+ [lyh逗比，3.4深渊12-2上半武士+雷火蝎（草主柯莱，0金）](https://www.bilibili.com/video/BV1JM411s7KX)  
 
 DPS参考：
 > 0
@@ -1380,7 +1377,7 @@ DPS参考：
 
 ###### 柯莱/草主/瑶瑶 行秋 坎蒂丝 久岐忍
 
-> 四星双水超绽
+> 四星双水超绽。因为四星草的挂草问题，再加上坎蒂丝/芭芭拉没有夜兰的高直伤，一般不带双水。但是在面对大量火盾时还是一个不错的选择。
 
 评分参考：
 > 输出： （环境-，配置-，练度-，手部-）  
@@ -1392,7 +1389,7 @@ DPS参考：
 > 0
 
 视频参考：
-> 枕头ツ，4.0深渊上半（瑶瑶，0金），<https://www.bilibili.com/video/BV11p4y1A7tH>  
+> [枕头ツ，4.0深渊上半（瑶瑶，0金）](https://www.bilibili.com/video/BV11p4y1A7tH)  
 
 DPS参考：
 > 0
@@ -1401,11 +1398,13 @@ DPS参考：
 
 ##### ③ 草X+水Y+雷Z+雷N（双雷超绽）
 
+双雷超绽原理：（待补充）  
+
 ---
 
 ###### 柯莱 行秋 皇女 久岐忍
 
-> 双雷+单草，产种不会受太大影响，同时水雷直伤很高
+> 0金标准练度DPS登顶配队。四星挂草巅峰柯莱+四星倍率巅峰行秋皇女+四星超绽核心久岐忍，在保住种子伤害基本盘的情况下能打出最高直伤甚至激化。
 
 评分参考：
 > 输出： （环境-，配置-，练度-，手部-）  
@@ -1417,8 +1416,8 @@ DPS参考：
 > 0
 
 视频参考：
-> 黑塔今天没转圈，4.0深渊上半（0金，竞速），<https://www.bilibili.com/video/BV1y34y1P74X>  
- thehander，3.6深渊上半（0金），<https://www.bilibili.com/video/BV1ts4y1A7uN>  
+> [黑塔今天没转圈，4.0深渊上半（0金，竞速）](https://www.bilibili.com/video/BV1y34y1P74X)  
+ [thehander，3.6深渊上半（0金）](https://www.bilibili.com/video/BV1ts4y1A7uN)  
 
 DPS参考：
 > 0
@@ -1427,7 +1426,7 @@ DPS参考：
 
 ###### 柯莱 芭芭拉 皇女 久岐忍
 
-> 将传统双草超绽中的一个草换为皇女，弥补了芭芭拉种门对单直伤不足的缺点，同时双雷+单草，产种不会受太大影响
+> 上面配队中行秋换为芭芭拉的版本
 
 评分参考：
 > 输出： （环境-，配置-，练度-，手部-）  
@@ -1439,17 +1438,17 @@ DPS参考：
 > 0
 
 视频参考：
-> thehander，3.8深渊上半（0金），<https://www.bilibili.com/video/BV1TF411f7Zf>  
- 黑塔今天没转圈，3.4深渊上半（2金），<https://www.bilibili.com/video/BV1KT411C7qT>  
+> [thehander，3.8深渊上半（0金）](https://www.bilibili.com/video/BV1TF411f7Zf)  
+ [黑塔今天没转圈，3.4深渊上半（2金）](https://www.bilibili.com/video/BV1KT411C7qT)  
 
 DPS参考：
 > 0
 
 ---
 
-###### 瑶瑶 行秋 丽莎 皇女（零抽双雷超绽）
+###### 瑶瑶 行秋 丽莎 皇女
 
-> 零抽没有久岐忍，因此使用全精通丽莎e点种。虽然强度一般但仍能满星，足以体现种门的下限之高
+> 零抽双雷超绽。零抽没有久岐忍，因此使用全精通丽莎e点种。虽然强度一般但仍能满星，足以体现种门的下限之高
 
 评分参考：
 > 输出： （环境-，配置-，练度-，手部-）  
@@ -1461,8 +1460,8 @@ DPS参考：
 > 0
 
 视频参考：
-> 时雨琦罗，4.0深渊12-1上半&12-2上半（0抽），<https://www.bilibili.com/video/BV1nu4y147eP>  
- 时雨琦罗，3.4深渊上半（0抽），<https://www.bilibili.com/video/BV18M4y1D7QL>  
+> [时雨琦罗，4.0深渊12-1上半&12-2上半（0抽）](https://www.bilibili.com/video/BV1nu4y147eP)  
+[时雨琦罗，3.4深渊上半（0抽）](https://www.bilibili.com/video/BV18M4y1D7QL)  
 
 DPS参考：
 > 0
@@ -1490,7 +1489,7 @@ DPS参考：
 > 0
 
 视频参考：
-> 藤原动感新之助，4.0深渊12-1上半（0金），<https://www.bilibili.com/video/BV14w411U7Yc>  
+> [藤原动感新之助，4.0深渊12-1上半（0金）](https://www.bilibili.com/video/BV14w411U7Yc)  
 
 DPS参考：
 > 0
@@ -1513,9 +1512,9 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，4.0深渊上半（柯莱，1金高练），<https://www.bilibili.com/video/BV1fN4y1D7Vp>  
- Nickess，3.5深渊下半（瑶瑶，0金），<https://www.bilibili.com/video/BV1Q24y1u7Qj>  
- Nickess，3.3深渊上半（瑶瑶，0金），<https://www.bilibili.com/video/BV1SR4y1h7Tj>  
+> [Nickess，4.0深渊上半（柯莱，1金）](https://www.bilibili.com/video/BV1fN4y1D7Vp)  
+ [Nickess，3.5深渊下半（瑶瑶，0金）](https://www.bilibili.com/video/BV1Q24y1u7Qj)  
+ [Nickess，3.3深渊上半（瑶瑶，0金）](https://www.bilibili.com/video/BV1SR4y1h7Tj)  
 
 DPS参考：
 > 0
@@ -1536,8 +1535,8 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，3.8深渊上半（瑶瑶，0金），<https://www.bilibili.com/video/BV11m4y1j7iS>  
- Nickess，3.4深渊下半（瑶瑶，1金），<https://www.bilibili.com/video/BV1yM411e7mS>  
+> [Nickess，3.8深渊上半（瑶瑶，0金）](https://www.bilibili.com/video/BV11m4y1j7iS)  
+ [Nickess，3.4深渊下半（瑶瑶，1金）](https://www.bilibili.com/video/BV1yM411e7mS)  
 
 DPS参考：
 > 0
@@ -1568,8 +1567,8 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，3.7深渊上半（柯莱，0金），<https://www.bilibili.com/video/BV12k4y1p72C>  
- Nickess，3.6深渊下半（柯莱，0金），<https://www.bilibili.com/video/BV1Ez4y1Y7sT>  
+> [Nickess，3.7深渊上半（柯莱，0金）](https://www.bilibili.com/video/BV12k4y1p72C)  
+ [Nickess，3.6深渊下半（柯莱，0金）](https://www.bilibili.com/video/BV1Ez4y1Y7sT)  
 
 DPS参考：
 > 0
@@ -1592,7 +1591,7 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，3.5深渊上半（0金），<https://www.bilibili.com/video/BV1zN411w7B4>  
+> [Nickess，3.5深渊上半（0金）](https://www.bilibili.com/video/BV1zN411w7B4)  
 
 DPS参考：
 > 0
@@ -1617,9 +1616,9 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，4.0深渊上半（0金），<https://www.bilibili.com/video/BV1BG411R7jJ>  
- Nickess，3.8深渊上半（0金），<https://www.bilibili.com/video/BV14x4y197Lc>  
- Nickess，3.4深渊下半（0金），<https://www.bilibili.com/video/BV1Ss4y187AH>  
+> [Nickess，4.0深渊上半（0金）](https://www.bilibili.com/video/BV1BG411R7jJ)  
+ [Nickess，3.8深渊上半（0金）](https://www.bilibili.com/video/BV14x4y197Lc)  
+ [Nickess，3.4深渊下半（0金）](https://www.bilibili.com/video/BV1Ss4y187AH)  
 
 DPS参考：
 > 0
@@ -1644,10 +1643,10 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，4.0深渊下半（0金），<https://www.bilibili.com/video/BV1qK4y1c7Kw>  
- Nickess，3.8深渊下半（0金），<https://www.bilibili.com/video/BV1uP411t778>  
- Nickess，3.5深渊上半（0金），<https://www.bilibili.com/video/BV17s4y1H7nr>  
- Nickess，3.4深渊上半（0金），<https://www.bilibili.com/video/BV11D4y1T7Dk>  
+> [Nickess，4.0深渊下半（0金）](https://www.bilibili.com/video/BV1qK4y1c7Kw)  
+ [Nickess，3.8深渊下半（0金）](https://www.bilibili.com/video/BV1uP411t778)  
+ [Nickess，3.5深渊上半（0金）](https://www.bilibili.com/video/BV17s4y1H7nr)  
+ [Nickess，3.4深渊上半（0金）](https://www.bilibili.com/video/BV11D4y1T7Dk)  
 
 DPS参考：
 > 0
@@ -1672,9 +1671,9 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，3.6深渊上半（0金），<https://www.bilibili.com/video/BV1pT411n7CE>  
- Nickess，3.5深渊上半（0金），<https://www.bilibili.com/video/BV1fV4y1X7L1>  
- Nickess，3.3深渊下半（0金），<https://www.bilibili.com/video/BV1Xy4y1Q7De>  
+> [Nickess，3.6深渊上半（0金）](https://www.bilibili.com/video/BV1pT411n7CE)  
+ [Nickess，3.5深渊上半（0金）](https://www.bilibili.com/video/BV1fV4y1X7L1)  
+ [Nickess，3.3深渊下半（0金）](https://www.bilibili.com/video/BV1Xy4y1Q7De)  
 
 DPS参考：
 > 0
@@ -1710,10 +1709,10 @@ iii) “冻结护草”
 > 0
 
 视频参考：
-> 时雨琦罗，4.0深渊12-3上半（草主柯莱迪奥娜，0抽），<https://www.bilibili.com/video/BV1nu4y147eP>  
- 弹药福娃，3.8深渊上半（绮良良柯莱罗莎莉亚，0金），<https://www.bilibili.com/video/BV1Ju4y1d7dX>  
- Nickess，3.8深渊上半（瑶瑶柯莱罗莎莉亚，0金），<https://www.bilibili.com/video/BV1v8411U7Su>  
- Nickess，3.6深渊下半（瑶瑶柯莱罗莎莉亚，0金），<https://www.bilibili.com/video/BV1bh4y1p7b9>  
+> [时雨琦罗，4.0深渊12-3上半（草主柯莱迪奥娜，0抽）](https://www.bilibili.com/video/BV1nu4y147eP)  
+ [弹药福娃，3.8深渊上半（绮良良柯莱罗莎莉亚，0金）](https://www.bilibili.com/video/BV1Ju4y1d7dX)  
+ [Nickess，3.8深渊上半（瑶瑶柯莱罗莎莉亚，0金）](https://www.bilibili.com/video/BV1v8411U7Su)  
+ [Nickess，3.6深渊下半（瑶瑶柯莱罗莎莉亚，0金）](https://www.bilibili.com/video/BV1bh4y1p7b9)  
 
 DPS参考：
 > 0
@@ -1738,7 +1737,7 @@ DPS参考：
 > 0
 
 视频参考：
-> Nickess，3.8深渊上半（草主，0金），<https://www.bilibili.com/video/BV1AM4y1s74g>  
+> [Nickess，3.8深渊上半（草主，0金）](https://www.bilibili.com/video/BV1AM4y1s74g)  
 
 DPS参考：
 > 0
