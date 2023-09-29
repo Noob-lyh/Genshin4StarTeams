@@ -8,19 +8,23 @@
 
 **0金配队标准练度理论DPS排行榜(施工中)**：
 
-1. 柯莱 行秋 久岐忍 菲谢尔（双雷行秋超绽1），5.78w（大体积怪，皇女不抢种子）
+1. 柯莱 行秋 久岐忍 菲谢尔（行秋双雷超绽1），5.78w（大体积怪，皇女不抢种子）
 2. 班尼特 香菱 行秋 砂糖（砂糖国家队1），5.22w（班6命/砂秒双扩不开Q/香双判/行秋E双蒸）
-3. 草主 柯莱 行秋 久岐忍（双草行秋超绽），5.12w
-4. 柯莱 行秋 久岐忍 菲谢尔（双雷行秋超绽2），4.59w（小体积怪，皇女抢种子）
-5. 班尼特 香菱 行秋 皇女（皇女国家队），4.50w
-6. 班尼特 香菱 行秋 砂糖（砂糖国家队2），4.49w（砂简易双扩三轮一Q，行秋E不凹蒸发）
-7. 草主 柯莱 芭芭拉 久岐忍（双草芭芭拉超绽），4.12w
-8. 砂糖 北斗 菲谢尔 瑶瑶（砂糖激化），3.90w
-9. 砂糖 北斗 菲谢尔 行秋（砂糖武装），3.89w
-10. 班尼特 香菱 珐露珊 鹿野院平藏（双风双火），3.69w
-11. 班尼特 香菱 凯亚 罗莎莉亚（双冰双火），3.34w ~ 3.45w（班5命/6命）
-12. 珐露珊 鹿野院平藏 琳妮特 莱依拉（新四星三风队），3.10w
-13. 凯亚 罗莎莉亚 行秋 砂糖（四星永冻），2.31w（砂糖讨龙）
+3. 草主 柯莱 行秋 久岐忍（行秋双草超绽），5.12w
+4. 柯莱 行秋 久岐忍 菲谢尔（行秋双雷超绽2），4.59w（小体积怪，皇女抢种子）
+5. 柯莱 芭芭拉 久岐忍 菲谢尔（芭芭拉双雷超绽1），4.51w（小体积怪，皇女抢种子）
+6. 班尼特 香菱 行秋 菲谢尔（皇女国家队），4.50w
+7. 班尼特 香菱 行秋 砂糖（砂糖国家队2），4.49w（砂简易双扩三轮一Q，行秋E不凹蒸发）
+8. 草主 柯莱 芭芭拉 久岐忍（芭芭拉双草超绽），4.12w
+9. 砂糖 北斗 菲谢尔 瑶瑶（砂糖激化），3.90w
+10. 砂糖 北斗 菲谢尔 行秋（砂糖武装），3.89w
+11. 班尼特 香菱 行秋 重云（重云国家队），3.85w
+12. 班尼特 香菱 珐露珊 鹿野院平藏（双风双火），3.69w
+13. 班尼特 香菱 北斗 菲谢尔（双雷双火），3.52w
+14. 柯莱 芭芭拉 久岐忍 菲谢尔（芭芭拉双雷超绽2），3.48w（大体积怪，皇女不抢种子）
+15. 班尼特 香菱 凯亚 罗莎莉亚（双冰双火），3.34w ~ 3.45w（班5命/6命）
+16. 珐露珊 鹿野院平藏 琳妮特 莱依拉（新四星三风），3.10w
+17. 凯亚 罗莎莉亚 行秋 砂糖（四星永冻），2.31w（砂糖讨龙）
 
 注1：经典低金配队DPS参考——1金雷国约5w，1金草行久皇约6.65w。  
 注2：主要使用通用面板，部分队伍进行针对性换装之后DPS还能提。  
@@ -111,8 +115,8 @@ while 1 {
 }
 ```
 
-备注1：砂糖秒双扩不开Q + 6命班 + 火轮双判 + 行秋E双蒸，来源<https://gcsim.app/db/hQBtQgpwhp6w#>  
-使用时要去掉默认的90秒模拟时长以及默认敌人设定。  
+备注1：砂糖秒双扩不开Q + 6命班 + 火轮双判 + 行秋E双蒸  
+[来源](https://gcsim.app/db/hQBtQgpwhp6w#)，使用时要去掉默认的90秒模拟时长以及默认敌人设定。  
 
 DPS：(24秒循环)  
 0金 5.22w  
@@ -190,14 +194,14 @@ while 1 {
 }
 ```
 
-## 班尼特 香菱 行秋 皇女
+## 班尼特 香菱 行秋 菲谢尔
 
 班尼特5命，精5原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
 香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
 行秋6命，精5祭礼剑，4绝缘攻水暴，(9+11)双暴+2攻击+2精通+2充能  
-皇女6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
+菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
 
-DPS：(20秒循环，皇女固定时机尝试eq)  
+DPS：(20秒循环，菲谢尔固定时机尝试插入EQ)  
 0金 4.50w  
 
 ```text
@@ -286,6 +290,63 @@ while 1 {
             fischl burst, attack;
         }
     }
+}
+```
+
+## 班尼特 香菱 行秋 重云
+
+班尼特5命，精5原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
+香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
+行秋6命，精5祭礼剑，4绝缘攻水暴，(9+11)双暴+2攻击+2精通+2充能  
+重云6命，精5饰铁之花，4绝缘充冰暴，(9+11)双暴+2攻击+2精通+2充能  
+
+DPS：(20秒单循环)  
+0金 3.85w  
+
+```text
+bennett char lvl=90/90 cons=5 talent=9,9,9;
+bennett add weapon="sapwoodblade" refine=5 lvl=90/90;
+bennett add set="noblesseoblige" count=4;
+bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
+
+xiangling char lvl=90/90 cons=6 talent=9,9,9;
+xiangling add weapon="thecatch" refine=5 lvl=90/90;
+xiangling add set="emblemofseveredfate" count=4;
+xiangling add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+xingqiu char lvl=90/90 cons=6 talent=9,9,9;
+xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
+xingqiu add set="emblemofseveredfate" count=4;
+xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+chongyun char lvl=90/90 cons=6 talent=9,9,9;
+chongyun add weapon="mailedflower" refine=5 lvl=90/90;
+chongyun add set="emblemofseveredfate" count=4;
+chongyun add stats hp=4780 atk=311 er=0.518 cryo%=0.466 cr=0.311;
+chongyun add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+options duration=20;
+active xingqiu;
+while 1 {
+    xingqiu burst, attack;
+    chongyun skill;
+    bennett burst, skill;
+    chongyun burst;
+    xiangling attack, burst, attack, skill;
+    xingqiu attack, skill, dash;
+    if .xingqiu.skill.ready {
+        xingqiu attack, skill, dash;
+    }
+    xingqiu attack:3;
+    bennett attack, skill;
+    while !.bennett.skill.ready {
+        xiangling attack;
+    }
+    bennett skill;
+    xiangling attack:4;
 }
 ```
 
@@ -488,7 +549,7 @@ while 1 {
 行秋6命，精5祭礼剑，4绝缘/4宗室攻水暴，(9+11)双暴+2攻击+2精通+2充能  
 砂糖6命，精5试作金珀，4风套精精精，4精通+6充能  
 
-DPS：  
+DPS：(20秒循环)  
 0金 2.31w (砂糖换讨龙)  
 0金 2.22w  
 
@@ -535,6 +596,93 @@ while 1 {
     xingqiu attack:3;
     rosaria skill, attack;
     kaeya skill, attack, charge, attack, charge;
+}
+```
+
+## 班尼特 香菱 北斗 菲谢尔
+
+班尼特5命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
+香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
+北斗6命，精5浪影阔剑，4绝缘充雷暴，(9+11)双暴+2攻击+2精通+2充能  
+菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
+
+DPS：(20秒循环，菲谢尔固定时机尝试插入EQ)  
+0金 3.52w  
+
+```text
+bennett char lvl=90/90 cons=5 talent=9,9,9;
+bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
+bennett add set="noblesseoblige" count=4;
+bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
+
+xiangling char lvl=90/90 cons=6 talent=9,9,9;
+xiangling add weapon="thecatch" refine=5 lvl=90/90;
+xiangling add set="emblemofseveredfate" count=4;
+xiangling add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+beidou char lvl=90/90 cons=6 talent=9,9,9;
+beidou add weapon="tidalshadow" refine=5 lvl=90/90;
+beidou add set="emblemofseveredfate" count=4;
+beidou add stats hp=4780 atk=311 er=0.518 electro%=0.466 cr=0.311;
+beidou add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+fischl char lvl=90/90 cons=6 talent=9,9,9; 
+fischl add weapon="stringless" refine=5 lvl=90/90;
+fischl add set="goldentroupe" count=4;
+fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
+fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+active bennett;
+while 1 {
+    bennett burst, skill;
+
+    if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl attack:2, skill;
+        } else if .fischl.burst.ready {
+            fischl burst, attack;
+        }
+    }
+
+    xiangling attack, burst, attack, skill;
+    beidou attack, skill, burst, attack;
+
+    if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl attack:2, skill;
+        } else if .fischl.burst.ready {
+            fischl burst, attack;
+        }
+    }
+
+    bennett attack, skill;
+    xiangling attack:3;
+
+    if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl attack:2, skill;
+        } else if .fischl.burst.ready {
+            fischl burst, attack;
+        }
+    }
+
+    while !.bennett.skill.ready {
+        bennett attack;
+    }
+    bennett skill;
+    xiangling attack:3;
+
+    if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl attack:2, skill;
+        } else if .fischl.burst.ready {
+            fischl burst, attack;
+        }
+    }
+
+    beidou skill[counter=2], attack:2;
 }
 ```
 
@@ -890,5 +1038,71 @@ while 1 {
     } else {
         nahida attack:3, dash;
     }
+}
+```
+
+## 柯莱 芭芭拉 久岐忍 菲谢尔
+
+柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
+芭芭拉6命，精5祭礼残章/试作金珀，4海染生生治，4精通+6生命  
+久岐忍6命，精5东花坊时雨，4乐园精精精，4精通+8生命  
+菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
+
+DPS：(无轴循环)  
+0金对单 3.48w (小体积怪，皇女抢种子)  
+0金对单 4.51w (大体积怪，皇女不抢种子)  
+
+```text
+collei char lvl=90/90 cons=6 talent=9,9,9;
+collei add weapon="favoniuswarbow" refine=5 lvl=90/90;
+collei add set="deepwoodmemories" count=4;
+collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+barbara char lvl=90/90 cons=6 talent=9,9,9;
+barbara add weapon="prototypeamber" refine=5 lvl=90/90;
+barbara add set="oceanhuedclam" count=4;
+barbara add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
+barbara add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
+
+kuki char lvl=90/90 cons=6 talent=9,9,9;
+kuki add weapon="toukaboushigure" refine=5 lvl=90/90;
+kuki add set="flowerofparadiselost" count=4;
+kuki add stats hp=4780 atk=311 em=187 em=187 em=187;
+kuki add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
+
+fischl char lvl=90/90 cons=6 talent=9,9,9; 
+fischl add weapon="stringless" refine=5 lvl=90/90;
+fischl add set="goldentroupe" count=4;
+fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
+fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+active collei;
+collei burst;
+barbara attack, skill, jump;
+kuki skill, dash;
+fischl skill;
+while 1 {
+
+    if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl skill, attack;
+        } else if .fischl.burst.ready {
+            fischl burst, attack;
+        }
+    }
+
+    if .kuki.skill.ready {
+        kuki skill;
+    } else if .collei.skill.ready {
+        collei skill, attack;
+    } else if .collei.burst.ready {
+        collei burst;
+    } else if .barbara.skill.ready {
+        barbara skill;
+    } else {
+        barbara attack:3, dash;
+    }
+
 }
 ```

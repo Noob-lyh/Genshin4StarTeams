@@ -86,6 +86,17 @@ rosaria add stats hp=4780 atk=311 atk%=0.466 cryo%=0.466 cr=0.311;
 rosaria add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 ```
 
+## 重云
+
+```text
+# 融化-饰铁散件，6命，精5饰铁之花，4绝缘充冰暴，(9+11)双暴+2攻击+2精通+2充能
+chongyun char lvl=90/90 cons=6 talent=9,9,9;
+chongyun add weapon="mailedflower" refine=5 lvl=90/90;
+chongyun add set="emblemofseveredfate" count=4;
+chongyun add stats hp=4780 atk=311 er=0.518 cryo%=0.466 cr=0.311;
+chongyun add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+```
+
 ## 菲谢尔
 
 ```text
