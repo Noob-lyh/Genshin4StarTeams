@@ -19,12 +19,13 @@
 9. 砂糖 北斗 菲谢尔 瑶瑶（砂糖激化），3.90w
 10. 砂糖 北斗 菲谢尔 行秋（砂糖武装），3.89w
 11. 班尼特 香菱 行秋 重云（重云国家队），3.85w
-12. 班尼特 香菱 珐露珊 鹿野院平藏（双风双火），3.69w
-13. 班尼特 香菱 北斗 菲谢尔（双雷双火），3.52w
-14. 柯莱 芭芭拉 久岐忍 菲谢尔（芭芭拉双雷超绽2），3.48w（大体积怪，皇女不抢种子）
-15. 班尼特 香菱 凯亚 罗莎莉亚（双冰双火），3.34w ~ 3.45w（班5命/6命）
-16. 珐露珊 鹿野院平藏 琳妮特 莱依拉（新四星三风），3.10w
-17. 凯亚 罗莎莉亚 行秋 砂糖（四星永冻），2.31w（砂糖讨龙）
+12. 珐露珊 鹿野院平藏 行秋 久岐忍（珐鹿感电），3.70w
+13. 班尼特 香菱 珐露珊 鹿野院平藏（双风双火），3.69w
+14. 班尼特 香菱 北斗 菲谢尔（双雷双火），3.52w
+15. 柯莱 芭芭拉 久岐忍 菲谢尔（芭芭拉双雷超绽2），3.48w（大体积怪，皇女不抢种子）
+16. 班尼特 香菱 凯亚 罗莎莉亚（双冰双火），3.34w ~ 3.45w（班5命/6命）
+17. 珐露珊 鹿野院平藏 琳妮特 莱依拉（新四星三风），3.10w
+18. 凯亚 罗莎莉亚 行秋 砂糖（四星永冻），2.31w（砂糖讨龙）
 
 注1：经典低金配队DPS参考——1金雷国约5w，1金草行久皇约6.65w。  
 注2：主要使用通用面板，部分队伍进行针对性换装之后DPS还能提。  
@@ -33,7 +34,7 @@
 ## gcsim模拟条件与敌人设置
 
 ```text
-# gcsim模拟的条件设置
+# gcsim模拟的条件设置，重复设置会覆盖
 options iteration=1000;     # 模拟次数
 options duration=90;        # 每次模拟的持续时间
 options swap_delay=4;       # 切人延迟，一般取4或12
@@ -683,6 +684,60 @@ while 1 {
     }
 
     beidou skill[counter=2], attack:2;
+}
+```
+
+## 珐露珊 鹿野院平藏 行秋 久岐忍
+
+珐露珊6命，精5静谧之曲，4剧团充风暴，(12+8)双暴+4充能  
+鹿野院平藏6命，精5流浪乐章，2风套2角斗攻风暴，(9+11)双暴+4攻击  
+行秋6命，精5祭礼剑，4宗室攻水暴，(9+11)双暴+2攻击+2精通+2充能  
+久岐忍6命，精5东花坊时雨，4千岩生生治，4精通+8生命  
+
+DPS：(20秒单循环)  
+0金 3.70w  
+
+```text
+faruzan char lvl=90/90 cons=6 talent=9,9,9;
+faruzan add weapon="songofstillness" refine=5 lvl=90/90;
+faruzan add set="goldentroupe" count=4;
+faruzan add stats hp=4780 atk=311 er=0.518 anemo%=0.466 cr=0.311;
+faruzan add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.22 em=0 cr=0.396 cd=0.528;
+
+heizou char lvl=90/90 cons=6 talent=9,9,9;
+heizou add weapon="thewidsith" refine=5 lvl=90/90;
+heizou add set="viridescentvenerer" count=2;
+heizou add set="gladiatorsfinale" count=2;
+heizou add stats hp=4780 atk=311 atk%=0.466 anemo%=0.466 cr=0.311;
+heizou add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0 em=0 cr=0.297 cd=0.726;
+
+xingqiu char lvl=90/90 cons=6 talent=9,9,9;
+xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
+xingqiu add set="noblesseoblige" count=4;
+xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+kuki char lvl=90/90 cons=6 talent=9,9,9;
+kuki add weapon="toukaboushigure" refine=5 lvl=90/90;
+kuki add set="tenacityofthemillelith" count=4;
+kuki add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 hp%=0.466;
+kuki add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
+
+options duration=20;
+active xingqiu;
+while 1 {
+    xingqiu burst, attack;
+    kuki skill, dash, attack;
+    faruzan burst, attack, skill;
+    heizou burst, attack, charge, skill;
+    faruzan attack, aim, attack, aim, attack, skill;
+    xingqiu attack, skill, dash;
+    if .xingqiu.skill.ready {
+        xingqiu attack, skill, dash;
+    }
+    xingqiu attack:3;
+    heizou attack, charge, attack:3, skill;
+    faruzan attack, aim, attack, aim;
 }
 ```
 

@@ -128,6 +128,12 @@ kuki add weapon="toukaboushigure" refine=5 lvl=90/90;
 kuki add set="flowerofparadiselost" count=4;
 kuki add stats hp=4780 atk=311 em=187 em=187 em=187;
 kuki add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
+# 治疗-伞剑千岩，6命，精5东花坊时雨，4千岩生生治，4精通+8生命
+kuki char lvl=90/90 cons=6 talent=9,9,9;
+kuki add weapon="toukaboushigure" refine=5 lvl=90/90;
+kuki add set="tenacityofthemillelith" count=4;
+kuki add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 hp%=0.466;
+kuki add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
 ```
 
 ## 莱伊拉
@@ -179,11 +185,11 @@ faruzan add weapon="favoniuswarbow" refine=5 lvl=90/90;
 faruzan add set="tenacityofthemillelith/viridescentvenerer" count=4;
 faruzan add stats hp=4780 atk=311 atk%=0.466/er=0.518 anemo%=0.466 cr=0.311;
 faruzan add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.22 em=0 cr=0.396 cd=0.528;
-# 珐鹿琳莱-站场输出，6命，精5静谧之曲，4剧团攻风暴，(12+8)双暴+4充能
+# 珐鹿琳莱-站场输出，6命，精5静谧之曲，4剧团攻/充风暴，(12+8)双暴+4充能
 faruzan char lvl=90/90 cons=6 talent=9,9,9;
 faruzan add weapon="songofstillness" refine=5 lvl=90/90;
 faruzan add set="goldentroupe" count=4;
-faruzan add stats hp=4780 atk=311 atk%=0.466 anemo%=0.466 cr=0.311;
+faruzan add stats hp=4780 atk=311 atk%=0.466/er=0.518 anemo%=0.466 cr=0.311;
 faruzan add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.22 em=0 cr=0.396 cd=0.528;
 ```
 
