@@ -2,9 +2,10 @@
 
 详见：<https://docs.gcsim.app/reference>  
 
-## 元素及角色
+注1：部分名称可使用简称，但为了方便翻译和搜索这里基本只使用全称。  
+注2：**武器、圣遗物在代码中只保留小写字母即可，删去空格和引号！！**  
 
-注：部分角色名为简称/多种可用名称之一，程序中用全小写即可
+## 元素及角色
 
 ```text
 火(Pyro)：安柏(Amber)，班尼特(Bennett)，迪希雅(Dehya)，迪卢克(Diluc)，胡桃(Hutao)，可莉(Klee)，林尼(Lyney)，托马(Thoma)，香菱(Xiangling)，辛焱(Xinyan)，烟绯(Yanfei)，宵宫(Yoimiya)
@@ -21,14 +22,12 @@
 
 草(Dendro)：艾尔海森(Alhaitham)，白术(Baizhu)，柯莱(Collei)，卡维(Kaveh)，绮良良(Kirara)，纳西妲(Nahida)，提纳里(Tighnari)，瑶瑶(YaoYao)
 
-旅行者：traveler/aethor/lumine + 元素名称，例如风荧(lumineanemo)
+物理(Phys)
 
-另：物理(Phys)
+旅行者：traveler/aethor/lumine + 元素名称，例如风系旅行者为(traveleranemo)，但默认为荧
 ```
 
 ## 武器
-
-注：代码中只输入小写字母。  
 
 ```text
 // 五星-限定
@@ -102,9 +101,7 @@
 法器：口袋魔导书(pocket grimoire)，学徒笔记(apprentice's notes)
 ```
 
-## 圣遗物
-
-注：代码中只输入小写字母。  
+## 圣遗物套装
 
 ```text
 // 5~4星
@@ -144,7 +141,7 @@
 
 ## 其他游戏名词
 
-注：所有百分比的数据均转化为小数
+注：所有百分比的数据均转化为小数，例如46.6%大攻击写为atk%=0.466
 
 ```text
 等级(lvl)，命座(cons)，精炼(refine)，天赋(talent)
