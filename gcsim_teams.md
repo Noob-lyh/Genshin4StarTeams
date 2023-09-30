@@ -21,11 +21,14 @@
 11. 班尼特 香菱 行秋 重云（重云国家队），3.85w
 12. 珐露珊 鹿野院平藏 行秋 久岐忍（珐鹿感电），3.70w
 13. 班尼特 香菱 珐露珊 鹿野院平藏（双风双火），3.69w
-14. 班尼特 香菱 北斗 菲谢尔（双雷双火），3.52w
-15. 柯莱 芭芭拉 久岐忍 菲谢尔（芭芭拉双雷超绽2），3.48w（小体积怪，皇女抢种子）
-16. 班尼特 香菱 凯亚 罗莎莉亚（双冰双火），3.34w ~ 3.45w（班5命/6命）
-17. 珐露珊 鹿野院平藏 琳妮特 莱依拉（新四星三风），3.10w
-18. 凯亚 罗莎莉亚 行秋 砂糖（四星永冻），2.31w（砂糖讨龙）
+14. 瑶瑶 柯莱 行秋 托马（行秋双草烈绽），3.66w
+15. 班尼特 香菱 北斗 菲谢尔（双雷双火），3.52w
+16. 柯莱 芭芭拉 久岐忍 菲谢尔（芭芭拉双雷超绽2），3.48w（小体积怪，皇女抢种子）
+17. 班尼特 香菱 凯亚 罗莎莉亚（双冰双火），3.34w ~ 3.45w（班5命/6命）
+18. 珐露珊 鹿野院平藏 琳妮特 莱依拉（新四星三风），3.10w
+19. 柯莱 行秋 雷泽 班尼特(6)（四星彩虹雷泽），3.09w
+20. 草主 柯莱 芭芭拉 托马（芭芭拉双草烈绽），2.41w
+21. 凯亚 罗莎莉亚 行秋 砂糖（四星凯亚永冻），2.35w（砂糖讨龙）
 
 注1：经典低金配队DPS参考——1金雷国约5w，1金草行久皇约6.65w。  
 注2：主要使用通用面板，部分队伍进行针对性换装之后DPS还能提。  
@@ -610,8 +613,8 @@ while 1 {
 砂糖6命，精5试作金珀，4风套精精精，4精通+6充能  
 
 DPS：(20秒循环)  
-0金 2.31w (砂糖换讨龙)  
-0金 2.22w  
+0金 2.35w (砂糖换讨龙)  
+0金 2.26w  
 
 ```text
 kaeya char lvl=90/90 cons=2 talent=9,9,9;
@@ -655,7 +658,8 @@ while 1 {
     }
     xingqiu attack:3;
     rosaria skill, attack;
-    kaeya skill, attack, charge, attack, charge;
+    kaeya skill, attack;
+    sucrose attack:4;
 }
 ```
 
@@ -1218,5 +1222,187 @@ while 1 {
         barbara attack:3, dash;
     }
 
+}
+```
+
+## 瑶瑶 柯莱 行秋 托马
+
+瑶瑶6命，精5西风长枪，4草套生生治，10暴击+6充能  
+柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
+行秋6命，精5西风剑，4绝缘攻水暴，(9+11)双暴+6充能  
+托马6命，精5喜多院十文字，4乐园精精精，10充能  
+
+DPS：(20秒循环)  
+0金 3.66w  
+
+```text
+yaoyao char lvl=90/90 cons=6 talent=9,9,9;
+yaoyao add weapon="favoniuslance" refine=5 lvl=90/90;
+yaoyao add set="deepwoodmemories" count=4;
+yaoyao add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
+yaoyao add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.33 cd=0;
+
+collei char lvl=90/90 cons=6 talent=9,9,9;
+collei add weapon="favoniuswarbow" refine=5 lvl=90/90;
+collei add set="deepwoodmemories" count=4;
+collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+xingqiu char lvl=90/90 cons=6 talent=9,9,9;
+xingqiu add weapon="favoniussword" refine=5 lvl=90/90;
+xingqiu add set="emblemofseveredfate" count=4;
+xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
+
+thoma char lvl=90/90 cons=6 talent=9,9,9;
+thoma add weapon="kitaincrossspear" refine=5 lvl=90/90;
+thoma add set="flowerofparadiselost" count=4;
+thoma add stats hp=4780 atk=311 em=187 em=187 em=187;
+thoma add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
+
+active yaoyao;
+while 1 {
+    yaoyao attack, skill, attack:2;
+    xingqiu burst, attack, skill, dash, attack:3;
+    thoma burst, attack, skill, attack:2;
+    yaoyao burst, 
+        attack:2, dash,
+        attack:2, dash,
+        attack:2, dash,
+        attack:2;
+    collei attack, skill, attack, burst;
+    xingqiu attack:2, dash,
+        attack:2, dash,
+        attack:2;
+    yaoyao attack:2, dash, attack;
+}
+```
+
+## 草主 柯莱 芭芭拉 托马
+
+草主6命，精5西风剑，4草套充草暴，(7+9)双爆+4攻击+4充能  
+柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
+芭芭拉6命，精5西风秘典，4海染生生暴，8暴击  
+托马6命，精5喜多院十文字，4乐园精精精，10充能  
+
+DPS：(20秒循环，芭芭拉站场平A时若E冷却完毕则释放)  
+0金 2.41w  
+
+```text
+travelerdendro char lvl=90/90 cons=6 talent=9,9,9;
+travelerdendro add weapon="favoniussword" refine=5 lvl=90/90;
+travelerdendro add set="deepwoodmemories" count=4;
+travelerdendro add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+travelerdendro add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+collei char lvl=90/90 cons=6 talent=9,9,9;
+collei add weapon="favoniuswarbow" refine=5 lvl=90/90;
+collei add set="deepwoodmemories" count=4;
+collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+barbara char lvl=90/90 cons=6 talent=9,9,9;
+barbara add weapon="favoniuscodex" refine=5 lvl=90/90;
+barbara add set="oceanhuedclam" count=4;
+barbara add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 cr=0.311;
+barbara add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0 em=0 cr=0.264 cd=0;
+
+thoma char lvl=90/90 cons=6 talent=9,9,9;
+thoma add weapon="kitaincrossspear" refine=5 lvl=90/90;
+thoma add set="flowerofparadiselost" count=4;
+thoma add stats hp=4780 atk=311 em=187 em=187 em=187;
+thoma add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
+
+active travelerdendro;
+while 1 {
+    travelerdendro skill, burst;
+    if .barbara.skill.ready {
+        barbara attack, skill, jump;
+    } else {
+        barbara attack:4;
+    }
+    thoma burst, skill, attack:3;
+    if .barbara.skill.ready {
+        barbara attack, skill, jump;
+    } else {
+        barbara attack:4;
+    }
+    collei burst, attack;
+    if .barbara.skill.ready {
+        barbara attack, skill, jump;
+    } else {
+        barbara attack:4;
+    }
+    travelerdendro skill, attack;
+    if .barbara.skill.ready {
+        barbara attack, skill, jump;
+    } else {
+        barbara attack:4;
+    }
+    collei skill, attack;
+    if .barbara.skill.ready {
+        barbara attack, skill, jump;
+    } else {
+        barbara attack:4;
+    }
+    if .barbara.skill.ready {
+        barbara attack, skill, jump;
+    } else {
+        barbara attack:4;
+    }
+    collei attack:2;
+    travelerdendro attack:2;
+}
+```
+
+## 柯莱 行秋 雷泽 班尼特(6)
+
+柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
+行秋6命，精5西风剑，4绝缘攻水暴，(9+11)双暴+6充能  
+雷泽6命，精5饰铁之花，4乐园精精精，6精通+6充能  
+班尼特6命，精5西风剑，4宗室充火暴，(5+7)双暴+6生命+6充能  
+
+DPS：(21秒循环)  
+0金 3.09w  
+
+```text
+collei char lvl=90/90 cons=6 talent=9,9,9;
+collei add weapon="favoniuswarbow" refine=5 lvl=90/90;
+collei add set="deepwoodmemories" count=4;
+collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+xingqiu char lvl=90/90 cons=6 talent=9,9,9;
+xingqiu add weapon="favoniussword" refine=5 lvl=90/90;
+xingqiu add set="emblemofseveredfate" count=4;
+xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
+
+razor char lvl=90/90 cons=6 talent=9,9,9;
+razor add weapon="mailedflower" refine=5 lvl=90/90;
+razor add set="flowerofparadiselost" count=4;
+razor add stats hp=4780 atk=311 em=187 em=187 em=187;
+razor add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=120 cr=0 cd=0;
+
+bennett char lvl=90/90 cons=6 talent=9,9,9;
+bennett add weapon="favoniussword" refine=5 lvl=90/90;
+bennett add set="noblesseoblige" count=4;
+bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
+
+active razor;
+while 1 {
+    razor skill, dash, attack;
+    xingqiu burst, attack, skill, dash;
+    collei skill, attack, burst;
+    bennett attack, burst, skill;
+    razor skill, dash, attack, burst,
+        attack, skill, dash,
+        attack:3, dash,
+        attack:3, dash,
+        attack:2, skill, dash,
+        attack:3, dash,
+        attack:3;
+    bennett skill, attack:2;
 }
 ```

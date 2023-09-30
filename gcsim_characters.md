@@ -2,9 +2,10 @@
 
 均为在队伍代码中使用的配置，每个配置前的备注会指明用于哪个队伍中  
 默认6命90级角色+精5四星90级武器，天赋9/9/9(计算命座前)  
-常见特殊情况：班尼特5命、凯亚2命，月卡与限定武器精炼酌情  
+常见特殊情况：班尼特5命、凯亚2命，月卡/限定/精炼收益低的武器精炼酌情  
 输出角色一般取双暴20词条(暴击头一般9暴击+11爆伤，爆伤头相反)+有效词条各2条  
 如果有效词条较少，或对某种有效词条需求较大，则取4条该有效词条  
+特殊情况可以放弃某些词条取更多的另一些词条  
 
 ## 班尼特
 
@@ -29,6 +30,17 @@ xiangling add stats hp=4780 atk=311 er=0.518/atk%=0.466 pyro%=0.466 cr=0.311;
 xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 ```
 
+## 托马
+
+```text
+# 烈绽-乐园十文字，6命，精5喜多院十文字，4乐园精精精，10充能
+thoma char lvl=90/90 cons=6 talent=9,9,9;
+thoma add weapon="kitaincrossspear" refine=5 lvl=90/90;
+thoma add set="flowerofparadiselost" count=4;
+thoma add stats hp=4780 atk=311 em=187 em=187 em=187;
+thoma add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
+```
+
 ## 行秋
 
 ```text
@@ -38,17 +50,29 @@ xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
 xingqiu add set="emblemofseveredfate/noblesseoblige" count=4;
 xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
 xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+# 循环-西风绝缘，6命，精5西风剑，4绝缘攻水暴，(9+11)双暴+6充能
+xingqiu char lvl=90/90 cons=6 talent=9,9,9;
+xingqiu add weapon="favoniussword" refine=5 lvl=90/90;
+xingqiu add set="emblemofseveredfate" count=4;
+xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
 ```
 
 ## 芭芭拉
 
 ```text
-# 通用-祭礼海染，6命，精5祭礼残章/试作金珀，4海染生生治，4精通+6生命
+# 通用-海染祭礼/金珀，6命，精5祭礼残章/试作金珀，4海染生生治，4精通+6生命
 barbara char lvl=90/90 cons=6 talent=9,9,9;
 barbara add weapon="acrificialfragments/prototypeamber" refine=5 lvl=90/90;
 barbara add set="oceanhuedclam" count=4;
 barbara add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
 barbara add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
+# 循环-海染西风，6命，精5西风秘典，4海染生生暴，8暴击
+barbara char lvl=90/90 cons=6 talent=9,9,9;
+barbara add weapon="favoniuscodex" refine=5 lvl=90/90;
+barbara add set="oceanhuedclam" count=4;
+barbara add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 cr=0.311;
+barbara add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0 em=0 cr=0.264 cd=0;
 ```
 
 ## 凯亚
@@ -134,6 +158,17 @@ kuki add weapon="toukaboushigure" refine=5 lvl=90/90;
 kuki add set="tenacityofthemillelith" count=4;
 kuki add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 hp%=0.466;
 kuki add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
+```
+
+## 雷泽
+
+```text
+# 彩虹-乐园三精，6命，精5饰铁之花，4乐园精精精，6精通+6充能
+razor char lvl=90/90 cons=6 talent=9,9,9;
+razor add weapon="mailedflower" refine=5 lvl=90/90;
+razor add set="flowerofparadiselost" count=4;
+razor add stats hp=4780 atk=311 em=187 em=187 em=187;
+razor add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=120 cr=0 cd=0;
 ```
 
 ## 莱伊拉
@@ -236,4 +271,10 @@ yaoyao add weapon="rightfulreward" refine=5 lvl=90/90;
 yaoyao add set="tenacityofthemillelith/deepwoodmemories" count=4;
 yaoyao add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
 yaoyao add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
+# 挂草循环-草套西风，6命，精5西风长枪，4草套生生治，10暴击+6充能
+yaoyao char lvl=90/90 cons=6 talent=9,9,9;
+yaoyao add weapon="favoniuslance" refine=5 lvl=90/90;
+yaoyao add set="deepwoodmemories" count=4;
+yaoyao add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
+yaoyao add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.33 cd=0;
 ```
