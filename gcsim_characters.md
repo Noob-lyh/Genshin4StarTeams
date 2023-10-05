@@ -124,9 +124,10 @@ chongyun add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.2
 ## 菲谢尔
 
 ```text
-# 通用-剧团绝弦，6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能
+# 通用-剧团绝弦/静谧之曲，6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能
+# 注：砂糖武装中静谧之曲伤害较高，队伍伤害与精5暗巷闪光差距在5%内，其他情况建议使用绝弦。
 fischl char lvl=90/90 cons=6 talent=9,9,9; 
-fischl add weapon="stringless" refine=5 lvl=90/90;
+fischl add weapon="stringless/songofstillness" refine=5 lvl=90/90;
 fischl add set="goldentroupe" count=4;
 fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
 fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
@@ -135,7 +136,7 @@ fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297
 ## 北斗
 
 ```text
-# 砂糖武装-直伤，6命，精5浪影阔剑，4绝缘充雷暴，(9+11)双暴+2攻击+2精通+2充能
+# 砂武/砂激-浪影绝缘，6命，精5浪影阔剑，4绝缘充雷暴，(9+11)双暴+2攻击+2精通+2充能
 beidou char lvl=90/90 cons=6 talent=9,9,9;
 beidou add weapon="tidalshadow" refine=5 lvl=90/90;
 beidou add set="emblemofseveredfate" count=4;
