@@ -8,31 +8,29 @@
 
 **0金配队标准练度理论DPS排行榜(施工中)**：
 
-1. 柯莱 行秋 久岐忍 菲谢尔（行秋双雷超绽-不抢种），5.78w
-2. 班尼特 香菱 行秋 砂糖（砂糖国家队-凹蒸发长轴），5.22w
+1. 柯莱 行秋 久岐忍 菲谢尔（行秋双雷超绽-不抢种/抢种），5.78w/4.59w
+2. 班尼特 香菱 行秋 砂糖（砂糖国家队-凹蒸发/不凹蒸发），5.22w/4.49w*
 3. 草主 柯莱 行秋 久岐忍（行秋双草超绽），5.12w
-4. 柯莱 行秋 久岐忍 菲谢尔（行秋双雷超绽-抢种），4.59w
-5. 柯莱 芭芭拉 久岐忍 菲谢尔（芭芭拉双雷超绽-不抢种），4.51w
-6. 班尼特 香菱 行秋 菲谢尔（皇女国家队），4.50w
-7. 班尼特 香菱 行秋 砂糖（砂糖国家队-不凹蒸发20秒轴），4.49w*
-8. 草主 柯莱 芭芭拉 久岐忍（芭芭拉双草超绽），4.12w
-9. 砂糖 北斗 菲谢尔 行秋（砂糖武装），3.93w
-10. 砂糖 北斗 菲谢尔 瑶瑶（砂糖激化），3.90w
-11. 班尼特 香菱 行秋 重云（重云国家队），3.85w*
-12. 珐露珊 鹿野院平藏 行秋 久岐忍（珐鹿感电），3.70w*
-13. 班尼特 香菱 珐露珊 鹿野院平藏（双风双火），3.69w
-14. 瑶瑶 柯莱 行秋 托马（行秋双草烈绽），3.66w
-15. 班尼特 香菱 北斗 菲谢尔（双雷双火），3.52w
-16. 柯莱 芭芭拉 久岐忍 菲谢尔（芭芭拉双雷超绽-抢种），3.48w
-17. 班尼特 香菱 凯亚 罗莎莉亚（双冰双火-班5/6命），3.34w ~ 3.45w
-18. 珐露珊 鹿野院平藏 琳妮特 莱依拉（新四星三风），3.10w*
-19. 柯莱 行秋 雷泽 班尼特(6)（四星彩虹雷泽），3.09w
-20. 草主 柯莱 芭芭拉 托马（芭芭拉双草烈绽），2.41w
-21. 凯亚 罗莎莉亚 行秋 砂糖（四星凯亚永冻-讨龙），2.35w
+4. 柯莱 芭芭拉 久岐忍 菲谢尔（芭芭拉双雷超绽-不抢种/抢种），4.51w/3.48w
+5. 班尼特 香菱 行秋 菲谢尔（皇女国家队），4.50w
+6. 草主 柯莱 芭芭拉 久岐忍（芭芭拉双草超绽），4.12w
+7. 砂糖 北斗 菲谢尔 行秋（砂糖武装），3.93w
+8. 砂糖 北斗 菲谢尔 瑶瑶（砂糖激化），3.90w
+9. 班尼特 香菱 行秋 重云（重云国家队），3.85w*
+10. 班尼特 香菱 罗莎莉亚 砂糖（融罗-班6/5命），3.72w/3.62w
+11. 珐露珊 鹿野院平藏 行秋 久岐忍（珐鹿感电），3.70w*
+12. 班尼特 香菱 珐露珊 鹿野院平藏（双风双火），3.69w
+13. 瑶瑶 柯莱 行秋 托马（行秋双草烈绽），3.66w
+14. 班尼特 香菱 北斗 菲谢尔（双雷双火），3.52w
+15. 班尼特 香菱 凯亚 罗莎莉亚（双冰双火-班6/5命），3.45w/3.34w
+16. 珐露珊 鹿野院平藏 琳妮特 莱依拉（新四星三风），3.10w*
+17. 柯莱 行秋 雷泽 班尼特(6)（彩虹雷泽），3.09w
+18. 草主 柯莱 芭芭拉 托马（芭芭拉双草烈绽），2.41w
+19. 凯亚 罗莎莉亚 行秋 砂糖（凯亚永冻-讨龙/金珀），2.35w/2.26w
 
 注1：经典低金配队DPS参考——1金雷国约5w，1金草行久皇约6.65w。  
 注2：后面标*的DPS值表示该DPS为单循环模拟得到，这通常说明对应手法容错率较低（即后台产球少，若不增加复杂的断循环处理代码会导致严重罚站DPS骤降），但不代表该DPS无法实现。  
-注3：主要使用通用面板，部分队伍进行针对性换装之后DPS还能提。此外手法不一定为最优，欢迎贡献更加合理/高伤害的手法。  
+注3：主要使用通用面板，班尼特默认5命，凯亚默认2命（实际上无法触发），部分队伍进行针对性换装之后DPS还能提。此外手法不一定为最优，欢迎贡献更加合理/高伤害的手法。  
 
 ## gcsim模拟条件与敌人设置
 
@@ -465,6 +463,60 @@ while 1 {
     bennett attack, skill;
     xiangling attack:2;
     kaeya skill;
+}
+```
+
+## 班尼特 香菱 罗莎莉亚 砂糖
+
+班尼特5命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
+香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
+罗莎莉亚6命，精5匣里灭辰，4绝缘充冰暴，(9+11)双暴+2攻击+2精通+2充能  
+砂糖6命，精5讨龙英杰谭，4风套精精精，4精通+6充能  
+
+DPS：(20秒循环)  
+0金 3.72w（班尼特6命）  
+0金 3.62w（班尼特5命）  
+
+```text
+bennett char lvl=90/90 cons=5 talent=9,9,9;
+bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
+bennett add set="noblesseoblige" count=4;
+bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
+
+xiangling char lvl=90/90 cons=6 talent=9,9,9;
+xiangling add weapon="thecatch" refine=5 lvl=90/90;
+xiangling add set="emblemofseveredfate" count=4;
+xiangling add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+rosaria char lvl=90/90 cons=6 talent=9,9,9;
+rosaria add weapon="dragonsbane" refine=5 lvl=90/90;
+rosaria add set="emblemofseveredfate" count=4;
+rosaria add stats hp=4780 atk=311 er=0.518 cryo%=0.466 cr=0.311;
+rosaria add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+sucrose char lvl=90/90 cons=6 talent=9,9,9;
+sucrose add weapon="thrillingtalesofdragonslayers" refine=5 lvl=90/90;
+sucrose add set="viridescentvenerer" count=4;
+sucrose add stats hp=4780 atk=311 em=187 em=187 em=187;
+sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
+
+active bennett;
+while 1 {
+    bennett burst, skill;
+    sucrose skill, dash;
+    rosaria attack, skill, burst;
+    sucrose attack;
+    xiangling burst, skill;
+    bennett attack, skill;
+    rosaria attack, skill;
+    sucrose attack;
+    bennett attack, skill;
+    xiangling attack:3;
+    rosaria attack, skill;
+    bennett skill;
+    xiangling attack:3;
 }
 ```
 

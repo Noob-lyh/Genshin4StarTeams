@@ -95,12 +95,18 @@ kaeya add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.363 
 ## 罗莎莉亚
 
 ```text
-# 融化-西风散件，6命，精5西风长枪，2冰2宗室精冰暴，(9+11)双暴+2攻击+2精通+2充能
+# 双冰融化-西风散件，6命，精5西风长枪，2冰2宗室精冰暴，(9+11)双暴+2攻击+2精通+2充能
 rosaria char lvl=90/90 cons=6 talent=9,9,9;
 rosaria add weapon="favoniuslance" refine=5 lvl=90/90;
 rosaria add set="blizzardstrayer" count=2;
 rosaria add set="noblesseoblige" count=2;
 rosaria add stats hp=4780 atk=311 em=187 cryo%=0.466 cr=0.311;
+rosaria add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+# 单核融化-匣里绝缘，6命，精5匣里灭辰，4绝缘充冰暴，(9+11)双暴+2攻击+2精通+2充能
+rosaria char lvl=90/90 cons=6 talent=9,9,9;
+rosaria add weapon="dragonsbane" refine=5 lvl=90/90;
+rosaria add set="emblemofseveredfate" count=4;
+rosaria add stats hp=4780 atk=311 er=0.518 cryo%=0.466 cr=0.311;
 rosaria add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 # 永冻-西风宗室，6命，精5西风长枪，4宗室攻冰暴，(9+11)双暴+2攻击+2精通+2充能
 rosaria char lvl=90/90 cons=6 talent=9,9,9;
