@@ -2,25 +2,25 @@
 
 **队伍手法/循环**：
 
-1. 对于一般有轴的队伍，会设计一套能循环的手法，使其长度约等于队伍中CD最长的动作，同时牺牲一些对不上轴的小技能，如香班凯修循环长度为香菱Q的20秒，而每个20秒循环中香菱12秒冷却的E只放一次。此时DPS标注为(xx秒循环)。  
-2. 部分队伍轴复杂、技能释放顺序要求较高、随机性大或随机性造成的影响大，gcsim直接循环90秒掉伤害非常严重，不能反映队伍真实DPS，例如各种带祭礼剑行秋的队伍。对于这些队伍，会在手工确认第二轮循环能成立的情况下，只模拟第一个循环的DPS，此时其DPS标注为(xx秒单循环)。  
-3. 部分队伍轴非常难排，例如各种带皇女的配队(因为E+Q续奥兹的轴长为25秒)，以及一些各技能冷却不一且没有倍数关系的队伍，如草主+柯莱+水+久岐忍的双草超绽。此时手法为固定起手式+while死循环，每个循环中按照一定的优先级执行某一个已就绪的动作，且DPS标注为(无轴循环)。  
+1. 对于一般有轴的队伍，会设计一套能循环的手法，使其长度约等于队伍中CD最长的动作，同时牺牲一些对不上轴的小技能，如香班凯修循环长度为香菱Q的20秒，而每个20秒循环中香菱12秒冷却的E只放一次。此时DPS标注为`(xx秒循环)`。另外一些冷却比较奇怪的技能(如皇女EQ)会在循环中的某些时间点尝试插入，同时在括号中补充说明。  
+2. 部分队伍轴复杂、技能释放顺序要求较高、产球随机性大或随机性造成的影响大，gcsim直接循环90秒掉伤害非常严重，不能反映队伍真实DPS，例如各种带祭礼剑行秋的队伍。对于这些队伍，通常会牺牲部分输出，选择更加适合循环的配装(如行秋带西风剑)。如果实在难以保证gcsim中的循环，会在手工确认第二轮循环能成立的情况下，只模拟第一个循环的DPS，此时其DPS标注为`(xx秒单循环)`。  
+3. 部分队伍轴非常难排，例如各技能冷却不一且没有倍数关系的队伍，如草主+柯莱+水+久岐忍的双草超绽。此时手法为固定起手式+while死循环，每个循环中按照一定的优先级执行某一个已就绪的动作，且DPS标注为`(无轴循环)`。  
 
 **0金配队标准练度理论DPS排行榜(施工中)**：
 
 1. 柯莱 行秋 久岐忍 菲谢尔（行秋双雷超绽-不抢种/抢种），5.78w/4.59w
-2. 班尼特 香菱 行秋 砂糖（砂糖国家队-凹蒸发/不凹蒸发），5.22w/4.49w*
+2. 班尼特 香菱 行秋 砂糖（砂糖国家队-行秋双蒸/稳定循环），5.22w/4.12w
 3. 草主 柯莱 行秋 久岐忍（行秋双草超绽），5.12w
 4. 柯莱 芭芭拉 久岐忍 菲谢尔（芭芭拉双雷超绽-不抢种/抢种），4.51w/3.48w
 5. 班尼特 香菱 行秋 菲谢尔（皇女国家队），4.50w
 6. 草主 柯莱 芭芭拉 久岐忍（芭芭拉双草超绽），4.12w
-7. 砂糖 北斗 菲谢尔 行秋（砂糖武装），3.93w
-8. 砂糖 北斗 菲谢尔 瑶瑶（砂糖激化），3.90w
-9. 班尼特 香菱 行秋 重云（重云国家队），3.85w*
+7. 班尼特 香菱 行秋 重云（重云国家队），3.94w
+8. 砂糖 北斗 菲谢尔 行秋（砂糖武装），3.93w
+9. 砂糖 北斗 菲谢尔 瑶瑶（砂糖激化），3.90w
 10. 班尼特 香菱 罗莎莉亚 砂糖（融罗-班6/5命），3.72w/3.62w
-11. 珐露珊 鹿野院平藏 行秋 久岐忍（珐鹿感电），3.70w*
-12. 班尼特 香菱 珐露珊 鹿野院平藏（双风双火），3.69w
-13. 瑶瑶 柯莱 行秋 托马（行秋双草烈绽），3.66w
+11. 班尼特 香菱 珐露珊 鹿野院平藏（双风双火），3.69w
+12. 瑶瑶 柯莱 行秋 托马（行秋双草烈绽），3.66w
+13. 珐露珊 鹿野院平藏 行秋 久岐忍（珐鹿感电），3.62w
 14. 班尼特 香菱 北斗 菲谢尔（双雷双火），3.52w
 15. 班尼特 香菱 凯亚 罗莎莉亚（双冰双火-班6/5命），3.45w/3.34w
 16. 珐露珊 鹿野院平藏 琳妮特 莱依拉（新四星三风），3.10w*
@@ -28,8 +28,8 @@
 18. 草主 柯莱 芭芭拉 托马（芭芭拉双草烈绽），2.41w
 19. 凯亚 罗莎莉亚 行秋 砂糖（凯亚永冻-讨龙/金珀），2.35w/2.26w
 
-注1：经典低金配队DPS参考——1金雷国约5w，1金草行久皇约6.65w。  
-注2：后面标*的DPS值表示该DPS为单循环模拟得到，这通常说明对应手法容错率较低（即后台产球少，若不增加复杂的断循环处理代码会导致严重罚站DPS骤降），但不代表该DPS无法实现。  
+注1：经典低金配队DPS参考，1金雷国约5w，1金草行久皇约6.65w。  
+注2：后面标*的DPS值表示该DPS为单循环模拟得到。  
 注3：主要使用通用面板，班尼特默认5命，凯亚默认2命（实际上无法触发），部分队伍进行针对性换装之后DPS还能提。此外手法不一定为最优，欢迎贡献更加合理/高伤害的手法。  
 
 ## gcsim模拟条件与敌人设置
@@ -59,13 +59,11 @@ energy every interval=480,720 amount=1;     # 通用掉球设置
 
 班尼特5命，精1原木刀，4教官充火暴，(5+7)双暴+6生命+6充能  
 香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
-行秋6命，精5祭礼剑，4宗室攻水暴，(9+11)双暴+2攻击+2精通+2充能  
+行秋6命，精5西风剑，4绝缘攻水暴，(9+11)双暴+6充能  
 砂糖6命，精5讨龙英杰谭，4风套精精精，4精通+6充能  
 
-DPS：(20秒单循环，简易双扩手法，香菱火轮单判，行秋不凹蒸发)  
-0金 4.69w (砂糖有Q)  
-0金 4.49w (砂糖三轮一Q平均值)  
-0金 4.39w (砂糖无Q，用E冲刺代替)  
+DPS：(21秒循环)  
+0金 4.12w  
 
 ```text
 bennett char lvl=90/90 cons=5 talent=9,9,9;
@@ -81,10 +79,10 @@ xiangling add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
 xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
 xingqiu char lvl=90/90 cons=6 talent=9,9,9;
-xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
-xingqiu add set="noblesseoblige" count=4;
+xingqiu add weapon="favoniussword" refine=5 lvl=90/90;
+xingqiu add set="emblemofseveredfate" count=4;
 xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
-xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
 
 sucrose char lvl=90/90 cons=6 talent=9,9,9;
 sucrose add weapon="thrillingtalesofdragonslayers" refine=5 lvl=90/90;
@@ -92,38 +90,45 @@ sucrose add set="viridescentvenerer" count=4;
 sucrose add stats hp=4780 atk=311 em=187 em=187 em=187;
 sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
 
-options duration=20;
 active xingqiu;
 while 1 {
     xingqiu burst, attack;
     bennett burst, attack;
     sucrose attack, skill, dash;
-    sucrose burst;                  # sucrose burst ready
-    #sucrose skill, dash;           # sucrose burst not ready
-    xiangling attack, burst, skill;
-    sucrose attack, dash;
-    xingqiu attack, skill, dash;
-    if .xingqiu.skill.ready {
-      xingqiu attack, skill, dash;
+    if .sucrose.burst.ready {
+        sucrose burst;
+    } else {
+        sucrose attack:3;
     }
-    xingqiu attack:3;
+    xiangling attack, burst, skill;
     sucrose attack;
+    xingqiu attack, skill, dash;
+    xingqiu attack:3;
+    sucrose attack:3;
+    xingqiu attack:3, dash, attack:3;
     bennett attack, skill;
     xiangling attack:3;
-    bennett attack, skill;
-    xiangling attack:3;
+    xingqiu attack:3;
     bennett attack, skill;
     xiangling attack:3;
 }
 ```
 
-备注1：砂糖秒双扩不开Q + 6命班 + 火轮双判 + 行秋E双蒸  
+备注1：比较极限的行秋E双蒸手法，行秋配装改为绝缘祭礼剑  
 [来源](https://gcsim.app/db/hQBtQgpwhp6w#)，使用时要去掉默认的90秒模拟时长以及默认敌人设定。  
+
+行秋6命，精5祭礼剑，4绝缘/4宗室攻水暴，(9+11)双暴+2攻击+2精通+2充能  
 
 DPS：(24秒循环)  
 0金 5.22w  
 
 ```text
+xingqiu char lvl=90/90 cons=6 talent=9,9,9;
+xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
+xingqiu add set="emblemofseveredfate/noblesseoblige" count=4;
+xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
 options swap_delay=12;
 target lvl=100 resist=0.1 pos=-2.4,0 radius=2;
 active xingqiu;
@@ -358,11 +363,11 @@ while 1 {
 
 班尼特5命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
 香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
-行秋6命，精5祭礼剑，4绝缘攻水暴，(9+11)双暴+2攻击+2精通+2充能  
+行秋6命，精5西风剑，4绝缘攻水暴，(9+11)双暴+6充能  
 重云6命，精5饰铁之花，4绝缘充冰暴，(9+11)双暴+2攻击+2精通+2充能  
 
-DPS：(20秒单循环)  
-0金 3.85w  
+DPS：(18秒循环)  
+0金 3.94w  
 
 ```text
 bennett char lvl=90/90 cons=5 talent=9,9,9;
@@ -378,10 +383,10 @@ xiangling add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
 xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
 xingqiu char lvl=90/90 cons=6 talent=9,9,9;
-xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
+xingqiu add weapon="favoniussword" refine=5 lvl=90/90;
 xingqiu add set="emblemofseveredfate" count=4;
 xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
-xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
 
 chongyun char lvl=90/90 cons=6 talent=9,9,9;
 chongyun add weapon="mailedflower" refine=5 lvl=90/90;
@@ -389,25 +394,21 @@ chongyun add set="emblemofseveredfate" count=4;
 chongyun add stats hp=4780 atk=311 er=0.518 cryo%=0.466 cr=0.311;
 chongyun add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
-options duration=20;
-active xingqiu;
+active chongyun;
 while 1 {
-    xingqiu burst, attack;
     chongyun skill;
+    xingqiu burst, attack;
     bennett burst, skill;
-    chongyun burst;
     xiangling attack, burst, attack, skill;
+    chongyun burst;
     xingqiu attack, skill, dash;
-    if .xingqiu.skill.ready {
-        xingqiu attack, skill, dash;
-    }
     xingqiu attack:3;
     bennett attack, skill;
     while !.bennett.skill.ready {
-        xiangling attack;
+        xingqiu attack;
     }
     bennett skill;
-    xiangling attack:4;
+    xiangling attack:3;
 }
 ```
 
@@ -791,11 +792,11 @@ while 1 {
 
 珐露珊6命，精5静谧之曲，4剧团充风暴，(12+8)双暴+4充能  
 鹿野院平藏6命，精5流浪乐章，2风套2角斗攻风暴，(9+11)双暴+4攻击  
-行秋6命，精5祭礼剑，4宗室攻水暴，(9+11)双暴+2攻击+2精通+2充能  
+行秋6命，精5西风剑，4绝缘攻水暴，(9+11)双暴+6充能  
 久岐忍6命，精5东花坊时雨，4千岩生生治，4精通+8生命  
 
-DPS：(20秒单循环)  
-0金 3.70w  
+DPS：  
+0金 3.62w  
 
 ```text
 faruzan char lvl=90/90 cons=6 talent=9,9,9;
@@ -812,10 +813,10 @@ heizou add stats hp=4780 atk=311 atk%=0.466 anemo%=0.466 cr=0.311;
 heizou add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0 em=0 cr=0.297 cd=0.726;
 
 xingqiu char lvl=90/90 cons=6 talent=9,9,9;
-xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
-xingqiu add set="noblesseoblige" count=4;
+xingqiu add weapon="favoniussword" refine=5 lvl=90/90;
+xingqiu add set="emblemofseveredfate" count=4;
 xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
-xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
 
 kuki char lvl=90/90 cons=6 talent=9,9,9;
 kuki add weapon="toukaboushigure" refine=5 lvl=90/90;
@@ -823,18 +824,14 @@ kuki add set="tenacityofthemillelith" count=4;
 kuki add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 hp%=0.466;
 kuki add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
 
-options duration=20;
 active xingqiu;
 while 1 {
     xingqiu burst, attack;
     kuki skill, dash, attack;
     faruzan burst, attack, skill;
-    heizou burst, attack, charge, skill;
+    heizou burst, attack, charge, attack, skill;
     faruzan attack, aim, attack, aim, attack, skill;
     xingqiu attack, skill, dash;
-    if .xingqiu.skill.ready {
-        xingqiu attack, skill, dash;
-    }
     xingqiu attack:3;
     heizou attack, charge, attack:3, skill;
     faruzan attack, aim, attack, aim;
