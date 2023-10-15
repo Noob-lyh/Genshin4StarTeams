@@ -20,7 +20,7 @@ bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165
 bennett char lvl=90/90 cons=2 talent=6,10,10;
 bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
 bennett add set="noblesseoblige" count=4;
-bennett add hp=7888 atk=644 def=76 em=19 cr=0.482 cd=0.499 er=0.784 pyro%=0.466;
+bennett add stats hp=7888 atk=644 def=76 em=19 cr=0.482 cd=0.499 er=0.784 pyro%=0.466;
 ```
 
 ## 香菱
@@ -108,7 +108,7 @@ kaeya add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.363 
 kaeya char lvl=90/90 cons=2 talent=6,10,10;
 kaeya add weapon="lionsroar" refine=3 lvl=90/90;
 kaeya add set="emblemofseveredfate" count=4;
-kaeya add stats hp=5730 atk=746 def=99 em=177 cr=0.505 cd=0.777 er=0.343 cyro%=0.466;
+kaeya add stats hp=5730 atk=746 def=99 em=177 cr=0.505 cd=0.777 er=0.343 cryo%=0.466;
 ```
 
 ## 罗莎莉亚
@@ -138,7 +138,7 @@ rosaria char lvl=90/90 cons=2 talent=6,10,10;
 rosaria add weapon="favoniuslance" refine=5 lvl=90/90;
 rosaria add set="blizzardstrayer" count=2;
 rosaria add set="noblesseoblige" count=2;
-rosaria add stats hp=4780 atk=785 def=140 em=140 cr=0.607 cd=0.738 er=0.447 cyro%=0.466;
+rosaria add stats hp=4780 atk=785 def=140 em=140 cr=0.607 cd=0.738 er=0.447 cryo%=0.466;
 ```
 
 ## 重云
