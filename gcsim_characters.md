@@ -1,22 +1,26 @@
 # gcsim角色面板示例
 
-均为在队伍代码中使用的配置，每个配置前的备注会指明用于哪个队伍中  
-默认6命90级角色+精5四星90级武器，天赋9/9/9(计算命座前)  
-常见特殊情况：班尼特5命、凯亚2命，月卡/限定/精炼收益低的武器精炼酌情  
-输出角色一般取双暴20词条(暴击头一般9暴击+11爆伤，爆伤头相反)+有效词条各2条  
-如果有效词条较少，或对某种有效词条需求较大，则取4条该有效词条  
-特殊情况可以放弃某些词条取更多的另一些词条  
+* 均为在队伍代码中使用的配置，每个配置前的备注会指明用于哪个队伍中  
+* 默认6命90级角色+精5四星90级武器，天赋9/9/9(计算命座前)  
+* 常见特殊情况：班尼特5命、凯亚2命，月卡/限定/精炼收益低的武器精炼酌情  
+* 输出角色一般取双暴20词条(暴击头一般9暴击+11爆伤，爆伤头相反)+有效词条各2条。如果有效词条较少，或对某种有效词条需求较大，则取4条该有效词条。特殊情况可以放弃某些词条取更多的另一些词条  
+* 使用四星圣遗物套装时并未修改词条大小，因此并不严谨，不过影响不大  
+* 部分角色会有我自己的面板，供大家参考。圣遗物数据格式略有不同，注意自己换算  
 
 ## 班尼特
 
 ```text
 # 通用-半输出，5/6命，精1原木刀/精5西风剑，4宗室/4教官充/攻火暴，(5+7)双暴+6生命+6充能
-# 注：教官是四星圣遗物数值较低，为了严谨理论上应当扣除部分属性
 bennett char lvl=90/90 cons=5/6 talent=9,9,9;
 bennett add weapon="sapwoodblade/favoniussword" refine=1/5 lvl=90/90;
 bennett add set="noblesseoblige/instructor" count=4;
 bennett add stats hp=4780 atk=311 er=0.518/atk%=0.466 pyro%=0.466 cr=0.311;
 bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
+# 我的-20231014-2命，精1原木刀，4宗室充火暴，(5.2+7.6)双暴+5.0生命+4.8充能+8.7攻击
+bennett char lvl=90/90 cons=2 talent=6,10,10;
+bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
+bennett add set="noblesseoblige" count=4;
+bennett add hp=7888 atk=644 def=76 em=19 cr=0.482 cd=0.499 er=0.784 pyro%=0.466;
 ```
 
 ## 香菱
@@ -28,6 +32,11 @@ xiangling add weapon="thecatch" refine=5 lvl=90/90;
 xiangling add set="emblemofseveredfate" count=4;
 xiangling add stats hp=4780 atk=311 er=0.518/atk%=0.466 pyro%=0.466 cr=0.311;
 xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+# 我的-20231014，5命，精5渔获，4绝缘充火暴，(10.0+14.6)双暴+2.0攻击+4.8精通+2.2充能
+xiangling char lvl=90/90 cons=5 talent=6,10,10;
+xiangling add weapon="thecatch" refine=5 lvl=90/90;
+xiangling add set="emblemofseveredfate" count=4;
+xiangling add stats hp=5433 atk=383 def=81 em=96 cr=0.642 cd=0.964 er=0.641 pyro%=0.466;
 ```
 
 ## 托马
@@ -56,6 +65,11 @@ xingqiu add weapon="favoniussword" refine=5 lvl=90/90;
 xingqiu add set="emblemofseveredfate" count=4;
 xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
 xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
+# 我的-20231014，6命，精3祭礼剑，4绝缘攻水爆，(15.9+7.4)双暴+6.3攻击+2.8精通+0充能
+xingqiu char lvl=90/90 cons=6 talent=6,10,10; 
+xingqiu add weapon="sacrificialsword" refine=3 lvl=90/90;
+xingqiu add set="emblemofseveredfate" count=4;
+xingqiu add stats hp=6032 atk=821 def=39 em=56 cr=0.525 cd=1.112 er=0 hydro%=0.466;
 ```
 
 ## 芭芭拉
@@ -90,6 +104,11 @@ kaeya add weapon="kagotsurubeisshin" refine=1 lvl=90/90;
 kaeya add set="blizzardstrayer" count=4;
 kaeya add stats hp=4780 atk=311 atk%=0.466 cryo%=0.466 cd=0.622;
 kaeya add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.363 cd=0.594;
+# 我的-20231014，2命，精3匣里龙吟，4绝缘攻冰暴，(5.9+11.8)双暴+2.5攻击+8.9精通+6.2充能
+kaeya char lvl=90/90 cons=2 talent=6,10,10;
+kaeya add weapon="lionsroar" refine=3 lvl=90/90;
+kaeya add set="emblemofseveredfate" count=4;
+kaeya add stats hp=5730 atk=746 def=99 em=177 cr=0.505 cd=0.777 er=0.343 cyro%=0.466;
 ```
 
 ## 罗莎莉亚
@@ -114,29 +133,39 @@ rosaria add weapon="favoniuslance" refine=5 lvl=90/90;
 rosaria add set="noblesseoblige" count=4;
 rosaria add stats hp=4780 atk=311 atk%=0.466 cryo%=0.466 cr=0.311;
 rosaria add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+# 我的-20231014，2命，精5西风长枪，2冰2宗室攻冰暴，(9.0+11.2)双暴+2.5攻击+7.0精通+8.1充能
+rosaria char lvl=90/90 cons=2 talent=6,10,10;
+rosaria add weapon="favoniuslance" refine=5 lvl=90/90;
+rosaria add set="blizzardstrayer" count=2;
+rosaria add set="noblesseoblige" count=2;
+rosaria add stats hp=4780 atk=785 def=140 em=140 cr=0.607 cd=0.738 er=0.447 cyro%=0.466;
 ```
 
 ## 重云
 
 ```text
-# 融化-饰铁散件，6命，精5饰铁之花，4绝缘充冰暴，(9+11)双暴+2攻击+2精通+2充能
+# 融化-饰铁绝缘，6命，精5饰铁之花，4绝缘充/精冰暴，(9+11)双暴+2攻击+2精通+2充能
 chongyun char lvl=90/90 cons=6 talent=9,9,9;
 chongyun add weapon="mailedflower" refine=5 lvl=90/90;
 chongyun add set="emblemofseveredfate" count=4;
-chongyun add stats hp=4780 atk=311 er=0.518 cryo%=0.466 cr=0.311;
+chongyun add stats hp=4780 atk=311 er=0.518/em=187 cryo%=0.466 cr=0.311;
 chongyun add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 ```
 
 ## 菲谢尔
 
 ```text
-# 通用-剧团绝弦/静谧之曲，6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能
-# 注：砂糖武装中静谧之曲伤害较高，队伍伤害与精5暗巷闪光差距在5%内，其他情况建议使用绝弦。
+# 通用-剧团绝弦/静谧之曲，6命，精5绝弦/静谧之曲，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能
 fischl char lvl=90/90 cons=6 talent=9,9,9; 
 fischl add weapon="stringless/songofstillness" refine=5 lvl=90/90;
 fischl add set="goldentroupe" count=4;
 fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
 fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+# 我的-20231014，6命，精5绝弦/静谧之曲，4剧团攻雷暴，(7.2+13.7)双暴+3.2攻击+6.6精通+2.9充能
+fischl char lvl=90/90 cons=6 talent=6,10,8; 
+fischl add weapon="stringless/songofstillness" refine=5 lvl=90/90;
+fischl add set="goldentroupe" count=4;
+fischl add stats hp=6163 atk=784 def=35 em=131 cr=0.548 cd=0.901 er=0.162 electro%=0.466;
 ```
 
 ## 北斗
@@ -148,6 +177,11 @@ beidou add weapon="tidalshadow" refine=5 lvl=90/90;
 beidou add set="emblemofseveredfate" count=4;
 beidou add stats hp=4780 atk=311 er=0.518 electro%=0.466 cr=0.311;
 beidou add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+# 我的-20231014，6命，精5浪影阔剑，4绝缘充雷暴，(11.1+13.2)双暴+3.9攻击+2.9精通+0充能
+beidou char lvl=90/90 cons=6 talent=2,10,10; 
+beidou add weapon="tidalshadow" refine=5 lvl=90/90;
+beidou add set="emblemofseveredfate" count=4;
+beidou add stats hp=4780 atk=455 def=194 em=58 cr=0.677 cd=0.870 er=0.518 electro%=0.466;
 ```
 
 ## 久岐忍
@@ -198,6 +232,11 @@ sucrose add weapon="prototypeamber/sacrificialfragments/thrillingtalesofdragonsl
 sucrose add set="viridescentvenerer" count=4;
 sucrose add stats hp=4780 atk=311 em=187 em=187 em=187;
 sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
+# 我的-20231014，4命，精5试作金珀/祭礼残章/讨龙英杰谭，4风套精精精，4.2精通+10.7充能
+sucrose char lvl=90/90 cons=4 talent=3,3,3;
+sucrose add weapon="prototypeamber/sacrificialfragments/thrillingtalesofdragonslayers" refine=5 lvl=90/90;
+sucrose add set="viridescentvenerer" count=4;
+sucrose add stats hp=6120 atk=467 def=199 em=643 cr=0.132 cd=0.140 er=0.589;
 ```
 
 ## 鹿野院平藏
@@ -216,6 +255,12 @@ heizou add weapon="prototypeamber" refine=5 lvl=90/90;
 heizou add set="noblesseoblige" count=4;
 heizou add stats hp=4780 atk=311 atk%=0.466 anemo%=0.466 cr=0.311;
 heizou add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0 em=0 cr=0.297 cd=0.726;
+# 我的-20231014，6命，精1流浪乐章，2风套2追忆攻风暴，(12.1+12.4)双爆+7.9攻击+2.1精通
+heizou char lvl=90/90 cons=6 talent=8,10,10;
+heizou add weapon="thewidsith" refine=1 lvl=90/90;
+heizou add set="viridescentvenerer" count=2;
+heizou add set="gladiatorsfinale" count=2;
+heizou add stats hp=6757 atk=943 def=40 em=42 cr=0.712 cd=0.816 er=0 anemo%=0.466;
 ```
 
 ## 珐露珊
@@ -233,6 +278,12 @@ faruzan add weapon="songofstillness" refine=5 lvl=90/90;
 faruzan add set="goldentroupe" count=4;
 faruzan add stats hp=4780 atk=311 atk%=0.466/er=0.518 anemo%=0.466 cr=0.311;
 faruzan add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.22 em=0 cr=0.396 cd=0.528;
+# 我的-20231014，6命，精5静谧之曲，2风套2追忆攻风暴，(13.2+13.9)双爆+5.2充能+1.1攻击
+faruzan char lvl=90/90 cons=6 talent=10,10,10;
+faruzan add weapon="songofstillness" refine=5 lvl=90/90;
+faruzan add set="viridescentvenerer" count=2;
+faruzan add set="shimenawasreminiscence" count=2;
+faruzan add stats hp=5784 atk=733 def=165 em=0 cr=0.747 cd=0.917 er=0.285 anemo%=0.466;
 ```
 
 ## 琳妮特

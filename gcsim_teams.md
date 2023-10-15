@@ -5,28 +5,30 @@
 1. 对于一般有轴的队伍，会设计一套能循环的手法，使其长度约等于队伍中CD最长的动作，同时牺牲一些对不上轴的小技能，如香班凯修循环长度为香菱Q的20秒，而每个20秒循环中香菱12秒冷却的E只放一次。此时DPS标注为`(xx秒循环)`。另外一些冷却比较奇怪的技能(如皇女EQ)会在循环中的某些时间点尝试插入，同时在括号中补充说明。  
 2. 部分队伍轴复杂、技能释放顺序要求较高、产球随机性大或随机性造成的影响大，gcsim直接循环90秒掉伤害非常严重，不能反映队伍真实DPS，例如各种带祭礼剑行秋的队伍。对于这些队伍，通常会延长循环时间，或者牺牲部分输出，选择更加适合循环的配装(如行秋带西风剑)。如果实在难以保证gcsim中的循环，会在手工确认第二轮循环能成立的情况下，只模拟第一个循环的DPS，此时其DPS标注为`(xx秒单循环)`。  
 3. 部分队伍轴非常难排，例如各技能冷却不一且没有倍数关系的队伍，如草主+柯莱+水+久岐忍的双草超绽。此时手法为固定起手式+while死循环，每个循环中按照一定的优先级执行某一个已就绪的动作，且DPS标注为`(无轴循环)`。  
+4. 模拟时使用90秒打桩，而不是固定4个循环，因此对出伤快或循环短的队伍会较有优势。
 
 **0金配队标准练度理论DPS排行榜(施工中)**：
 
 1. 柯莱 行秋 久岐忍 菲谢尔（行秋双雷超绽-不抢种/抢种），5.78w/4.59w
 2. 班尼特 香菱 行秋 砂糖（砂糖国家队-行秋双蒸/稳定循环），5.22w/4.12w
-3. 草主 柯莱 行秋 久岐忍（行秋双草超绽），5.12w
-4. 柯莱 芭芭拉 久岐忍 菲谢尔（芭芭拉双雷超绽-不抢种/抢种），4.51w/3.48w
-5. 班尼特 香菱 行秋 菲谢尔（皇女国家队），4.50w
+3. 班尼特 香菱 行秋 菲谢尔（皇女国家队），5.14w
+4. 草主 柯莱 行秋 久岐忍（行秋双草超绽），5.12w
+5. 柯莱 芭芭拉 久岐忍 菲谢尔（芭芭拉双雷超绽-不抢种/抢种），4.51w/3.48w
 6. 草主 柯莱 芭芭拉 久岐忍（芭芭拉双草超绽），4.12w
 7. 班尼特 香菱 行秋 重云（重云国家队），3.94w
 8. 砂糖 北斗 菲谢尔 行秋（砂糖武装），3.93w
 9. 砂糖 北斗 菲谢尔 瑶瑶（砂糖激化），3.90w
-10. 班尼特 香菱 罗莎莉亚 砂糖（融罗-班6/5命），3.72w/3.62w
-11. 班尼特 香菱 珐露珊 鹿野院平藏（双风双火），3.69w
-12. 瑶瑶 柯莱 行秋 托马（行秋双草烈绽），3.66w
+10. 班尼特 香菱 珐露珊 鹿野院平藏（双风双火），3.69w
+11. 瑶瑶 柯莱 行秋 托马（行秋双草烈绽），3.66w
+12. 班尼特 香菱 罗莎莉亚 砂糖（融罗），3.62w
 13. 珐露珊 鹿野院平藏 行秋 久岐忍（珐鹿感电），3.62w
-14. 班尼特 香菱 北斗 菲谢尔（双雷双火），3.52w
-15. 班尼特 香菱 凯亚 罗莎莉亚（双冰双火-班6/5命），3.45w/3.34w
-16. 珐露珊 鹿野院平藏 琳妮特 莱依拉（新四星三风），3.32w
-17. 柯莱 行秋 雷泽 班尼特(6)（彩虹雷泽），3.09w
-18. 草主 柯莱 芭芭拉 托马（芭芭拉双草烈绽），2.41w
-19. 凯亚 罗莎莉亚 行秋 砂糖（凯亚永冻-讨龙/金珀），2.35w/2.26w
+14. 班尼特 香菱 重云 罗莎莉亚（双冰双火-重罗），3.60w
+15. 班尼特 香菱 北斗 菲谢尔（双雷双火），3.52w
+16. 班尼特 香菱 凯亚 罗莎莉亚（双冰双火-凯罗），3.45w
+17. 珐露珊 鹿野院平藏 琳妮特 莱依拉（新四星三风），3.32w
+18. 柯莱 行秋 雷泽 班尼特(6)（彩虹雷泽），3.09w
+19. 草主 柯莱 芭芭拉 托马（芭芭拉双草烈绽），2.41w
+20. 凯亚 罗莎莉亚 行秋 砂糖（凯亚永冻-讨龙/金珀），2.35w/2.26w
 
 注1：经典低金配队DPS参考，1金雷国约5w，1金草行久皇约6.65w。  
 注2：后面标*的DPS值表示该DPS为单循环模拟得到。  
@@ -264,11 +266,11 @@ while 1 {
 
 班尼特5命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
 香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
-行秋6命，精5祭礼剑，4绝缘攻水暴，(9+11)双暴+2攻击+2精通+2充能  
+行秋6命，精5西风剑，4绝缘攻水暴，(9+11)双暴+6充能  
 菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
 
-DPS：(20秒循环，菲谢尔固定时机尝试插入EQ)  
-0金 4.50w  
+DPS：(21秒循环，菲谢尔固定时机尝试插入EQ)  
+0金 5.14w  
 
 ```text
 bennett char lvl=90/90 cons=5 talent=9,9,9;
@@ -284,10 +286,10 @@ xiangling add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
 xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
 xingqiu char lvl=90/90 cons=6 talent=9,9,9;
-xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
-xingqiu add set="noblesseoblige" count=4;
+xingqiu add weapon="favoniussword" refine=5 lvl=90/90;
+xingqiu add set="emblemofseveredfate" count=4;
 xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
-xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
 
 fischl char lvl=90/90 cons=6 talent=9,9,9; 
 fischl add weapon="stringless" refine=5 lvl=90/90;
@@ -295,66 +297,40 @@ fischl add set="goldentroupe" count=4;
 fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
 fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
+fn try_summon_oz_with_attack2(){
+    if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl attack:2, skill;
+        } else if .fischl.burst.ready {
+            fischl burst;
+        }
+    }
+}
+
 active xingqiu;
 while 1 {
     xingqiu burst, attack;
     bennett burst, attack, skill;
-
-    if .fischl.oz == 0 {
-        if .fischl.skill.ready {
-            fischl attack, skill;
-        } else if .fischl.burst.ready {
-            fischl burst, attack;
-        }
-    }
-
+    try_summon_oz_with_attack2();
     xiangling attack, burst, attack, skill;
-
-    if .fischl.oz == 0 {
-        if .fischl.skill.ready {
-            fischl attack, skill;
-        } else if .fischl.burst.ready {
-            fischl burst, attack;
-        }
+    try_summon_oz_with_attack2();
+    while !.xingqiu.skill.ready {
+        xingqiu attack;
     }
-
     xingqiu attack, skill, dash;
-    if .xingqiu.skill.ready {
-        xingqiu attack, skill, dash;
-    }
     xingqiu attack:3;
-
-    if .fischl.oz == 0 {
-        if .fischl.skill.ready {
-            fischl attack, skill;
-        } else if .fischl.burst.ready {
-            fischl burst, attack;
-        }
-    }
-
+    try_summon_oz_with_attack2();
     bennett attack, skill;
     xiangling attack:3;
-
-    if .fischl.oz == 0 {
-        if .fischl.skill.ready {
-            fischl attack, skill;
-        } else if .fischl.burst.ready {
-            fischl burst, attack;
-        }
-    }
-
+    try_summon_oz_with_attack2();
     while !.bennett.skill.ready {
-        bennett attack;
+        xingqiu attack;
     }
     bennett skill;
     xiangling attack:3;
-
-    if .fischl.oz == 0 {
-        if .fischl.skill.ready {
-            fischl attack, skill;
-        } else if .fischl.burst.ready {
-            fischl burst, attack;
-        }
+    try_summon_oz_with_attack2();
+    while !.xingqiu.burst.ready {
+        xingqiu attack;
     }
 }
 ```
@@ -414,14 +390,13 @@ while 1 {
 
 ## 班尼特 香菱 凯亚 罗莎莉亚
 
-班尼特5/6命，精1原木刀，4宗室攻火暴，(5+7)双暴+6生命+6充能  
-香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
+班尼特5，精1原木刀，4宗室攻火暴，(5+7)双暴+6生命+6充能  
+香菱6命，精5渔获，4绝缘攻火暴，(9+11)双暴+2攻击+2精通+2充能  
 凯亚2命，精5匣里龙吟，4绝缘精冰暴，(9+11)双暴+2攻击+2精通+2充能  
 罗莎莉亚6命，精5西风长枪，2冰2宗室精冰暴，(9+11)双暴+2攻击+2精通+2充能  
 
 DPS：(20秒循环)  
-0金 3.45w (班尼特6命)  
-0金 3.34w (班尼特5命)  
+0金 3.45w  
 
 ```text
 bennett char lvl=90/90 cons=5/6 talent=9,9,9;
@@ -433,7 +408,7 @@ bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165
 xiangling char lvl=90/90 cons=6 talent=9,9,9;
 xiangling add weapon="thecatch" refine=5 lvl=90/90;
 xiangling add set="emblemofseveredfate" count=4;
-xiangling add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+xiangling add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
 xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
 kaeya char lvl=90/90 cons=2 talent=9,9,9;
@@ -467,6 +442,59 @@ while 1 {
 }
 ```
 
+## 班尼特 香菱 重云 罗莎莉亚
+
+班尼特5命，精1原木刀，4宗室攻火暴，(5+7)双暴+6生命+6充能  
+香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
+重云6命，精5饰铁之花，4绝缘精冰暴，(9+11)双暴+2攻击+2精通+2充能  
+罗莎莉亚6命，精5西风长枪，2冰2宗室精冰暴，(9+11)双暴+2攻击+2精通+2充能  
+
+DPS：(17秒循环)  
+0金 3.60w  
+
+```text
+bennett char lvl=90/90 cons=6 talent=9,9,9;
+bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
+bennett add set="noblesseoblige" count=4;
+bennett add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
+bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
+
+xiangling char lvl=90/90 cons=6 talent=9,9,9;
+xiangling add weapon="thecatch" refine=5 lvl=90/90;
+xiangling add set="emblemofseveredfate" count=4;
+xiangling add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+chongyun char lvl=90/90 cons=6 talent=9,9,9;
+chongyun add weapon="mailedflower" refine=5 lvl=90/90;
+chongyun add set="emblemofseveredfate" count=4;
+chongyun add stats hp=4780 atk=311 em=187 cryo%=0.466 cr=0.311;
+chongyun add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+rosaria char lvl=90/90 cons=6 talent=9,9,9;
+rosaria add weapon="favoniuslance" refine=5 lvl=90/90;
+rosaria add set="blizzardstrayer" count=2;
+rosaria add set="noblesseoblige" count=2;
+rosaria add stats hp=4780 atk=311 em=187 cryo%=0.466 cr=0.311;
+rosaria add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+active chongyun;
+while 1 {
+    chongyun skill;
+    bennett burst, skill;
+    rosaria skill, burst;
+    xiangling burst, skill;
+    bennett skill;
+    chongyun burst;
+    rosaria skill;
+    xiangling attack:2;
+    bennett attack, skill;
+    xiangling attack:2;
+    rosaria skill;
+    xiangling attack:2;
+}
+```
+
 ## 班尼特 香菱 罗莎莉亚 砂糖
 
 班尼特5命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
@@ -475,8 +503,7 @@ while 1 {
 砂糖6命，精5讨龙英杰谭，4风套精精精，4精通+6充能  
 
 DPS：(20秒循环)  
-0金 3.72w（班尼特6命）  
-0金 3.62w（班尼特5命）  
+0金 3.62w  
 
 ```text
 bennett char lvl=90/90 cons=5 talent=9,9,9;
