@@ -75,13 +75,13 @@ xingqiu add stats hp=6032 atk=821 def=39 em=56 cr=0.525 cd=1.112 er=0 hydro%=0.4
 ## 芭芭拉
 
 ```text
-# 通用-海染祭礼/金珀，6命，精5祭礼残章/试作金珀，4海染生生治，4精通+6生命
+# 通用-海染，6命，精5祭礼残章/试作金珀/白辰之环，4海染生生治，4精通+6生命
 barbara char lvl=90/90 cons=6 talent=9,9,9;
-barbara add weapon="acrificialfragments/prototypeamber" refine=5 lvl=90/90;
+barbara add weapon="acrificialfragments/prototypeamber/hakushinring" refine=5 lvl=90/90;
 barbara add set="oceanhuedclam" count=4;
 barbara add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
 barbara add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
-# 循环-海染西风，6命，精5西风秘典，4海染生生暴，8暴击
+# 循环-西风，6命，精5西风秘典，4海染生生暴，8暴击
 barbara char lvl=90/90 cons=6 talent=9,9,9;
 barbara add weapon="favoniuscodex" refine=5 lvl=90/90;
 barbara add set="oceanhuedclam" count=4;
@@ -289,6 +289,12 @@ faruzan add stats hp=5784 atk=733 def=165 em=0 cr=0.747 cd=0.917 er=0.285 anemo%
 ## 琳妮特
 
 ```text
+# 通用-风套工具人，6命，精5西风剑，4风套充风暴，(9+11)双暴+4攻击
+lynette char lvl=90/90 cons=6 talent=9,9,9;
+lynette add weapon="favoniussword" refine=5 lvl=90/90;
+lynette add set="viridescentvenerer" count=4;
+lynette add stats hp=4780 atk=311 er=0.518 anemo%=0.466 cr=0.311;
+lynette add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0 em=0 cr=0.297 cd=0.726;
 # 珐鹿琳莱-速切嘲讽副C，6命，精5西风剑，2角斗2追忆攻风暴，(9+11)双暴+4攻击
 lynette char lvl=90/90 cons=6 talent=9,9,9;
 lynette add weapon="favoniussword" refine=5 lvl=90/90;

@@ -14,21 +14,23 @@
 3. 班尼特 香菱 行秋 菲谢尔（皇女国家队），5.14w
 4. 草主 柯莱 行秋 久岐忍（行秋双草超绽），5.12w
 5. 柯莱 芭芭拉 久岐忍 菲谢尔（芭芭拉双雷超绽-不抢种/抢种），4.51w/3.48w
-6. 草主 柯莱 芭芭拉 久岐忍（芭芭拉双草超绽），4.12w
-7. 班尼特 香菱 行秋 重云（重云国家队），3.94w
-8. 砂糖 北斗 菲谢尔 行秋（砂糖武装），3.93w
-9. 砂糖 北斗 菲谢尔 瑶瑶（砂糖激化），3.90w
-10. 班尼特 香菱 珐露珊 鹿野院平藏（双风双火），3.69w
-11. 瑶瑶 柯莱 行秋 托马（行秋双草烈绽），3.66w
-12. 班尼特 香菱 罗莎莉亚 砂糖（融罗），3.62w
-13. 珐露珊 鹿野院平藏 行秋 久岐忍（珐鹿感电），3.62w
-14. 班尼特 香菱 重云 罗莎莉亚（双冰双火-重罗），3.60w
-15. 班尼特 香菱 北斗 菲谢尔（双雷双火），3.52w
-16. 班尼特 香菱 凯亚 罗莎莉亚（双冰双火-凯罗），3.45w
-17. 珐露珊 鹿野院平藏 琳妮特 莱依拉（新四星三风），3.32w
-18. 柯莱 行秋 雷泽 班尼特(6)（彩虹雷泽），3.09w
-19. 草主 柯莱 芭芭拉 托马（芭芭拉双草烈绽），2.41w
-20. 凯亚 罗莎莉亚 行秋 砂糖（凯亚永冻-讨龙/金珀），2.35w/2.26w
+6. 瑶瑶 行秋 菲谢尔 砂糖（行秋带风超绽/砂糖激绽），4.45w
+7. 草主 柯莱 芭芭拉 久岐忍（芭芭拉双草超绽），4.12w
+8. 班尼特 香菱 行秋 重云（重云国家队），3.94w
+9. 砂糖 北斗 菲谢尔 行秋（砂糖武装），3.93w
+10. 砂糖 北斗 菲谢尔 瑶瑶（砂糖激化），3.90w
+11. 班尼特 香菱 珐露珊 鹿野院平藏（双风双火），3.69w
+12. 瑶瑶 柯莱 行秋 托马（行秋双草烈绽），3.66w
+13. 班尼特 香菱 罗莎莉亚 砂糖（融罗），3.62w
+14. 珐露珊 鹿野院平藏 行秋 久岐忍（珐鹿感电），3.62w
+15. 班尼特 香菱 重云 罗莎莉亚（双冰双火-重罗），3.60w
+16. 班尼特 香菱 北斗 菲谢尔（双雷双火），3.52w
+17. 班尼特 香菱 凯亚 罗莎莉亚（双冰双火-凯罗），3.45w
+18. 珐露珊 鹿野院平藏 琳妮特 莱依拉（新四星三风），3.32w
+19. 柯莱 行秋 雷泽 班尼特(6)（彩虹雷泽），3.09w
+20. 琳妮特 北斗 菲谢尔 芭芭拉（琳芭武装），3.06w
+21. 草主 柯莱 芭芭拉 托马（芭芭拉双草烈绽），2.41w
+22. 凯亚 罗莎莉亚 行秋 砂糖（凯亚永冻-讨龙/金珀），2.35w/2.26w
 
 注1：经典低金配队DPS参考，1金雷国约5w，1金草行久皇约6.65w。  
 注2：后面标*的DPS值表示该DPS为单循环模拟得到。  
@@ -692,6 +694,85 @@ while 1 {
 }
 ```
 
+## 琳妮特 北斗 菲谢尔 芭芭拉
+
+琳妮特6命，精5西风剑，4风套充风暴，(9+11)双暴+4攻击  
+北斗6命，精5浪影阔剑，4绝缘充雷暴，(9+11)双暴+2攻击+2精通+2充能  
+菲谢尔6命，精5静谧之曲，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
+芭芭拉6命，精5白辰之环，4海染生生治，4精通+6生命  
+
+DPS：(无轴循环)  
+0金 3.06w  
+
+```text
+lynette char lvl=90/90 cons=6 talent=9,9,9;
+lynette add weapon="favoniussword" refine=5 lvl=90/90;
+lynette add set="viridescentvenerer" count=4;
+lynette add stats hp=4780 atk=311 er=0.518 anemo%=0.466 cr=0.311;
+lynette add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0 em=0 cr=0.297 cd=0.726;
+
+fischl char lvl=90/90 cons=6 talent=9,9,9; 
+fischl add weapon="songofstillness" refine=5 lvl=90/90;
+fischl add set="goldentroupe" count=4;
+fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
+fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+beidou char lvl=90/90 cons=6 talent=9,9,9;
+beidou add weapon="tidalshadow" refine=5 lvl=90/90;
+beidou add set="emblemofseveredfate" count=4;
+beidou add stats hp=4780 atk=311 er=0.518 electro%=0.466 cr=0.311;
+beidou add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+barbara char lvl=90/90 cons=6 talent=9,9,9;
+barbara add weapon="hakushinring" refine=5 lvl=90/90;
+barbara add set="oceanhuedclam" count=4;
+barbara add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
+barbara add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
+
+fn try_summon_oz_with_attack(){
+    if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl attack, skill;
+        } else if .fischl.burst.ready {
+            fischl burst;
+        }
+    }
+}
+
+options iteration=100;
+active beidou;
+beidou skill;
+lynette burst;
+let e = f();
+barbara skill, dash, attack;
+beidou burst;
+try_summon_oz_with_attack();
+barbara attack:3, dash;
+while 1 {
+
+    try_summon_oz_with_attack();
+
+    if ( f()-e > 600 ) {
+        if .lynette.skill.ready {
+            lynette skill, attack:3;
+        } else if .lynette.burst.ready {
+            lynette burst;
+        }
+        let e = f();
+    }
+
+    if .beidou.burst.ready {
+        beidou burst, attack;
+    } else if .beidou.skill.ready {
+        beidou skill, attack;
+    } else if .barbara.skill.ready {
+        barbara skill, jump, attack:3;
+    } else {
+        barbara attack:3, dash;
+    }
+}
+```
+
 ## 凯亚 罗莎莉亚 行秋 砂糖
 
 凯亚2命，笼钓瓶一心，4冰套攻冰爆，(11+9)双暴+2攻击+2精通+2充能  
@@ -1285,6 +1366,76 @@ while 1 {
 }
 ```
 
+## 瑶瑶 行秋 菲谢尔 砂糖
+
+瑶瑶6命，精5西风长枪，4草套生生治，10暴击+6充能  
+行秋6命，精5西风剑，4绝缘攻水暴，(9+11)双暴+6充能  
+菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
+砂糖6命，精5祭礼残章，4风套精精精，4精通+6充能  
+
+DPS：(无轴循环)  
+0金 4.45w  
+
+```text
+yaoyao char lvl=90/90 cons=6 talent=9,9,9;
+yaoyao add weapon="favoniuslance" refine=5 lvl=90/90;
+yaoyao add set="deepwoodmemories" count=4;
+yaoyao add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
+yaoyao add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.33 cd=0;
+
+xingqiu char lvl=90/90 cons=6 talent=9,9,9;
+xingqiu add weapon="favoniussword" refine=5 lvl=90/90;
+xingqiu add set="emblemofseveredfate" count=4;
+xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
+
+fischl char lvl=90/90 cons=6 talent=9,9,9; 
+fischl add weapon="stringless" refine=5 lvl=90/90;
+fischl add set="goldentroupe" count=4;
+fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
+fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+sucrose char lvl=90/90 cons=6 talent=9,9,9;
+sucrose add weapon="sacrificialfragments" refine=5 lvl=90/90;
+sucrose add set="viridescent" count=4;
+sucrose add stats hp=4780 atk=311 em=187 em=187 em=187;
+sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
+
+active xingqiu;
+xingqiu burst, attack;
+sucrose attack:2;
+fischl skill, attack;
+yaoyao skill;
+sucrose attack, skill, dash, burst;
+xingqiu attack, skill, dash, attack:3;
+while 1 {
+
+    if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl attack, skill;
+        } else if .fischl.burst.ready {
+            fischl burst;
+        }
+    }
+
+    if .xingqiu.burst.ready {
+        xingqiu burst, attack;
+    } else if .xingqiu.skill.ready {
+        xingqiu attack, skill, dash, attack:3;
+    } else if .yaoyao.skill.ready {
+        yaoyao skill, attack;
+    }  else if .sucrose.burst.ready {
+        sucrose burst, attack;
+    } else if .sucrose.skill.ready {
+        sucrose attack, skill, dash;
+    } else if .yaoyao.burst.ready {
+        yaoyao burst, attack, dash, attack, dash, attack, dash, attack, dash;
+    } else {
+        sucrose attack:3, dash;
+    }
+}
+```
+
 ## 瑶瑶 柯莱 行秋 托马
 
 瑶瑶6命，精5西风长枪，4草套生生治，10暴击+6充能  
@@ -1373,43 +1524,27 @@ thoma add set="flowerofparadiselost" count=4;
 thoma add stats hp=4780 atk=311 em=187 em=187 em=187;
 thoma add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
 
+fn barbara_attack_with_try_skill() {
+    if .barbara.skill.ready {
+        barbara attack, skill, jump;
+    } else {
+        barbara attack:4;
+    }
+}
+
 active travelerdendro;
 while 1 {
     travelerdendro skill, burst;
-    if .barbara.skill.ready {
-        barbara attack, skill, jump;
-    } else {
-        barbara attack:4;
-    }
+    barbara_attack_with_try_skill();
     thoma burst, skill, attack:3;
-    if .barbara.skill.ready {
-        barbara attack, skill, jump;
-    } else {
-        barbara attack:4;
-    }
+    barbara_attack_with_try_skill();
     collei burst, attack;
-    if .barbara.skill.ready {
-        barbara attack, skill, jump;
-    } else {
-        barbara attack:4;
-    }
+    barbara_attack_with_try_skill();
     travelerdendro skill, attack;
-    if .barbara.skill.ready {
-        barbara attack, skill, jump;
-    } else {
-        barbara attack:4;
-    }
+    barbara_attack_with_try_skill();
     collei skill, attack;
-    if .barbara.skill.ready {
-        barbara attack, skill, jump;
-    } else {
-        barbara attack:4;
-    }
-    if .barbara.skill.ready {
-        barbara attack, skill, jump;
-    } else {
-        barbara attack:4;
-    }
+    barbara_attack_with_try_skill();
+    barbara_attack_with_try_skill();
     collei attack:2;
     travelerdendro attack:2;
 }
