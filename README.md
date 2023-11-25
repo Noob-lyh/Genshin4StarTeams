@@ -10,11 +10,15 @@
 
 * **gcsim_dictionary.md**：gcsim中各游戏名词的中文翻译，如果你有编写gcsim代码的需求可以查阅。  
 
-## 一、纯四星配队思路特点
+## 一、纯四星配队简介
 
-1. 经常围绕少数老四星建队
-2. 由于四星角色天生瘸腿，少乘区的队伍比较难发挥（如永冻、纯岩、纯风），通常需要高命高精甚至五星武器支持
-3. 大部分新四星角色由于输出能力或拐输出能力一坨屎，辅助能力有限，出场率极其惨淡
+声明：作者入坑版本为2.8，对于之前四星队的发展均为查找相关视频得到，可能因为幸存者偏差而不准确，欢迎指正。  
+
+在1.0~1.6时期，18位老四星角色整体强度相比于现在相当在线，特别是倍率与附着。与此同时，刚开服的深渊难度相比于现在也极低。因此尽管当时整体游戏理解、操作普遍一般，只要四星的练度以及配置足够，基本上均可以达到满星。这导致了很多在现在看来匪夷所思但却能打满的队伍，例如单火香菱等。当然这个时期也出现了很多经典配队，例如知名度最高（起码老玩家群体中）的四星队————重云国家队，以及上限最高的四星队————砂糖国家队。这两只队伍取个交集，就是三位六星战神。  
+
+进入2.0，随着永冻雷国两大传奇平民底裤队的出现，深渊难度也开始上升。更加困难的深渊筛选掉了一批数值不足、逻辑不自洽的四星队，但也留下了四星队中堪比永冻雷国的两只传奇队伍————砂糖武装与双冰双火，恰好也是直伤与增幅————这两支四星队几乎霸占了2.0时期的纯四星深渊。是的，没有草系的四星队就是这么枯燥无味，顶多就是找个人换掉行秋，让三位六星战神凑一块。只可惜随着从1.6版本优菈开始的五星伤害命座大膨胀，四星角色打伤害的责任似乎越来越少。整个2.0大版本中实装了7位新四星角色：早柚、九条、托马、五郎、云堇、久岐忍、小鹿，其中九条五郎为专拐，早柚云堇是辅助，托马久岐忍还在等他们的种子，最终只有小鹿可以勉强算得上输出，更不要说风系专拐还远在3.3。因此，2.0大版本几乎很少看到新队伍，可以说是四星队的至暗时刻。  
+
+3.0草体系的实装瞬间拓宽了四星队的选择。绽放系反应超高的元素利用率和剧变反应倍率极大拉高了四星队的下限，尽管草系新四星的附着人均卧龙凤雏，在低练情况下种门仍然能力压一众强力四星队，甚至部分低金队。同时，草体系也为砂糖武装带来了新生，用草系替代行秋后队伍输出模式从直伤变为了上限更高的激化，省下来的行秋则可以在另一队为所欲为，无论是追求上限点秋香合体，还是当一个高效省心的挂水位打种门，都是又有强度又舒适的选择。  
 
 ## 二、纯四星配队评价标准
 
@@ -301,6 +305,8 @@ c. +冰
 > [Nickess，3.7深渊下半（1金）](https://www.bilibili.com/video/BV1Gs4y1v7Xw)  
  [Nickess，3.2深渊下半（1金）](https://www.bilibili.com/video/BV1pP4y117ze)  
  [Nickess，2.6深渊下半（0金）](https://www.bilibili.com/video/BV1xa411i7R7)  
+ [鐮夜，1.5深渊上半（0金）](https://www.bilibili.com/video/BV1564y117Hc)  
+ [鐮夜，1.3~1.4深渊上半（0金）](https://www.bilibili.com/video/BV1Rb4y1S7Bo)  
 
 DPS参考：
 > 0
@@ -475,10 +481,14 @@ DPS参考：
 
 视频参考：
 > [cbean123，4.1深渊上半（0金，0命）](https://www.bilibili.com/video/BV1uw41127UJ)  
- [弹药福娃，4.0深渊下半（0金，低配0命凯亚）](https://www.bilibili.com/video/BV1z8411z7Zj)  
+ [弹药福娃，4.0深渊下半（0金，低配）](https://www.bilibili.com/video/BV1z8411z7Zj)  
  [凛疯1f，4.0深渊上半&下半（3金，6命凯亚）](https://www.bilibili.com/video/BV1Y94y147sz)  
  [评论区说客，3.8深渊下半（0金，1命凯亚）](https://www.bilibili.com/video/BV1Mm4y1J7FH)  
  [评论区说客，3.7深渊下半（0金，1命凯亚）](https://www.bilibili.com/video/BV1wN411y7tu)  
+ [评论区说客，3.2深渊下半（0金，低配三星武器非连打）](https://www.bilibili.com/video/BV1VG411c7ed)  
+ [评论区说客，3.0深渊下半（0金，低配三星武器）](https://www.bilibili.com/video/BV1Ud4y1M7Mv)  
+ [评论区说客，2.7深渊下半（0金，低配）](https://www.bilibili.com/video/BV1fZ4y1v7jm)  
+ [香香怪coco，2.3深渊下半（0金）](https://www.bilibili.com/video/BV1ph411x7iY)  
 
 DPS参考：
 > 0  
@@ -502,6 +512,8 @@ DPS参考：
 > [时雨琦罗，4.1深渊12-1上半&12-3下半（0氪0抽）](https://www.bilibili.com/video/BV1EV411c7yz)  
  [时雨琦罗，4.0深渊12-1下半&12-2下半（0抽）](https://www.bilibili.com/video/BV1nu4y147eP)  
  [评论区说客，3.2深渊下半（0金低命）](https://www.bilibili.com/video/BV1Lg411W75L/)  
+ [香香怪coco，2.2深渊下半（0金）](https://www.bilibili.com/video/BV1zu411Z7Pr)  
+ [香香怪coco，2.1深渊上半（0金）](https://www.bilibili.com/video/BV17341127RU)  
 
 DPS参考：
 > 0
@@ -526,6 +538,7 @@ DPS参考：
  [Nickess，3.8深渊下半（0金）](https://www.bilibili.com/video/BV13h4y1w7v3)  
  [Nickess，3.5深渊上半（1金）](https://www.bilibili.com/video/BV1Q24y1u7Qj)  
  [Nickess，3.3深渊下半（1金）](https://www.bilibili.com/video/BV1SR4y1h7Tj)  
+ [香香怪coco，2.7深渊下半（0金）](https://www.bilibili.com/video/BV17Y411M7eD)  
  [评论区说客，2.3深渊上半（0金低命低练）](https://www.bilibili.com/video/BV18L411773s)  
 
 DPS参考：
@@ -562,7 +575,28 @@ DPS参考：
 
 ---
 
-其他冰系选择：凯亚（融化覆盖率低，但总倍率高）、重云（爆发，但总倍率低）  
+###### 班尼特 香菱 重云 砂糖
+
+> 冰换重云的版本。优势为爆发、大数字，适合打多动症目标，以及核爆表演。总倍率比修女略低。  
+
+评分参考：
+> 输出： （环境-，配置-，练度-，手部-）  
+ 生存：  
+ 破盾：  
+ 成本：
+
+手法参考：
+> 0
+
+视频参考：
+> [香香怪coco，1.3~1.4深渊上半（0金）](https://www.bilibili.com/video/BV1BK4y1m7Yg)  
+
+DPS参考：
+> 0
+
+---
+
+其他冰系选择：凯亚，虽然总倍率高，但融化覆盖率低，因此不是很常见  
 其他风系选择：小鹿、琳妮特（嘲讽+荒）等，但是拐力不如砂糖  
 
 ---
@@ -642,7 +676,7 @@ DPS参考：
 
 ###### 菲谢尔 北斗 瑶瑶 砂糖
 
-> 砂糖激扩。最常见的四星超激化队伍，低配视频中出场率很高。对单DPS与砂糖武装相近。对群时如果能保证草元素覆盖则相比砂糖武装更有优势。  
+> 砂糖激扩。最常见的四星超激化队伍，低配出场率很高（瑶瑶实装前常用草主柯莱）。对单DPS与砂糖武装相近。对群时如果能保证草元素覆盖则相比砂糖武装更有优势。  
 
 评分参考：
 > 输出： （环境-，配置-，练度-，手部-）  
@@ -659,9 +693,11 @@ DPS参考：
  [Nickess，3.8深渊上半（0金）](https://www.bilibili.com/video/BV1Mh4y1L7bC)  
  [Nickess，3.7深渊上半（2金）](https://www.bilibili.com/video/BV1Gs4y1v7Xw)  
  [Nickess，3.6深渊下半（0金）](https://www.bilibili.com/video/BV1ya4y1A7WZ)  
- [评论区说客，3.5深渊下半（0金低命）](https://www.bilibili.com/video/BV1Th41137G6)  
+ [评论区说客，3.5深渊下半（0金，低命）](https://www.bilibili.com/video/BV1Th41137G6)  
  [Nickess，3.4深渊下半（0金）](ttps://www.bilibili.com/video/BV1iv4y1r7cK)  
- [评论区说客，3.3深渊下半（0金低命低练）](https://www.bilibili.com/video/BV1Wy4y197qi)  
+ [评论区说客，3.3深渊下半（0金，低命低练）](https://www.bilibili.com/video/BV1Wy4y197qi)  
+ [评论区说客，3.2深渊上半（草主，0金，低配三星武器非连打）](https://www.bilibili.com/video/BV1VG411c7ed)  
+ [评论区说客，3.0深渊上半（草主，0金，低配三星武器）](https://www.bilibili.com/video/BV1Ud4y1M7Mv)  
 
 DPS参考：
 > 0
@@ -736,6 +772,12 @@ DPS参考：
  [JackTRipper，3.6深渊上半（0金）](https://www.bilibili.com/video/BV1do4y187Ay)  
  [凛疯1f，3.5深渊上半&下半（0金）](https://www.bilibili.com/video/BV1Zx4y1A7fz)  
  [JackTRipper，3.4深渊上半（0金）](https://www.bilibili.com/video/BV1jG4y1D7qk)  
+ [评论区说客，2.7深渊上半（0金，低配）](https://www.bilibili.com/video/BV1fZ4y1v7jm)  
+ [评论区说客，2.6深渊上半（0金，低配三星武器）](https://www.bilibili.com/video/BV16u411i7TF)  
+ [香香怪coco，2.5深渊上半（0金）](https://www.bilibili.com/video/BV1pU4y1f7gr)  
+ [香香怪coco，2.3深渊上半（0金）](https://www.bilibili.com/video/BV1ph411x7iY)  
+ [香香怪coco，2.2深渊上半（0金）](https://www.bilibili.com/video/BV1zu411Z7Pr)  
+ [香香怪coco，2.1深渊下半（0金）](https://www.bilibili.com/video/BV17341127RU)  
 
 DPS参考：
 > 0
@@ -788,6 +830,7 @@ DPS参考：
  [Nickess，2.8深渊下半（砂糖，0金）](https://www.bilibili.com/video/BV1XK411o7DT)  
  [时雨琦罗，2.7深渊12-1上半（风主，0抽）](https://www.bilibili.com/video/BV1eB4y1S78q)  
  [Nickess，2.6深渊上半（砂糖，0金）](https://www.bilibili.com/video/BV1xa411i7R7)  
+ [鐮夜，1.3~1.4深渊下半（0金）](https://www.bilibili.com/video/BV1Rb4y1S7Bo)  
 
 DPS参考：
 > 0
@@ -821,7 +864,7 @@ DPS参考：
 
 ---
 
-###### 凯亚 修女/重云 行秋 砂糖
+###### 凯亚 修女/重云 行秋 砂糖/早柚
 
 > 当前低金勉强能玩的凯亚永冻，带行秋而不是芭芭拉，能提供不少的水系直伤输出。生存能力较弱，聚怪和冻结很吃手部乘区，伤害也很依靠命座以及凯亚的雾切。DPS较低，特别是面对无法冻结的boss，低金一般不建议使用。
 
@@ -835,8 +878,9 @@ DPS参考：
 > 0
 
 视频参考：
-> [持灵，4.0深渊上半（修女，0金，2命凯亚）](https://www.bilibili.com/video/BV1xF411r7G8)  
- [JackTRipper，3.8深渊上半（修女，0金，3命凯亚）](https://www.bilibili.com/video/BV1ak4y137fU)  
+> [持灵，4.0深渊上半（修女砂糖，0金，2命凯亚）](https://www.bilibili.com/video/BV1xF411r7G8)  
+ [JackTRipper，3.8深渊上半（修女砂糖，0金，3命凯亚）](https://www.bilibili.com/video/BV1ak4y137fU)  
+ [评论区说客，2.6深渊下半（修女早柚，0金，低配三星武器）](https://www.bilibili.com/video/BV16u411i7TF)  
 
 DPS参考：
 > 0
@@ -1169,7 +1213,8 @@ DPS参考：
 > 0
 
 视频参考：
-> [Nickess，2.7深渊上半（丽莎，0金）](https://www.bilibili.com/video/BV1XK411o7vt)  
+> [评论区说客，3.1深渊上半（0金，低配三星武器）](https://www.bilibili.com/video/BV1ke4y1v7As)  
+ [Nickess，2.7深渊上半（丽莎，0金）](https://www.bilibili.com/video/BV1XK411o7vt)  
 
 DPS参考：
 > 0
@@ -1480,7 +1525,8 @@ DPS参考：
 视频参考：
 > [时雨琦罗，4.1深渊12-3上半（0氪0抽）](https://www.bilibili.com/video/BV1EV411c7yz)  
  [时雨琦罗，4.0深渊12-1上半&12-2上半（0抽）](https://www.bilibili.com/video/BV1nu4y147eP)  
-[时雨琦罗，3.4深渊上半（0抽）](https://www.bilibili.com/video/BV18M4y1D7QL)  
+ [时雨琦罗，3.4深渊上半（0抽）](https://www.bilibili.com/video/BV18M4y1D7QL)  
+ [评论区说客，3.1深渊下半（草主芭芭拉，0金，低配三星武器）](https://www.bilibili.com/video/BV1ke4y1v7As)  
 
 DPS参考：
 > 0
@@ -1794,6 +1840,18 @@ DPS参考：
 #### 4. 原/卡绽放（水草）
 
 暂缺
+
+### （五）未分类/时代眼泪
+
+收录一些未分类，或者因为强度问题不再上场的队伍。  
+
+[雷泽 菲谢尔 迪奥娜 行秋，香香怪coco，1.3~1.4深渊下半（0金）](https://www.bilibili.com/video/BV1BK4y1m7Yg)  
+[砂糖 北斗 菲谢尔 迪奥娜，鐮夜，1.5深渊半（0金）](https://www.bilibili.com/video/BV1564y117Hc)  
+[香菱 菲谢尔 砂糖 迪奥娜，香香怪coco，1.6深渊上半（0金）](https://www.bilibili.com/video/BV1Tv411H7Ua)  
+[班尼特 行秋 凯亚 重云，香香怪coco，1.6深渊下半（0金）](https://www.bilibili.com/video/BV1Tv411H7Ua)  
+[班尼特 行秋 凯亚 重云，香香怪coco，2.0深渊上半（0金）](https://www.bilibili.com/video/BV1244y117rA)  
+[香菱 菲谢尔 迪奥娜 风主，香香怪coco，2.0深渊下半（0金）](https://www.bilibili.com/video/BV1244y117rA)  
+[香菱 班尼特 风主 雷泽，评论区说客，2.6深渊下半（0金，低配三星武器）](https://www.bilibili.com/video/BV16u411i7TF)  
 
 ## 四、纯四星最大配队示例
 
