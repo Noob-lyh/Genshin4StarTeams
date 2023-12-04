@@ -7,7 +7,7 @@
 3. 部分队伍轴非常难排，例如各技能冷却不一且没有倍数关系的队伍，如草主+柯莱+水+久岐忍的双草超绽。此时手法为固定起手式+while死循环，每个循环中按照一定的优先级执行某一个已就绪的动作，且DPS标注为`(无轴循环)`。  
 4. 模拟时使用90秒打桩，而不是固定4个循环，因此对出伤快或循环短的队伍会较有优势。
 
-**0金配队标准练度理论DPS排行榜(施工中)**：
+**0金配队标准练度对单DPS排行榜(施工中)**：
 
 1. 柯莱 行秋 久岐忍 菲谢尔（行秋双雷超绽-不抢种/抢种），5.78w/4.59w
 2. 班尼特 香菱 行秋 砂糖（砂糖国家队-行秋双蒸/稳定循环），5.22w/4.12w
@@ -15,22 +15,23 @@
 4. 草主 柯莱 行秋 久岐忍（行秋双草超绽），5.12w
 5. 柯莱 芭芭拉 久岐忍 菲谢尔（芭芭拉双雷超绽-不抢种/抢种），4.51w/3.48w
 6. 瑶瑶 行秋 菲谢尔 砂糖（行秋带风超绽/砂糖激绽），4.45w
-7. 草主 柯莱 芭芭拉 久岐忍（芭芭拉双草超绽），4.12w
-8. 班尼特 香菱 行秋 重云（重云国家队），3.94w
-9. 砂糖 北斗 菲谢尔 行秋（砂糖武装），3.93w
-10. 砂糖 北斗 菲谢尔 瑶瑶（砂糖激化），3.90w
-11. 班尼特 香菱 珐露珊 鹿野院平藏（双风双火），3.69w
-12. 瑶瑶 柯莱 行秋 托马（行秋双草烈绽），3.66w
-13. 班尼特 香菱 罗莎莉亚 砂糖（融罗），3.62w
-14. 珐露珊 鹿野院平藏 行秋 久岐忍（珐鹿感电），3.62w
-15. 班尼特 香菱 重云 罗莎莉亚（双冰双火-重罗），3.60w
-16. 班尼特 香菱 北斗 菲谢尔（双雷双火），3.52w
-17. 班尼特 香菱 凯亚 罗莎莉亚（双冰双火-凯罗），3.45w
-18. 珐露珊 鹿野院平藏 琳妮特 莱依拉（新四星三风），3.32w
-19. 柯莱 行秋 雷泽 班尼特(6)（彩虹雷泽），3.09w
-20. 琳妮特 北斗 菲谢尔 芭芭拉（琳芭武装），3.06w
-21. 草主 柯莱 芭芭拉 托马（芭芭拉双草烈绽），2.41w
-22. 凯亚 罗莎莉亚 行秋 砂糖（凯亚永冻-讨龙/金珀），2.35w/2.26w
+7. 砂糖 丽莎 菲谢尔 瑶瑶（砂糖激化-丽莎），4.67w
+8. 草主 柯莱 芭芭拉 久岐忍（芭芭拉双草超绽），4.12w
+9. 班尼特 香菱 行秋 重云（重云国家队），3.94w
+10. 砂糖 北斗 菲谢尔 行秋（砂糖武装），3.93w
+11. 砂糖 北斗 菲谢尔 瑶瑶（砂糖激化-北斗），3.90w
+12. 班尼特 香菱 珐露珊 鹿野院平藏（双风双火），3.69w
+13. 瑶瑶 柯莱 行秋 托马（行秋双草烈绽），3.66w
+14. 班尼特 香菱 罗莎莉亚 砂糖（融罗），3.62w
+15. 珐露珊 鹿野院平藏 行秋 久岐忍（珐鹿感电），3.62w
+16. 班尼特 香菱 重云 罗莎莉亚（双冰双火-重罗），3.60w
+17. 班尼特 香菱 北斗 菲谢尔（双雷双火），3.52w
+18. 班尼特 香菱 凯亚 罗莎莉亚（双冰双火-凯罗），3.45w
+19. 珐露珊 鹿野院平藏 琳妮特 莱依拉（新四星三风），3.32w
+20. 柯莱 行秋 雷泽 班尼特(6)（彩虹雷泽），3.09w
+21. 琳妮特 北斗 菲谢尔 芭芭拉（琳芭武装），3.06w
+22. 草主 柯莱 芭芭拉 托马（芭芭拉双草烈绽），2.41w
+23. 凯亚 罗莎莉亚 行秋 砂糖（凯亚永冻-讨龙/金珀），2.35w/2.26w
 
 注1：经典低金配队DPS参考，1金雷国约5w，1金草行久皇约6.65w。  
 注2：后面标*的DPS值表示该DPS为单循环模拟得到。  
@@ -612,6 +613,71 @@ while 1 {
         sucrose attack, skill, dash;
     } else {
         sucrose attack:3, dash;
+    }
+}
+```
+
+## 砂糖 丽莎 菲谢尔 瑶瑶
+
+砂糖6命，精5白辰之环，4风套精精精，4精通+6充能  
+丽莎0命，精5西风秘典，4如雷攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
+菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
+瑶瑶6命，精5公义的酬报，4千岩生生治，4精通+6生命+6充能  
+
+DPS：(无轴循环)  
+0金 4.67w  
+
+```text
+sucrose char lvl=90/90 cons=6 talent=9,9,9;
+sucrose add weapon="hakushinring" refine=5 lvl=90/90;
+sucrose add set="viridescent" count=4;
+sucrose add stats hp=4780 atk=311 em=187 em=187 em=187;
+sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
+
+lisa char lvl=90/90 cons=0 talent=9,9,9;
+lisa add weapon="favoniuscodex" refine=5 lvl=90/90;
+lisa add set="thunderingfury" count=4;
+lisa add stats hp=4780 atk=311 er=0.518 electro%=0.466 cr=0.311;
+lisa add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+fischl char lvl=90/90 cons=6 talent=9,9,9; 
+fischl add weapon="stringless" refine=5 lvl=90/90;
+fischl add set="goldentroupe" count=4;
+fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
+fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+yaoyao char lvl=90/90 cons=6 talent=9,9,9;
+yaoyao add weapon="rightfulreward" refine=5 lvl=90/90;
+yaoyao add set="tenacityofthemillelith" count=4;
+yaoyao add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
+yaoyao add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
+
+active yaoyao;
+yaoyao skill;
+lisa burst, attack;
+sucrose burst, attack, skill;
+fischl skill;
+while 1 {
+
+    if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl skill;
+        } else if .fischl.burst.ready {
+            fischl burst;
+        }
+    } 
+    
+    if .lisa.burst.ready {
+        lisa attack, burst;
+    } else if .sucrose.burst.ready {
+        sucrose burst, attack;
+    } else if .yaoyao.skill.ready {
+        yaoyao skill;
+    } else if .sucrose.skill.ready {
+        sucrose attack, skill, dash;
+    } else {
+        lisa attack:3;
+        sucrose attack:3;
     }
 }
 ```
