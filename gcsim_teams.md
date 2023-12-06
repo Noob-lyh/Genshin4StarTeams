@@ -3,14 +3,14 @@
 **队伍手法/循环**：
 
 1. 对于一般有轴的队伍，会设计一套能循环的手法，使其长度约等于队伍中CD最长的动作，同时牺牲一些对不上轴的小技能，如香班凯修循环长度为香菱Q的20秒，而每个20秒循环中香菱12秒冷却的E只放一次。此时DPS标注为`(xx秒循环)`。另外一些冷却比较奇怪的技能(如皇女EQ)会在循环中的某些时间点尝试插入，同时在括号中补充说明。  
-2. 部分队伍轴复杂、技能释放顺序要求较高、产球随机性大或随机性造成的影响大，gcsim直接循环90秒掉伤害非常严重，不能反映队伍真实DPS，例如各种带祭礼剑行秋的队伍。对于这些队伍，通常会延长循环时间，或者牺牲部分输出，选择更加适合循环的配装(如行秋带西风剑)。如果实在难以保证gcsim中的循环，会在手工确认第二轮循环能成立的情况下，只模拟第一个循环的DPS，此时其DPS标注为`(xx秒单循环)`。  
+2. 部分队伍轴复杂、技能释放顺序要求较高、产球随机性大或随机性造成的影响大，gcsim直接循环90秒掉伤害非常严重，不能反映队伍真实DPS，例如各种带祭礼剑行秋的队伍。对于这些队伍，通常会延长循环时间，或者牺牲部分输出，选择更加适合循环的配装(如行秋带西风剑，或者作弊使用精7祭礼剑)。如果实在难以保证gcsim中的循环，会在手工确认第二轮循环能成立的情况下，只模拟第一个循环的DPS，此时其DPS标注为`(xx秒单循环)`，这样的手法只会作为暂时的解决方案，如果有可以循环的手法会马上替换。  
 3. 部分队伍轴非常难排，例如各技能冷却不一且没有倍数关系的队伍，如草主+柯莱+水+久岐忍的双草超绽。此时手法为固定起手式+while死循环，每个循环中按照一定的优先级执行某一个已就绪的动作，且DPS标注为`(无轴循环)`。  
 4. 模拟时使用90秒打桩，而不是固定4个循环，因此对出伤快或循环短的队伍会较有优势。
 
 **0金配队标准练度对单DPS排行榜(施工中)**：
 
 1. 柯莱 行秋 久岐忍 菲谢尔（行秋双雷超绽-不抢种/抢种），5.78w/4.59w
-2. 班尼特 香菱 行秋 砂糖（砂糖国家队-行秋双蒸/稳定循环），5.22w/4.12w
+2. 班尼特 香菱 行秋 砂糖（砂糖国家队-6班），5.58w
 3. 班尼特 香菱 行秋 菲谢尔（皇女国家队），5.14w
 4. 草主 柯莱 行秋 久岐忍（行秋双草超绽），5.12w
 5. 柯莱 芭芭拉 久岐忍 菲谢尔（芭芭拉双雷超绽-不抢种/抢种），4.51w/3.48w
@@ -43,35 +43,39 @@
 # gcsim模拟的条件设置，重复设置会覆盖
 options iteration=1000;     # 模拟次数
 options duration=90;        # 每次模拟的持续时间
-options swap_delay=4;       # 切人延迟，一般取4或12
 options workers=30;         # 并行模拟相关参数
+options swap_delay=4;       # 切人延迟（部分手法需要修改此值）
 ```
 
 ```text
-# gcsim模拟的敌人设置，第一个为前方大体积敌人，第二到五个为前/右/左/后方小体积敌人，一般使用一个敌人模拟
-# 默认100级，无限血量，10%全抗
+# gcsim模拟的敌人设置
+# 第一个为前方大体积敌人，第二到五个为前/右/左/后方小体积敌人
+# 在此文档中，只使用第一或第二个敌人模拟，通常使用第二个小体积敌人
+# 敌人默认100级，无限血量，10%全抗
+# 使用通用掉球设置
 #target lvl=100 pos=0,3 radius=2.5 pyro=0.1 dendro=0.1 hydro=0.1 electro=0.1 geo=0.1 anemo=0.1 physical=0.1 cryo=0.1;
 target lvl=100 pos=0,1 radius=0.5 pyro=0.1 dendro=0.1 hydro=0.1 electro=0.1 geo=0.1 anemo=0.1 physical=0.1 cryo=0.1;
 #target lvl=100 pos=1,0 radius=0.5 pyro=0.1 dendro=0.1 hydro=0.1 electro=0.1 geo=0.1 anemo=0.1 physical=0.1 cryo=0.1;
 #target lvl=100 pos=-1,0 radius=0.5 pyro=0.1 dendro=0.1 hydro=0.1 electro=0.1 geo=0.1 anemo=0.1 physical=0.1 cryo=0.1;
 #target lvl=100 pos=0,-1 radius=0.5 pyro=0.1 dendro=0.1 hydro=0.1 electro=0.1 geo=0.1 anemo=0.1 physical=0.1 cryo=0.1;
-energy every interval=480,720 amount=1;     # 通用掉球设置
+energy every interval=480,720 amount=1;     
 ```
 
 将上面设置调整好后，复制粘贴到gcsim的config.txt中，再在下面粘贴队伍代码，就可以运行gcsim模拟了。  
 
 ## 班尼特 香菱 行秋 砂糖
 
-班尼特5命，精1原木刀，4教官充火暴，(5+7)双暴+6生命+6充能  
+满命班尼特+祭礼行秋，[来源](https://ngabbs.com/read.php?tid=38590510)，注意需要修改切人延迟为1  
+班尼特6命，精1原木刀，4教官充火暴，(5+7)双暴+6生命+6充能  
 香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
-行秋6命，精5西风剑，4绝缘攻水暴，(9+11)双暴+6充能  
+行秋6命，精7祭礼剑(保证刷新E)，4宗室攻水暴，(9+11)双暴+6充能  
 砂糖6命，精5讨龙英杰谭，4风套精精精，4精通+6充能  
 
-DPS：(21秒循环)  
-0金 4.12w  
+DPS：(24秒循环)  
+0金 5.58w  
 
 ```text
-bennett char lvl=90/90 cons=5 talent=9,9,9;
+bennett char lvl=90/90 cons=6 talent=9,9,9;
 bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
 bennett add set="instructor" count=4;
 bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
@@ -80,12 +84,12 @@ bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165
 xiangling char lvl=90/90 cons=6 talent=9,9,9;
 xiangling add weapon="thecatch" refine=5 lvl=90/90;
 xiangling add set="emblemofseveredfate" count=4;
-xiangling add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+xiangling add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
 xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
 xingqiu char lvl=90/90 cons=6 talent=9,9,9;
-xingqiu add weapon="favoniussword" refine=5 lvl=90/90;
-xingqiu add set="emblemofseveredfate" count=4;
+xingqiu add weapon="sacrificialsword" refine=7 lvl=90/90;
+xingqiu add set="noblesseoblige" count=4;
 xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
 xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
 
@@ -95,92 +99,38 @@ sucrose add set="viridescentvenerer" count=4;
 sucrose add stats hp=4780 atk=311 em=187 em=187 em=187;
 sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
 
+options swap_delay=1;
+
 active xingqiu;
 while 1 {
+    set_player_pos(0, -1);
     xingqiu burst, attack;
-    bennett burst, attack;
-    sucrose attack, skill, dash;
-    if .sucrose.burst.ready {
-        sucrose burst;
-    } else {
-        sucrose attack:3;
-    }
-    xiangling attack, burst, skill;
-    sucrose attack;
-    xingqiu attack, skill, dash;
-    xingqiu attack:3;
-    sucrose attack:3;
-    xingqiu attack:3, dash, attack:3;
-    bennett attack, skill;
-    xiangling attack:3;
-    xingqiu attack:3;
-    bennett attack, skill;
-    xiangling attack:3;
+    bennett burst, attack, skill;
+    sucrose attack, skill;
+    set_player_pos(0, 0);
+    sucrose dash;
+    wait(25);
+    xiangling burst, attack, skill, attack;
+    xingqiu swap;
+    wait(40);
+    xingqiu attack;
+    wait(1);
+    xingqiu skill, dash, attack, skill, dash, attack;
+    xiangling attack:4,charge;
+    sucrose attack:1,charge;
+    bennett attack:3,skill;
+    xiangling attack:3,skill,attack:8;
+    wait(6);
 }
 ```
 
-备注1：比较极限的行秋E双蒸手法，行秋配装改为绝缘祭礼剑  
-[来源](https://gcsim.app/db/hQBtQgpwhp6w#)，使用时要去掉默认的90秒模拟时长以及默认敌人设定。  
+备注：雷国，用雷电将军替代砂糖  
+雷电将军0命，精5西风枪，4绝缘充雷暴，(9+11)双暴+2攻击+2充能
+行秋词条改为改为20+2n，香菱班尼特不变  
+注意队伍充能溢出，换配装DPS还能提升  
 
-行秋6命，精5祭礼剑，4绝缘/4宗室攻水暴，(9+11)双暴+2攻击+2精通+2充能  
-
-DPS：(24秒循环)  
-0金 5.22w  
-
-```text
-xingqiu char lvl=90/90 cons=6 talent=9,9,9;
-xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
-xingqiu add set="emblemofseveredfate/noblesseoblige" count=4;
-xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
-xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
-
-options swap_delay=12;
-target lvl=100 resist=0.1 pos=-2.4,0 radius=2;
-active xingqiu;
-for let i = 0; i < 4; i = i + 1 {
-    set_player_pos(1.2,0);# 0.8 < 1.2 ≤ 1.6
-    xingqiu burst,attack;
-    wait(3);
-    bennett burst,attack,skill;
-    sucrose attack;
-    wait(7);
-    sucrose skill,dash;
-    xiangling attack,skill,dash,attack,burst;
-    xingqiu skill;
-    let e = .xingqiu.skill.ready;
-    if(e) {
-        xingqiu skill;
-    }
-    xingqiu dash;
-    set_player_pos(0,0);
-    if(!e) {
-        xingqiu attack:3;
-    }
-    bennett attack:3,skill;
-    xingqiu attack:2;
-    bennett attack:2,skill,attack;
-    xiangling attack:3,skill,dash,attack;
-    bennett skill,attack;
-    xiangling attack:3;
-    bennett attack:3,skill;
-    if(e) {
-        xiangling attack,dash;
-    }else {
-        xingqiu attack:2;
-        sucrose skill,dash,attack;
-        xingqiu attack,dash;
-    }
-}
-```
-
-备注2：雷国，用雷电将军替代砂糖  
-雷电将军0命，精5西风枪，4绝缘充雷暴，(9+11)双暴+2攻击+2充能  
-
-DPS：(20秒单循环，香菱火轮单判，行秋不凹蒸发)  
-1金 5.27w (教官班尼特，攻击沙香菱，宗室行秋，雷国极致配装)  
-1金 5.11w (教官班尼特，充能沙香菱，宗室行秋，即只换砂糖其他不变)  
-1金 5.00w (宗室班尼特，攻击沙香菱，绝缘行秋，雷国常见配装)  
-1金 4.86w (宗室班尼特，充能沙香菱，绝缘行秋)  
+DPS：(20秒循环)  
+1金 4.88w  
 
 ```text
 raiden char lvl=90/90 cons=0 talent=9,9,9;
@@ -189,7 +139,6 @@ raiden add set="emblemofseveredfate" count=4;
 raiden add stats hp=4780 atk=311 er=0.518 electro%=0.466 cr=0.311;
 raiden add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
 
-options duration=20;
 active raiden;
 while 1 {
     raiden skill;
@@ -203,65 +152,6 @@ while 1 {
     raiden burst;
     raiden attack:3, charge, attack:3, charge, attack:3, charge, attack:2;
     bennett attack, skill;
-}
-```
-
-备注3：万达国际，[手法来源](https://gcsim.app/db/Wcg69bnKGTCD)  
-达达利亚0命，精1苍翠猎弓，4水仙攻水爆，(12+8)双暴+2攻击+2精通+2充能  
-万叶0命，精5西风剑，4风套精精精，(6+6)双暴+2精通+2充能  
-班尼特6命，精1原木刀，4教官充火暴，(5+7)双暴+6生命+6充能  
-
-DPS：(28秒循环)  
-2金 3.66w  
-
-```text
-tartaglia char lvl=90/90 cons=0 talent=9,9,9;
-tartaglia add weapon="theviridescenthunt" refine=1 lvl=90/90;
-tartaglia add set="nymphsdream" count=4;
-tartaglia add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cd=0.622;
-tartaglia add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.396 cd=0.528;
-
-kazuha char lvl=90/90 cons=0 talent=9,9,9;
-kazuha add weapon="favoniussword" refine=5 lvl=90/90;
-kazuha add set="viridescentvenerer" count=4;
-kazuha add stats hp=4780 atk=311 em=187 em=187 em=187;
-kazuha add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.11 em=40 cr=0.198 cd=0.396;
-
-bennett char lvl=90/90 cons=6 talent=9,9,9;
-bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
-bennett add set="instructor" count=4;
-bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
-bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
-
-xiangling char lvl=90/90 cons=6 talent=9,9,9;
-xiangling add weapon="thecatch" refine=5 lvl=90/90;
-xiangling add set="emblemofseveredfate" count=4;
-xiangling add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
-xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
-
-options duration=115;
-active tartaglia;
-while 1 {
-    tartaglia walk, skill, attack;
-    bennett burst;
-    kazuha skill, high_plunge, burst;
-    xiangling burst, skill, dash;
-    tartaglia walk, burst, walk[f=11], skill,
-        attack:2, charge, jump,
-        attack:2, charge, dash,
-        attack:1, charge, dash,
-        attack:2, charge, dash,
-        attack:2, charge, dash,
-        attack, charge, dash;
-    kazuha skill, high_plunge;
-    bennett skill;
-    xiangling attack, skill, dash;
-    tartaglia aim;
-    bennett skill;
-    kazuha skill, high_plunge;
-    tartaglia aim;
-    bennett skill;
-    xiangling attack;
 }
 ```
 

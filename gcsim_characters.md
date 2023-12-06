@@ -59,9 +59,9 @@ xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
 xingqiu add set="emblemofseveredfate/noblesseoblige" count=4;
 xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
 xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
-# 循环-西风绝缘，6命，精5西风剑，4绝缘攻水暴，(9+11)双暴+6充能
+# 循环-西风绝缘，6命，精5西风剑/精7祭礼剑(保证刷新E)，4绝缘攻水暴，(9+11)双暴+6充能
 xingqiu char lvl=90/90 cons=6 talent=9,9,9;
-xingqiu add weapon="favoniussword" refine=5 lvl=90/90;
+xingqiu add weapon="favoniussword/sacrificialsword" refine=5/7 lvl=90/90;
 xingqiu add set="emblemofseveredfate" count=4;
 xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
 xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
