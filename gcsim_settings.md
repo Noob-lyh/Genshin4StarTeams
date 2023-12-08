@@ -27,7 +27,7 @@ options swap_delay=4;       # 60帧下的切人延迟（帧）
 
 ## 2. 敌人设置
 
-* 预设中一共添加了五个敌人，实际模拟时注释掉其中四个，只保留一个（通常使用第一个和第二个）。  
+* 预设中一共添加了五个敌人，实际模拟时注释掉其中四个，只保留一个（一般使用第二个，其次第一个）。  
 * 五个敌人中，第一个为前方大体积敌人（半径2.5，圆心离原点距离3），第二到五个为前/右/左/后方小体积敌人（半径0.5，圆心离原点距离1），另外角色半径为0.3，位置在原点。  
 * 敌人统一使用100级，无限血量，10%全抗性，使用通用掉球设置（每随机480到720帧，即每随机6到12秒，掉落一个1能量的白色微粒）  
 
@@ -303,6 +303,18 @@ kuki add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 hp%=0.466;
 kuki add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
 ```
 
+### 丽莎
+
+【通用-西风如雷/绝缘】0命，精5西风秘典，4如雷攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
+
+```text
+lisa char lvl=90/90 cons=0 talent=9,9,9;
+lisa add weapon="favoniuscodex" refine=5 lvl=90/90;
+lisa add set="thunderingfury/emblemofseveredfate" count=4;
+lisa add stats hp=4780 atk=311 er=0.518 electro%=0.466 cr=0.311;
+lisa add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+```
+
 ### 雷泽
 
 【彩虹-乐园三精】6命，精5饰铁之花，4乐园精精精，6精通+6充能  
@@ -448,7 +460,7 @@ travelerdendro add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
 travelerdendro add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
 ```
 
-## 柯莱
+### 柯莱
 
 【通用-草套工具人】6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
 
@@ -460,7 +472,7 @@ collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
 collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
 ```
 
-## 瑶瑶
+### 瑶瑶
 
 【通用-治疗】6命，精5公义的酬报，4千岩/4草套生生治，4精通+6生命+6充能  
 

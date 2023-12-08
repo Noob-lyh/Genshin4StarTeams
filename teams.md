@@ -1,12 +1,16 @@
 # 原神纯四星角色队伍简介
 
-**收录配队要求**：
+**注意事项：**  
 
-1. 满人配队，不考虑压人配队以及压人之后再带任意角色的配队  
-2. 逻辑自洽，不能配置练度拉满各打各的，队伍中的角色要有自己比较独特或比较重要的作用  
-3. 较低成本，队伍总金数（五星武器精炼等级之和）<=2  
+1. 篇幅较长，请合理使用搜索。另外**0金对单DPS排行榜已移动到README.md中**。  
+2. 施工中如果有希望添加的队伍/更新的手法，请查阅gcsim_settings了解投稿要求。  
+3. 主流/自洽的配队说明会比较详细，部分配队会进行合并。
 
-注：由于时间和精力原因，其中比较主流/自洽的配队会有详细评价，其余队伍仅简单提及。
+**收录配队要求：**  
+
+1. 满人配队，不考虑压人配队以及压人之后再带任意角色的配队。  
+2. 逻辑自洽，不能配置练度拉满各打各的，队伍中的角色要有自己比较独特或比较重要的作用。  
+3. 较低成本，不刚需五星武器。  
 
 **配队分类方式**：
 
@@ -2371,7 +2375,64 @@ while 1{
 
 **DPS参考：**  
 
-暂缺  
+0金 4.12w (无轴循环)  
+
+注：此无轴循环难度较大且需要全程贴身，对实战DPS的参考价值有限  
+
+草主6命，精5西风剑，4草套充草暴，(7+9)双爆+4攻击+4充能  
+柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
+芭芭拉6命，精5试作金珀，4海染生生治，4精通+6生命  
+久岐忍6命，精5东花坊时雨，4乐园精精精，4精通+8生命  
+
+```text
+travelerdendro char lvl=90/90 cons=6 talent=9,9,9;
+travelerdendro add weapon="favoniussword" refine=5 lvl=90/90;
+travelerdendro add set="deepwoodmemories" count=4;
+travelerdendro add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+travelerdendro add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+collei char lvl=90/90 cons=6 talent=9,9,9;
+collei add weapon="favoniuswarbow" refine=5 lvl=90/90;
+collei add set="deepwoodmemories" count=4;
+collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+barbara char lvl=90/90 cons=6 talent=9,9,9;
+barbara add weapon="prototypeamber" refine=5 lvl=90/90;
+barbara add set="oceanhuedclam" count=4;
+barbara add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
+barbara add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
+
+kuki char lvl=90/90 cons=6 talent=9,9,9;
+kuki add weapon="toukaboushigure" refine=5 lvl=90/90;
+kuki add set="flowerofparadiselost" count=4;
+kuki add stats hp=4780 atk=311 em=187 em=187 em=187;
+kuki add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
+
+active travelerdendro;
+travelerdendro skill, burst;
+barbara attack, skill, jump;
+kuki skill, dash;
+barbara attack:4;
+travelerdendro skill;
+while 1{
+    if .kuki.skill.ready {
+        kuki skill, dash;
+    } else if .barbara.skill.ready {
+        barbara attack, skill, jump;
+    } else if .travelerdendro.skill.ready {
+        travelerdendro skill;
+    } else if .collei.skill.ready {
+        collei skill;
+    } else if .travelerdendro.burst.ready {
+        travelerdendro burst;
+    } else if .collei.burst.ready {
+        collei burst;
+    } else {
+        barbara attack:4;
+    }
+}
+```
 
 ## 4.1.2 草X+水Y+水Z+雷N（双水超绽）
 
@@ -2430,7 +2491,73 @@ while 1{
 
 **DPS参考：**  
 
-暂缺  
+0金 4.59w/5.78w (小体积怪，皇女抢种子/大体积怪，皇女不抢种子，无轴循环)  
+
+柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
+行秋6命，精5祭礼剑，4绝缘攻水暴，(9+11)双暴+2攻击+2精通+2充能  
+久岐忍6命，精5东花坊时雨，4乐园精精精，4精通+8生命  
+菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
+
+```text
+collei char lvl=90/90 cons=6 talent=9,9,9;
+collei add weapon="favoniuswarbow" refine=5 lvl=90/90;
+collei add set="deepwoodmemories" count=4;
+collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+xingqiu char lvl=90/90 cons=6 talent=9,9,9;
+xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
+xingqiu add set="emblemofseveredfate" count=4;
+xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+kuki char lvl=90/90 cons=6 talent=9,9,9;
+kuki add weapon="toukaboushigure" refine=5 lvl=90/90;
+kuki add set="flowerofparadiselost" count=4;
+kuki add stats hp=4780 atk=311 em=187 em=187 em=187;
+kuki add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
+
+fischl char lvl=90/90 cons=6 talent=9,9,9; 
+fischl add weapon="stringless" refine=5 lvl=90/90;
+fischl add set="goldentroupe" count=4;
+fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
+fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+active xingqiu;
+xingqiu burst, attack;
+fischl skill, attack;
+collei skill, attack;
+kuki skill, attack;
+xingqiu skill, attack;
+if .xingqiu.skill.ready {
+  xingqiu skill, attack;
+}
+collei burst, attack;
+while 1 {
+    if .xingqiu.burst.ready {
+        xingqiu burst, attack;
+    } else if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl skill, attack;
+        } else if .fischl.burst.ready {
+            fischl burst, attack;
+        }
+    } else if .kuki.skill.ready {
+        kuki skill, attack;
+    } else if .xingqiu.skill.ready {
+        xingqiu attack, skill, dash;
+        if .xingqiu.skill.ready {
+            xingqiu attack, skill, dash;
+        }
+    } else if .collei.burst.ready {
+        collei burst, attack;
+    } else if .collei.skill.ready {
+        collei skill, attack;
+    } else {
+        kuki attack;
+    }
+}
+```
 
 ### 柯莱 芭芭拉 菲谢尔 久岐忍
 
@@ -2456,7 +2583,67 @@ while 1{
 
 **DPS参考：**  
 
-暂缺  
+0金 3.48w/4.51w (小体积怪，皇女抢种子/大体积怪，皇女不抢种子，无轴循环)  
+
+柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
+芭芭拉6命，精5祭礼残章/试作金珀，4海染生生治，4精通+6生命  
+久岐忍6命，精5东花坊时雨，4乐园精精精，4精通+8生命  
+菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
+
+```text
+collei char lvl=90/90 cons=6 talent=9,9,9;
+collei add weapon="favoniuswarbow" refine=5 lvl=90/90;
+collei add set="deepwoodmemories" count=4;
+collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+barbara char lvl=90/90 cons=6 talent=9,9,9;
+barbara add weapon="prototypeamber" refine=5 lvl=90/90;
+barbara add set="oceanhuedclam" count=4;
+barbara add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
+barbara add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
+
+kuki char lvl=90/90 cons=6 talent=9,9,9;
+kuki add weapon="toukaboushigure" refine=5 lvl=90/90;
+kuki add set="flowerofparadiselost" count=4;
+kuki add stats hp=4780 atk=311 em=187 em=187 em=187;
+kuki add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
+
+fischl char lvl=90/90 cons=6 talent=9,9,9; 
+fischl add weapon="stringless" refine=5 lvl=90/90;
+fischl add set="goldentroupe" count=4;
+fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
+fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+active collei;
+collei burst;
+barbara attack, skill, jump;
+kuki skill, dash;
+fischl skill;
+while 1 {
+
+    if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl skill, attack;
+        } else if .fischl.burst.ready {
+            fischl burst, attack;
+        }
+    }
+
+    if .kuki.skill.ready {
+        kuki skill;
+    } else if .collei.skill.ready {
+        collei skill, attack;
+    } else if .collei.burst.ready {
+        collei burst;
+    } else if .barbara.skill.ready {
+        barbara skill;
+    } else {
+        barbara attack:3, dash;
+    }
+
+}
+```
 
 ### 柯莱 行秋 北斗 久岐忍
 
@@ -2596,7 +2783,72 @@ while 1{
 
 **DPS参考：**  
 
-暂缺  
+0金 4.45w (瑶瑶菲谢尔，无轴循环)  
+
+瑶瑶6命，精5西风长枪，4草套生生治，10暴击+6充能  
+行秋6命，精5西风剑，4绝缘攻水暴，(9+11)双暴+6充能  
+菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
+砂糖6命，精5祭礼残章，4风套精精精，4精通+6充能  
+
+```text
+yaoyao char lvl=90/90 cons=6 talent=9,9,9;
+yaoyao add weapon="favoniuslance" refine=5 lvl=90/90;
+yaoyao add set="deepwoodmemories" count=4;
+yaoyao add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
+yaoyao add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.33 cd=0;
+
+xingqiu char lvl=90/90 cons=6 talent=9,9,9;
+xingqiu add weapon="favoniussword" refine=5 lvl=90/90;
+xingqiu add set="emblemofseveredfate" count=4;
+xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
+
+fischl char lvl=90/90 cons=6 talent=9,9,9; 
+fischl add weapon="stringless" refine=5 lvl=90/90;
+fischl add set="goldentroupe" count=4;
+fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
+fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+sucrose char lvl=90/90 cons=6 talent=9,9,9;
+sucrose add weapon="sacrificialfragments" refine=5 lvl=90/90;
+sucrose add set="viridescent" count=4;
+sucrose add stats hp=4780 atk=311 em=187 em=187 em=187;
+sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
+
+active xingqiu;
+xingqiu burst, attack;
+sucrose attack:2;
+fischl skill, attack;
+yaoyao skill;
+sucrose attack, skill, dash, burst;
+xingqiu attack, skill, dash, attack:3;
+while 1 {
+
+    if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl attack, skill;
+        } else if .fischl.burst.ready {
+            fischl burst;
+        }
+    }
+
+    if .xingqiu.burst.ready {
+        xingqiu burst, attack;
+    } else if .xingqiu.skill.ready {
+        xingqiu attack, skill, dash, attack:3;
+    } else if .yaoyao.skill.ready {
+        yaoyao skill, attack;
+    }  else if .sucrose.burst.ready {
+        sucrose burst, attack;
+    } else if .sucrose.skill.ready {
+        sucrose attack, skill, dash;
+    } else if .yaoyao.burst.ready {
+        yaoyao burst, attack, dash, attack, dash, attack, dash, attack, dash;
+    } else {
+        sucrose attack:3, dash;
+    }
+}
+```
 
 ## 4.2 烈绽放（水草火+草/火/风）
 
@@ -2630,7 +2882,136 @@ while 1{
 
 **DPS参考：**  
 
+0金 3.66w (柯莱，20秒循环)  
+
+瑶瑶6命，精5西风长枪，4草套生生治，10暴击+6充能  
+柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
+行秋6命，精5西风剑，4绝缘攻水暴，(9+11)双暴+6充能  
+托马6命，精5喜多院十文字，4乐园精精精，10充能  
+
+```text
+yaoyao char lvl=90/90 cons=6 talent=9,9,9;
+yaoyao add weapon="favoniuslance" refine=5 lvl=90/90;
+yaoyao add set="deepwoodmemories" count=4;
+yaoyao add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
+yaoyao add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.33 cd=0;
+
+collei char lvl=90/90 cons=6 talent=9,9,9;
+collei add weapon="favoniuswarbow" refine=5 lvl=90/90;
+collei add set="deepwoodmemories" count=4;
+collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+xingqiu char lvl=90/90 cons=6 talent=9,9,9;
+xingqiu add weapon="favoniussword" refine=5 lvl=90/90;
+xingqiu add set="emblemofseveredfate" count=4;
+xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
+
+thoma char lvl=90/90 cons=6 talent=9,9,9;
+thoma add weapon="kitaincrossspear" refine=5 lvl=90/90;
+thoma add set="flowerofparadiselost" count=4;
+thoma add stats hp=4780 atk=311 em=187 em=187 em=187;
+thoma add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
+
+active yaoyao;
+while 1 {
+    yaoyao attack, skill, attack:2;
+    xingqiu burst, attack, skill, dash, attack:3;
+    thoma burst, attack, skill, attack:2;
+    yaoyao burst, 
+        attack:2, dash,
+        attack:2, dash,
+        attack:2, dash,
+        attack:2;
+    collei attack, skill, attack, burst;
+    xingqiu attack:2, dash,
+        attack:2, dash,
+        attack:2;
+    yaoyao attack:2, dash, attack;
+}
+```
+
+### 瑶瑶 草主/柯莱 芭芭拉 托马
+
+**队伍简介：**  
+
 暂缺  
+
+**评分参考：**  
+
+输出： （环境-，配置-，练度-，手部-）  
+生存：  
+破盾：  
+成本：
+
+**手法参考：**  
+
+暂缺  
+
+**视频参考：**  
+
+暂缺  
+
+**DPS参考：**  
+
+0金 2.41w (柯莱，20秒循环，芭芭拉站场平A时若E冷却完毕则释放)  
+
+草主6命，精5西风剑，4草套充草暴，(7+9)双爆+4攻击+4充能  
+柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
+芭芭拉6命，精5西风秘典，4海染生生暴，8暴击  
+托马6命，精5喜多院十文字，4乐园精精精，10充能  
+
+```text
+travelerdendro char lvl=90/90 cons=6 talent=9,9,9;
+travelerdendro add weapon="favoniussword" refine=5 lvl=90/90;
+travelerdendro add set="deepwoodmemories" count=4;
+travelerdendro add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+travelerdendro add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+collei char lvl=90/90 cons=6 talent=9,9,9;
+collei add weapon="favoniuswarbow" refine=5 lvl=90/90;
+collei add set="deepwoodmemories" count=4;
+collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+barbara char lvl=90/90 cons=6 talent=9,9,9;
+barbara add weapon="favoniuscodex" refine=5 lvl=90/90;
+barbara add set="oceanhuedclam" count=4;
+barbara add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 cr=0.311;
+barbara add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0 em=0 cr=0.264 cd=0;
+
+thoma char lvl=90/90 cons=6 talent=9,9,9;
+thoma add weapon="kitaincrossspear" refine=5 lvl=90/90;
+thoma add set="flowerofparadiselost" count=4;
+thoma add stats hp=4780 atk=311 em=187 em=187 em=187;
+thoma add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
+
+fn barbara_attack_with_try_skill() {
+    if .barbara.skill.ready {
+        barbara attack, skill, jump;
+    } else {
+        barbara attack:4;
+    }
+}
+
+active travelerdendro;
+while 1 {
+    travelerdendro skill, burst;
+    barbara_attack_with_try_skill();
+    thoma burst, skill, attack:3;
+    barbara_attack_with_try_skill();
+    collei burst, attack;
+    barbara_attack_with_try_skill();
+    travelerdendro skill, attack;
+    barbara_attack_with_try_skill();
+    collei skill, attack;
+    barbara_attack_with_try_skill();
+    barbara_attack_with_try_skill();
+    collei attack:2;
+    travelerdendro attack:2;
+}
+```
 
 ## 4.2.2 草X+水Y+火Z+火N（双火烈绽）
 
@@ -2907,437 +3288,3 @@ iii) “冻结护草”
 [班尼特 行秋 凯亚 重云，香香怪coco，2.0深渊上半（0金）](https://www.bilibili.com/video/BV1244y117rA)  
 [香菱 菲谢尔 迪奥娜 风主，香香怪coco，2.0深渊下半（0金）](https://www.bilibili.com/video/BV1244y117rA)  
 [香菱 班尼特 风主 雷泽，评论区说客，2.6深渊下半（0金，低配三星武器）](https://www.bilibili.com/video/BV16u411i7TF)  
-
-## 草主 柯莱 芭芭拉 久岐忍
-
-草主6命，精5西风剑，4草套充草暴，(7+9)双爆+4攻击+4充能  
-柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
-芭芭拉6命，精5试作金珀，4海染生生治，4精通+6生命  
-久岐忍6命，精5东花坊时雨，4乐园精精精，4精通+8生命  
-
-注：此无轴循环难度较大且需要全程贴身，对实战DPS的参考价值有限  
-
-DPS：(无轴循环)  
-0金 4.12w  
-
-```text
-travelerdendro char lvl=90/90 cons=6 talent=9,9,9;
-travelerdendro add weapon="favoniussword" refine=5 lvl=90/90;
-travelerdendro add set="deepwoodmemories" count=4;
-travelerdendro add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
-travelerdendro add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
-
-collei char lvl=90/90 cons=6 talent=9,9,9;
-collei add weapon="favoniuswarbow" refine=5 lvl=90/90;
-collei add set="deepwoodmemories" count=4;
-collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
-collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
-
-barbara char lvl=90/90 cons=6 talent=9,9,9;
-barbara add weapon="prototypeamber" refine=5 lvl=90/90;
-barbara add set="oceanhuedclam" count=4;
-barbara add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
-barbara add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
-
-kuki char lvl=90/90 cons=6 talent=9,9,9;
-kuki add weapon="toukaboushigure" refine=5 lvl=90/90;
-kuki add set="flowerofparadiselost" count=4;
-kuki add stats hp=4780 atk=311 em=187 em=187 em=187;
-kuki add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
-
-active travelerdendro;
-travelerdendro skill, burst;
-barbara attack, skill, jump;
-kuki skill, dash;
-barbara attack:4;
-travelerdendro skill;
-while 1{
-    if .kuki.skill.ready {
-        kuki skill, dash;
-    } else if .barbara.skill.ready {
-        barbara attack, skill, jump;
-    } else if .travelerdendro.skill.ready {
-        travelerdendro skill;
-    } else if .collei.skill.ready {
-        collei skill;
-    } else if .travelerdendro.burst.ready {
-        travelerdendro burst;
-    } else if .collei.burst.ready {
-        collei burst;
-    } else {
-        barbara attack:4;
-    }
-}
-```
-
-## 柯莱 行秋 久岐忍 菲谢尔
-
-柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
-行秋6命，精5祭礼剑，4绝缘攻水暴，(9+11)双暴+2攻击+2精通+2充能  
-久岐忍6命，精5东花坊时雨，4乐园精精精，4精通+8生命  
-菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
-
-DPS：(无轴循环)  
-0金对单 4.59w (小体积怪，皇女抢种子)  
-0金对单 5.78w (大体积怪，皇女不抢种子)  
-
-```text
-collei char lvl=90/90 cons=6 talent=9,9,9;
-collei add weapon="favoniuswarbow" refine=5 lvl=90/90;
-collei add set="deepwoodmemories" count=4;
-collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
-collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
-
-xingqiu char lvl=90/90 cons=6 talent=9,9,9;
-xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
-xingqiu add set="emblemofseveredfate" count=4;
-xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
-xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
-
-kuki char lvl=90/90 cons=6 talent=9,9,9;
-kuki add weapon="toukaboushigure" refine=5 lvl=90/90;
-kuki add set="flowerofparadiselost" count=4;
-kuki add stats hp=4780 atk=311 em=187 em=187 em=187;
-kuki add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
-
-fischl char lvl=90/90 cons=6 talent=9,9,9; 
-fischl add weapon="stringless" refine=5 lvl=90/90;
-fischl add set="goldentroupe" count=4;
-fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
-fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
-
-active xingqiu;
-xingqiu burst, attack;
-fischl skill, attack;
-collei skill, attack;
-kuki skill, attack;
-xingqiu skill, attack;
-if .xingqiu.skill.ready {
-  xingqiu skill, attack;
-}
-collei burst, attack;
-while 1 {
-    if .xingqiu.burst.ready {
-        xingqiu burst, attack;
-    } else if .fischl.oz == 0 {
-        if .fischl.skill.ready {
-            fischl skill, attack;
-        } else if .fischl.burst.ready {
-            fischl burst, attack;
-        }
-    } else if .kuki.skill.ready {
-        kuki skill, attack;
-    } else if .xingqiu.skill.ready {
-        xingqiu attack, skill, dash;
-        if .xingqiu.skill.ready {
-            xingqiu attack, skill, dash;
-        }
-    } else if .collei.burst.ready {
-        collei burst, attack;
-    } else if .collei.skill.ready {
-        collei skill, attack;
-    } else {
-        kuki attack;
-    }
-}
-```
-
-备注：草行久皇，草神换柯莱  
-纳西妲0命，精5祭礼书残章，4草套精精精，(3+5)双暴+4精通  
-
-DPS：(无轴循环)  
-1金对单 5.30w (小体积怪，皇女抢种子)  
-1金对单 6.65w (大体积怪，皇女不抢种子)  
-
-```text
-nahida char lvl=90/90 cons=0 talent=9,9,9;
-nahida add weapon="sacrificialfragments" refine=5 lvl=90/90;
-nahida add set="deepwoodmemories" count=4;
-nahida add stats hp=4780 atk=311 em=187 em=187 em=187;
-nahida add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0.099 cd=0.33;
-
-active nahida;
-nahida skill, burst;
-fischl skill;
-xingqiu burst, attack;
-kuki skill, attack;
-nahida attack:3, dash, attack:3, dash;
-xingqiu skill, attack, dash;
-if .xingqiu.skill.ready {
-  xingqiu skill, attack, dash;
-}
-while 1 {
-    if .xingqiu.burst.ready {
-        xingqiu burst, attack;
-    } else if .fischl.oz == 0 {
-        if .fischl.skill.ready {
-            fischl skill, attack;
-        } else if .fischl.burst.ready {
-            fischl burst, attack;
-        }
-    } else if .kuki.skill.ready {
-        kuki skill, attack;
-    } else if .xingqiu.skill.ready {
-        xingqiu attack, skill, dash;
-        if .xingqiu.skill.ready {
-            xingqiu attack, skill, dash;
-        }
-    } else if .nahida.skill.ready {
-        nahida attack:3, skill;
-    } else if .nahida.burst.ready {
-        nahida attack, burst;
-    } else {
-        nahida attack:3, dash;
-    }
-}
-```
-
-## 柯莱 芭芭拉 久岐忍 菲谢尔
-
-柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
-芭芭拉6命，精5祭礼残章/试作金珀，4海染生生治，4精通+6生命  
-久岐忍6命，精5东花坊时雨，4乐园精精精，4精通+8生命  
-菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
-
-DPS：(无轴循环)  
-0金对单 3.48w (小体积怪，皇女抢种子)  
-0金对单 4.51w (大体积怪，皇女不抢种子)  
-
-```text
-collei char lvl=90/90 cons=6 talent=9,9,9;
-collei add weapon="favoniuswarbow" refine=5 lvl=90/90;
-collei add set="deepwoodmemories" count=4;
-collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
-collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
-
-barbara char lvl=90/90 cons=6 talent=9,9,9;
-barbara add weapon="prototypeamber" refine=5 lvl=90/90;
-barbara add set="oceanhuedclam" count=4;
-barbara add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
-barbara add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
-
-kuki char lvl=90/90 cons=6 talent=9,9,9;
-kuki add weapon="toukaboushigure" refine=5 lvl=90/90;
-kuki add set="flowerofparadiselost" count=4;
-kuki add stats hp=4780 atk=311 em=187 em=187 em=187;
-kuki add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
-
-fischl char lvl=90/90 cons=6 talent=9,9,9; 
-fischl add weapon="stringless" refine=5 lvl=90/90;
-fischl add set="goldentroupe" count=4;
-fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
-fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
-
-active collei;
-collei burst;
-barbara attack, skill, jump;
-kuki skill, dash;
-fischl skill;
-while 1 {
-
-    if .fischl.oz == 0 {
-        if .fischl.skill.ready {
-            fischl skill, attack;
-        } else if .fischl.burst.ready {
-            fischl burst, attack;
-        }
-    }
-
-    if .kuki.skill.ready {
-        kuki skill;
-    } else if .collei.skill.ready {
-        collei skill, attack;
-    } else if .collei.burst.ready {
-        collei burst;
-    } else if .barbara.skill.ready {
-        barbara skill;
-    } else {
-        barbara attack:3, dash;
-    }
-
-}
-```
-
-## 瑶瑶 行秋 菲谢尔 砂糖
-
-瑶瑶6命，精5西风长枪，4草套生生治，10暴击+6充能  
-行秋6命，精5西风剑，4绝缘攻水暴，(9+11)双暴+6充能  
-菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
-砂糖6命，精5祭礼残章，4风套精精精，4精通+6充能  
-
-DPS：(无轴循环)  
-0金 4.45w  
-
-```text
-yaoyao char lvl=90/90 cons=6 talent=9,9,9;
-yaoyao add weapon="favoniuslance" refine=5 lvl=90/90;
-yaoyao add set="deepwoodmemories" count=4;
-yaoyao add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
-yaoyao add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.33 cd=0;
-
-xingqiu char lvl=90/90 cons=6 talent=9,9,9;
-xingqiu add weapon="favoniussword" refine=5 lvl=90/90;
-xingqiu add set="emblemofseveredfate" count=4;
-xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
-xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
-
-fischl char lvl=90/90 cons=6 talent=9,9,9; 
-fischl add weapon="stringless" refine=5 lvl=90/90;
-fischl add set="goldentroupe" count=4;
-fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
-fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
-
-sucrose char lvl=90/90 cons=6 talent=9,9,9;
-sucrose add weapon="sacrificialfragments" refine=5 lvl=90/90;
-sucrose add set="viridescent" count=4;
-sucrose add stats hp=4780 atk=311 em=187 em=187 em=187;
-sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
-
-active xingqiu;
-xingqiu burst, attack;
-sucrose attack:2;
-fischl skill, attack;
-yaoyao skill;
-sucrose attack, skill, dash, burst;
-xingqiu attack, skill, dash, attack:3;
-while 1 {
-
-    if .fischl.oz == 0 {
-        if .fischl.skill.ready {
-            fischl attack, skill;
-        } else if .fischl.burst.ready {
-            fischl burst;
-        }
-    }
-
-    if .xingqiu.burst.ready {
-        xingqiu burst, attack;
-    } else if .xingqiu.skill.ready {
-        xingqiu attack, skill, dash, attack:3;
-    } else if .yaoyao.skill.ready {
-        yaoyao skill, attack;
-    }  else if .sucrose.burst.ready {
-        sucrose burst, attack;
-    } else if .sucrose.skill.ready {
-        sucrose attack, skill, dash;
-    } else if .yaoyao.burst.ready {
-        yaoyao burst, attack, dash, attack, dash, attack, dash, attack, dash;
-    } else {
-        sucrose attack:3, dash;
-    }
-}
-```
-
-## 瑶瑶 柯莱 行秋 托马
-
-瑶瑶6命，精5西风长枪，4草套生生治，10暴击+6充能  
-柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
-行秋6命，精5西风剑，4绝缘攻水暴，(9+11)双暴+6充能  
-托马6命，精5喜多院十文字，4乐园精精精，10充能  
-
-DPS：(20秒循环)  
-0金 3.66w  
-
-```text
-yaoyao char lvl=90/90 cons=6 talent=9,9,9;
-yaoyao add weapon="favoniuslance" refine=5 lvl=90/90;
-yaoyao add set="deepwoodmemories" count=4;
-yaoyao add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
-yaoyao add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.33 cd=0;
-
-collei char lvl=90/90 cons=6 talent=9,9,9;
-collei add weapon="favoniuswarbow" refine=5 lvl=90/90;
-collei add set="deepwoodmemories" count=4;
-collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
-collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
-
-xingqiu char lvl=90/90 cons=6 talent=9,9,9;
-xingqiu add weapon="favoniussword" refine=5 lvl=90/90;
-xingqiu add set="emblemofseveredfate" count=4;
-xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
-xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
-
-thoma char lvl=90/90 cons=6 talent=9,9,9;
-thoma add weapon="kitaincrossspear" refine=5 lvl=90/90;
-thoma add set="flowerofparadiselost" count=4;
-thoma add stats hp=4780 atk=311 em=187 em=187 em=187;
-thoma add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
-
-active yaoyao;
-while 1 {
-    yaoyao attack, skill, attack:2;
-    xingqiu burst, attack, skill, dash, attack:3;
-    thoma burst, attack, skill, attack:2;
-    yaoyao burst, 
-        attack:2, dash,
-        attack:2, dash,
-        attack:2, dash,
-        attack:2;
-    collei attack, skill, attack, burst;
-    xingqiu attack:2, dash,
-        attack:2, dash,
-        attack:2;
-    yaoyao attack:2, dash, attack;
-}
-```
-
-## 草主 柯莱 芭芭拉 托马
-
-草主6命，精5西风剑，4草套充草暴，(7+9)双爆+4攻击+4充能  
-柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
-芭芭拉6命，精5西风秘典，4海染生生暴，8暴击  
-托马6命，精5喜多院十文字，4乐园精精精，10充能  
-
-DPS：(20秒循环，芭芭拉站场平A时若E冷却完毕则释放)  
-0金 2.41w  
-
-```text
-travelerdendro char lvl=90/90 cons=6 talent=9,9,9;
-travelerdendro add weapon="favoniussword" refine=5 lvl=90/90;
-travelerdendro add set="deepwoodmemories" count=4;
-travelerdendro add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
-travelerdendro add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
-
-collei char lvl=90/90 cons=6 talent=9,9,9;
-collei add weapon="favoniuswarbow" refine=5 lvl=90/90;
-collei add set="deepwoodmemories" count=4;
-collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
-collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
-
-barbara char lvl=90/90 cons=6 talent=9,9,9;
-barbara add weapon="favoniuscodex" refine=5 lvl=90/90;
-barbara add set="oceanhuedclam" count=4;
-barbara add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 cr=0.311;
-barbara add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0 em=0 cr=0.264 cd=0;
-
-thoma char lvl=90/90 cons=6 talent=9,9,9;
-thoma add weapon="kitaincrossspear" refine=5 lvl=90/90;
-thoma add set="flowerofparadiselost" count=4;
-thoma add stats hp=4780 atk=311 em=187 em=187 em=187;
-thoma add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
-
-fn barbara_attack_with_try_skill() {
-    if .barbara.skill.ready {
-        barbara attack, skill, jump;
-    } else {
-        barbara attack:4;
-    }
-}
-
-active travelerdendro;
-while 1 {
-    travelerdendro skill, burst;
-    barbara_attack_with_try_skill();
-    thoma burst, skill, attack:3;
-    barbara_attack_with_try_skill();
-    collei burst, attack;
-    barbara_attack_with_try_skill();
-    travelerdendro skill, attack;
-    barbara_attack_with_try_skill();
-    collei skill, attack;
-    barbara_attack_with_try_skill();
-    barbara_attack_with_try_skill();
-    collei attack:2;
-    travelerdendro attack:2;
-}
-```
