@@ -7,18 +7,20 @@
 
 ## 元素及角色
 
+角色按英文首字母排序。  
+
 ```text
 火(Pyro)：安柏(Amber)，班尼特(Bennett)，迪希雅(Dehya)，迪卢克(Diluc)，胡桃(Hutao)，可莉(Klee)，林尼(Lyney)，托马(Thoma)，香菱(Xiangling)，辛焱(Xinyan)，烟绯(Yanfei)，宵宫(Yoimiya)
 
-水(Hydro)：神里绫人(Ayato)，芭芭拉(Barbara)，坎蒂丝(Candace)，珊瑚宫心海(Kokomi)，莫娜(Mona)，妮露(Nilou)，达达利亚(Tartaglia)，行秋(Xingqiu)，夜兰(Yelan)
+水(Hydro)：神里绫人(Ayato)，芭芭拉(Barbara)，坎蒂丝(Candace)，珊瑚宫心海(Kokomi)，莫娜(Mona)，那维莱特(Neuvillette)，妮露(Nilou)，达达利亚(Tartaglia)，行秋(Xingqiu)，夜兰(Yelan)
 
 雷(Electro)：北斗(Beidou)，赛诺(Cyno)，多莉(Dori)，菲谢尔(Fischl)，刻晴(Keqing)，久岐忍(Kuki)，丽莎(Lisa)，雷电将军(Raiden)，雷泽(Razor)，九条裟罗(Sara)，八重神子(Yae)
 
-冰(Cyro)：俄洛伊(Aloy)，神里绫华(Ayaka)，重云(Chongyun)，迪奥娜(Diana)，优菈(Eula)，甘雨(Ganyu)，凯亚(Kaeya)，莱依拉(Layla)，米卡(Mika)，七七(Qiqi)，罗莎莉亚(Rosaria)，申鹤(Shenhe)
+冰(Cyro)：俄洛伊(Aloy)，神里绫华(Ayaka)，重云(Chongyun)，迪奥娜(Diana)，优菈(Eula)，菲米尼(Freminet)，甘雨(Ganyu)，凯亚(Kaeya)，莱依拉(Layla)，米卡(Mika)，七七(Qiqi)，罗莎莉亚(Rosaria)，申鹤(Shenhe)
 
 风(Anemo)：珐露珊(Faruzan)，鹿野院平藏(Heizou)，琴(Jean)，万叶(Kazuha)，琳妮特(Lynette)，早柚(Sayu)，砂糖(Sucrose)，温迪(Venti)，流浪者(Wanderer)，魈(Xiao)
 
-岩(Geo)：阿贝多(Albedo)，五郎(Gorou)，荒泷一斗(itto)，凝光(Ningguang)，诺艾尔(Noelle)，云堇(YunJin)，钟离(Zhongli)
+岩(Geo)：阿贝多(Albedo)，五郎(Gorou)，荒泷一斗(itto)，娜维娅(Navia)，凝光(Ningguang)，诺艾尔(Noelle)，云堇(YunJin)，钟离(Zhongli)
 
 草(Dendro)：艾尔海森(Alhaitham)，白术(Baizhu)，柯莱(Collei)，卡维(Kaveh)，绮良良(Kirara)，纳西妲(Nahida)，提纳里(Tighnari)，瑶瑶(YaoYao)
 
@@ -31,11 +33,11 @@
 
 ```text
 // 五星-限定
-单手剑：斫峰之刃(summit shaper)，磐岩结绿(primordial jade cutter)，苍古自由之誓(freedom-sworn)，雾切之回光(mistsplitter reforged)，波乱月白经津(haran geppaku futsu)，圣显之钥(key of khaj-nisut)，裁叶萃光(light of foliar incision)
-双手剑：无工之剑(the unforged)，松籁响起之时(song of broken pines)，赤角石溃杵(redhorn stonethresher)，苇海信标(beacon of the reed sea)
+单手剑：斫峰之刃(summit shaper)，磐岩结绿(primordial jade cutter)，苍古自由之誓(freedom-sworn)，雾切之回光(mistsplitter reforged)，波乱月白经津(haran geppaku futsu)，圣显之钥(key of khaj-nisut)，裁叶萃光(light of foliar incision)，静水流涌之辉(splendor of tranquil waters)
+双手剑：无工之剑(the unforged)，松籁响起之时(song of broken pines)，赤角石溃杵(redhorn stonethresher)，苇海信标(beacon of the reed sea)，裁断(Verdict)
 长柄武器：贯虹之槊(vortex vanquisher)，护摩之杖(staff of homa)，息灾(calamity queller)，薙草之稻光(engulfing lightning)，赤沙之杖(staff of the scarlet sands)
 弓：终末嗟叹之诗(elegy for the end)，冬极白星(polar star)，飞雷之弦振(thundering pulse)，若水(aqua simulacra)，猎人之径(hunter's path)，最初的大魔术(the first great magic)
-法器：尘世之锁(memory of dust)，神乐之真意(kagura's verity)，不灭月华(everlasting moonglow)，千夜浮梦(a thousand floating dreams)，图莱杜拉的回忆(tulaytullah's remembrance)，碧落之珑(jadefall's splendor)
+法器：尘世之锁(memory of dust)，神乐之真意(kagura's verity)，不灭月华(everlasting moonglow)，千夜浮梦(a thousand floating dreams)，图莱杜拉的回忆(tulaytullah's remembrance)，碧落之珑(jadefall's splendor)，万世流涌大典(tome of the eternal flow)，金流监督(cashflow supervision)，鹤鸣余音(crane's echoing call)
 
 // 五星-常驻
 单手剑：天空之刃(skyward blade)，风鹰剑(aquila favonia)
@@ -52,10 +54,10 @@
 法器：匣里日月(solar pearl)，遗祀玉珑(sacrificial jade)
 
 // 四星-限定
-单手剑：暗巷闪光(the alley flash)，西福斯的月光(xiphos' moonlight)
-双手剑：千岩古剑(lithic blade)，恶王丸(akuoumaru)，玛海拉的水色(makhaira aquamarine)
-长柄武器：千岩长枪(lithic spear)，断浪长鳍(wavebreaker's fin)
-弓：暗巷猎手(alley hunter)，朦云之月(mouun's moon)
+单手剑：暗巷闪光(the alley flash)，西福斯的月光(xiphos' moonlight)，船坞长剑(the dockhand's assistant)
+双手剑：千岩古剑(lithic blade)，恶王丸(akuoumaru)，玛海拉的水色(makhaira aquamarine)，便携动力锯(portable power saw)
+长柄武器：千岩长枪(lithic spear)，断浪长鳍(wavebreaker's fin)，勘探钻机(prospector's drill)
+弓：暗巷猎手(alley hunter)，朦云之月(mouun's moon)，测距规(range gauge)
 法器：暗巷的酒与诗(wine and song)，流浪的晚星(wandering evenstar)
 
 // 四星-祈愿
@@ -65,12 +67,12 @@
 弓：西风猎弓(favonius warbow)，祭礼弓(sacrificial bow)，绝弦(the stringless)，弓藏(rust)
 法器：西风秘典(favonius codex)，祭礼残章(sacrificial fragments)，流浪乐章(the widsith)，昭心(eye of perception)
 
-// 四星-活动&钓鱼
-单手剑：降临之剑(sword of descension)，腐殖之剑(festering desire)，辰砂之纺锤(cinnabar spindle)，笼钓瓶一心(kagotsurube isshin)，东花坊时雨(toukabou shigure)，灰河渡手(fleuve cendre ferryman)
-双手剑：衔珠海皇(luxurious sea-lord)，饰铁之花(mailed flower)
+// 四星-活动&钓鱼&其他
+单手剑：降临之剑(sword of descension)，腐殖之剑(festering desire)，辰砂之纺锤(cinnabar spindle)，笼钓瓶一心(kagotsurube isshin)，东花坊时雨(toukabou shigure)，灰河渡手(fleuve cendre ferryman)，水仙十字之剑(sword of narzissenkreuz)
+双手剑：衔珠海皇(luxurious sea-lord)，饰铁之花(mailed flower)，究极霸王超级魔剑(ultimate overlord's mega magic sword)
 长柄武器：“渔获”(the catch)，风信之锋(missive Windspear)
 弓：掠食者(predator)，落霞(fading twilight)，竭泽(end of the line)，风花之颂(windblume ode)，幽夜华尔兹(mitternachts waltz)，鹮穿之喙(ibis piercer)
-法器：证誓之明瞳(oathsworn eye)，嘟嘟可故事集(dodoco tales)
+法器：证誓之明瞳(oathsworn eye)，嘟嘟可故事集(dodoco tales)，无垠蔚蓝之歌(ballad of the boundless blue)
 
 // 四星-锻造
 单手剑：铁蜂刺(iron sting)，试作斩岩(prototype rancour)，天目影打刀(amenoma kageuchi)，原木刀(sapwood blade)，海渊终曲(finale of the deep)
@@ -120,6 +122,7 @@
 楼阁(desert pavilion chronicle)，乐园(flower of paradise lost)
 水仙(nymph's dream)，花海(vourukasha's glow)
 猎人(marechaussee hunter)，剧团(golden troupe)
+回声(nighttime whispers in the echoing woods)，昔时(song of days past)
 
 // 4~3星
 教官(instructor)
@@ -131,12 +134,16 @@
 守护(defender's will)
 赌徒(gambler)
 学士(scholar)
-奇迹()
+奇迹(tiny miracle)
+祭冰(prayers to springtime)
+祭雷(prayers for wisdom)
+祭水(prayers for destiny)
+祭火(prayers for illumination)
 
 // 3~1星
-冒险家()
-幸运儿()
-游医()
+冒险家(adventurer)
+幸运儿(lucky dog)
+游医(traveling doctor)
 ```
 
 ## 其他游戏名词

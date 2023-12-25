@@ -88,6 +88,18 @@ xiangling add set="emblemofseveredfate" count=4;
 xiangling add stats hp=5433 atk=383 def=81 em=96 cr=0.642 cd=0.964 er=0.641 pyro%=0.466;
 ```
 
+### 烟绯
+
+【通用-流浪乐团】6命，精5流浪乐章，4乐团攻火暴，(9+11)双暴+2攻击+2精通+2充能  
+
+```text
+yanfei char lvl=90/90 cons=6 talent=9,9,9;
+yanfei add weapon="thewidsith" refine=5 lvl=90/90;
+yanfei add set="wandererstroupe" count=4;
+yanfei add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
+yanfei add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+```
+
 ### 托马
 
 【烈绽-乐园十文字】6命，精5喜多院十文字，4乐园精精精，10充能  
