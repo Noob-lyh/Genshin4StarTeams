@@ -54,10 +54,19 @@ XX国家队，四星最经典的配队（模板）没有之一。
 
 **视频参考：**  
 
+由于砂国强度太高了，很多视频瞎打都能满，这里只收录操作/观感比较好的视频，没有就只能选竞速视频了。  
 [神樣Loki，砂国手法讲解](https://www.bilibili.com/video/BV1w24y1r7DT)  
 [神樣Loki，砂国编年史](https://www.bilibili.com/video/BV1s84y1j7xV)  
-[评论区说客，3.6深渊下半（0金低命）](https://www.bilibili.com/video/BV1vo4y1j7Ju)  
-[陆孤凡，3.5深渊换间（0金零氪22天速通）](https://www.bilibili.com/video/BV17M4y127Qx)  
+[魈魈利亚，4.2深渊上半（0金）](https://www.bilibili.com/video/BV1db4y1T7Ec)  
+[是溜溜花，4.2深渊下半（1金，竞速）](https://www.bilibili.com/video/BV1LN411T7NA)  
+[是溜溜花，4.1深渊上半（0金，竞速）](https://www.bilibili.com/video/BV1KC4y1j7zC)  
+[是溜溜花，4.0深渊下半（1金，竞速）](https://www.bilibili.com/video/BV1sh4y1v7bD)  
+[是溜溜花，3.8深渊下半（0金，竞速）](https://www.bilibili.com/video/BV1Mj411z7bZ)  
+[是溜溜花，3.7深渊上半（2金，竞速）](https://www.bilibili.com/video/BV1Qc411u7as)  
+[评论区说客，3.6深渊下半（0金，低命）](https://www.bilibili.com/video/BV1vo4y1j7Ju)  
+[陆孤凡，3.5深渊换间（0金，零氪22天速通）](https://www.bilibili.com/video/BV17M4y127Qx)  
+[米酒Yahalo，3.1深渊下半（0金，竞速）](https://www.bilibili.com/video/BV1Av4y1Q7hL)  
+[神樣Loki，1.6深渊上半（0金，竞速）](https://www.bilibili.com/video/BV1JB4y1T74e)  
 
 **DPS参考：**  
 
@@ -158,6 +167,7 @@ while 1 {
 
 **视频参考：**  
 
+[长夜临光----暗夜永存，4.2深渊上半（0金）](https://www.bilibili.com/video/BV1qw411N7KD)  
 [lyh逗比，3.7深渊12-1下半（等效0金，0命香菱）](https://www.bilibili.com/video/BV1hh411u7UU)  
 [评论区说客，3.5深渊换间（0金低命）](https://www.bilibili.com/video/BV1Th41137G6)  
 
@@ -319,6 +329,7 @@ while 1 {
 
 **视频参考：**  
 
+[凛疯1f，4.2深渊下半（0金，开服配置）](https://www.bilibili.com/video/BV1mN4y1Y71g)  
 [Nickess，3.8深渊下半（0金）](https://www.bilibili.com/video/BV1Mh4y1L7bC)  
 [Nickess，3.6深渊上半（0金）](https://www.bilibili.com/video/BV1ya4y1A7WZ)  
 [Nickess，3.4深渊上半（0金）](https://www.bilibili.com/video/BV1iv4y1r7cK)  
@@ -381,6 +392,7 @@ while 1 {
 
 **视频参考：**  
 
+[咕咕喵乀，4.2深渊下半（0金）](https://www.bilibili.com/video/BV1bg4y1Q7F2)
 [Nickess，3.7深渊下半（1金）](https://www.bilibili.com/video/BV1Gs4y1v7Xw)  
 [Nickess，3.2深渊下半（1金）](https://www.bilibili.com/video/BV1pP4y117ze)  
 [Nickess，2.6深渊下半（0金）](https://www.bilibili.com/video/BV1xa411i7R7)  
@@ -459,6 +471,7 @@ while 1 {
 
 **视频参考：**  
 
+[Kiriha_4ever，4.2深渊下半（罗莎莉亚，1金）](https://www.bilibili.com/video/BV1YC4y1m7sc)
 [像素光点，4.1深渊上半（3命凯亚，0金，较低练）](https://www.bilibili.com/video/BV1Wj41147vn)  
 [Nickess，3.7深渊下半（罗莎莉亚，0金）](https://www.bilibili.com/video/BV1mL411v7J6)  
 
@@ -513,7 +526,7 @@ while 1 {
 
 ### 行秋 班尼特 烟绯 砂糖
 
-带班烟绯蒸发/砂糖国家队香菱换烟绯
+(带班)烟绯蒸发/砂糖国家队香菱换烟绯，需要注意的烟绯充能压力较大，很难保证每轮都开出Q，解决方法为仅奇数轮开Q，这样还可以使得流浪乐章在开出Q的循环触发，使得收益最大化。  
 
 **评分参考：**  
 
@@ -534,7 +547,76 @@ while 1 {
 
 **DPS参考：**  
 
-暂缺  
+0金 4.02w = 0.5*(4.82w+3.22w) (23秒循环，奇数轮开Q并触发流浪乐章)  
+
+班尼特6命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
+烟绯6命，精5流浪乐章，4乐团攻火暴，(9+11)双暴+2攻击+2精通+2充能  
+行秋6命，精7祭礼剑，4绝缘攻水暴，(9+11)双暴+6充能  
+砂糖6命，精5讨龙英杰谭，4风套精精精，4精通+6充能  
+
+```text
+bennett char lvl=90/90 cons=6 talent=9,9,9;
+bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
+bennett add set="noblesseoblige" count=4;
+bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
+
+yanfei char lvl=90/90 cons=6 talent=9,9,9;
+yanfei add weapon="thewidsith" refine=5 lvl=90/90;
+yanfei add set="wandererstroupe" count=4;
+yanfei add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
+yanfei add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.363 cd=0.594;
+
+xingqiu char lvl=90/90 cons=6 talent=9,9,9;
+xingqiu add weapon="sacrificialsword" refine=7 lvl=90/90;
+xingqiu add set="emblemofseveredfate" count=4;
+xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
+
+sucrose char lvl=90/90 cons=6 talent=9,9,9;
+sucrose add weapon="thrillingtalesofdragonslayers" refine=5 lvl=90/90;
+sucrose add set="viridescentvenerer" count=4;
+sucrose add stats hp=4780 atk=311 em=187 em=187 em=187;
+sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
+
+active xingqiu;
+while 1 {
+    set_player_pos(0, -1);
+    xingqiu skill, burst, attack, skill, dash;
+    set_player_pos(0, 0);
+    bennett attack:2, skill;
+    set_player_pos(0, -1);
+    bennett burst;
+    sucrose attack, skill;
+    wait(11);
+    set_player_pos(0, 0);
+    yanfei attack, burst, attack, charge, 
+            attack, skill, attack, charge, 
+            attack:2, charge, 
+            attack:2, charge, 
+            attack:2, charge, 
+            attack:2, charge, 
+            attack, skill, charge,
+            attack:2, charge,
+            attack;
+    
+    set_player_pos(0, -1);
+    xingqiu skill, burst, attack, skill, dash;
+    set_player_pos(0, 0);
+    bennett attack:2, skill;
+    set_player_pos(0, -1);
+    bennett burst;
+    sucrose attack, skill;
+    wait(11);
+    set_player_pos(0, 0);
+    yanfei attack, skill, charge, 
+            attack:4, charge, 
+            attack:4, charge, 
+            attack:2, skill, charge, 
+            attack:4, charge, 
+            attack:3;
+}
+```
 
 ### 行秋 班尼特 烟绯 菲谢尔
 
@@ -614,6 +696,7 @@ while 1 {
 
 **视频参考：**  
 
+[凛疯1f，4.2深渊上半&下半（3金，6命凯亚）](https://www.bilibili.com/video/BV12a4y1m77W)  
 [cbean123，4.1深渊上半（0金，0命）](https://www.bilibili.com/video/BV1uw41127UJ)  
 [弹药福娃，4.0深渊下半（0金，低配）](https://www.bilibili.com/video/BV1z8411z7Zj)  
 [凛疯1f，4.0深渊上半&下半（3金，6命凯亚）](https://www.bilibili.com/video/BV1Y94y147sz)  
@@ -723,6 +806,7 @@ while 1 {
 
 **视频参考：**  
 
+[一--方，4.2深渊下半（2金）](https://www.bilibili.com/video/BV1Q94y1J7cc)  
 [Nickess，4.0深渊下半（0金）](https://www.bilibili.com/video/BV1fN4y1D7Vp)  
 [Nickess，3.8深渊下半（0金）](https://www.bilibili.com/video/BV13h4y1w7v3)  
 [Nickess，3.5深渊上半（1金）](https://www.bilibili.com/video/BV1Q24y1u7Qj)  
@@ -965,12 +1049,12 @@ while 1 {
 
 四星超激化的核心是菲谢尔，菲谢尔打超激化的核心是固有天赋2，即前台触发雷元素相关反应时降下落雷，造成80%攻击力的雷伤（独立附着，因此可以触发超激化）。配队中除了核心菲谢尔以及挂草位，第三人通常选用风系角色扩雷削雷抗（扩散雷同样可以触发激化加伤），在这个条件下，第四人基本只能选用雷系角色提供足够多的雷元素给风扩散、顺便增加雷反应频率以及凑双雷共鸣。由于对风雷附着量的要求，风系最好使用法器角色，如砂糖小鹿，其中砂糖由于精通拐更多以及Q染色机制成为首选；而雷系选择较多，最常见的选择为北斗，此外也可选法器角色丽莎，以及有雷附魔的满命多莉等。  
 
-### 菲谢尔 北斗 瑶瑶 砂糖
+### 菲谢尔 北斗 瑶瑶/绮良良 砂糖
 
 **队伍简介：**  
 
-砂糖激扩。  
-最常见的四星超激化队伍，低配出场率很高（瑶瑶实装前常用草主柯莱）。  
+砂皇激扩。  
+最常见的四星超激化队伍，低配出场率很高（瑶瑶实装前，挂草位常用草主柯莱）。  
 对单DPS与砂糖武装相近，对群时如果能保证草元素覆盖则相比砂糖武装更有优势。  
 
 **评分参考：**  
@@ -986,14 +1070,17 @@ while 1 {
 
 **视频参考：**  
 
-[像素光点，4.1深渊下半（0金，较低练）](https://www.bilibili.com/video/BV1Wj41147vn)  
-[持灵，4.0深渊下半(0金)](https://www.bilibili.com/video/BV1M94y1s7Db)  
-[Nickess，3.8深渊上半（0金）](https://www.bilibili.com/video/BV1Mh4y1L7bC)  
-[Nickess，3.7深渊上半（2金）](https://www.bilibili.com/video/BV1Gs4y1v7Xw)  
-[Nickess，3.6深渊下半（0金）](https://www.bilibili.com/video/BV1ya4y1A7WZ)  
-[评论区说客，3.5深渊下半（0金，低命）](https://www.bilibili.com/video/BV1Th41137G6)  
-[Nickess，3.4深渊下半（0金）](ttps://www.bilibili.com/video/BV1iv4y1r7cK)  
-[评论区说客，3.3深渊下半（0金，低命低练）](https://www.bilibili.com/video/BV1Wy4y197qi)  
+[摸鱼的筱柒，4.2深渊上半（瑶瑶，0金）](https://www.bilibili.com/video/BV1zN4y1q7bV)  
+[Kiriha_4ever，4.2深渊上半（绮良良，1金）](https://www.bilibili.com/video/BV1YC4y1m7sc)
+[长夜临光----暗夜永存，4.2深渊下半（瑶瑶，0金）](https://www.bilibili.com/video/BV1qw411N7KD)  
+[像素光点，4.1深渊下半（瑶瑶，0金，较低练）](https://www.bilibili.com/video/BV1Wj41147vn)  
+[持灵，4.0深渊下半（瑶瑶，0金）](https://www.bilibili.com/video/BV1M94y1s7Db)  
+[Nickess，3.8深渊上半（瑶瑶，0金）](https://www.bilibili.com/video/BV1Mh4y1L7bC)  
+[Nickess，3.7深渊上半（瑶瑶，2金）](https://www.bilibili.com/video/BV1Gs4y1v7Xw)  
+[Nickess，3.6深渊下半（瑶瑶，0金）](https://www.bilibili.com/video/BV1ya4y1A7WZ)  
+[评论区说客，3.5深渊下半（瑶瑶，0金，低命）](https://www.bilibili.com/video/BV1Th41137G6)  
+[Nickess，3.4深渊下半（瑶瑶，0金）](ttps://www.bilibili.com/video/BV1iv4y1r7cK)  
+[评论区说客，3.3深渊下半（瑶瑶，0金，低命低练）](https://www.bilibili.com/video/BV1Wy4y197qi)  
 [评论区说客，3.2深渊上半（草主，0金，低配三星武器非连打）](https://www.bilibili.com/video/BV1VG411c7ed)  
 [评论区说客，3.0深渊上半（草主，0金，低配三星武器）](https://www.bilibili.com/video/BV1Ud4y1M7Mv)  
 
@@ -1066,7 +1153,8 @@ while 1 {
 
 **队伍简介：**  
 
-北斗换丽莎的对单打桩特化版本，舍弃减伤抗打断薄盾，换取更多前台雷附着以触发皇女天赋，以及少量减防。  
+砂皇激扩，北斗换丽莎的对单打桩特化版本。  
+舍弃减伤抗打断薄盾，换取更多前台雷附着以触发皇女天赋，以及少量减防。  
 
 **评分参考：**  
 
@@ -1193,7 +1281,12 @@ while 1 {
 
 **队伍简介：**  
 
-砂糖武装。四星经典队伍，0金深渊常客，割草活动的神。砂糖站场远程攻击+扩散感电+风套水雷双削抗+染色增伤(满命)+控制聚怪+拐精通(但作用不大)，北斗减伤+抗打断+盾(1命)+削雷抗(6命)+后台雷输出+E弹反生存爆发(需要操作)，菲谢尔后台雷输出+产雷球，行秋减伤+抗打断+后台水输出。  
+砂糖武装/砂武，顶级自洽，高配简单无脑的四星队。  
+四星经典队伍，0金深渊常客，割草活动的神。  
+砂糖站场远程攻击+扩散感电+风套水雷双削抗+染色增伤(满命)+控制聚怪+拐精通(但作用不大)。  
+北斗减伤+抗打断+盾(1命)+削雷抗(6命)+后台雷输出+E弹反生存爆发(需要操作)。  
+菲谢尔后台雷输出+产雷球。  
+行秋减伤+抗打断+后台水输出。  
 
 **评分参考：**  
 
@@ -1208,6 +1301,7 @@ while 1 {
 
 **视频参考：**  
 
+[评论区说客，4.2深渊上半（0金）](https://www.bilibili.com/video/BV1934y1F764)  
 [lyh逗比，4.1深渊下半（0金，全锻造武器）](https://www.bilibili.com/video/BV13m4y1G7tL)  
 [弹药福娃，4.0深渊上半（0金，低配）](https://www.bilibili.com/video/BV1z8411z7Zj)  
 [凛疯1f，4.0深渊上半&下半（0金）](https://www.bilibili.com/video/BV1Nh4y1P7RQ)  
@@ -1336,7 +1430,8 @@ while 1 {
 
 **队伍简介：**  
 
-芭芭拉武装。用海染芭芭拉替代行秋，对单DPS降低，但是对群勉强。由于队伍里有正经治疗，因此风系的选择并不仅限于(金珀)砂糖。  
+芭芭拉武装。用海染芭芭拉替代行秋，对单DPS降低，但是对群勉强。  
+由于队伍里有正经治疗，生存压力较小，因此风系可以不是金珀法师。  
 
 **评分参考：**  
 
@@ -1351,6 +1446,7 @@ while 1 {
 
 **视频参考：**  
 
+[咕咕喵乀，4.2深渊上半（0金）](https://www.bilibili.com/video/BV1bg4y1Q7F2)  
 [thehander，4.0深渊下半（砂糖，0金）](https://www.bilibili.com/video/BV1sp4y1L722)  
 [thehander，3.8深渊下半（砂糖，0金）](https://www.bilibili.com/video/BV1Km4y1p7TC)  
 [Nickess，3.7深渊上半（砂糖，2金）](https://www.bilibili.com/video/BV1mL411v7J6)  
@@ -1466,7 +1562,7 @@ while 1 {
 
 ## 3.2.1 凯亚+冰X+水Y+风Z（凯亚永冻）
 
-### 凯亚 修女/重云 行秋 砂糖/早柚
+### 凯亚 修女/重云 行秋 砂糖/早柚/鹿野院平藏
 
 **队伍简介：**  
 
@@ -1485,6 +1581,7 @@ while 1 {
 
 **视频参考：**  
 
+[持灵，4.2深渊上半（修女+双水行芭，1金，2命凯亚）](https://www.bilibili.com/video/BV1Nw411P7vt)
 [持灵，4.0深渊上半（修女砂糖，0金，2命凯亚）](https://www.bilibili.com/video/BV1xF411r7G8)  
 [JackTRipper，3.8深渊上半（修女砂糖，0金，3命凯亚）](https://www.bilibili.com/video/BV1ak4y137fU)  
 [评论区说客，2.6深渊下半（修女早柚，0金，低配三星武器）](https://www.bilibili.com/video/BV16u411i7TF)  
@@ -1545,7 +1642,7 @@ while 1 {
 }
 ```
 
-### 凯亚 修女/重云 芭芭拉 砂糖
+### 凯亚 修女/重云 芭芭拉 砂糖/鹿野院平藏
 
 **队伍简介：**  
 
@@ -1564,8 +1661,9 @@ while 1 {
 
 **视频参考：**  
 
-[thehander，3.8深渊上半（重云，1金，6命凯）](https://www.bilibili.com/video/BV1ru411E7t6)  
-[Nickess，3.1深渊上半（修女，0金，0命凯）](https://www.bilibili.com/video/BV14g411q7zW)，[配置](https://www.bilibili.com/video/BV1XG4y1t7v2)  
+[米酒Yahalo，4.2深渊上半（修女小鹿，0金，6命凯）](https://www.bilibili.com/video/BV1a94y1E7nP)  
+[thehander，3.8深渊上半（重云砂糖，1金，6命凯）](https://www.bilibili.com/video/BV1ru411E7t6)  
+[Nickess，3.1深渊上半（修女砂糖，0金，0命凯）](https://www.bilibili.com/video/BV14g411q7zW)，[配置](https://www.bilibili.com/video/BV1XG4y1t7v2)  
 
 **DPS参考：**  
 
@@ -1635,7 +1733,9 @@ while 1 {
 
 **队伍简介：**  
 
-经典双雷双火，北斗菲谢尔的锁面板非常适配班尼特。相比于带双冰/双风，显著优势在于有北斗的抗打断减伤不容易暴毙。  
+经典双雷双火，北斗菲谢尔的锁面板非常适配班尼特。  
+相比于带双冰/双风，显著优势在于有北斗的抗打断减伤不容易暴毙。  
+然而毕竟是个直伤配队，有对冰风组曲特化的感觉。  
 
 **评分参考：**  
 
@@ -1650,6 +1750,7 @@ while 1 {
 
 **视频参考：**  
 
+[lyh逗比，4.2深渊下半（0金）](https://www.bilibili.com/video/BV15a4y1U7aL)  
 [小夜悠，4.1深渊下半（0金）](https://www.bilibili.com/video/BV1DV411F7gE)  
 [lyh逗比，4.0深渊下半（0金）](https://www.bilibili.com/video/BV1w84y1S7Aa)  
 [Nickess，3.7深渊下半（2金）](https://www.bilibili.com/video/BV12k4y1p72C)  
@@ -1722,7 +1823,7 @@ while 1 {
 
 ## 3.3.3 班尼特+香菱+火X+风Y（三火一风/纯火）
 
-### 班尼特 香菱 烟绯 砂糖
+### 班尼特 香菱 烟绯 砂糖/鹿野院平藏
 
 **队伍简介：**  
 
@@ -1741,8 +1842,9 @@ while 1 {
 
 **视频参考：**  
 
-[只会逃跑的小佐伊，4.1深渊上半（0金）](https://www.bilibili.com/video/BV1Ez4y1F7VW)  
-[枕头ツ，4.0深渊下半（2金）](https://www.bilibili.com/video/BV11p4y1A7tH)  
+[玲音的信徒，4.2深渊下半（0金，小鹿）](https://www.bilibili.com/video/BV1kg4y1Q7MZ)  
+[只会逃跑的小佐伊，4.1深渊上半（0金，砂糖）](https://www.bilibili.com/video/BV1Ez4y1F7VW)  
+[枕头ツ，4.0深渊下半（2金，砂糖）](https://www.bilibili.com/video/BV11p4y1A7tH)  
 
 **DPS参考：**  
 
@@ -1750,13 +1852,15 @@ while 1 {
 
 ## 3.4 珐鹿双风+任意直伤（含纯风）
 
+主要有鹿C和珐C两种流派，由于小鹿平A倍率较低，个人建议使用珐C（6命），特别是对群时，不过大部分视频仍是鹿C打法。  
+
 ## 3.4.1 珐露珊+鹿野院平藏+雷X+水Y（珐鹿感电）
 
-### 珐露珊 鹿野院平藏 久岐忍 行秋
+### 珐露珊 鹿野院平藏 久岐忍/北斗/菲谢尔 行秋/芭芭拉/坎蒂丝
 
 **队伍简介：**  
 
-珐露珊主C，小鹿速切，行秋提供额外直伤（需要珐露珊重击之间插入普攻触发协同），久岐忍提供雷元素感电、治疗以及千岩攻击拐。珐露珊加上扩散感电的削韧效果极强。  
+扩散感电的削韧效果极强的风(+雷/水)直伤队。  
 
 **评分参考：**  
 
@@ -1771,7 +1875,10 @@ while 1 {
 
 **视频参考：**  
 
-[lyh逗比，4.0深渊上半（0金）](https://www.bilibili.com/video/BV1w84y1S7Aa)
+[爱翻车的回忆，4.2深渊上半（北斗行秋，1金）](https://www.bilibili.com/video/BV19c411y7bM)  
+[lyh逗比，4.2深渊上半（久岐忍坎蒂丝，0金）](https://www.bilibili.com/video/BV1ib4y1K7ah)  
+[lyh逗比，4.0深渊上半（久岐忍行秋，0金）](https://www.bilibili.com/video/BV1w84y1S7Aa)  
+[Nickess，3.7深渊上半（菲谢尔芭芭拉，0金）](https://www.bilibili.com/video/BV1Zj411o7My)  
 
 **DPS参考：**  
 
@@ -1822,31 +1929,6 @@ while 1 {
 }
 ```
 
-### 珐露珊 鹿野院平藏 菲谢尔 芭芭拉
-
-**队伍简介：**  
-
-另一种珐鹿感电，菲谢尔提供直伤，芭芭拉提供治疗。  
-
-**评分参考：**  
-
-输出： （环境-，配置-，练度-，手部-）  
-生存：  
-破盾：  
-成本：
-
-**手法参考：**  
-
-暂缺  
-
-**视频参考：**  
-
-[Nickess，3.7深渊上半（0金）](https://www.bilibili.com/video/BV1Zj411o7My)  
-
-**DPS参考：**  
-
-暂缺  
-
 ## 3.4.2 珐露珊+鹿野院平藏+冰X+水Y（珐鹿冻结）
 
 ### 珐露珊 鹿野院平藏 罗莎莉亚 芭芭拉
@@ -1874,13 +1956,13 @@ while 1 {
 
 暂缺  
 
-## 3.4.3 珐露珊+鹿野院平藏+冰X+冰Y（珐鹿双冰）
+## 3.4.3 珐露珊+鹿野院平藏+冰/雷XY（珐鹿双冰/雷）
 
-### 珐露珊 鹿野院平藏 罗莎莉亚 莱依拉
+### 珐露珊 鹿野院平藏 (罗莎莉亚 莱依拉) / (北斗 菲谢尔)
 
 **队伍简介：**  
 
-放弃带双元素打感电/冻结，转而带双冰吃共鸣15%暴击率。  
+放弃带双元素的感电/冻结反应，转而带双同元素吃元素共鸣的配队方式。  
 
 **评分参考：**  
 
@@ -1895,7 +1977,8 @@ while 1 {
 
 **视频参考：**  
 
-[凛疯1f，4.0深渊上半（2金）](https://www.bilibili.com/video/BV18F411D74C)  
+[Nickess，4.2深渊上半（北斗皇女，2金）](https://www.bilibili.com/video/BV1kp4y1f7XD)  
+[凛疯1f，4.0深渊上半（修女莱依拉，2金）](https://www.bilibili.com/video/BV18F411D74C)  
 
 **DPS参考：**  
 
@@ -1993,6 +2076,7 @@ while 1{
 
 **视频参考：**  
 
+[凛疯1f，4.2深渊下半（0金）](https://www.bilibili.com/video/BV1T34y1F7qT)  
 [Nickess，4.0深渊下半（0金）](https://www.bilibili.com/video/BV1BG411R7jJ)  
 [Nickess，3.6深渊下半（0金）](https://www.bilibili.com/video/BV1pX4y167JW)  
 [Nickess，3.5深渊上半（0金）](https://www.bilibili.com/video/BV1dv4y1G7DE)  
@@ -2349,12 +2433,15 @@ while 1{
 }
 ```
 
-### 草主/柯莱/瑶瑶（三选二） 芭芭拉 久岐忍
+### 草主/柯莱/瑶瑶（三选二） 芭芭拉/坎蒂丝 久岐忍
 
 **队伍简介：**  
 
-用芭芭拉替换行秋的版本。因为芭芭拉需要站场挂水，所以草系角色最好选择能后台挂草的草主/柯莱/瑶瑶。  
-相比于带行秋的版本，操作较为繁琐，没有抗打断和高额水直伤，但是有群体治疗、更多群体挂水以及海染的群体伤害，在对付流血狗等敌人时比较有优势，最重要的是可以省下一个行秋，在输出压力不大时是一个非常不错的低成本配队选择。  
+用芭芭拉/坎蒂丝替换行秋的版本。  
+芭芭拉需要站场挂水，所以草系角色最好选择能后台挂草的草主/柯莱/瑶瑶。坎蒂丝需要E充能，因此也不适合带卡维这样的前台草。  
+相比于带行秋的版本，操作较为繁琐，没有抗打断和高额水直伤。  
+但芭芭拉有群体治疗、更多群体挂水以及海染的群体伤害，在对付流血狗等敌人时较有优势；坎蒂丝群体挂水能力更强。  
+当然最重要的是可以省下一个行秋，在输出压力不大时是一个非常不错的低成本配队选择。  
 
 **评分参考：**  
 
@@ -2369,9 +2456,10 @@ while 1{
 
 **视频参考：**  
 
-[大白突突突突，4.0深渊上半（草主柯莱，0金）](https://www.bilibili.com/video/BV1Fp4y177TX)  
-[lyh逗比，3.6深渊12-2上半龙兽&12-3上半妙脆角（草主柯莱，0金](https://www.bilibili.com/video/BV1hh411u7UU)  
-[lyh逗比，3.4深渊12-2上半武士+雷火蝎（草主柯莱，0金）](https://www.bilibili.com/video/BV1JM411s7KX)  
+[猫蜥肉酱，4.2深渊下半（柯莱瑶瑶坎蒂丝，0金）](https://www.bilibili.com/video/BV1Va4y1Z72P)
+[大白突突突突，4.0深渊上半（草主柯莱芭芭拉，0金）](https://www.bilibili.com/video/BV1Fp4y177TX)  
+[lyh逗比，3.6深渊12-2上半龙兽&12-3上半妙脆角（草主柯莱芭芭拉，0金）](https://www.bilibili.com/video/BV1hh411u7UU)  
+[lyh逗比，3.4深渊12-2上半武士+雷火蝎（草主柯莱芭芭拉，0金）](https://www.bilibili.com/video/BV1JM411s7KX)  
 
 **DPS参考：**  
 
@@ -2455,6 +2543,7 @@ while 1{
 
 **视频参考：**  
 
+[小夜悠，4.2深渊上半（柯莱芭芭拉，0金）](https://www.bilibili.com/video/BV1db4y1T7VX)
 [只会逃跑的小佐伊，4.1深渊下半（柯莱芭芭拉，0金）](https://www.bilibili.com/video/BV1Ez4y1F7VW)  
 [枕头ツ，4.0深渊上半（瑶瑶坎蒂丝，0金）](https://www.bilibili.com/video/BV11p4y1A7tH)  
 
@@ -2485,7 +2574,8 @@ while 1{
 
 **视频参考：**  
 
-[吃狗头的喵酱，4.1深渊下半（0金）](https://www.bilibili.com/video/BV18h4y167q1)  
+[lyh逗比，4.2深渊下半（柯莱，0金）](https://www.bilibili.com/video/BV1sC4y1m7oM)  
+[吃狗头的喵酱，4.1深渊下半（草主，0金）](https://www.bilibili.com/video/BV18h4y167q1)  
 [黑塔今天没转圈，4.0深渊上半（柯莱，0金，竞速）](https://www.bilibili.com/video/BV1y34y1P74X)  
 [thehander，3.6深渊上半（柯莱，0金）](https://www.bilibili.com/video/BV1ts4y1A7uN)  
 
@@ -2559,7 +2649,7 @@ while 1 {
 }
 ```
 
-### 柯莱 芭芭拉 菲谢尔 久岐忍
+### 草主/柯莱 芭芭拉 菲谢尔 久岐忍
 
 **队伍简介：**  
 
@@ -2578,8 +2668,10 @@ while 1 {
 
 **视频参考：**  
 
-[thehander，3.8深渊上半（0金）](https://www.bilibili.com/video/BV1TF411f7Zf)  
-[黑塔今天没转圈，3.4深渊上半（2金）](https://www.bilibili.com/video/BV1KT411C7qT)  
+[Nahida丶，4.2深渊下半（草主，0金）](https://www.bilibili.com/video/BV1tb4y1T77F)
+[持灵，4.2深渊下半（柯莱，1金），](https://www.bilibili.com/video/BV1Nw411P7vt)  
+[thehander，3.8深渊上半（柯莱，0金）](https://www.bilibili.com/video/BV1TF411f7Zf)  
+[黑塔今天没转圈，3.4深渊上半（柯莱，2金）](https://www.bilibili.com/video/BV1KT411C7qT)  
 
 **DPS参考：**  
 
@@ -2703,11 +2795,13 @@ while 1 {
 绽放带冰的原理：草冰可共存，上水时，水先和冰反应生成二倍元素量的冻元素，剩余水元素和其一半元素量的草元素反应生成一颗种子。  
 因此，同样生成一颗种子，带冰时对草元素的消耗量低，即所谓“冻结护草”。  
 
-### 柯莱 行秋 久岐忍 夏洛蒂
+### 柯莱 行秋 久岐忍 夏洛蒂/迪奥娜
 
 **队伍简介：**  
 
-冰法驾驶员，而且恰好治疗量和伤害都为攻击倍率，带输出装时可同时提供足量治疗和不低的直伤。  
+冰治疗版本。  
+迪奥娜可提供盾。  
+夏洛蒂治疗量和伤害都为攻击倍率，带输出装时可同时提供足量治疗和不低的直伤。  
 
 **评分参考：**  
 
@@ -2722,6 +2816,7 @@ while 1 {
 
 **视频参考：**  
 
+[摸鱼的筱柒，4.2深渊下半（0金）](https://www.bilibili.com/video/BV1zN4y1q7bV)  
 [lyh逗比，4.1深渊上半（0金）](https://www.bilibili.com/video/BV1eN411M7jJ)  
 
 **DPS参考：**  
@@ -2756,7 +2851,7 @@ while 1 {
 
 ## 4.1.5 草X+水Y+雷Z+风N（带风超绽）
 
-### 瑶瑶/柯莱 行秋 菲谢尔/北斗 砂糖
+### 瑶瑶/柯莱/草主 行秋 菲谢尔/北斗/久岐忍 砂糖
 
 **队伍简介：**  
 
@@ -2775,6 +2870,9 @@ while 1 {
 
 **视频参考：**  
 
+[凛疯1f，4.2深渊上半（瑶瑶菲谢尔，0金）](https://www.bilibili.com/video/BV1T34y1F7qT)
+[重装小秃0_0，4.2深渊上半（柯莱北斗，0金）](https://www.bilibili.com/video/BV1DN411T7oK)
+[蝶wei61161，4.2深渊上半（草主久岐忍，0金）](https://www.bilibili.com/video/BV1uz4y1A7Cf)
 [Nickess，4.0深渊上半（柯莱菲谢尔，1金）](https://www.bilibili.com/video/BV1fN4y1D7Vp)  
 [Nickess，3.8深渊上半（瑶瑶北斗，0金）](https://www.bilibili.com/video/BV11m4y1j7iS)  
 [Nickess，3.5深渊下半（瑶瑶菲谢尔，0金）](https://www.bilibili.com/video/BV1Q24y1u7Qj)  
@@ -3061,6 +3159,7 @@ while 1 {
 
 **视频参考：**  
 
+[Nickess，4.2深渊上半（0金）](https://www.bilibili.com/video/BV1e64y1p7W3)  
 [Nickess，4.0深渊上半（0金）](https://www.bilibili.com/video/BV1BG411R7jJ)  
 [Nickess，3.8深渊上半（0金）](https://www.bilibili.com/video/BV14x4y197Lc)  
 [Nickess，3.4深渊下半（0金）](https://www.bilibili.com/video/BV1Ss4y187AH)  
@@ -3248,11 +3347,11 @@ iii) “冻结护草”
 
 ## 4.3.3 草X+水Y+冰Z+风N（带风冻绽）
 
-### 草主/柯莱 芭芭拉 罗莎莉亚 砂糖
+### 草主/柯莱 芭芭拉 罗莎莉亚 砂糖/鹿野院平藏
 
 **队伍简介：**  
 
-暂缺  
+带风通常是为了聚怪，此外也可以帮助染色破盾等。  
 
 **评分参考：**  
 
@@ -3267,7 +3366,8 @@ iii) “冻结护草”
 
 **视频参考：**  
 
-[Nickess，3.8深渊上半（草主，0金）](https://www.bilibili.com/video/BV1AM4y1s74g)  
+[稀人，4.2深渊上半（柯莱小鹿，0金）](https://www.bilibili.com/video/BV1WC4y1176w)
+[Nickess，3.8深渊上半（草主砂糖，0金）](https://www.bilibili.com/video/BV1AM4y1s74g)  
 
 **DPS参考：**  
 
@@ -3277,9 +3377,9 @@ iii) “冻结护草”
 
 暂缺  
 
-## 5. 未分类/时代眼泪
+## 5. 时代眼泪
 
-收录一些未分类，或者因为强度问题不再上场的队伍。  
+收录因为强度问题不再上场的队伍。  
 
 [雷泽 菲谢尔 迪奥娜 行秋，香香怪coco，1.3~1.4深渊下半（0金）](https://www.bilibili.com/video/BV1BK4y1m7Yg)  
 [砂糖 北斗 菲谢尔 迪奥娜，鐮夜，1.5深渊下半（0金）](https://www.bilibili.com/video/BV1564y117Hc)  
@@ -3288,3 +3388,11 @@ iii) “冻结护草”
 [班尼特 行秋 凯亚 重云，香香怪coco，2.0深渊上半（0金）](https://www.bilibili.com/video/BV1244y117rA)  
 [香菱 菲谢尔 迪奥娜 风主，香香怪coco，2.0深渊下半（0金）](https://www.bilibili.com/video/BV1244y117rA)  
 [香菱 班尼特 风主 雷泽，评论区说客，2.6深渊下半（0金，低配三星武器）](https://www.bilibili.com/video/BV16u411i7TF)  
+
+## 6. 科研区
+
+收录配队逻辑比较抽象，或成本/练度需求过高，或手法要求过高的队伍。
+
+[凯亚 罗莎莉亚 坎蒂丝 班尼特，凛疯1f，4.2深渊上半（2金，6命凯）](https://www.bilibili.com/video/BV1ej41177xv)  
+[砂糖 九条 菲谢尔 绮良良，凛疯1f，4.2深渊下半（1金）](https://www.bilibili.com/video/BV1ej41177xv)  
+[雷泽 皇女 柯莱 迪奥娜，魈魈利亚，4.2深渊下半（0金）](https://www.bilibili.com/video/BV1db4y1T7Ec)  
