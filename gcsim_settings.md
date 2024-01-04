@@ -13,6 +13,22 @@
 
 如需投稿，请尽量保持1和2本文档给出的相同。  
 
+## 0. gcsim使用方式
+
+第一步：[从github下载gcsim](https://github.com/genshinsim/gcsim/releases)，点击最新版的Assets下的gcsim.exe即可保存，注意下载exe可能会导致浏览器警告，手动选择保留即可。  
+
+第二步：把gcsim.exe放到工作文件夹中，当然下载的时候就可以指定。
+
+第三步：在此文件夹中创建config.txt用于保存模拟使用的代码，如何编写请参照后文，可以先将固定的部分写入。
+
+第四步：创建run.bat用于便捷地运行模拟，此文件内容如下（将其后缀名修改为.txt，增加下列文本，再将后缀名修改回.bat，如何显示后缀名请百度）：
+
+```text
+cmd /k gcsim.exe -c="config.txt" -s="true"
+```
+
+第五步：在config.txt中编写队伍代码，然后运行run.bat进行模拟。
+
 ## 1. 模拟条件
 
 * 重复设置时新的会覆盖。  
@@ -90,7 +106,7 @@ xiangling add stats hp=5433 atk=383 def=81 em=96 cr=0.642 cd=0.964 er=0.641 pyro
 
 ### 烟绯
 
-【通用-流浪乐团】6命，精5流浪乐章，4乐团攻火暴，(9+11)双暴+2攻击+2精通+2充能  
+【蒸发-流浪乐团】6命，精5流浪乐章，4乐团攻火暴，(9+11)双暴+2攻击+2精通+2充能  
 
 ```text
 yanfei char lvl=90/90 cons=6 talent=9,9,9;
@@ -98,6 +114,16 @@ yanfei add weapon="thewidsith" refine=5 lvl=90/90;
 yanfei add set="wandererstroupe" count=4;
 yanfei add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
 yanfei add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+```
+
+【纯火-流浪渡火】6命，精5流浪乐章，4渡火攻火暴，(9+11)双暴+4攻击+2充能
+
+```text
+yanfei char lvl=90/90 cons=6 talent=9,9,9;
+yanfei add weapon="thewidsith" refine=5 lvl=90/90;
+yanfei add set="lavawalker" count=4;
+yanfei add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
+yanfei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
 ```
 
 ### 托马
@@ -261,6 +287,18 @@ chongyun add weapon="mailedflower" refine=5 lvl=90/90;
 chongyun add set="emblemofseveredfate" count=4;
 chongyun add stats hp=4780 atk=311 er=0.518/em=187 cryo%=0.466 cr=0.311;
 chongyun add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+```
+
+### 夏洛蒂
+
+【超绽驾驶员-流华追忆】6命，精5纯水流华，4追忆攻冰暴，(9+11)双暴+2攻击+2精通+2充能  
+
+```text
+charlotte char lvl=90/90 cons=6 talent=9,9,9;
+charlotte add weapon="flowingpurity" refine=5 lvl=90/90;
+charlotte add set="shimenawasreminiscence" count=4;
+charlotte add stats hp=4780 atk=311 atk%=0.466 cryo%=0.466 cr=0.311;
+charlotte add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 ```
 
 ### 菲谢尔

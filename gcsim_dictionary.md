@@ -16,7 +16,7 @@
 
 雷(Electro)：北斗(Beidou)，赛诺(Cyno)，多莉(Dori)，菲谢尔(Fischl)，刻晴(Keqing)，久岐忍(Kuki)，丽莎(Lisa)，雷电将军(Raiden)，雷泽(Razor)，九条裟罗(Sara)，八重神子(Yae)
 
-冰(Cyro)：俄洛伊(Aloy)，神里绫华(Ayaka)，重云(Chongyun)，迪奥娜(Diana)，优菈(Eula)，菲米尼(Freminet)，甘雨(Ganyu)，凯亚(Kaeya)，莱依拉(Layla)，米卡(Mika)，七七(Qiqi)，罗莎莉亚(Rosaria)，申鹤(Shenhe)
+冰(Cryo)：俄洛伊(Aloy)，神里绫华(Ayaka)，夏洛蒂(Charlotte)，重云(Chongyun)，迪奥娜(Diana)，优菈(Eula)，菲米尼(Freminet)，甘雨(Ganyu)，凯亚(Kaeya)，莱依拉(Layla)，米卡(Mika)，七七(Qiqi)，罗莎莉亚(Rosaria)，申鹤(Shenhe)
 
 风(Anemo)：珐露珊(Faruzan)，鹿野院平藏(Heizou)，琴(Jean)，万叶(Kazuha)，琳妮特(Lynette)，早柚(Sayu)，砂糖(Sucrose)，温迪(Venti)，流浪者(Wanderer)，魈(Xiao)
 

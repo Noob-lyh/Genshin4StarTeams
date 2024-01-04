@@ -1848,11 +1848,11 @@ while 1 {
 
 **DPS参考：**  
 
-0金 2.99w (约44秒循环，烟绯奇数轮开Q吃流浪)  
+0金 3.08w (约44秒循环，烟绯奇数轮开Q吃流浪)  
 
 班尼特6命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
 香菱6命，精5渔获，4绝缘充/攻火暴，(9+11)双暴+2攻击+4充能  
-烟绯6命，精5流浪乐章，4乐团攻火暴，(9+11)双暴+2攻击+2精通+2充能  
+烟绯6命，精5流浪乐章，4渡火攻火暴，(9+11)双暴+4攻击+2充能  
 鹿野院平藏6命，精5西风秘典，4风套攻风暴，(9+11)双暴+4攻击+2充能  
 
 ```text
@@ -1870,9 +1870,9 @@ xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.22 em=0 cr=0.2
 
 yanfei char lvl=90/90 cons=6 talent=9,9,9;
 yanfei add weapon="thewidsith" refine=5 lvl=90/90;
-yanfei add set="wandererstroupe" count=4;
+yanfei add set="lavawalker" count=4;
 yanfei add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
-yanfei add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+yanfei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
 
 heizou char lvl=90/90 cons=6 talent=9,9,9;
 heizou add weapon="favoniuscodex" refine=5 lvl=90/90;
@@ -2949,7 +2949,62 @@ while 1 {
 
 **DPS参考：**  
 
-暂缺  
+0金 4.15w  
+
+柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
+芭芭拉6命，精5祭礼残章/试作金珀，4海染生生治，4精通+6生命  
+久岐忍6命，精5东花坊时雨，4乐园精精精，4精通+8生命  
+菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
+
+```text
+collei char lvl=90/90 cons=6 talent=9,9,9;
+collei add weapon="favoniuswarbow" refine=5 lvl=90/90;
+collei add set="deepwoodmemories" count=4;
+collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+xingqiu char lvl=90/90 cons=6 talent=9,9,9;
+xingqiu add weapon="sacrificialsword" refine=7 lvl=90/90;
+xingqiu add set="emblemofseveredfate" count=4;
+xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
+
+kuki char lvl=90/90 cons=6 talent=9,9,9;
+kuki add weapon="toukaboushigure" refine=5 lvl=90/90;
+kuki add set="flowerofparadiselost" count=4;
+kuki add stats hp=4780 atk=311 em=187 em=187 em=187;
+kuki add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
+
+charlotte char lvl=90/90 cons=6 talent=9,9,9;
+charlotte add weapon="flowingpurity" refine=5 lvl=90/90;
+charlotte add set="shimenawasreminiscence" count=4;
+charlotte add stats hp=4780 atk=311 atk%=0.466 cryo%=0.466 cr=0.311;
+charlotte add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+active xingqiu;
+xingqiu burst, attack;
+kuki skill, dash, attack;
+collei skill, attack;
+xingqiu attack, skill, dash, attack, skill, dash;
+charlotte attack, skill;
+while 1{
+    if .kuki.skill.ready {
+        kuki skill, dash, attack;
+    } else if .xingqiu.burst.ready {
+        xingqiu burst, attack;
+    } else if .collei.skill.ready {
+        collei skill;
+    } else if .collei.burst.ready {
+        collei burst;
+    } else if .xingqiu.skill.ready {
+        xingqiu attack, skill, dash, attack, skill, dash;
+    } else if .charlotte.skill.ready {
+        charlotte attack, skill;
+    } else {
+        charlotte attack:3, dash;
+    }
+}
+```
 
 ### 柯莱 行秋 久岐忍 菲米尼/重云
 
