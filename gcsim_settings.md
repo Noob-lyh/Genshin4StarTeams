@@ -165,6 +165,18 @@ barbara add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 cr=0.311;
 barbara add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0 em=0 cr=0.264 cd=0;
 ```
 
+### 坎蒂丝
+
+【通用-绝缘】6命，精5西风长枪/公义的酬报，4绝缘充生暴，(7+9)双爆+4生命+4充能  
+
+```text
+candace char lvl=90/90 cons=6 talent=9,9,9;
+candace add weapon="favoniuslance/rightfulreward" refine=5 lvl=90/90;
+candace add set="emblemofseveredfate" count=4;
+candace add stats hp=4780 atk=311 er=0.518 hp%=0.466 cr=0.311;
+candace add stats hp=0 hp%=0.196 atk=0 atk%=0 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+```
+
 ### 凯亚
 
 【融化-龙吟绝缘】2命，精5匣里龙吟，4绝缘充/精/攻冰暴，(9+11)双暴+2攻击+2精通+2充能
@@ -374,15 +386,15 @@ sucrose add stats hp=6120 atk=467 def=199 em=643 cr=0.132 cd=0.140 er=0.589;
 
 ### 鹿野院平藏
 
-【通用-速切输出】6命，精5流浪乐章，2风套2角斗攻风暴，(9+11)双暴+4攻击
+【通用-速切输出】6命，精5流浪乐章/西风秘典，2风套2角斗/4风套攻风暴，(9+11)双暴+4攻击+2充能
 
 ```text
 heizou char lvl=90/90 cons=6 talent=9,9,9;
-heizou add weapon="thewidsith" refine=5 lvl=90/90;
+heizou add weapon="thewidsith/favoniuscodex" refine=5 lvl=90/90;
 heizou add set="viridescentvenerer" count=2;
 heizou add set="gladiatorsfinale" count=2;
 heizou add stats hp=4780 atk=311 atk%=0.466 anemo%=0.466 cr=0.311;
-heizou add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0 em=0 cr=0.297 cd=0.726;
+heizou add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
 ```
 
 【珐鹿琳莱-充能速切治疗】6命，精5试作金珀，4宗室攻风暴，(9+11)双暴+4攻击  

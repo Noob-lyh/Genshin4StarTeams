@@ -547,7 +547,7 @@ while 1 {
 
 **DPS参考：**  
 
-0金 4.02w = 0.5*(4.82w+3.22w) (23秒循环，奇数轮开Q并触发流浪乐章)  
+0金 4.02w = 0.5*(4.82w+3.22w) (46秒循环，烟绯奇数轮开Q吃流浪乐章)  
 
 班尼特6命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
 烟绯6命，精5流浪乐章，4乐团攻火暴，(9+11)双暴+2攻击+2精通+2充能  
@@ -1848,7 +1848,75 @@ while 1 {
 
 **DPS参考：**  
 
-暂缺  
+0金 2.99w (约44秒循环，烟绯奇数轮开Q吃流浪)  
+
+班尼特6命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
+香菱6命，精5渔获，4绝缘充/攻火暴，(9+11)双暴+2攻击+4充能  
+烟绯6命，精5流浪乐章，4乐团攻火暴，(9+11)双暴+2攻击+2精通+2充能  
+鹿野院平藏6命，精5西风秘典，4风套攻风暴，(9+11)双暴+4攻击+2充能  
+
+```text
+bennett char lvl=90/90 cons=6 talent=9,9,9;
+bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
+bennett add set="noblesseoblige" count=4;
+bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
+
+xiangling char lvl=90/90 cons=6 talent=9,9,9;
+xiangling add weapon="thecatch" refine=5 lvl=90/90;
+xiangling add set="emblemofseveredfate" count=4;
+xiangling add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
+xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.22 em=0 cr=0.297 cd=0.726;
+
+yanfei char lvl=90/90 cons=6 talent=9,9,9;
+yanfei add weapon="thewidsith" refine=5 lvl=90/90;
+yanfei add set="wandererstroupe" count=4;
+yanfei add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
+yanfei add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+heizou char lvl=90/90 cons=6 talent=9,9,9;
+heizou add weapon="favoniuscodex" refine=5 lvl=90/90;
+heizou add set="viridescentvenerer" count=4;
+heizou add stats hp=4780 atk=311 atk%=0.466 anemo%=0.466 cr=0.311;
+heizou add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
+
+fn heizou_combo(){
+    if .heizou.burst.ready {
+        heizou burst, attack, charge, skill;
+    } else {
+        heizou attack, charge, attack:3, skill;
+    }
+}
+
+active bennett;
+while 1 {
+    bennett burst, skill;
+    xiangling burst, skill;
+    heizou_combo();
+    yanfei burst, charge, 
+           skill, charge,
+           attack:2, charge, 
+           attack:2, charge, 
+           attack:2, charge, 
+           attack:2, charge;
+    xiangling skill;
+    heizou_combo();
+    yanfei skill;
+    xiangling attack:3;
+
+    bennett burst, skill;
+    xiangling burst;
+    heizou attack:2;
+    heizou_combo();
+    yanfei skill, charge;
+    xiangling skill;
+    bennett skill;
+    xiangling attack:3;
+    yanfei attack:4, charge,
+           attack:2, skill, charge;
+    xiangling attack;
+}
+```
 
 ## 3.4 珐鹿双风+任意直伤（含纯风）
 
@@ -2463,7 +2531,7 @@ while 1{
 
 **DPS参考：**  
 
-0金 4.12w (无轴循环)  
+芭芭拉 0金 4.12w (无轴循环)  
 
 注：此无轴循环难度较大且需要全程贴身，对实战DPS的参考价值有限  
 
@@ -2518,6 +2586,66 @@ while 1{
         collei burst;
     } else {
         barbara attack:4;
+    }
+}
+```
+
+坎蒂丝 0金 4.48w (无轴循环)  
+
+草主6命，精5西风剑，4草套充草暴，(7+9)双爆+4攻击+4充能  
+柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
+坎蒂丝6命，精5西风长枪，4绝缘充生暴，(7+9)双爆+4生命+4充能  
+久岐忍6命，精5东花坊时雨，4乐园精精精，4精通+8生命  
+
+```text
+travelerdendro char lvl=90/90 cons=6 talent=9,9,9;
+travelerdendro add weapon="favoniussword" refine=5 lvl=90/90;
+travelerdendro add set="deepwoodmemories" count=4;
+travelerdendro add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+travelerdendro add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+collei char lvl=90/90 cons=6 talent=9,9,9;
+collei add weapon="favoniuswarbow" refine=5 lvl=90/90;
+collei add set="deepwoodmemories" count=4;
+collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+candace char lvl=90/90 cons=6 talent=9,9,9;
+candace add weapon="favoniuslance" refine=5 lvl=90/90;
+candace add set="emblemofseveredfate" count=4;
+candace add stats hp=4780 atk=311 er=0.518 hp%=0.466 cr=0.311;
+candace add stats hp=0 hp%=0.196 atk=0 atk%=0 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+kuki char lvl=90/90 cons=6 talent=9,9,9;
+kuki add weapon="toukaboushigure" refine=5 lvl=90/90;
+kuki add set="flowerofparadiselost" count=4;
+kuki add stats hp=4780 atk=311 em=187 em=187 em=187;
+kuki add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
+
+active travelerdendro;
+travelerdendro skill, burst;
+candace skill, burst;
+kuki skill, dash;
+collei skill, burst;
+while 1{
+    if .kuki.skill.ready {
+        kuki attack, skill, dash;
+    } else if .candace.burst.ready {
+        candace burst, attack;
+    } else if .travelerdendro.skill.ready {
+        travelerdendro attack, skill;
+    } else if .collei.skill.ready {
+        collei skill;
+    } else if .travelerdendro.burst.ready {
+        travelerdendro attack, burst;
+    } else if .collei.burst.ready {
+        collei burst;
+    } else if .candace.skill.ready {
+        candace attack, skill;
+    } else if .kuki.burst.ready {
+        kuki burst;
+    } else {
+        kuki attack;
     }
 }
 ```
