@@ -74,7 +74,7 @@ XX国家队，四星最经典的配队（模板）没有之一。
 
 班尼特6命，精1原木刀，4教官充火暴，(5+7)双暴+6生命+6充能  
 香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
-行秋6命，精7祭礼剑(保证刷新E)，4宗室攻水暴，(9+11)双暴+6充能  
+行秋6命，精7祭礼剑，4宗室攻水暴，(9+11)双暴+6充能  
 砂糖6命，精5讨龙英杰谭，4风套精精精，4精通+6充能  
 
 ```text
@@ -1086,10 +1086,10 @@ while 1 {
 
 **DPS参考：**  
 
-0金 3.90w (无轴循环)  
+0金 3.93w (无轴循环)  
 
 砂糖6命，精5祭礼残章，4风套精精精，4精通+6充能  
-北斗6命，精5浪影阔剑，4绝缘充雷暴，(9+11)双暴+2攻击+2精通+2充能  
+北斗6命，精5究极霸王超级魔剑，4绝缘攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
 菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
 瑶瑶6命，精5公义的酬报，4千岩生生治，4精通+6生命+6充能  
 
@@ -1101,9 +1101,9 @@ sucrose add stats hp=4780 atk=311 em=187 em=187 em=187;
 sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
 
 beidou char lvl=90/90 cons=6 talent=9,9,9;
-beidou add weapon="finaleofthedeep" refine=5 lvl=90/90;
+beidou add weapon="ultimateoverlordsmegamagicsword" refine=5 lvl=90/90;
 beidou add set="emblemofseveredfate" count=4;
-beidou add stats hp=4780 atk=311 er=0.518 electro%=0.466 cr=0.311;
+beidou add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
 beidou add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
 fischl char lvl=90/90 cons=6 talent=9,9,9; 
@@ -1319,10 +1319,10 @@ while 1 {
 
 **DPS参考：**  
 
-0金 3.93w (无轴循环)  
+0金 3.97w (无轴循环)  
 
 砂糖6命，精5试作金珀，4风套精精精，4精通+6充能  
-北斗6命，精5浪影阔剑，4绝缘充雷暴，(9+11)双暴+2攻击+2精通+2充能  
+北斗6命，精5究极霸王超级魔剑，4绝缘攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
 菲谢尔6命，精5静谧之曲，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
 行秋6命，精5祭礼剑，4绝缘攻水暴，(9+11)双暴+2攻击+2精通+2充能  
 
@@ -1334,9 +1334,9 @@ sucrose add stats hp=4780 atk=311 em=187 em=187 em=187;
 sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
 
 beidou char lvl=90/90 cons=6 talent=9,9,9;
-beidou add weapon="tidalshadow" refine=5 lvl=90/90;
+beidou add weapon="ultimateoverlordsmegamagicsword" refine=5 lvl=90/90;
 beidou add set="emblemofseveredfate" count=4;
-beidou add stats hp=4780 atk=311 er=0.518 electro%=0.466 cr=0.311;
+beidou add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
 beidou add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
 fischl char lvl=90/90 cons=6 talent=9,9,9; 
@@ -2293,11 +2293,11 @@ while 1{
 
 ## 3.8.1 菲米尼+雷X+Y+Z（菲米尼物理队）
 
-### 菲米尼 菲谢尔
+### 菲米尼 菲谢尔 行秋 米卡
 
 **队伍简介：**  
 
-暂缺  
+菲米尼物理队，双冰+雷水，吃不到双冰共鸣，但是可以方便地触发超导和碎冰。  
 
 **评分参考：**  
 
@@ -2316,7 +2316,54 @@ while 1{
 
 **DPS参考：**  
 
-暂缺  
+0金 3.49w (23秒循环)  
+
+菲米尼6命，精5浪影阔剑，4苍白攻物暴，(9+11)双暴+2攻击+2精通+2充能  
+菲谢尔6命，精5静谧之曲，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
+行秋6命，精7祭礼剑，4绝缘攻水暴，(9+11)双暴+6充能  
+米卡6命，精5公义的酬报，4宗室生生治，4生命+10充能  
+
+```text
+freminet char lvl=90/90 cons=6 talent=9,9,9;
+freminet add weapon="tidalshadow" refine=5 lvl=90/90;
+freminet add set="paleflame" count=4;
+freminet add stats hp=4780 atk=311 atk%=0.466 phys%=0.583 cr=0.311;
+freminet add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+fischl char lvl=90/90 cons=6 talent=9,9,9; 
+fischl add weapon="songofstillness" refine=5 lvl=90/90;
+fischl add set="goldentroupe" count=4;
+fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
+fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+xingqiu char lvl=90/90 cons=6 talent=9,9,9;
+xingqiu add weapon="sacrificialsword" refine=7 lvl=90/90;
+xingqiu add set="emblemofseveredfate" count=4;
+xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
+
+mika char lvl=90/90 cons=6 talent=9,9,9; 
+mika add weapon="rightfulreward" refine=5 lvl=90/90;
+mika add set="noblesseoblige" count=4;
+mika add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
+mika add stats hp=0 hp%=0.196 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
+
+active xingqiu;
+while 1{    
+    xingqiu skill, dash, burst, attack, skill;
+    mika skill, attack, burst;
+    if .fischl.skill.ready { 
+        fischl skill, attack; 
+    } else { 
+        fischl attack:2, burst; 
+    }
+    freminet skill, burst,
+             attack:2, skill, skill,
+             attack:2, skill, attack:2, skill,
+             attack:2, skill, attack:2, skill,
+             attack:3, skill, attack:2;
+}
+```
 
 ## 3.8.2 雷泽+冰X+Y+Z（雷泽物理队）
 
@@ -2949,12 +2996,12 @@ while 1 {
 
 **DPS参考：**  
 
-0金 4.15w  
+0金 4.15w (无轴循环)  
 
 柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
-芭芭拉6命，精5祭礼残章/试作金珀，4海染生生治，4精通+6生命  
+行秋6命，精7祭礼剑，4绝缘攻水暴，(9+11)双暴+6充能  
 久岐忍6命，精5东花坊时雨，4乐园精精精，4精通+8生命  
-菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
+夏洛蒂6命，精5纯水流华，4追忆攻冰暴，(9+11)双暴+2攻击+2精通+2充能  
 
 ```text
 collei char lvl=90/90 cons=6 talent=9,9,9;
@@ -3030,7 +3077,50 @@ while 1{
 
 **DPS参考：**  
 
-暂缺  
+0金 4.00w (菲米尼，23秒循环)  
+
+柯莱6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
+行秋6命，精7祭礼剑，4绝缘攻水暴，(9+11)双暴+6充能  
+久岐忍6命，精5东花坊时雨，4乐园精精精，4精通+8生命  
+菲米尼6命，精5浪影阔剑，4苍白攻物暴，(9+11)双暴+2攻击+2精通+2充能  
+
+```text
+collei char lvl=90/90 cons=6 talent=9,9,9;
+collei add weapon="favoniuswarbow" refine=5 lvl=90/90;
+collei add set="deepwoodmemories" count=4;
+collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
+collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
+
+xingqiu char lvl=90/90 cons=6 talent=9,9,9;
+xingqiu add weapon="sacrificialsword" refine=7 lvl=90/90;
+xingqiu add set="emblemofseveredfate" count=4;
+xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
+
+kuki char lvl=90/90 cons=6 talent=9,9,9;
+kuki add weapon="toukaboushigure" refine=5 lvl=90/90;
+kuki add set="flowerofparadiselost" count=4;
+kuki add stats hp=4780 atk=311 em=187 em=187 em=187;
+kuki add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
+
+freminet char lvl=90/90 cons=6 talent=9,9,9;
+freminet add weapon="tidalshadow" refine=5 lvl=90/90;
+freminet add set="paleflame" count=4;
+freminet add stats hp=4780 atk=311 atk%=0.466 phys%=0.583 cr=0.311;
+freminet add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+active xingqiu;
+while 1{    
+    xingqiu skill, burst, attack, skill;
+    kuki skill, dash, attack;
+    collei skill, attack, burst;
+    freminet skill, burst,
+             attack:2, skill, skill,
+             attack:2, skill, attack:2, skill,
+             attack:2, skill, attack:2, skill,
+             attack:3, skill, attack;
+}
+```
 
 ## 4.1.5 草X+水Y+雷Z+风N（带风超绽）
 

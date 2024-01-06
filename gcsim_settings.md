@@ -140,11 +140,11 @@ thoma add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
 
 ### 行秋
 
-【通用-祭礼攻击沙】6命，精5祭礼剑，4绝缘/4宗室攻水暴，(9+11)双暴+2攻击+2精通+2充能  
+【通用-祭礼攻击沙】6命，精5西风剑/精5祭礼剑，4绝缘/4宗室攻水暴，(9+11)双暴+2攻击+2精通+2充能  
 
 ```text
 xingqiu char lvl=90/90 cons=6 talent=9,9,9;
-xingqiu add weapon="sacrificialsword" refine=5 lvl=90/90;
+xingqiu add weapon="favoniussword/sacrificialsword" refine=5 lvl=90/90;
 xingqiu add set="emblemofseveredfate/noblesseoblige" count=4;
 xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
 xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
@@ -301,6 +301,42 @@ charlotte add stats hp=4780 atk=311 atk%=0.466 cryo%=0.466 cr=0.311;
 charlotte add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 ```
 
+### 莱伊拉
+
+【通用-千岩挂冰盾辅】6命，精5天目影打刀，4千岩生生生，4生命+10充能  
+
+```text
+layla char lvl=90/90 cons=6 talent=9,9,9;
+layla add weapon="amenomakageuchi" refine=5 lvl=90/90;
+layla add set="tenacityofthemillelith" count=4;
+layla add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 hp%=0.466;
+layla add stats hp=0 hp%=0.196 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
+```
+
+### 米卡
+
+【通用-宗室治疗】6命，精5公义的酬报，4宗室生生治，4生命+10充能
+
+```text
+mika char lvl=90/90 cons=6 talent=9,9,9; 
+mika add weapon="rightfulreward" refine=5 lvl=90/90;
+mika add set="noblesseoblige" count=4;
+mika add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
+mika add stats hp=0 hp%=0.196 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
+```
+
+### 菲米尼
+
+【超绽驾驶员-浪影苍白】6命，精5浪影阔剑，4苍白攻物暴，(9+11)双暴+2攻击+2精通+2充能  
+
+```text
+freminet char lvl=90/90 cons=6 talent=9,9,9;
+freminet add weapon="tidalshadow" refine=5 lvl=90/90;
+freminet add set="paleflame" count=4;
+freminet add stats hp=4780 atk=311 atk%=0.466 phys%=0.583 cr=0.311;
+freminet add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+```
+
 ### 菲谢尔
 
 【通用-剧团绝弦/静谧之曲】6命，精5绝弦/静谧之曲，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
@@ -387,18 +423,6 @@ razor add weapon="mailedflower" refine=5 lvl=90/90;
 razor add set="flowerofparadiselost" count=4;
 razor add stats hp=4780 atk=311 em=187 em=187 em=187;
 razor add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=120 cr=0 cd=0;
-```
-
-### 莱伊拉
-
-【通用-千岩挂冰盾辅】6命，精5天目影打刀，4千岩生生生，4生命+10充能  
-
-```text
-layla char lvl=90/90 cons=6 talent=9,9,9;
-layla add weapon="amenomakageuchi" refine=5 lvl=90/90;
-layla add set="tenacityofthemillelith" count=4;
-layla add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 hp%=0.466;
-layla add stats hp=0 hp%=0.196 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
 ```
 
 ### 砂糖
