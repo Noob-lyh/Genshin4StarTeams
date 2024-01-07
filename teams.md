@@ -71,14 +71,15 @@ XX国家队，四星最经典的配队（模板）没有之一。
 **DPS参考：**  
 
 0金 5.58w (6命班24秒循环，[手法来源](https://ngabbs.com/read.php?tid=38590510)，注意需要修改切人延迟为1)  
+0金 4.74w (5命班24秒循环，由6命班手法微调得到)  
 
-班尼特6命，精1原木刀，4教官充火暴，(5+7)双暴+6生命+6充能  
+班尼特5/6命，精1原木刀，4教官充火暴，(5+7)双暴+6生命+6充能  
 香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
 行秋6命，精7祭礼剑，4宗室攻水暴，(9+11)双暴+6充能  
 砂糖6命，精5讨龙英杰谭，4风套精精精，4精通+6充能  
 
 ```text
-bennett char lvl=90/90 cons=6 talent=9,9,9;
+bennett char lvl=90/90 cons=5/6 talent=9,9,9;
 bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
 bennett add set="instructor" count=4;
 bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
@@ -143,7 +144,7 @@ while 1 {
     xiangling attack:4,charge;
     sucrose attack:1,charge;
     bennett attack:3,skill;
-    xiangling attack:3,skill,attack:8;
+    xiangling attack:3,skill,attack:6;
     wait(6);
 }
 ```
@@ -240,15 +241,15 @@ while 1 {
 
 **DPS参考：**  
 
-0金 5.14w (21秒循环，菲谢尔固定时机尝试插入EQ)  
+0金 5.13w/4.98w (6班/5班，约21秒循环，菲谢尔固定时机尝试插入EQ)  
 
-班尼特5命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
+班尼特5/6命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
 香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
-行秋6命，精5西风剑，4绝缘攻水暴，(9+11)双暴+6充能  
+行秋6命，精7祭礼剑，4宗室攻水暴，(9+11)双暴+6充能  
 菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
 
 ```text
-bennett char lvl=90/90 cons=5 talent=9,9,9;
+bennett char lvl=90/90 cons=5/6 talent=9,9,9;
 bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
 bennett add set="instructor" count=4;
 bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
@@ -261,8 +262,8 @@ xiangling add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
 xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
 xingqiu char lvl=90/90 cons=6 talent=9,9,9;
-xingqiu add weapon="favoniussword" refine=5 lvl=90/90;
-xingqiu add set="emblemofseveredfate" count=4;
+xingqiu add weapon="sacrificialsword" refine=7 lvl=90/90;
+xingqiu add set="noblesseoblige" count=4;
 xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
 xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
 
@@ -293,7 +294,7 @@ while 1 {
         xingqiu attack;
     }
     xingqiu attack, skill, dash;
-    xingqiu attack:3;
+    xingqiu attack, skill, dash;
     try_summon_oz_with_attack2();
     bennett attack, skill;
     xiangling attack:3;
@@ -301,11 +302,17 @@ while 1 {
     while !.bennett.skill.ready {
         xingqiu attack;
     }
+    try_summon_oz_with_attack2();
     bennett skill;
     xiangling attack:3;
     try_summon_oz_with_attack2();
     while !.xingqiu.burst.ready {
-        xingqiu attack;
+        try_summon_oz_with_attack2();
+        if .bennett.skill.ready {
+            bennett skill;
+        } else {
+            bennett attack;
+        }
     }
 }
 ```
@@ -547,15 +554,16 @@ while 1 {
 
 **DPS参考：**  
 
-0金 4.02w = 0.5*(4.82w+3.22w) (46秒循环，烟绯奇数轮开Q吃流浪乐章)  
+0金 4.02w = 0.5*(4.82w+3.22w) (6班，46秒循环，烟绯奇数轮开Q吃流浪乐章)  
+0金 3.87w (5班，同上，但是懒得测奇偶轮了)
 
-班尼特6命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
+班尼特5/6命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
 烟绯6命，精5流浪乐章，4乐团攻火暴，(9+11)双暴+2攻击+2精通+2充能  
 行秋6命，精7祭礼剑，4绝缘攻水暴，(9+11)双暴+6充能  
 砂糖6命，精5讨龙英杰谭，4风套精精精，4精通+6充能  
 
 ```text
-bennett char lvl=90/90 cons=6 talent=9,9,9;
+bennett char lvl=90/90 cons=5/6 talent=9,9,9;
 bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
 bennett add set="noblesseoblige" count=4;
 bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
@@ -709,9 +717,9 @@ while 1 {
 
 **DPS参考：**  
 
-0金 3.45w (20秒循环)  
+0金 3.67w/3.56w (6班/5班，20秒循环)  
 
-班尼特5命，精1原木刀，4宗室攻火暴，(5+7)双暴+6生命+6充能  
+班尼特5/6命，精1原木刀，4宗室攻火暴，(5+7)双暴+6生命+6充能  
 香菱6命，精5渔获，4绝缘攻火暴，(9+11)双暴+2攻击+2精通+2充能  
 凯亚2命，精5匣里龙吟，4绝缘精冰暴，(9+11)双暴+2攻击+2精通+2充能  
 罗莎莉亚6命，精5西风长枪，2冰2宗室精冰暴，(9+11)双暴+2攻击+2精通+2充能  
@@ -744,18 +752,24 @@ rosaria add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.29
 
 active rosaria;
 while 1 {
-    rosaria skill;
+    if .rosaria.skill.ready {
+        rosaria skill;
+    }
+    #rosaria skill;
     bennett burst, skill;
     rosaria burst;
+    if .rosaria.skill.ready {
+        rosaria skill;
+    }
     xiangling burst, skill;
-    kaeya skill, burst;
-    rosaria skill, attack;
+    kaeya attack:2, skill, burst;
+    rosaria attack:2, skill;
     bennett attack, skill;
     xiangling attack:2;
-    kaeya attack, skill;
-    rosaria attack, skill;
-    bennett attack, skill;
-    xiangling attack:2;
+    kaeya skill, attack:3;
+    rosaria skill;
+    bennett skill;
+    xiangling attack:3;
     kaeya skill;
 }
 ```
@@ -816,15 +830,15 @@ while 1 {
 
 **DPS参考：**  
 
-0金 3.60w (17秒循环)  
+0金 4.38w/4.17w (6班/5班，17秒循环)  
 
-班尼特5命，精1原木刀，4宗室攻火暴，(5+7)双暴+6生命+6充能  
+班尼特5/6命，精1原木刀，4宗室攻火暴，(5+7)双暴+6生命+6充能  
 香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
 重云6命，精5饰铁之花，4绝缘精冰暴，(9+11)双暴+2攻击+2精通+2充能  
 罗莎莉亚6命，精5西风长枪，2冰2宗室精冰暴，(9+11)双暴+2攻击+2精通+2充能  
 
 ```text
-bennett char lvl=90/90 cons=6 talent=9,9,9;
+bennett char lvl=90/90 cons=5/6 talent=9,9,9;
 bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
 bennett add set="noblesseoblige" count=4;
 bennett add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
@@ -853,15 +867,14 @@ active chongyun;
 while 1 {
     chongyun skill;
     bennett burst, skill;
-    rosaria skill, burst;
-    xiangling burst, skill;
+    rosaria skill, attack, burst;
+    xiangling attack, burst, skill;
+    rosaria skill;
     bennett skill;
+    xiangling attack:2;
     chongyun burst;
-    rosaria skill;
-    xiangling attack:2;
-    bennett attack, skill;
-    xiangling attack:2;
-    rosaria skill;
+    rosaria attack, skill;
+    bennett skill;
     xiangling attack:2;
 }
 ```
@@ -898,15 +911,15 @@ while 1 {
 
 **DPS参考：**  
 
-0金 3.62w (20秒循环)  
+0金 3.74w/3.63w (6班/5班，20秒循环)  
 
-班尼特5命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
+班尼特5/6命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
 香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
 罗莎莉亚6命，精5匣里灭辰，4绝缘充冰暴，(9+11)双暴+2攻击+2精通+2充能  
 砂糖6命，精5讨龙英杰谭，4风套精精精，4精通+6充能  
 
 ```text
-bennett char lvl=90/90 cons=5 talent=9,9,9;
+bennett char lvl=90/90 cons=5/6 talent=9,9,9;
 bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
 bennett add set="noblesseoblige" count=4;
 bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
@@ -932,17 +945,20 @@ sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
 
 active bennett;
 while 1 {
-    bennett burst, skill;
+    bennett burst;
+    if .bennett.skill.ready {
+        bennett skill;
+    }
     sucrose skill, dash;
     rosaria attack, skill, burst;
     sucrose attack;
     xiangling burst, skill;
-    bennett attack, skill;
+    bennett attack:2, skill;
     rosaria attack, skill;
     sucrose attack;
-    bennett attack, skill;
+    bennett skill;
     xiangling attack:3;
-    rosaria attack, skill;
+    rosaria attack:2, skill;
     bennett skill;
     xiangling attack:3;
 }
@@ -1759,15 +1775,15 @@ while 1 {
 
 **DPS参考：**  
 
-0金 3.52w (20秒循环，菲谢尔固定时机尝试插入EQ)  
+0金 3.66w/3.53w (6班/5班，20秒循环，菲谢尔固定时机尝试插入EQ)  
 
-班尼特5命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
+班尼特5/6命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
 香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
-北斗6命，精5浪影阔剑，4绝缘充雷暴，(9+11)双暴+2攻击+2精通+2充能  
+北斗6命，精5究极霸王超级魔剑，4绝缘攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
 菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
 
 ```text
-bennett char lvl=90/90 cons=5 talent=9,9,9;
+bennett char lvl=90/90 cons=5/6 talent=9,9,9;
 bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
 bennett add set="noblesseoblige" count=4;
 bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
@@ -1780,9 +1796,9 @@ xiangling add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
 xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
 beidou char lvl=90/90 cons=6 talent=9,9,9;
-beidou add weapon="tidalshadow" refine=5 lvl=90/90;
+beidou add weapon="ultimateoverlordsmegamagicsword" refine=5 lvl=90/90;
 beidou add set="emblemofseveredfate" count=4;
-beidou add stats hp=4780 atk=311 er=0.518 electro%=0.466 cr=0.311;
+beidou add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
 beidou add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 
 fischl char lvl=90/90 cons=6 talent=9,9,9; 
@@ -1806,12 +1822,12 @@ while 1 {
     bennett burst, skill;
     try_summon_oz_with_attack();
     xiangling attack, burst, attack, skill;
-    beidou attack, skill, burst, attack;
+    beidou skill, burst, attack;
     try_summon_oz_with_attack();
     bennett attack, skill;
     xiangling attack:3;
-    try_summon_oz_with_attack();
     while !.bennett.skill.ready {
+        try_summon_oz_with_attack();
         bennett attack;
     }
     bennett skill;
@@ -2077,11 +2093,11 @@ while 1 {
 
 **DPS参考：**  
 
-0金 3.32w (24秒循环)  
+0金 3.44w (24秒循环)  
 
-珐露珊6命，精5静谧之曲，4剧团攻风暴，(12+8)双暴+4充能  
-鹿野院平藏6命，精5试作金珀，4宗室攻风暴，(9+11)双暴+4攻击  
-琳妮特6命，精5西风剑，2角斗2追忆攻风暴，(9+11)双暴+4攻击  
+珐露珊6命，精5静谧之曲，4剧团攻风暴，(12+8)双暴+4攻击+2充能  
+鹿野院平藏6命，精5试作金珀，4宗室攻风暴，(9+11)双暴+4攻击+2充能  
+琳妮特6命，精5西风剑，4绝缘攻风暴，(9+11)双暴+4攻击+2充能  
 莱依拉6命，精5天目影打刀，4千岩生生生，4生命+10充能  
   
 ```text
@@ -2089,20 +2105,19 @@ faruzan char lvl=90/90 cons=6 talent=9,9,9;
 faruzan add weapon="songofstillness" refine=5 lvl=90/90;
 faruzan add set="goldentroupe" count=4;
 faruzan add stats hp=4780 atk=311 atk%=0.466 anemo%=0.466 cr=0.311;
-faruzan add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.22 em=0 cr=0.396 cd=0.528;
+faruzan add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.11 em=0 cr=0.396 cd=0.528;
 
 heizou char lvl=90/90 cons=6 talent=9,9,9;
 heizou add weapon="prototypeamber" refine=5 lvl=90/90;
 heizou add set="noblesseoblige" count=4;
 heizou add stats hp=4780 atk=311 atk%=0.466 anemo%=0.466 cr=0.311;
-heizou add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0 em=0 cr=0.33 cd=0.66;
+heizou add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
 
 lynette char lvl=90/90 cons=6 talent=9,9,9;
 lynette add weapon="favoniussword" refine=5 lvl=90/90;
-lynette add set="gladiatorsfinale" count=2;
-lynette add set="shimenawasreminiscence" count=2;
+lynette add set="emblemofseveredfate" count=4;
 lynette add stats hp=4780 atk=311 atk%=0.466 anemo%=0.466 cr=0.311;
-lynette add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0 em=0 cr=0.33 cd=0.66;
+lynette add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
 
 layla char lvl=90/90 cons=6 talent=9,9,9;
 layla add weapon="amenomakageuchi" refine=5 lvl=90/90;
@@ -2117,6 +2132,7 @@ while 1{
     faruzan burst, skill;
     heizou burst, attack, charge, skill[hold=1];
     faruzan aim, aim, skill, aim, aim;
+
     layla skill, burst;
     lynette skill;
     faruzan skill;
@@ -2152,15 +2168,15 @@ while 1{
 
 **DPS参考：**  
 
-0金 3.69w (20秒循环)  
+0金 4.30w/4.18w (6班/5班，20秒循环)  
 
 班尼特5命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
 香菱6命，精5渔获，4绝缘充火暴，(9+11)双暴+2攻击+2精通+2充能  
-珐露珊6命，精5西风猎弓，4风套充风暴，(12+8)双暴+4充能  
-鹿野院平藏6命，精5流浪乐章，2风套2角斗攻风暴，(9+11)双暴+4攻击  
+珐露珊6命，精5西风猎弓，4风套充风暴，(12+8)双暴+2攻击+4充能  
+鹿野院平藏6命，精5流浪乐章，2风套2楼阁攻风暴，(9+11)双暴+4攻击+2充能  
 
 ```text
-bennett char lvl=90/90 cons=5 talent=9,9,9;
+bennett char lvl=90/90 cons=5/6 talent=9,9,9;
 bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
 bennett add set="noblesseoblige" count=4;
 bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
@@ -2175,15 +2191,15 @@ xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.
 heizou char lvl=90/90 cons=6 talent=9,9,9;
 heizou add weapon="thewidsith" refine=5 lvl=90/90;
 heizou add set="viridescentvenerer" count=2;
-heizou add set="gladiatorsfinale" count=2;
+heizou add set="desertpavilionchronicle" count=2;
 heizou add stats hp=4780 atk=311 atk%=0.466 anemo%=0.466 cr=0.311;
-heizou add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0 em=0 cr=0.297 cd=0.726;
+heizou add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
 
 faruzan char lvl=90/90 cons=6 talent=9,9,9;
 faruzan add weapon="favoniuswarbow" refine=5 lvl=90/90;
 faruzan add set="viridescentvenerer" count=4;
 faruzan add stats hp=4780 atk=311 er=0.518 anemo%=0.466 cr=0.311;
-faruzan add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.22 em=0 cr=0.396 cd=0.528;
+faruzan add stats hp=0 hp%=0 atk=0.098 atk%=0 def=0 def%=0 er=0.22 em=0 cr=0.396 cd=0.528;
 
 active bennett;
 while 1{
@@ -2193,9 +2209,11 @@ while 1{
     heizou attack, charge, burst, skill;
     bennett attack, skill;
     xiangling attack:2;
-    bennett attack, skill;
+    faruzan aim, aim, skill;
+    bennett skill;
     xiangling attack:2;
     heizou attack, charge, attack:3, skill;
+    faruzan aim;
 }
 ```  
 
@@ -3057,7 +3075,8 @@ while 1{
 
 **队伍简介：**  
 
-冰系大剑驾驶员，可提供不错直伤，但是大剑攻速慢有丢水剑协同的风险  
+冰系大剑驾驶员，可提供不错直伤，但是大剑攻速慢有丢水剑协同的风险。  
+此外开Q强制站场的机制也会导致挂草覆盖率问题。  
 
 **评分参考：**  
 

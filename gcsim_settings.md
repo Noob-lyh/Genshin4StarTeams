@@ -140,7 +140,7 @@ thoma add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
 
 ### 行秋
 
-【通用-祭礼攻击沙】6命，精5西风剑/精5祭礼剑，4绝缘/4宗室攻水暴，(9+11)双暴+2攻击+2精通+2充能  
+【通用-无压力循环】6命，精5西风剑/精5祭礼剑，4绝缘/4宗室攻水暴，(9+11)双暴+2攻击+2精通+2充能  
 
 ```text
 xingqiu char lvl=90/90 cons=6 talent=9,9,9;
@@ -150,12 +150,12 @@ xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
 xingqiu add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 ```
 
-【循环-西风绝缘】6命，精5西风剑/精7祭礼剑(保证刷新E)，4绝缘攻水暴，(9+11)双暴+6充能  
+【通用-循环特化】6命，精5西风剑/精7祭礼剑(保证刷新E)，4绝缘/4宗室攻水暴，(9+11)双暴+6充能  
 
 ```text
 xingqiu char lvl=90/90 cons=6 talent=9,9,9;
 xingqiu add weapon="favoniussword/sacrificialsword" refine=5/7 lvl=90/90;
-xingqiu add set="emblemofseveredfate" count=4;
+xingqiu add set="emblemofseveredfate/noblesseoblige" count=4;
 xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
 xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
 ```
@@ -360,13 +360,13 @@ fischl add stats hp=6163 atk=784 def=35 em=131 cr=0.548 cd=0.901 er=0.162 electr
 
 ### 北斗
 
-【砂武/砂激-浪影绝缘】6命，精5浪影阔剑，4绝缘充雷暴，(9+11)双暴+2攻击+2精通+2充能  
+【通用-魔剑绝缘】6命，精5究极霸王超级魔剑，4绝缘攻/充雷暴，(9+11)双暴+2攻击+2精通+2充能  
 
 ```text
 beidou char lvl=90/90 cons=6 talent=9,9,9;
-beidou add weapon="tidalshadow" refine=5 lvl=90/90;
+beidou add weapon="ultimateoverlordsmegamagicsword" refine=5 lvl=90/90;
 beidou add set="emblemofseveredfate" count=4;
-beidou add stats hp=4780 atk=311 er=0.518 electro%=0.466 cr=0.311;
+beidou add stats hp=4780 atk=311 atk%=0.466/er=0.518 electro%=0.466 cr=0.311;
 beidou add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 ```
 
@@ -448,25 +448,25 @@ sucrose add stats hp=6120 atk=467 def=199 em=643 cr=0.132 cd=0.140 er=0.589;
 
 ### 鹿野院平藏
 
-【通用-速切输出】6命，精5流浪乐章/西风秘典，2风套2角斗/4风套攻风暴，(9+11)双暴+4攻击+2充能
+【通用-速切输出】6命，精5流浪乐章/西风秘典，2风套2楼阁/4风套攻风暴，(9+11)双暴+4攻击+2充能
 
 ```text
 heizou char lvl=90/90 cons=6 talent=9,9,9;
 heizou add weapon="thewidsith/favoniuscodex" refine=5 lvl=90/90;
 heizou add set="viridescentvenerer" count=2;
-heizou add set="gladiatorsfinale" count=2;
+heizou add set="desertpavilionchronicle" count=2;
 heizou add stats hp=4780 atk=311 atk%=0.466 anemo%=0.466 cr=0.311;
 heizou add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
 ```
 
-【珐鹿琳莱-充能速切治疗】6命，精5试作金珀，4宗室攻风暴，(9+11)双暴+4攻击  
+【珐鹿琳莱-充能速切治疗】6命，精5试作金珀，4宗室攻风暴，(9+11)双暴+4攻击+2充能  
 
 ```text
 heizou char lvl=90/90 cons=6 talent=9,9,9;
 heizou add weapon="prototypeamber" refine=5 lvl=90/90;
 heizou add set="noblesseoblige" count=4;
 heizou add stats hp=4780 atk=311 atk%=0.466 anemo%=0.466 cr=0.311;
-heizou add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0 em=0 cr=0.297 cd=0.726;
+heizou add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
 ```
 
 【我的-20231014】6命，精1流浪乐章，2风套2追忆攻风暴，(12.1+12.4)双爆+7.9攻击+2.1精通  
@@ -481,24 +481,24 @@ heizou add stats hp=6757 atk=943 def=40 em=42 cr=0.712 cd=0.816 er=0 anemo%=0.46
 
 ### 珐露珊
 
-【通用-后台风辅】6命，精5西风猎弓，4千岩/4风套攻/充风暴，(12+8)双暴+4充能  
+【通用-后台风辅】6命，精5西风猎弓，4千岩/4风套攻/充风暴，(12+8)双暴+2攻击+4充能  
 
 ```text
 faruzan char lvl=90/90 cons=6 talent=9,9,9;
 faruzan add weapon="favoniuswarbow" refine=5 lvl=90/90;
 faruzan add set="tenacityofthemillelith/viridescentvenerer" count=4;
 faruzan add stats hp=4780 atk=311 atk%=0.466/er=0.518 anemo%=0.466 cr=0.311;
-faruzan add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.22 em=0 cr=0.396 cd=0.528;
+faruzan add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.22 em=0 cr=0.396 cd=0.528;
 ```
 
-【珐鹿琳莱-站场输出】6命，精5静谧之曲，4剧团攻/充风暴，(12+8)双暴+4充能  
+【珐鹿琳莱-站场输出】6命，精5静谧之曲，4剧团攻/充风暴，(12+8)双暴+4攻击+2充能  
 
 ```text
 faruzan char lvl=90/90 cons=6 talent=9,9,9;
 faruzan add weapon="songofstillness" refine=5 lvl=90/90;
 faruzan add set="goldentroupe" count=4;
 faruzan add stats hp=4780 atk=311 atk%=0.466/er=0.518 anemo%=0.466 cr=0.311;
-faruzan add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.22 em=0 cr=0.396 cd=0.528;
+faruzan add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.11 em=0 cr=0.396 cd=0.528;
 ```
 
 【我的-20231014】6命，精5静谧之曲，2风套2追忆攻风暴，(13.2+13.9)双爆+5.2充能+1.1攻击  
@@ -513,17 +513,17 @@ faruzan add stats hp=5784 atk=733 def=165 em=0 cr=0.747 cd=0.917 er=0.285 anemo%
 
 ### 琳妮特
 
-【通用-风套工具人】6命，精5西风剑，4风套充风暴，(9+11)双暴+4攻击  
+【通用-风套工具人】6命，精5西风剑，4风套充风暴，(9+11)双暴+4攻击+2充能  
 
 ```text
 lynette char lvl=90/90 cons=6 talent=9,9,9;
 lynette add weapon="favoniussword" refine=5 lvl=90/90;
 lynette add set="viridescentvenerer" count=4;
 lynette add stats hp=4780 atk=311 er=0.518 anemo%=0.466 cr=0.311;
-lynette add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0 em=0 cr=0.297 cd=0.726;
+lynette add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
 ```
 
-【珐鹿琳莱-速切嘲讽副C】6命，精5西风剑，2角斗2追忆攻风暴，(9+11)双暴+4攻击  
+【珐鹿琳莱-速切嘲讽副C】6命，精5西风剑，2角斗2追忆攻风暴，(9+11)双暴+4攻击+2充能  
 
 ```text
 lynette char lvl=90/90 cons=6 talent=9,9,9;
@@ -531,7 +531,7 @@ lynette add weapon="favoniussword" refine=5 lvl=90/90;
 lynette add set="gladiatorsfinale" count=2;
 lynette add set="shimenawasreminiscence" count=2;
 lynette add stats hp=4780 atk=311 atk%=0.466 anemo%=0.466 cr=0.311;
-lynette add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0 em=0 cr=0.297 cd=0.726;
+lynette add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
 ```
 
 ### 草主
