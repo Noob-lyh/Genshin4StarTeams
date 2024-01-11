@@ -7,13 +7,13 @@
 3. **角色面板**  
 4. **队伍手法**  
 
-本文档依次给出**模拟条件**、**敌人设置**（这两个部分在模拟时保持不变）、包括所有角色不同流派标准面板的**角色面板**，以及**队伍手法**的说明。  
+本文档依次给出**模拟条件**、**敌人设置**（这两个部分在模拟时保持不变）、包括所有角色不同流派标准面板的**角色面板**，以及**队伍手法**的简易说明。  
 
-在team.md中，队伍DPS参考包含的角色面板均从本文档中选取。  
-
-如需投稿，请尽量保持1和2本文档给出的相同。  
+在teams.md中，队伍DPS参考包含的角色面板均从本文档中选取。如需投稿，请尽量保持1和2本文档给出的相同。  
 
 ## 0. gcsim使用方式
+
+增加这一部分以防你对gcsim产生了兴趣想自己试一试！
 
 第一步：[从github下载gcsim](https://github.com/genshinsim/gcsim/releases)，点击最新版的Assets下的gcsim.exe即可保存，注意下载exe可能会导致浏览器警告，手动选择保留即可。  
 
@@ -579,3 +579,100 @@ yaoyao add set="deepwoodmemories" count=4;
 yaoyao add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
 yaoyao add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.33 cd=0;
 ```
+
+## 4. 队伍手法
+
+手法的设置多种多样，本文档中主要使用两种：固定长度循环与无轴循环。在设置具体角色行动前，需要使用如下代码，指定起手角色：  
+
+```text
+active chA;
+```
+
+对于固定长度循环而言，通常使用如下while死循环的方式，当然也可以用for循环指定循环次数：
+
+```text
+while 1 {
+    chA xxx;
+    chB xxx;
+    chC xxx;
+    chD xxx;
+}
+```
+
+对于无轴循环，通常使用固定起手式 + while死循环优先选择的方式：
+
+```text
+chA xxx;
+chB xxx;
+chC xxx;
+chD xxx;
+while 1 {
+    if .chA.xxx.ready {
+        chA xxx;
+    } else if .chB.xxx.ready {
+        chB xxx;
+    } else if ... {
+        ...
+    } else {
+        ...
+    }
+}
+```
+
+一个固定长度循环的例子是香菱班尼特重云罗莎莉亚（双冰双火）。起手角色为重云，循环手法为“重云E，班尼特QE，罗莎莉亚EAQ，香菱AQE，罗莎莉亚E，班尼特E，香菱AA，重云Q，罗莎莉亚AE，班尼特E，香菱AA”，代码可写为：  
+
+```text
+active chongyun;
+while 1 {
+    chongyun skill;
+    bennett burst, skill;
+    rosaria skill, attack, burst;
+    xiangling attack, burst, skill;
+    rosaria skill;
+    bennett skill;
+    xiangling attack:2;
+    chongyun burst;
+    rosaria attack, skill;
+    bennett skill;
+    xiangling attack:2;
+}
+```
+
+一个无轴循环的例子为草主柯莱行秋久岐忍（行秋双草超绽），起手为草主EQ，行秋QA，久岐忍E闪A，柯莱EA，行秋EA闪EA闪，草主E，此后哪里亮了点哪里，优先级为久岐忍E>行秋Q>草主E>柯莱E>草主Q>柯莱Q>行秋E，如果以上技能都未就绪，则久岐忍站场平A。  
+
+```text
+active travelerdendro;
+travelerdendro skill, burst;
+xingqiu burst, attack;
+kuki skill, dash, attack;
+collei skill, attack;
+xingqiu attack, skill, dash;
+if .xingqiu.skill.ready {
+    xingqiu attack, skill, dash;
+}
+travelerdendro skill;
+while 1{
+    if .kuki.skill.ready {
+        kuki skill, dash, attack;
+    } else if .xingqiu.burst.ready {
+        xingqiu burst, attack;
+    } else if .travelerdendro.skill.ready {
+        travelerdendro skill;
+    } else if .collei.skill.ready {
+        collei skill;
+    } else if .travelerdendro.burst.ready {
+        travelerdendro burst;
+    } else if .collei.burst.ready {
+        collei burst;
+    } else if .xingqiu.skill.ready {
+        xingqiu attack, skill, dash;
+        if .xingqiu.skill.ready {
+            xingqiu attack, skill, dash;
+        }
+    } else {
+        kuki attack;
+    }
+}
+```
+
+实际手法可能更加复杂，例如烟绯蒸发队中烟绯只有奇数轮放Q，因此while循环中的长度为正常的两倍，包括一次烟绯放Q的循环和一次烟绯不放Q的循环；例如队伍中有皇女的情况，找时间放奥兹相当麻烦；例如某些手法精度要求较高的队伍，如砂国，需要大量使用设置角色位置、等待若干帧后行动的代码。  
