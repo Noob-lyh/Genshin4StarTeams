@@ -10,7 +10,7 @@
 角色按英文首字母排序。  
 
 ```text
-火(Pyro)：安柏(Amber)，班尼特(Bennett)，迪希雅(Dehya)，迪卢克(Diluc)，胡桃(Hutao)，可莉(Klee)，林尼(Lyney)，托马(Thoma)，香菱(Xiangling)，辛焱(Xinyan)，烟绯(Yanfei)，宵宫(Yoimiya)
+火(Pyro)：安柏(Amber)，班尼特(Bennett)，夏沃蕾(Chevreuse)，迪希雅(Dehya)，迪卢克(Diluc)，胡桃(Hutao)，可莉(Klee)，林尼(Lyney)，托马(Thoma)，香菱(Xiangling)，辛焱(Xinyan)，烟绯(Yanfei)，宵宫(Yoimiya)
 
 水(Hydro)：神里绫人(Ayato)，芭芭拉(Barbara)，坎蒂丝(Candace)，珊瑚宫心海(Kokomi)，莫娜(Mona)，那维莱特(Neuvillette)，妮露(Nilou)，达达利亚(Tartaglia)，行秋(Xingqiu)，夜兰(Yelan)
 

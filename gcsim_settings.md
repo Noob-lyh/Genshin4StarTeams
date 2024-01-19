@@ -106,7 +106,7 @@ xiangling add stats hp=5433 atk=383 def=81 em=96 cr=0.642 cd=0.964 er=0.641 pyro
 
 ### 烟绯
 
-【蒸发-流浪乐团】6命，精5流浪乐章，4乐团攻火暴，(9+11)双暴+2攻击+2精通+2充能  
+【通用-流浪乐团】6命，精5流浪乐章，4乐团攻火暴，(9+11)双暴+2攻击+2精通+2充能  
 
 ```text
 yanfei char lvl=90/90 cons=6 talent=9,9,9;
@@ -136,6 +136,18 @@ thoma add weapon="kitaincrossspear" refine=5 lvl=90/90;
 thoma add set="flowerofparadiselost" count=4;
 thoma add stats hp=4780 atk=311 em=187 em=187 em=187;
 thoma add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
+```
+
+### 夏沃蕾
+
+【通用-超载削抗治疗攻击拐】6命，精5公义的酬报，4宗室充生生，8生命+8充能  
+
+```text
+chevreuse char lvl=90/90 cons=6 talent=9,9,9;
+chevreuse add weapon="rightfulreward" refine=5 lvl=90/90;
+chevreuse add set="noblesseoblige" count=4;
+chevreuse add stats hp=4780 atk=311 er=0.518 hp%=0.466 hp%=0.466;
+chevreuse add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0.44 em=0 cr=0 cd=0;
 ```
 
 ### 行秋

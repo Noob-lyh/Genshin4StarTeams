@@ -1837,7 +1837,7 @@ while 1 {
 }
 ```
 
-## 3.3.3 班尼特+香菱+火X+风Y（三火一风/纯火）
+## 3.3.3 班尼特+香菱+火X+风Y（经典纯火）
 
 ### 班尼特 香菱 烟绯 砂糖/鹿野院平藏
 
@@ -2093,7 +2093,7 @@ while 1 {
 
 **DPS参考：**  
 
-0金 3.44w (24秒循环)  
+0金 3.48w (25秒循环)  
 
 珐露珊6命，精5静谧之曲，4剧团攻风暴，(12+8)双暴+4攻击+2充能  
 鹿野院平藏6命，精5试作金珀，4宗室攻风暴，(9+11)双暴+4攻击+2充能  
@@ -2129,14 +2129,14 @@ active layla;
 while 1{
     layla skill, burst;
     lynette burst, skill;
-    faruzan burst, skill;
-    heizou burst, attack, charge, skill[hold=1];
+    faruzan skill, burst;
+    heizou burst, attack, charge, skill;
     faruzan aim, aim, skill, aim, aim;
 
     layla skill, burst;
     lynette skill;
     faruzan skill;
-    heizou burst, attack, charge, skill[hold=1];
+    heizou burst, attack, charge, skill;
     faruzan aim, aim, skill, aim, aim;
 }
 ```
@@ -2449,6 +2449,201 @@ while 1{
 生存：  
 破盾：  
 成本：
+
+**手法参考：**  
+
+暂缺  
+
+**视频参考：**  
+
+暂缺  
+
+**DPS参考：**  
+
+暂缺  
+
+## 3.9 夏沃蕾超载
+
+## 3.9.1 火前台
+
+### 烟绯 夏沃蕾 北斗 菲谢尔
+
+**队伍简介：**  
+
+最具性价比的夏沃蕾超载队。不需要香菱班尼特的情况下作为一个直伤队仍有超过砂糖武装的对单输出能力。  
+
+**评分参考：**  
+
+输出： （环境-，配置-，练度-，手部-）  
+生存：  
+破盾：  
+成本：
+
+**手法参考：**  
+
+暂缺  
+
+**视频参考：**  
+
+暂缺
+
+**DPS参考：**  
+
+0金 4.22w (无轴循环)  
+
+烟绯6命，精5流浪乐章，4乐团攻火暴，(9+11)双暴+2攻击+2精通+2充能  
+夏沃蕾6命，精5公义的酬报，4宗室充生生，8生命+8充能  
+北斗6命，精5究极霸王超级魔剑，4绝缘攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
+菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
+
+```text
+yanfei char lvl=90/90 cons=6 talent=9,9,9;
+yanfei add weapon="thewidsith" refine=5 lvl=90/90;
+yanfei add set="wandererstroupe" count=4;
+yanfei add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
+yanfei add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+chevreuse char lvl=90/90 cons=6 talent=9,9,9;
+chevreuse add weapon="rightfulreward" refine=5 lvl=90/90;
+chevreuse add set="noblesseoblige" count=4;
+chevreuse add stats hp=4780 atk=311 er=0.518 hp%=0.466 hp%=0.466;
+chevreuse add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0.44 em=0 cr=0 cd=0;
+
+beidou char lvl=90/90 cons=6 talent=9,9,9;
+beidou add weapon="ultimateoverlordsmegamagicsword" refine=5 lvl=90/90;
+beidou add set="emblemofseveredfate" count=4;
+beidou add stats hp=4780 atk=311 er=0.518 electro%=0.466 cr=0.311;
+beidou add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+fischl char lvl=90/90 cons=6 talent=9,9,9; 
+fischl add weapon="thestringless" refine=5 lvl=90/90;
+fischl add set="goldentroupe" count=4;
+fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
+fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+active beidou;
+beidou skill;
+chevreuse burst, skill[hold=1], skill[hold=1], skill[hold=1];
+fischl skill;
+beidou burst;
+yanfei attack, skill, charge, attack:4, charge;
+while 1 {
+
+    if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl skill;
+        } else if .fischl.burst.ready {
+            fischl burst;
+        }
+    }
+
+    if .chevreuse.skill.ready {
+        chevreuse burst, attack, skill[hold=1], skill[hold=1], attack, skill[hold=1];
+    } else if .beidou.burst.ready {
+        beidou burst;
+    } else if .beidou.skill.ready {
+        beidou skill;
+    } else if .yanfei.skill.ready {
+        yanfei attack, skill, charge;
+    } else if .yanfei.burst.ready {
+        yanfei attack, burst, charge;
+    } else {
+        yanfei attack:2, charge;
+    }
+}
+```
+
+### 班尼特(6) 夏沃蕾 北斗 菲谢尔
+
+**队伍简介：**  
+
+暂缺  
+
+**评分参考：**  
+
+输出： （环境-，配置-，练度-，手部-）  
+生存：  
+破盾：  
+成本：  
+
+**手法参考：**  
+
+暂缺  
+
+**视频参考：**  
+
+暂缺  
+
+**DPS参考：**  
+
+暂缺  
+
+### 班尼特 香菱 夏沃蕾 菲谢尔
+
+**队伍简介：**  
+
+暂缺  
+
+**评分参考：**  
+
+输出： （环境-，配置-，练度-，手部-）  
+生存：  
+破盾：  
+成本：
+
+**手法参考：**  
+
+暂缺  
+
+**视频参考：**  
+
+暂缺  
+
+**DPS参考：**  
+
+暂缺  
+
+## 3.9.2 雷前台
+
+### 香菱 夏沃蕾 丽莎 菲谢尔
+
+**队伍简介：**  
+
+暂缺  
+
+**评分参考：**  
+
+输出： （环境-，配置-，练度-，手部-）  
+生存：  
+破盾：  
+成本：  
+
+**手法参考：**  
+
+暂缺  
+
+**视频参考：**  
+
+暂缺  
+
+**DPS参考：**  
+
+暂缺  
+
+## 3.9.3 无前台
+
+### 香菱 夏沃蕾 北斗 菲谢尔
+
+**队伍简介：**  
+
+暂缺  
+
+**评分参考：**  
+
+输出： （环境-，配置-，练度-，手部-）  
+生存：  
+破盾：  
+成本：  
 
 **手法参考：**  
 
