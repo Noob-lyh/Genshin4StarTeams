@@ -2515,8 +2515,9 @@ while 1{
 
 **队伍简介：**  
 
-带北斗时最具性价比的夏沃蕾超载队。不需要香菱班尼特的情况下作为一个直伤队仍有超过砂糖武装的对单输出能力。  
-也可以带丽莎，但是充能比较大，没有抗打断蓄力长E可能比较困难。  
+最具性价比的夏沃蕾超载队之一，不需要香菱班尼特的情况下作为一个直伤队仍有超过砂糖武装的对单输出能力。  
+虽然伤害不如香班蕾三火+雷，但生存能力较强，即使治疗量较低，无内鬼火和北斗的减伤抗打断薄盾也足够应对大多数情况。  
+也可以带丽莎，但是充能压力比较大，没有抗打断的蓄力长E释放风险不低。  
 
 **评分参考：**  
 
@@ -2604,7 +2605,7 @@ while 1 {
 
 **队伍简介：**  
 
-6班主C。可以尝试4如雷，但是不太泛用。  
+6班主C+双雷。班尼特可以尝试4如雷，娱乐性强。  
 
 **评分参考：**  
 
@@ -2629,7 +2630,9 @@ while 1 {
 
 **队伍简介：**  
 
-经典纯火（三火一风）烟香班+风的改进版，用夏沃蕾替换掉6班或者烟绯其中一个，把风系替换为皇女。  
+对单伤害最高的0金夏沃蕾超载队。  
+本质上是经典纯火（三火一风）烟香班+风的改进版，夏沃蕾替换掉6班/烟绯，把风系替换为菲谢尔增加直伤。  
+缺点在于生存能力较差，内鬼火+没有抗打断减伤，即使队伍中有两个治疗也无法避免高压环境下被秒。  
 
 **评分参考：**  
 
@@ -2649,7 +2652,71 @@ while 1 {
 
 **DPS参考：**  
 
-暂缺  
+0金 4.97w/4.58w (6班/5班，约21秒循环)  
+
+班尼特5/6命，精5匣里龙吟，4魔女攻火暴，(9+11)双暴+2攻击+2精通+2充能  
+香菱6命，精5渔获，4绝缘充/攻火暴，(9+11)双暴+2攻击+2精通+2充能  
+夏沃蕾6命，精5西风长枪，4宗室攻火爆，(9+11)双暴+2攻击+2精通+2充能  
+菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
+
+```text
+bennett char lvl=90/90 cons=5/6 talent=9,9,9;
+bennett add weapon="lionsroar" refine=5 lvl=90/90;
+bennett add set="crimsonwitchofflames" count=4;
+bennett add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
+bennett add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+xiangling char lvl=90/90 cons=6 talent=9,9,9;
+xiangling add weapon="thecatch" refine=5 lvl=90/90;
+xiangling add set="emblemofseveredfate" count=4;
+xiangling add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
+xiangling add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+chevreuse char lvl=90/90 cons=6 talent=9,9,9;
+chevreuse add weapon="favoniuslance" refine=5 lvl=90/90;
+chevreuse add set="noblesseoblige" count=4;
+chevreuse add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
+chevreuse add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+fischl char lvl=90/90 cons=6 talent=9,9,9; 
+fischl add weapon="thestringless" refine=5 lvl=90/90;
+fischl add set="goldentroupe" count=4;
+fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
+fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+fn try_all_skill() {
+
+    if .fischl.oz == 0 {
+        if .fischl.skill.ready {
+            fischl attack:2, skill;
+        } else if .fischl.burst.ready {
+            fischl burst, attack;
+        }
+    }
+
+    if .xiangling.skill.ready {
+        xiangling skill, dash;
+    } else if !.bennett.skill.ready {
+        bennett attack;
+    } else {
+        bennett skill;
+    }
+}
+
+active fischl;
+fischl skill;
+while 1 {
+    let a = f();
+    bennett burst;
+    chevreuse burst, skill[hold=1];
+    while !.chevreuse.mods.favonius-cd { chevreuse attack; }
+    xiangling burst;
+    if .xiangling.skill.ready { xiangling skill; }
+    while f() - a < 1260 {
+        try_all_skill();
+    }
+}
+```
 
 ## 3.9.2 雷前台
 

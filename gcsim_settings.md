@@ -74,6 +74,16 @@ bennett add stats hp=4780 atk=311 er=0.518/atk%=0.466 pyro%=0.466 cr=0.311;
 bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
 ```
 
+【夏沃蕾超载-6命站场】6命，精5匣里龙吟，4魔女攻火暴，(9+11)双暴+2攻击+2精通+2充能  
+
+```text
+bennett char lvl=90/90 cons=6 talent=9,9,9;
+bennett add weapon="lionsroar" refine=5 lvl=90/90;
+bennett add set="crimsonwitchofflames" count=4;
+bennett add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
+bennett add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+```
+
 【我的-20231014】2命，精1原木刀，4宗室充火暴，(5.2+7.6)双暴+5.0生命+4.8充能+8.7攻击  
 
 ```text
@@ -148,6 +158,16 @@ chevreuse add weapon="rightfulreward" refine=5 lvl=90/90;
 chevreuse add set="noblesseoblige" count=4;
 chevreuse add stats hp=4780 atk=311 er=0.518 hp%=0.466 hp%=0.466;
 chevreuse add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0.44 em=0 cr=0 cd=0;
+```
+
+【夏沃蕾超载-输出装】6命，精5西风长枪，4宗室攻火爆，(9+11)双暴+2攻击+2精通+2充能  
+
+```text
+chevreuse char lvl=90/90 cons=6 talent=9,9,9;
+chevreuse add weapon="favoniuslance" refine=5 lvl=90/90;
+chevreuse add set="noblesseoblige" count=4;
+chevreuse add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
+chevreuse add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 ```
 
 ### 行秋
