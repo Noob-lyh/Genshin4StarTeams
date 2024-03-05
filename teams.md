@@ -247,6 +247,7 @@ while 1 {
 **视频参考：**  
 
 [PigRZ，4.4深渊上半（0金，4.4四星杯106秒）](https://www.bilibili.com/video/BV1Fp421Z7Rs)  
+[倪cw，4.4深渊下半（0金）](https://www.bilibili.com/video/BV1m2421L77C)  
 [持灵，4.3深渊上半（1金）](https://www.bilibili.com/video/BV1Q5411q7X9)  
 [时雨琦罗，4.1深渊12-2下半（0氪0抽）](https://www.bilibili.com/video/BV1EV411c7yz)  
 [时雨琦罗，4.0深渊12-3下半（0抽）](https://www.bilibili.com/video/BV1nu4y147eP)  
@@ -254,6 +255,9 @@ while 1 {
 [Nickess，3.8深渊下半（0金）](https://www.bilibili.com/video/BV1Fu4y127sa)  
 [Nickess，3.4深渊上半（0金）](https://www.bilibili.com/video/BV1Sb411f7eQ)  
 [Nickess，3.1深渊下半（1金）](https://www.bilibili.com/video/BV1ee4y1W76d)  
+
+行秋换芭芭拉  
+[Nickess，4.4深渊下半（1金）](https://www.bilibili.com/video/BV1TK421y7mR)  
 
 **DPS参考：**  
 
@@ -354,6 +358,7 @@ while 1 {
 
 **视频参考：**  
 
+[心心丨念念，4.4深渊下半（1金）](https://www.bilibili.com/video/BV1JB421r7pV)  
 [心心丨念念，4.3深渊上半（0金）](https://www.bilibili.com/video/BV1J5411i7jG)  
 [凛疯1f，4.2深渊下半（0金，开服配置）](https://www.bilibili.com/video/BV1mN4y1Y71g)  
 [Nickess，3.8深渊下半（0金）](https://www.bilibili.com/video/BV1Mh4y1L7bC)  
@@ -737,6 +742,30 @@ while 1 {
 
 暂缺  
 
+### 行秋 班尼特 嘉明 菲谢尔
+
+鸟国香菱换嘉明，不需要扩火操作更加简单。  
+
+**评分参考：**  
+
+输出：8 （环境-低，配置-高，练度-中，手部-高）  
+生存：8  
+破盾：9  
+成本：8  
+
+**手法参考：**  
+
+略  
+
+**视频参考：**  
+
+[Sansnya，4.4深渊12-1&12-3下半（0金）](https://www.bilibili.com/video/BV1yx4y1r7qN)  
+
+**DPS参考：**  
+
+暂缺  
+
+
 ### 行秋 芭芭拉 班尼特 嘉明
 
 双水的版本，降低上限提高舒适度  
@@ -878,6 +907,7 @@ while 1 {
 
 **视频参考：**  
 
+[时雨琦罗，4.4深渊12-1上半&12-3上半（0金，0抽）](https://www.bilibili.com/video/BV1W4421c7AH)  
 [t0级海森黑子但是七圣，4.3深渊下半（1金）](https://www.bilibili.com/video/BV1c5411y7kJ)  
 [时雨琦罗，4.1深渊12-1上半&12-3下半（0氪0抽）](https://www.bilibili.com/video/BV1EV411c7yz)  
 [时雨琦罗，4.0深渊12-1下半&12-2下半（0抽）](https://www.bilibili.com/video/BV1nu4y147eP)  
@@ -1200,7 +1230,8 @@ while 1 {
 **视频参考：**  
 
 [飞行矮矮堇瓜，4.4深渊上半（0金，4.4四星杯57秒）](https://www.bilibili.com/video/BV1ip421R7Y8)  
-[椛开桦落丶丿，4.4深渊上半（迪奥娜换莱依拉，0金）](https://www.bilibili.com/video/BV1RU421Z7oW)
+[椛开桦落丶丿，4.4深渊上半（迪奥娜换莱依拉，0金）](https://www.bilibili.com/video/BV1RU421Z7oW)  
+[椛开桦落丶丿，4.4深渊下半（迪奥娜换莱依拉，0金）](https://www.bilibili.com/video/BV1nA4m137AJ)  
 
 **DPS参考：**  
 
@@ -1278,11 +1309,14 @@ while 1 {
 [Kirakishou419，4.4深渊上半（绮良良，0金，4.4四星杯109秒）](https://www.bilibili.com/video/BV1Sv421v7ad)  
 [兴锅锅zzZZ，4.4深渊上半（瑶瑶，0金）](https://www.bilibili.com/video/BV1rp421o7w9)  
 [鹿鸣湖水怪，4.4深渊上半（瑶瑶，砂糖换小鹿，0金）](https://www.bilibili.com/video/BV1Ct421a7ro)  
-[倪cw，4.4深渊上半（草主，皇女换北斗，0金）](https://www.bilibili.com/video/BV1m2421L77C)
+[倪cw，4.4深渊上半（草主，菲谢尔换九条，0金）](https://www.bilibili.com/video/BV1m2421L77C)  
+[猫蜥肉酱，4.4深渊下半（瑶瑶，0金）](https://www.bilibili.com/video/BV1rU421Z7rK)  
+[凛疯1f，4.4深渊下半（绮良良，北斗换九条，0金）](https://www.bilibili.com/video/BV1tC411W7k8)  
+[wAIt灬流风，4.4深渊下半（瑶瑶，北斗换九条，0金，压80级）](https://www.bilibili.com/video/BV1v44y1F7u4)  
 [玲音的信徒，4.3深渊上半（瑶瑶，0金）](https://www.bilibili.com/video/BV1E5411z7SF)  
-[風趣奈，4.3深渊上半（柯莱，1金）](https://www.bilibili.com/video/BV1He411q7n6)
+[風趣奈，4.3深渊上半（柯莱，1金）](https://www.bilibili.com/video/BV1He411q7n6)  
 [摸鱼的筱柒，4.2深渊上半（瑶瑶，0金）](https://www.bilibili.com/video/BV1zN4y1q7bV)  
-[Kiriha_4ever，4.2深渊上半（绮良良，1金）](https://www.bilibili.com/video/BV1YC4y1m7sc)
+[Kiriha_4ever，4.2深渊上半（绮良良，1金）](https://www.bilibili.com/video/BV1YC4y1m7sc)  
 [长夜临光----暗夜永存，4.2深渊下半（瑶瑶，0金）](https://www.bilibili.com/video/BV1qw411N7KD)  
 [像素光点，4.1深渊下半（瑶瑶，0金，较低练）](https://www.bilibili.com/video/BV1Wj41147vn)  
 [持灵，4.0深渊下半（瑶瑶，0金）](https://www.bilibili.com/video/BV1M94y1s7Db)  
@@ -1545,6 +1579,7 @@ while 1 {
 **视频参考：**  
 
 [lyh逗比，4.4深渊上半（0金，4.4四星杯127秒）](https://www.bilibili.com/video/BV1RZ421B7iw)  
+[Ysjt丶雲霄，4.4深渊下半（0金）](https://www.bilibili.com/video/BV1rZ421U75p)  
 [凛疯1f，4.3深渊上半&下半（0金）](https://www.bilibili.com/video/BV1RN4y1W7ia)
 [评论区说客，4.2深渊上半（0金）](https://www.bilibili.com/video/BV1934y1F764)  
 [lyh逗比，4.1深渊下半（0金，全锻造武器）](https://www.bilibili.com/video/BV13m4y1G7tL)  
@@ -1833,12 +1868,13 @@ while 1 {
 
 **视频参考：**  
 
-[thehander，4.4深渊上半（罗莎莉亚砂糖0金，6命凯亚）](https://www.bilibili.com/video/BV1pv421i79M)  
-[thehander，4.3深渊下半（罗莎莉亚小鹿，0金，6命凯亚）](https://www.bilibili.com/video/BV1Qb4y1P74n)  
-[持灵，4.2深渊上半（罗莎莉亚+风换芭芭拉，1金，2命凯亚）](https://www.bilibili.com/video/BV1Nw411P7vt)  
-[持灵，4.0深渊上半（罗莎莉亚砂糖，0金，2命凯亚）](https://www.bilibili.com/video/BV1xF411r7G8)  
-[JackTRipper，3.8深渊上半（罗莎莉亚砂糖，0金，3命凯亚）](https://www.bilibili.com/video/BV1ak4y137fU)  
-[评论区说客，2.6深渊下半（罗莎莉亚早柚，0金，低配三星武器）](https://www.bilibili.com/video/BV16u411i7TF)  
+[时雨琦罗，4.4深渊12-2上半（重云迪奥娜风主，0金，0抽）](https://www.bilibili.com/video/BV1W4421c7AH)  
+[thehander，4.4深渊上半（罗莎莉亚+砂糖，0金，6命凯亚）](https://www.bilibili.com/video/BV1pv421i79M)  
+[thehander，4.3深渊下半（罗莎莉亚+小鹿，0金，6命凯亚）](https://www.bilibili.com/video/BV1Qb4y1P74n)  
+[持灵，4.2深渊上半（罗莎莉亚，双水芭芭拉，1金，2命凯亚）](https://www.bilibili.com/video/BV1Nw411P7vt)  
+[持灵，4.0深渊上半（罗莎莉亚+砂糖，0金，2命凯亚）](https://www.bilibili.com/video/BV1xF411r7G8)  
+[JackTRipper，3.8深渊上半（罗莎莉亚+砂糖，0金，3命凯亚）](https://www.bilibili.com/video/BV1ak4y137fU)  
+[评论区说客，2.6深渊下半（罗莎莉亚+早柚，0金，低配三星武器）](https://www.bilibili.com/video/BV16u411i7TF)  
 
 **DPS参考：**  
 
@@ -2180,14 +2216,13 @@ while 1 {
 }
 ```
 
-## 3.4 珐鹿双风+任意直伤（含纯风）
+## 3.4 珐双风+任意直伤（含纯风）
 
-由于小鹿平A倍率较低，建议有6命珐露珊时珐露珊站场射箭，特别是对群时。  
+常见风系角色为小鹿，由于小鹿平A倍率较低，建议有6命珐露珊时珐露珊站场射箭，特别是对群时。  
 不过目前大部分视频仍是小鹿站场的打法。  
+也有6命琳妮特站场的打法，区别不大。  
 
-## 3.4.1 珐露珊+鹿野院平藏+雷X+水Y（珐鹿感电）
-
-### 珐露珊 鹿野院平藏 久岐忍/北斗/菲谢尔 行秋/芭芭拉/坎蒂丝
+## 3.4.1 珐露珊+风X+雷Y+水Z（双风感电）
 
 **队伍简介：**  
 
@@ -2207,11 +2242,12 @@ while 1 {
 
 **视频参考：**  
 
-[丰羽Feng_Yu，4.3深渊下半（北斗行秋，1金）](https://www.bilibili.com/video/BV1gi4y1q7g7)  
-[爱翻车的回忆，4.2深渊上半（北斗行秋，1金）](https://www.bilibili.com/video/BV19c411y7bM)  
-[lyh逗比，4.2深渊上半（久岐忍坎蒂丝，0金）](https://www.bilibili.com/video/BV1ib4y1K7ah)  
-[lyh逗比，4.0深渊上半（久岐忍行秋，0金）](https://www.bilibili.com/video/BV1w84y1S7Aa)  
-[Nickess，3.7深渊上半（菲谢尔芭芭拉，0金）](https://www.bilibili.com/video/BV1Zj411o7My)  
+小鹿  
+[丰羽Feng_Yu，4.3深渊下半（北斗+行秋，1金）](https://www.bilibili.com/video/BV1gi4y1q7g7)  
+[爱翻车的回忆，4.2深渊上半（北斗+行秋，1金）](https://www.bilibili.com/video/BV19c411y7bM)  
+[lyh逗比，4.2深渊上半（久岐忍+坎蒂丝，0金）](https://www.bilibili.com/video/BV1ib4y1K7ah)  
+[lyh逗比，4.0深渊上半（久岐忍+行秋，0金）](https://www.bilibili.com/video/BV1w84y1S7Aa)  
+[Nickess，3.7深渊上半（菲谢尔+芭芭拉，0金）](https://www.bilibili.com/video/BV1Zj411o7My)  
 
 **DPS参考：**  
 
@@ -2262,11 +2298,11 @@ while 1 {
 }
 ```
 
-## 3.4.2 珐露珊+鹿野院平藏+冰X+水Y（珐鹿冻结）
+## 3.4.2 珐露珊+风X+冰Y+水Z（双风冻结）
 
 **队伍简介：**  
 
-带冰水提供冻结，珐露珊和小鹿的聚怪效果也较强，能冻结时比感电控制更强。  
+带冰水提供冻结，珐露珊的聚怪效果也较强，能冻结时比感电控制更强。  
 
 **评分参考：**  
 
@@ -2281,15 +2317,20 @@ while 1 {
 
 **视频参考：**  
 
-[椛开桦落丶丿，4.4深渊上半（罗莎莉亚行秋，1金）](https://www.bilibili.com/video/BV1Gm411979Q)  
-[Sansnya，4.4深渊上半（凯亚芭芭拉，0金，6命凯亚）](https://www.bilibili.com/video/BV1yx4y1r7qN)  
-[Nickess，3.8深渊上半（罗莎莉亚芭芭拉，0金）](https://www.bilibili.com/video/BV1Fu4y127sa)  
+小鹿  
+[椛开桦落丶丿，4.4深渊上半（罗莎莉亚+行秋，1金）](https://www.bilibili.com/video/BV1Gm411979Q)  
+[Sansnya，4.4深渊上半（凯亚+芭芭拉，0金，6命凯亚）](https://www.bilibili.com/video/BV1yx4y1r7qN)  
+[Nickess，3.8深渊上半（罗莎莉亚+芭芭拉，0金）](https://www.bilibili.com/video/BV1Fu4y127sa)  
+
+琳妮特  
+[紫苏めいおう，4.4深渊上半（罗莎莉亚+行秋，1金）](https://www.bilibili.com/video/BV1tj421U7ay)  
+[Sansnya，4.4深渊上半（凯亚+芭芭拉，0金，6命凯亚）](https://www.bilibili.com/video/BV1yx4y1r7qN)  
 
 **DPS参考：**  
 
 暂缺  
 
-## 3.4.3 珐露珊+鹿野院平藏+冰/雷XY（珐鹿双冰/雷）
+## 3.4.3 珐露珊+风X+冰/雷YZ（双风双冰/雷）
 
 **队伍简介：**  
 
@@ -2308,6 +2349,7 @@ while 1 {
 
 **视频参考：**  
 
+小鹿  
 [甘美-風来，4.4深渊上半（凯亚夏洛蒂，0金，6命凯亚）](https://www.bilibili.com/video/BV1oU421Z7Y5)  
 [Nickess，4.2深渊上半（北斗皇女，2金）](https://www.bilibili.com/video/BV1kp4y1f7XD)  
 [凛疯1f，4.0深渊上半（修女莱依拉，2金）](https://www.bilibili.com/video/BV18F411D74C)  
@@ -2318,12 +2360,11 @@ while 1 {
 
 ## 3.4.4 珐露珊+鹿野院平藏+风X+任意Y（珐鹿三风）
 
-### 珐露珊 鹿野院平藏 琳妮特 莱依拉
-
 **队伍简介：**  
 
-纯新四星三风直伤队，0金珐露珊主C、纯新四星队伍的标志性成果。  
-珐露珊主C（伤害占比约50%），小鹿速切+金珀治疗，琳妮特产球+后台副C+嘲讽+芒+天赋攻击拐，莱依拉盾+千岩攻击拐。  
+新四星三风直伤队，0金珐露珊主C。  
+珐露珊主C（伤害占比约50%），小鹿速切+金珀治疗，琳妮特产球+后台副C+嘲讽+芒+天赋攻击拐。  
+最后一个位置可以带莱依拉盾+千岩攻击拐，顺便组成纯新四星阵容，不过也可以带其他传统强力后台。  
 伤害不高，但胜在真对群且削韧较强。另外纯色直伤队充能流畅，手法也较简单。  
 
 **评分参考：**  
@@ -2339,9 +2380,10 @@ while 1 {
 
 **视频参考：**  
 
- [lyh逗比，4.4深渊上半（0金，4.4四星杯147秒）](https://www.bilibili.com/video/BV144421A7hz)  
-[lyh逗比，4.3深渊下半（莱依拉换菲米尼，0金）](https://www.bilibili.com/video/BV12G411z7pZ)  
-[lyh逗比，4.1深渊上半（0金）](https://www.bilibili.com/video/BV1sz4y1G7vt)  
+[lyh逗比，4.4深渊上半（莱依拉，0金，4.4四星杯147秒）](https://www.bilibili.com/video/BV144421A7hz)  
+[凛疯1f，4.4深渊下半（菲谢尔，2金）](https://www.bilibili.com/video/BV1qv421k77H)  
+[lyh逗比，4.3深渊下半（菲米尼，0金）](https://www.bilibili.com/video/BV12G411z7pZ)  
+[lyh逗比，4.1深渊上半（莱依拉，0金）](https://www.bilibili.com/video/BV1sz4y1G7vt)  
 
 **DPS参考：**  
 
@@ -2414,11 +2456,15 @@ while 1{
 **视频参考：**  
 
 [QiQi不响丸辽，4.4深渊上半（0金，4.4四星杯92秒）](https://www.bilibili.com/video/BV1XK421y7AT)  
+[兴锅锅zzZZ，4.4深渊下半（0金）](https://www.bilibili.com/video/BV1rp421o7w9)  
 [凛疯1f，4.2深渊下半（0金）](https://www.bilibili.com/video/BV1T34y1F7qT)  
 [Nickess，4.0深渊下半（0金）](https://www.bilibili.com/video/BV1BG411R7jJ)  
 [Nickess，3.6深渊下半（0金）](https://www.bilibili.com/video/BV1pX4y167JW)  
 [Nickess，3.5深渊上半（0金）](https://www.bilibili.com/video/BV1dv4y1G7DE)  
 [Nickess，3.3深渊上半（0金）](https://www.bilibili.com/video/BV1hv4y1Q75n)  
+
+小鹿换琳妮特  
+[余光宗，4.4深渊上半（1金）](https://www.bilibili.com/video/BV1NC411a7xb)  
 
 **DPS参考：**  
 
@@ -2722,7 +2768,7 @@ while 1{
 因此这里分为三火单雷和双火双雷两类，由于这两个系的四星角色都很多，实战中队伍也很多样。  
 这里只能选取有代表性的队伍进行gcsim模拟。  
 
-## 3.9.1 三火单雷
+## 3.9.1 三火一雷
 
 **队伍简介：**  
 
@@ -2745,7 +2791,12 @@ while 1{
 
 [中单柒伍，4.4深渊上半（班尼特香菱+菲谢尔，0金，4.4四星杯148秒）](https://www.bilibili.com/video/BV1kH4y1e7RA)  
 [JiaHua1023，4.4深渊上半（班尼特嘉明+菲谢尔，0金）](https://www.bilibili.com/video/BV1a4421A7HW)  
-[暗胧-，4.4深渊上半（嘉明香菱+菲谢尔，0金）](https://www.bilibili.com/video/BV114421A7og)
+[凛疯1f，4.4深渊上半（班尼特香菱+北斗，0金，低命）](https://www.bilibili.com/video/BV1gy42187QB)  
+[暗胧-，4.4深渊上半（嘉明香菱+菲谢尔，0金）](https://www.bilibili.com/video/BV114421A7og)  
+[百里香爱摸鱼，4.4深渊下半（班尼特香菱+九条，3金）](https://www.bilibili.com/video/BV1Bv421i7ZG)
+[一叶知秋知一叶，4.4深渊下半（班尼特香菱+菲谢尔，0金）](https://www.bilibili.com/video/BV1yy421e7s6)
+[凛疯1f，4.4深渊下半（班尼特香菱+丽莎，0金）](https://www.bilibili.com/video/BV1uK421k7nD)
+[胖胖跟班，4.4深渊下半（烟绯香菱+菲谢尔，0金）](https://www.bilibili.com/video/BV1Qu4m1A7Z2)
 [吐籽跑西瓜，4.3深渊上半（班尼特香菱+菲谢尔，0金）](https://www.bilibili.com/video/BV1Nc411b7Cu)  
 [thehander，4.3深渊下半（烟绯香菱+菲谢尔，0金）](https://www.bilibili.com/video/BV12w41177kp)  
 
@@ -2844,6 +2895,9 @@ while 1 {
 [飞行矮矮堇瓜，4.4深渊上半（班尼特+北斗菲谢尔，0金，4.4四星杯83秒）](https://www.bilibili.com/video/BV1mu4m1K7uq)  
 [Vernichtet，4.4深渊上半（香菱+北斗菲谢尔，0金，4.4四星杯125秒）](https://www.bilibili.com/video/BV1WH4y1e7Nm)  
 [EDL_Chrihanna，4.4深渊上半（香菱+北斗九条，0金）](https://www.bilibili.com/video/BV1JT4m1S7UF)  
+[反向之箭高德伟，4.4深渊下半（香菱+丽莎菲谢尔，0金）](https://www.bilibili.com/video/BV1AF4m177Sq)  
+[玲音的信徒，4.4深渊下半（烟绯+北斗菲谢尔，0金）](https://www.bilibili.com/video/BV1st421W7Jo)  
+[thehander，4.4深渊下半（烟绯+久岐忍菲谢尔，0金）](https://www.bilibili.com/video/BV13B4216759)  
 [thehander，4.3深渊上半（烟绯+北斗菲谢尔，0金）](https://www.bilibili.com/video/BV1MK4y1i7cB)  
 [凛疯1f，4.3深渊上半（香菱+北斗菲谢尔，0金）](https://www.bilibili.com/video/BV1g94y1T7k6)  
 [每天一朵花送到九十八，4.3深渊上半（烟绯+丽莎菲谢尔，0金）](https://www.bilibili.com/video/BV1Cc411t7CK)  
@@ -2954,6 +3008,7 @@ while 1 {
 行秋+久岐忍  
 [一叶知秋知一叶，4.4深渊上半（柯莱绮良良，0金）](https://www.bilibili.com/video/BV1yy421e7s6)  
 [这么小声还想开军舰啊，4.4深渊上半（草主瑶瑶，0金）](https://www.bilibili.com/video/BV1LF4m137s4)  
+[凛疯1f，4.4深渊下半（草主柯莱，0金，低命）](https://www.bilibili.com/video/BV1gy42187QB)  
 [t0级海森黑子但是七圣，4.3深渊上半（草主卡维，1金）](https://www.bilibili.com/video/BV1c5411y7kJ)  
 [逆流__而上，4.3深渊上半（柯莱瑶瑶，0金）](https://www.bilibili.com/video/BV18Q4y1J7VN)  
 [cbean123，4.1深渊下半（草主柯莱，0金，除草主外0命）](https://www.bilibili.com/video/BV1uw41127UJ)  
@@ -2971,8 +3026,12 @@ while 1 {
 [lyh逗比，3.4深渊12-2上半武士+雷火蝎（草主柯莱，0金）](https://www.bilibili.com/video/BV1JM411s7KX)  
 
 坎蒂丝+久岐忍  
+[lyh逗比，4.4深渊下半（草主柯莱，0金）](https://www.bilibili.com/video/BV1C6421g744)  
 [鹿鸣湖水怪，4.3深渊上半（草主柯莱，0金）](https://www.bilibili.com/video/BV1Pi4y1r7fg)  
 [猫蜥肉酱，4.2深渊下半（柯莱瑶瑶，0金）](https://www.bilibili.com/video/BV1Va4y1Z72P)  
+
+行秋+丽莎
+[时雨琦罗，4.4深渊12-1下半&12-2上半&12-3下半（草主柯莱，0金，0抽）](https://www.bilibili.com/video/BV1W4421c7AH)  
 
 **DPS参考：**  
 
@@ -3213,6 +3272,7 @@ while 1{
 **视频参考：**  
 
 行秋+久岐忍+菲谢尔  
+[風趣奈，4.4深渊下半（柯莱，0金）](https://www.bilibili.com/video/BV1Gv42117Qf)  
 [lyh逗比，4.2深渊下半（柯莱，0金）](https://www.bilibili.com/video/BV1sC4y1m7oM)  
 [吃狗头的喵酱，4.1深渊下半（草主，0金）](https://www.bilibili.com/video/BV18h4y167q1)  
 [黑塔今天没转圈，4.0深渊上半（柯莱，0金，竞速）](https://www.bilibili.com/video/BV1y34y1P74X)  
@@ -3389,12 +3449,14 @@ while 1 {
 
 **视频参考：**  
 
-[QAQ雨若，4.3深渊下半（菲米尼，0金）](https://www.bilibili.com/video/BV1se411U7HQ)  
-[楚楚楚楚楚岚，4.3深渊下半（莱依拉，0金）](https://www.bilibili.com/video/BV1hT4y1H7xn)  
-[摸鱼的筱柒，4.2深渊下半（迪奥娜，0金）](https://www.bilibili.com/video/BV1zN4y1q7bV)  
-[lyh逗比，4.1深渊上半（夏洛蒂，0金）](https://www.bilibili.com/video/BV1eN411M7jJ)  
-[小夜悠，4.1深渊上半（重云，0金）](https://www.bilibili.com/video/BV1DV411F7gE)  
-[藤原动感新之助，4.0深渊12-1上半（菲米尼，0金）](https://www.bilibili.com/video/BV14w411U7Yc)  
+行秋+久岐忍  
+[心不要悬着，4.4深渊上半（草主+罗莎莉亚，0金）](https://www.bilibili.com/video/BV1ow4m1o7CP)  
+[QAQ雨若，4.3深渊下半（柯莱+菲米尼，0金）](https://www.bilibili.com/video/BV1se411U7HQ)  
+[楚楚楚楚楚岚，4.3深渊下半（柯莱+莱依拉，0金）](https://www.bilibili.com/video/BV1hT4y1H7xn)  
+[摸鱼的筱柒，4.2深渊下半（柯莱+迪奥娜，0金）](https://www.bilibili.com/video/BV1zN4y1q7bV)  
+[lyh逗比，4.1深渊上半（柯莱+夏洛蒂，0金）](https://www.bilibili.com/video/BV1eN411M7jJ)  
+[小夜悠，4.1深渊上半（柯莱+重云，0金）](https://www.bilibili.com/video/BV1DV411F7gE)  
+[藤原动感新之助，4.0深渊12-1上半（柯莱+菲米尼，0金）](https://www.bilibili.com/video/BV14w411U7Yc)  
 
 **DPS参考：**  
 
@@ -3521,6 +3583,7 @@ while 1{
 **视频参考：**  
 
 行秋+砂糖  
+[EDL_Chrihanna，4.4深渊下半（瑶瑶+菲谢尔，0金）](https://www.bilibili.com/video/BV1JT4m1S7UF)  
 [Sss0aa，4.3深渊下半（绮良良+北斗，0金）](https://www.bilibili.com/video/BV1zK411x77Q)  
 [Ysjt丶雲霄，4.3深渊上半（柯莱+久岐忍，0金）](https://www.bilibili.com/video/BV1jN4y1W7g5)  
 [蝶wei61161，4.3深渊下半（柯莱+久岐忍，0金）](https://www.bilibili.com/video/BV1ae411v79i)  
@@ -3786,12 +3849,13 @@ while 1 {
 
 **视频参考：**  
 
-瑶瑶+行秋+托马+砂糖  
-[thehander，4.3深渊下半（0金）](https://www.bilibili.com/video/BV1LN4y1q7iQ)  
-[Nickess，4.2深渊上半（0金）](https://www.bilibili.com/video/BV1e64y1p7W3)  
-[Nickess，4.0深渊上半（0金）](https://www.bilibili.com/video/BV1BG411R7jJ)  
-[Nickess，3.8深渊上半（0金）](https://www.bilibili.com/video/BV14x4y197Lc)  
-[Nickess，3.4深渊下半（0金）](https://www.bilibili.com/video/BV1Ss4y187AH)  
+行秋+托马+砂糖  
+[Nickess，4.4深渊上半（柯莱，0金）](https://www.bilibili.com/video/BV1QU421d74K)  
+[thehander，4.3深渊下半（瑶瑶，0金）](https://www.bilibili.com/video/BV1LN4y1q7iQ)  
+[Nickess，4.2深渊上半（瑶瑶，0金）](https://www.bilibili.com/video/BV1e64y1p7W3)  
+[Nickess，4.0深渊上半（瑶瑶，0金）](https://www.bilibili.com/video/BV1BG411R7jJ)  
+[Nickess，3.8深渊上半（瑶瑶，0金）](https://www.bilibili.com/video/BV14x4y197Lc)  
+[Nickess，3.4深渊下半（瑶瑶，0金）](https://www.bilibili.com/video/BV1Ss4y187AH)  
 
 **DPS参考：**  
 
@@ -3969,6 +4033,9 @@ iii) “冻结护草”
 [Nickess，3.8深渊上半（瑶瑶柯莱+罗莎莉亚，0金）](https://www.bilibili.com/video/BV1v8411U7Su)  
 [Nickess，3.6深渊下半（瑶瑶柯莱+罗莎莉亚，0金）](https://www.bilibili.com/video/BV1bh4y1p7b9)  
 
+行秋  
+[Nickess，4.4深渊上半（瑶瑶柯莱+罗莎莉亚，0金）](https://www.bilibili.com/video/BV1TK421y7mR)  
+
 **DPS参考：**  
 
 暂缺  
@@ -3993,8 +4060,9 @@ iii) “冻结护草”
 **视频参考：**  
 
 柯莱+芭芭拉  
-[持灵，4.3深渊下半（凯亚罗莎莉亚，2金）](https://www.bilibili.com/video/BV1Q5411q7X9)  
-[Nickess，4.1深渊上半（凯亚罗莎莉亚，0金）](https://www.bilibili.com/video/BV11C4y1d7Bm)  
+[反向之箭高德伟，4.4深渊上半（凯亚罗莎莉亚，0金，6命凯亚）](https://www.bilibili.com/video/BV18K42117Lq)  
+[持灵，4.3深渊下半（凯亚罗莎莉亚，2金，2命凯亚）](https://www.bilibili.com/video/BV1Q5411q7X9)  
+[Nickess，4.1深渊上半（凯亚罗莎莉亚，0金，0命凯亚）](https://www.bilibili.com/video/BV11C4y1d7Bm)  
 
 **DPS参考：**  
 
