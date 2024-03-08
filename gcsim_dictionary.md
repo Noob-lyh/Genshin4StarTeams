@@ -7,22 +7,22 @@
 
 ## 元素及角色
 
-角色按英文首字母排序。  
+角色按从早到晚实装排序。  
 
 ```text
-火(Pyro)：安柏(Amber)，班尼特(Bennett)，夏沃蕾(Chevreuse)，迪希雅(Dehya)，迪卢克(Diluc)，胡桃(Hutao)，可莉(Klee)，林尼(Lyney)，托马(Thoma)，香菱(Xiangling)，辛焱(Xinyan)，烟绯(Yanfei)，宵宫(Yoimiya)
+火(Pyro)：迪卢克(Diluc)，安柏(Amber)，香菱(Xiangling)，班尼特(Bennett)，可莉(Klee)，辛焱(Xinyan)，胡桃(Hutao)，烟绯(Yanfei)，宵宫(Yoimiya)，托马(Thoma)，迪希雅(Dehya)，林尼(Lyney)，夏沃蕾(Chevreuse)，嘉明(Gaming)
 
-水(Hydro)：神里绫人(Ayato)，芭芭拉(Barbara)，坎蒂丝(Candace)，珊瑚宫心海(Kokomi)，莫娜(Mona)，那维莱特(Neuvillette)，妮露(Nilou)，达达利亚(Tartaglia)，行秋(Xingqiu)，夜兰(Yelan)
+水(Hydro)：莫娜(Mona)，芭芭拉(Barbara)，行秋(Xingqiu)，达达利亚(Tartaglia)，珊瑚宫心海(Kokomi)，神里绫人(Ayato)，夜兰(Yelan)，坎蒂丝(Candace)，妮露(Nilou)，那维莱特(Neuvillette)，芙宁娜(Furina)
 
-雷(Electro)：北斗(Beidou)，赛诺(Cyno)，多莉(Dori)，菲谢尔(Fischl)，刻晴(Keqing)，久岐忍(Kuki)，丽莎(Lisa)，雷电将军(Raiden)，雷泽(Razor)，九条裟罗(Sara)，八重神子(Yae)
+雷(Electro)：刻晴(Keqing)，北斗(Beidou)，丽莎(Lisa)，菲谢尔(Fischl)，雷泽(Razor)，雷电将军(Raiden)，九条裟罗(Sara)，八重神子(Yae)，久岐忍(Kuki)，多莉(Dori)，赛诺(Cyno)
 
-冰(Cryo)：俄洛伊(Aloy)，神里绫华(Ayaka)，夏洛蒂(Charlotte)，重云(Chongyun)，迪奥娜(Diana)，优菈(Eula)，菲米尼(Freminet)，甘雨(Ganyu)，凯亚(Kaeya)，莱依拉(Layla)，米卡(Mika)，七七(Qiqi)，罗莎莉亚(Rosaria)，申鹤(Shenhe)
+冰(Cryo)：七七(Qiqi)，重云(Chongyun)，凯亚(Kaeya)，迪奥娜(Diana)，甘雨(Ganyu)，罗莎莉亚(Rosaria)，优菈(Eula)，神里绫华(Ayaka)，俄洛伊(Aloy)，申鹤(Shenhe)，莱依拉(Layla)，米卡(Mika)，菲米尼(Freminet)，莱欧斯利(Wriothesley)，夏洛蒂(Charlotte)
 
-风(Anemo)：珐露珊(Faruzan)，鹿野院平藏(Heizou)，琴(Jean)，万叶(Kazuha)，琳妮特(Lynette)，早柚(Sayu)，砂糖(Sucrose)，温迪(Venti)，流浪者(Wanderer)，魈(Xiao)
+风(Anemo)：琴(Jean)，砂糖(Sucrose)，温迪(Venti)，魈(Xiao)，万叶(Kazuha)，早柚(Sayu)，鹿野院平藏(Heizou)，珐露珊(Faruzan)，流浪者(Wanderer)，琳妮特(Lynette)，闲云(Xianyun)
 
-岩(Geo)：阿贝多(Albedo)，五郎(Gorou)，荒泷一斗(itto)，娜维娅(Navia)，凝光(Ningguang)，诺艾尔(Noelle)，云堇(YunJin)，钟离(Zhongli)
+岩(Geo)：诺艾尔(Noelle)，凝光(Ningguang)，钟离(Zhongli)，阿贝多(Albedo)，五郎(Gorou)，荒泷一斗(itto)，云堇(YunJin)，娜维娅(Navia)
 
-草(Dendro)：艾尔海森(Alhaitham)，白术(Baizhu)，柯莱(Collei)，卡维(Kaveh)，绮良良(Kirara)，纳西妲(Nahida)，提纳里(Tighnari)，瑶瑶(YaoYao)
+草(Dendro)：提纳里(Tighnari)，柯莱(Collei)，纳西妲(Nahida)，艾尔海森(Alhaitham)，瑶瑶(YaoYao)，卡维(Kaveh)，白术(Baizhu)，绮良良(Kirara)
 
 物理(Phys)
 
