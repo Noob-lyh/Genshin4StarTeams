@@ -1,68 +1,11 @@
-# gcsim模拟设置及角色面板参考
+# 角色标准面板
 
-简单来说，一段gcsim的程序包含四个部分：
-
-1. **模拟条件**  
-2. **敌人设置**  
-3. **角色面板**  
-4. **队伍手法**  
-
-本文档依次给出**模拟条件**、**敌人设置**（这两个部分在模拟时保持不变）、包括所有角色不同流派标准面板的**角色面板**，以及**队伍手法**的简易说明。  
-
-在teams.md中，队伍DPS参考包含的角色面板均从本文档中选取。如需投稿，请尽量保持1和2本文档给出的相同。  
-
-## 0. gcsim使用方式
-
-增加这一部分以防你对gcsim产生了兴趣想自己试一试！
-
-第一步：[从github下载gcsim](https://github.com/genshinsim/gcsim/releases)，点击最新版的Assets下的gcsim.exe即可保存，注意下载exe可能会导致浏览器警告，手动选择保留即可。  
-
-第二步：把gcsim.exe放到工作文件夹中，当然下载的时候就可以指定。
-
-第三步：在此文件夹中创建config.txt用于保存模拟使用的代码，如何编写请参照后文，可以先将固定的部分写入。
-
-第四步：创建run.bat用于便捷地运行模拟，此文件内容如下（将其后缀名修改为.txt，增加下列文本，再将后缀名修改回.bat，如何显示后缀名请百度）：
-
-```text
-cmd /k gcsim.exe -c="config.txt" -s="true"
-```
-
-第五步：在config.txt中编写队伍代码，然后运行run.bat进行模拟。
-
-## 1. 模拟条件
-
-* 重复设置时新的会覆盖。  
-* 模拟持续时间取90秒，即12层半间恰好及格的用时。相比于传统的4循环，这种方式能部分体现队伍的出伤速度（但是总体影响不大）。  
-
-```text
-options iteration=1000;     # 模拟次数
-options duration=90;        # 每次模拟的持续时间（秒）
-options workers=30;         # 并行模拟相关参数（可不管）
-options swap_delay=4;       # 60帧下的切人延迟（帧）
-```
-
-## 2. 敌人设置
-
-* 预设中一共添加了五个敌人，实际模拟时注释掉其中四个，只保留一个（一般使用第二个，其次第一个）。  
-* 五个敌人中，第一个为前方大体积敌人（半径2.5，圆心离原点距离3），第二到五个为前/右/左/后方小体积敌人（半径0.5，圆心离原点距离1），另外角色半径为0.3，位置在原点。  
-* 敌人统一使用100级，无限血量，10%全抗性，使用通用掉球设置（每随机480到720帧，即每随机6到12秒，掉落一个1能量的白色微粒）  
-
-```text
-#target lvl=100 pos=0,3 radius=2.5 pyro=0.1 dendro=0.1 hydro=0.1 electro=0.1 geo=0.1 anemo=0.1 physical=0.1 cryo=0.1;
-target lvl=100 pos=0,1 radius=0.5 pyro=0.1 dendro=0.1 hydro=0.1 electro=0.1 geo=0.1 anemo=0.1 physical=0.1 cryo=0.1;
-#target lvl=100 pos=1,0 radius=0.5 pyro=0.1 dendro=0.1 hydro=0.1 electro=0.1 geo=0.1 anemo=0.1 physical=0.1 cryo=0.1;
-#target lvl=100 pos=-1,0 radius=0.5 pyro=0.1 dendro=0.1 hydro=0.1 electro=0.1 geo=0.1 anemo=0.1 physical=0.1 cryo=0.1;
-#target lvl=100 pos=0,-1 radius=0.5 pyro=0.1 dendro=0.1 hydro=0.1 electro=0.1 geo=0.1 anemo=0.1 physical=0.1 cryo=0.1;
-energy every interval=480,720 amount=1;     
-```
-
-## 3. 角色面板  
-
-* 角色90级满命（班尼特及御三家除外）天赋999（计算命座前），武器90级精5（不使用限定或月卡武器），副词条标准为20+2n（20条双爆，每种有效词条一般各2条，特殊情况可只取4~6条的某种有效词条）  
+* teams.md中，队伍DPS参考包含的角色面板均从本文档中选取。  
+* 角色90级满命（班尼特及御三家除外）天赋999（计算命座前），武器90级精5（不使用限定或月卡武器），副词条标准为20+2n（20条双爆，每种有效词条一般各2条，特殊情况可只取4~6条的某种有效词条）。  
 * 使用四星圣遗物套装时并未修改词条大小，并不严谨，不过影响不大。  
 * 部分角色会有我自己的面板，供参考。圣遗物数据格式略有不同，注意换算。  
 
-### 班尼特
+## 班尼特
 
 【通用-半输出】5/6命，精1原木刀/精5西风剑，4宗室/4教官充/攻火暴，(5+7)双暴+6生命+6充能  
 
@@ -93,7 +36,7 @@ bennett add set="noblesseoblige" count=4;
 bennett add stats hp=7888 atk=644 def=76 em=19 cr=0.482 cd=0.499 er=0.784 pyro%=0.466;
 ```
 
-### 香菱
+## 香菱
 
 【通用-渔获绝缘】6命，精5渔获，4绝缘充/攻火暴，(9+11)双暴+2攻击+2精通+2充能  
 
@@ -114,7 +57,7 @@ xiangling add set="emblemofseveredfate" count=4;
 xiangling add stats hp=5433 atk=383 def=81 em=96 cr=0.642 cd=0.964 er=0.641 pyro%=0.466;
 ```
 
-### 烟绯
+## 烟绯
 
 【通用-流浪乐团】6命，精5流浪乐章，4乐团攻火暴，(9+11)双暴+2攻击+2精通+2充能  
 
@@ -136,7 +79,7 @@ yanfei add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
 yanfei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
 ```
 
-### 托马
+## 托马
 
 【烈绽-乐园十文字】6命，精5喜多院十文字，4乐园精精精，10充能  
 
@@ -148,7 +91,7 @@ thoma add stats hp=4780 atk=311 em=187 em=187 em=187;
 thoma add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
 ```
 
-### 夏沃蕾
+## 夏沃蕾
 
 【通用-超载削抗治疗攻击拐】6命，精5公义的酬报，4宗室充生生，8生命+8充能  
 
@@ -170,7 +113,7 @@ chevreuse add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
 chevreuse add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 ```
 
-### 行秋
+## 行秋
 
 【通用-无压力循环】6命，精5西风剑/精5祭礼剑，4绝缘/4宗室攻水暴，(9+11)双暴+2攻击+2精通+2充能  
 
@@ -201,7 +144,7 @@ xingqiu add set="emblemofseveredfate" count=4;
 xingqiu add stats hp=6032 atk=821 def=39 em=56 cr=0.525 cd=1.112 er=0 hydro%=0.466;
 ```
 
-### 芭芭拉
+## 芭芭拉
 
 【通用-海染】6命，精5祭礼残章/试作金珀/白辰之环，4海染生生治，4精通+6生命  
 
@@ -223,7 +166,7 @@ barbara add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 cr=0.311;
 barbara add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0 em=0 cr=0.264 cd=0;
 ```
 
-### 坎蒂丝
+## 坎蒂丝
 
 【通用-绝缘】6命，精5西风长枪/公义的酬报，4绝缘充生暴，(7+9)双爆+4生命+4充能  
 
@@ -235,7 +178,7 @@ candace add stats hp=4780 atk=311 er=0.518 hp%=0.466 cr=0.311;
 candace add stats hp=0 hp%=0.196 atk=0 atk%=0 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
 ```
 
-### 凯亚
+## 凯亚
 
 【融化-龙吟绝缘】2命，精5匣里龙吟，4绝缘充/精/攻冰暴，(9+11)双暴+2攻击+2精通+2充能
 
@@ -266,7 +209,7 @@ kaeya add set="emblemofseveredfate" count=4;
 kaeya add stats hp=5730 atk=746 def=99 em=177 cr=0.505 cd=0.777 er=0.343 cryo%=0.466;
 ```
 
-### 罗莎莉亚
+## 罗莎莉亚
 
 【双冰融化-西风散件】6命，精5西风长枪，2冰2宗室精冰暴，(9+11)双暴+2攻击+2精通+2充能  
 
@@ -309,7 +252,7 @@ rosaria add set="noblesseoblige" count=2;
 rosaria add stats hp=4780 atk=785 def=140 em=140 cr=0.607 cd=0.738 er=0.447 cryo%=0.466;
 ```
 
-### 重云
+## 重云
 
 【融化-饰铁绝缘】6命，精5饰铁之花，4绝缘充/精冰暴，(9+11)双暴+2攻击+2精通+2充能  
 
@@ -321,7 +264,7 @@ chongyun add stats hp=4780 atk=311 er=0.518/em=187 cryo%=0.466 cr=0.311;
 chongyun add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 ```
 
-### 夏洛蒂
+## 夏洛蒂
 
 【超绽驾驶员-流华追忆】6命，精5纯水流华，4追忆攻冰暴，(9+11)双暴+2攻击+2精通+2充能  
 
@@ -333,7 +276,7 @@ charlotte add stats hp=4780 atk=311 atk%=0.466 cryo%=0.466 cr=0.311;
 charlotte add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 ```
 
-### 莱伊拉
+## 莱伊拉
 
 【通用-千岩挂冰盾辅】6命，精5天目影打刀，4千岩生生生，4生命+10充能  
 
@@ -345,7 +288,7 @@ layla add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 hp%=0.466;
 layla add stats hp=0 hp%=0.196 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
 ```
 
-### 米卡
+## 米卡
 
 【通用-宗室治疗】6命，精5公义的酬报，4宗室生生治，4生命+10充能
 
@@ -357,7 +300,7 @@ mika add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
 mika add stats hp=0 hp%=0.196 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
 ```
 
-### 菲米尼
+## 菲米尼
 
 【超绽驾驶员-浪影苍白】6命，精5浪影阔剑，4苍白攻物暴，(9+11)双暴+2攻击+2精通+2充能  
 
@@ -369,7 +312,7 @@ freminet add stats hp=4780 atk=311 atk%=0.466 phys%=0.583 cr=0.311;
 freminet add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 ```
 
-### 菲谢尔
+## 菲谢尔
 
 【通用-剧团绝弦/静谧之曲】6命，精5绝弦/静谧之曲，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
 
@@ -390,7 +333,7 @@ fischl add set="goldentroupe" count=4;
 fischl add stats hp=6163 atk=784 def=35 em=131 cr=0.548 cd=0.901 er=0.162 electro%=0.466;
 ```
 
-### 北斗
+## 北斗
 
 【通用-魔剑绝缘】6命，精5究极霸王超级魔剑，4绝缘攻/充雷暴，(9+11)双暴+2攻击+2精通+2充能  
 
@@ -411,7 +354,7 @@ beidou add set="emblemofseveredfate" count=4;
 beidou add stats hp=4780 atk=455 def=194 em=58 cr=0.677 cd=0.870 er=0.518 electro%=0.466;
 ```
 
-### 久岐忍
+## 久岐忍
 
 【超绽-伞剑乐园三精】6命，精5东花坊时雨，4乐园精精精，4精通+8生命  
 
@@ -433,7 +376,7 @@ kuki add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 hp%=0.466;
 kuki add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0 em=80 cr=0 cd=0;
 ```
 
-### 丽莎
+## 丽莎
 
 【通用-西风如雷/绝缘】0命，精5西风秘典，4如雷攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
 
@@ -445,7 +388,7 @@ lisa add stats hp=4780 atk=311 er=0.518 electro%=0.466 cr=0.311;
 lisa add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 ```
 
-### 雷泽
+## 雷泽
 
 【彩虹-乐园三精】6命，精5饰铁之花，4乐园精精精，6精通+6充能  
 
@@ -457,7 +400,7 @@ razor add stats hp=4780 atk=311 em=187 em=187 em=187;
 razor add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=120 cr=0 cd=0;
 ```
 
-### 砂糖
+## 砂糖
 
 【通用-精通风套驾驶员】6命，精5试作金珀/祭礼残章/讨龙英杰谭，4风套精精精，4精通+6充能  
 
@@ -478,7 +421,7 @@ sucrose add set="viridescentvenerer" count=4;
 sucrose add stats hp=6120 atk=467 def=199 em=643 cr=0.132 cd=0.140 er=0.589;
 ```
 
-### 鹿野院平藏
+## 鹿野院平藏
 
 【通用-速切输出】6命，精5流浪乐章/西风秘典，2风套2楼阁/4风套攻风暴，(9+11)双暴+4攻击+2充能
 
@@ -511,7 +454,7 @@ heizou add set="gladiatorsfinale" count=2;
 heizou add stats hp=6757 atk=943 def=40 em=42 cr=0.712 cd=0.816 er=0 anemo%=0.466;
 ```
 
-### 珐露珊
+## 珐露珊
 
 【通用-后台风辅】6命，精5西风猎弓，4千岩/4风套攻/充风暴，(12+8)双暴+2攻击+4充能  
 
@@ -543,7 +486,7 @@ faruzan add set="shimenawasreminiscence" count=2;
 faruzan add stats hp=5784 atk=733 def=165 em=0 cr=0.747 cd=0.917 er=0.285 anemo%=0.466;
 ```
 
-### 琳妮特
+## 琳妮特
 
 【通用-风套工具人】6命，精5西风剑，4风套充风暴，(9+11)双暴+4攻击+2充能  
 
@@ -566,7 +509,7 @@ lynette add stats hp=4780 atk=311 atk%=0.466 anemo%=0.466 cr=0.311;
 lynette add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.11 em=0 cr=0.297 cd=0.726;
 ```
 
-### 草主
+## 草主
 
 【通用-草套工具人】6命，精5西风剑，4草套充草暴，(7+9)双爆+4攻击+4充能  
 
@@ -578,7 +521,7 @@ travelerdendro add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
 travelerdendro add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
 ```
 
-### 柯莱
+## 柯莱
 
 【通用-草套工具人】6命，精5西风猎弓，4草套充草暴，(7+9)双爆+4攻击+4充能  
 
@@ -590,7 +533,7 @@ collei add stats hp=4780 atk=311 er=0.518 dendro%=0.466 cr=0.311;
 collei add stats hp=0 hp%=0 atk=0 atk%=0.196 def=0 def%=0 er=0.22 em=0 cr=0.231 cd=0.594;
 ```
 
-### 瑶瑶
+## 瑶瑶
 
 【通用-治疗】6命，精5公义的酬报，4千岩/4草套生生治，4精通+6生命+6充能  
 
@@ -611,100 +554,3 @@ yaoyao add set="deepwoodmemories" count=4;
 yaoyao add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
 yaoyao add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.33 cd=0;
 ```
-
-## 4. 队伍手法
-
-手法的设置多种多样，本文档中主要使用两种：固定长度循环与无轴循环。在设置具体角色行动前，需要使用如下代码，指定起手角色：  
-
-```text
-active chA;
-```
-
-对于固定长度循环而言，通常使用如下while死循环的方式，当然也可以用for循环指定循环次数：
-
-```text
-while 1 {
-    chA xxx;
-    chB xxx;
-    chC xxx;
-    chD xxx;
-}
-```
-
-对于无轴循环，通常使用固定起手式 + while死循环优先选择的方式：
-
-```text
-chA xxx;
-chB xxx;
-chC xxx;
-chD xxx;
-while 1 {
-    if .chA.xxx.ready {
-        chA xxx;
-    } else if .chB.xxx.ready {
-        chB xxx;
-    } else if ... {
-        ...
-    } else {
-        ...
-    }
-}
-```
-
-一个固定长度循环的例子是香菱班尼特重云罗莎莉亚（双冰双火）。起手角色为重云，循环手法为“重云E，班尼特QE，罗莎莉亚EAQ，香菱AQE，罗莎莉亚E，班尼特E，香菱AA，重云Q，罗莎莉亚AE，班尼特E，香菱AA”，代码可写为：  
-
-```text
-active chongyun;
-while 1 {
-    chongyun skill;
-    bennett burst, skill;
-    rosaria skill, attack, burst;
-    xiangling attack, burst, skill;
-    rosaria skill;
-    bennett skill;
-    xiangling attack:2;
-    chongyun burst;
-    rosaria attack, skill;
-    bennett skill;
-    xiangling attack:2;
-}
-```
-
-一个无轴循环的例子为草主柯莱行秋久岐忍（行秋双草超绽），起手为草主EQ，行秋QA，久岐忍E闪A，柯莱EA，行秋EA闪EA闪，草主E，此后哪里亮了点哪里，优先级为久岐忍E>行秋Q>草主E>柯莱E>草主Q>柯莱Q>行秋E，如果以上技能都未就绪，则久岐忍站场平A。  
-
-```text
-active travelerdendro;
-travelerdendro skill, burst;
-xingqiu burst, attack;
-kuki skill, dash, attack;
-collei skill, attack;
-xingqiu attack, skill, dash;
-if .xingqiu.skill.ready {
-    xingqiu attack, skill, dash;
-}
-travelerdendro skill;
-while 1{
-    if .kuki.skill.ready {
-        kuki skill, dash, attack;
-    } else if .xingqiu.burst.ready {
-        xingqiu burst, attack;
-    } else if .travelerdendro.skill.ready {
-        travelerdendro skill;
-    } else if .collei.skill.ready {
-        collei skill;
-    } else if .travelerdendro.burst.ready {
-        travelerdendro burst;
-    } else if .collei.burst.ready {
-        collei burst;
-    } else if .xingqiu.skill.ready {
-        xingqiu attack, skill, dash;
-        if .xingqiu.skill.ready {
-            xingqiu attack, skill, dash;
-        }
-    } else {
-        kuki attack;
-    }
-}
-```
-
-实际手法可能更加复杂，例如烟绯蒸发队中烟绯只有奇数轮放Q，因此while循环中的长度为正常的两倍，包括一次烟绯放Q的循环和一次烟绯不放Q的循环；例如队伍中有皇女的情况，找时间放奥兹相当麻烦；例如某些手法精度要求较高的队伍，如砂国，需要大量使用设置角色位置、等待若干帧后行动的代码。  
