@@ -1154,7 +1154,65 @@ while 1 {
 
 **DPS参考：**  
 
-暂缺  
+0金 5.81w/5.40w (6班/5班，18秒循环嘉明5E)
+
+嘉明6命，精5饰铁之花，4魔女攻火爆，(11+9)双爆+2攻击+4充能  
+班尼特5/6命，精5西风剑，4教官充火暴，(5+7)双暴+6生命+6充能  
+罗莎莉亚6命，精5西风长枪，4宗室充冰暴，10暴击+10充能  
+砂糖6命，精5讨龙英杰谭，4风套精精精，4精通+6充能  
+
+```text
+gaming char lvl=90/90 cons=6 talent=9,9,9;
+gaming add weapon="mailedflower" refine=5 lvl=90/90;
+gaming add set="crimsonwitchofflames" count=4;
+gaming add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cd=0.622;
+gaming add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.22 em=0 cr=0.363 cd=0.594;
+
+bennett char lvl=90/90 cons=5/6 talent=9,9,9;
+bennett add weapon="favoniussword" refine=5 lvl=90/90;
+bennett add set="instructor" count=4;
+bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
+
+rosaria char lvl=90/90 cons=6 talent=9,9,9;
+rosaria add weapon="favoniuslance" refine=5 lvl=90/90;
+rosaria add set="noblesseoblige" count=4;
+rosaria add stats hp=4780 atk=311 er=0.518 cryo%=0.466 cr=0.311;
+rosaria add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0.330 cd=0;
+
+sucrose char lvl=90/90 cons=6 talent=9,9,9;
+sucrose add weapon="thrillingtalesofdragonslayers" refine=5 lvl=90/90;
+sucrose add set="viridescentvenerer" count=4;
+sucrose add stats hp=4780 atk=311 em=187 em=187 em=187;
+sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
+
+active rosaria;
+while 1 {
+    rosaria skill,burst;
+    bennett burst,skill;
+    sucrose skill,dash,attack;
+    gaming burst;
+    wait(30); 
+    gaming skill[man_chai_delay=60];
+    wait(30);
+    gaming high_plunge;
+    wait(30);
+    gaming skill[man_chai_delay=60];
+    wait(30);
+    gaming high_plunge;
+    wait(50);
+    gaming skill[man_chai_delay=60];
+    wait(30);
+    gaming high_plunge;
+    wait(30);
+    gaming skill[man_chai_delay=60];
+    wait(30);
+    gaming high_plunge;
+    bennett skill;
+    while !.bennett.mods.favonius-cd { bennett attack; }
+    gaming skill[man_chai_delay=60], high_plunge;
+}
+```  
 
 其他风系选择：对拐力和染色要求很高，不建议替换  
 其他冰系选择：凯亚（冰直伤、冰附着）  
@@ -1194,7 +1252,59 @@ while 1 {
 
 **DPS参考：**  
 
-暂缺  
+0金 6.62w/6.19w (6班/5班，20秒循环嘉明7E)  
+
+嘉明6命，精5饰铁之花，4魔女攻火爆，(11+9)双爆+2攻击+2精通+2充能  
+班尼特5/6命，精1原木刀，4教官充火暴，(5+7)双暴+6生命+6充能  
+罗莎莉亚6命，精5西风长枪，4宗室攻冰暴，(9+11)双暴+2攻击+2精通+2充能  
+迪奥娜6命，精5西风猎弓，4回声充生治，6充能+10暴击  
+
+```text
+gaming char lvl=90/90 cons=6 talent=9,9,9;
+gaming add weapon="mailedflower" refine=5 lvl=90/90;
+gaming add set="crimsonwitchofflames" count=4;
+gaming add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cd=0.622;
+gaming add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.363 cd=0.594;
+
+bennett char lvl=90/90 cons=6 talent=9,9,9;
+bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
+bennett add set="instructor" count=4;
+bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
+
+rosaria char lvl=90/90 cons=6 talent=9,9,9;
+rosaria add weapon="favoniuslance" refine=5 lvl=90/90;
+rosaria add set="noblesseoblige" count=4;
+rosaria add stats hp=4780 atk=311 atk%=0.466 cryo%=0.466 cr=0.311;
+rosaria add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+diona char lvl=90/90 cons=6 talent=9,9,9;
+diona add weapon="favoniuswarbow" refine=5 lvl=90/90;
+diona add set="songofdayspast" count=4;
+diona add stats hp=4780 atk=311 er=0.518 hp%=0.466 heal=0.359;
+diona add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.330 cd=0;
+
+active diona;
+while 1 {
+    diona skill[hold=1], burst;
+    rosaria burst, skill;
+    bennett burst;
+    gaming burst[man_chai_delay=60], skill[man_chai_delay=60];
+    wait(30);
+    gaming high_plunge, skill[man_chai_delay=60];
+    wait(30);
+    gaming high_plunge, skill[man_chai_delay=60];
+    wait(30);
+    gaming high_plunge, skill[man_chai_delay=60];
+    wait(30);
+    gaming high_plunge, skill[man_chai_delay=60];
+    wait(30);
+    gaming high_plunge, skill, high_plunge;
+    rosaria skill;
+    gaming skill, high_plunge;
+    bennett skill;
+}  
+```
 
 其他风系选择：对拐力和染色要求很高，不建议替换  
 其他冰系选择：凯亚（冰直伤、冰附着）  
