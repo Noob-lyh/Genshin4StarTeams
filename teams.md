@@ -2987,7 +2987,7 @@ while 1 {
 [鹿鸣湖水怪，4.3深渊上半（草主柯莱，0金）](https://www.bilibili.com/video/BV1Pi4y1r7fg)  
 [猫蜥肉酱，4.2深渊下半（柯莱瑶瑶，0金）](https://www.bilibili.com/video/BV1Va4y1Z72P)  
 
-行秋+丽莎
+行秋+丽莎  
 [时雨琦罗，4.4深渊12-1下半&12-2上半&12-3下半（草主柯莱，0金，0抽）](https://www.bilibili.com/video/BV1W4421c7AH)  
 
 **DPS参考：**  
