@@ -827,7 +827,7 @@ while 1 {
 
 **视频参考：**  
 
-凯亚罗莎莉亚
+凯亚罗莎莉亚  
 [凯风大魔王，4.4深渊上半（0金，6命凯亚，4.4四星杯127秒*）](https://www.bilibili.com/video/BV1kU421o7cG)  
 [楚楚楚楚楚岚，4.3深渊上半（0金，6命凯亚）](https://www.bilibili.com/video/BV1hT4y1H7xn)  
 [逆流__而上，4.3深渊下半（0金，2命凯亚）](https://www.bilibili.com/video/BV18Q4y1J7VN)  
@@ -3896,13 +3896,10 @@ while 1 {
 
 ## 4.1&2 超+烈绽放（草水雷火）
 
-## 4.1&2.1 草X+水Y+雷泽+班尼特(6)
-
-### 柯莱 行秋 雷泽 班尼特(6)
-
 **队伍简介：**  
 
-四星版彩虹雷泽  
+反应炉配队，绽放激化蒸发超载感电燃烧，伤害不高但视觉效果十足。  
+代表队伍四星版彩虹雷泽，此外也有融合了超烈绽放打火机的配队，在破盾方面比较有优势。  
 
 **评分参考：**  
 
@@ -3917,10 +3914,19 @@ while 1 {
 
 **视频参考：**  
 
+柯莱+行秋+班尼特(6)+雷泽  
 [Nickess，4.0深渊下半（0金）](https://www.bilibili.com/video/BV1qK4y1c7Kw)  
 [Nickess，3.8深渊下半（0金）](https://www.bilibili.com/video/BV1uP411t778)  
 [Nickess，3.5深渊上半（0金）](https://www.bilibili.com/video/BV17s4y1H7nr)  
 [Nickess，3.4深渊上半（0金）](https://www.bilibili.com/video/BV11D4y1T7Dk)  
+
+柯莱+行秋+久岐忍+托马  
+[约鲁鲁，4.3深渊下半（0金）](https://www.bilibili.com/video/BV1EC4y1C7fc)  
+
+瑶瑶+行秋+菲谢尔+托马  
+[Nickess，3.6深渊上半（0金）](https://www.bilibili.com/video/BV1pT411n7CE)  
+[Nickess，3.5深渊上半（0金）](https://www.bilibili.com/video/BV1fV4y1X7L1)  
+[Nickess，3.3深渊下半（0金）](https://www.bilibili.com/video/BV1Xy4y1Q7De)  
 
 **DPS参考：**  
 
@@ -3972,36 +3978,6 @@ while 1 {
     bennett skill, attack:2;
 }
 ```
-
-## 4.1&2.2 草X+行秋+雷Z+托马
-
-### 瑶瑶/柯莱 行秋 菲谢尔/久岐忍 托马
-
-**队伍简介：**  
-
-暂缺  
-
-**评分参考：**  
-
-输出： （环境-，配置-，练度-，手部-）  
-生存：  
-破盾：  
-成本：
-
-**手法参考：**  
-
-暂缺  
-
-**视频参考：**  
-
-[约鲁鲁，4.3深渊下半（柯莱+久岐忍，0金）](https://www.bilibili.com/video/BV1EC4y1C7fc)  
-[Nickess，3.6深渊上半（瑶瑶+菲谢尔，0金）](https://www.bilibili.com/video/BV1pT411n7CE)  
-[Nickess，3.5深渊上半（瑶瑶+菲谢尔，0金）](https://www.bilibili.com/video/BV1fV4y1X7L1)  
-[Nickess，3.3深渊下半（瑶瑶+菲谢尔，0金）](https://www.bilibili.com/video/BV1Xy4y1Q7De)  
-
-**DPS参考：**  
-
-暂缺  
 
 ## 4.3 冻绽放（水草冰+草/水/冰/风）
 
