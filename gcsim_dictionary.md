@@ -33,7 +33,7 @@
 
 ```text
 // 五星-限定
-单手剑：斫峰之刃(summit shaper)，磐岩结绿(primordial jade cutter)，苍古自由之誓(freedom-sworn)，雾切之回光(mistsplitter reforged)，波乱月白经津(haran geppaku futsu)，圣显之钥(key of khaj-nisut)，裁叶萃光(light of foliar incision)，静水流涌之辉(splendor of tranquil waters)
+单手剑：斫峰之刃(summit shaper)，磐岩结绿(primordial jade cutter)，苍古自由之誓(freedom-sworn)，雾切之回光(mistsplitter reforged)，波乱月白经津(haran geppaku futsu)，圣显之钥(key of khaj-nisut)，裁叶萃光(light of foliar incision)，静水流涌之辉(splendor of tranquil waters)，有乐御簾切(uraku misugiri)
 双手剑：无工之剑(the unforged)，松籁响起之时(song of broken pines)，赤角石溃杵(redhorn stonethresher)，苇海信标(beacon of the reed sea)，裁断(Verdict)
 长柄武器：贯虹之槊(vortex vanquisher)，护摩之杖(staff of homa)，息灾(calamity queller)，薙草之稻光(engulfing lightning)，赤沙之杖(staff of the scarlet sands)
 弓：终末嗟叹之诗(elegy for the end)，冬极白星(polar star)，飞雷之弦振(thundering pulse)，若水(aqua simulacra)，猎人之径(hunter's path)，最初的大魔术(the first great magic)
@@ -70,7 +70,7 @@
 // 四星-活动&钓鱼&其他
 单手剑：降临之剑(sword of descension)，腐殖之剑(festering desire)，辰砂之纺锤(cinnabar spindle)，笼钓瓶一心(kagotsurube isshin)，东花坊时雨(toukabou shigure)，灰河渡手(fleuve cendre ferryman)，水仙十字之剑(sword of narzissenkreuz)
 双手剑：衔珠海皇(luxurious sea-lord)，饰铁之花(mailed flower)，究极霸王超级魔剑(ultimate overlord's mega magic sword)
-长柄武器：“渔获”(the catch)，风信之锋(missive Windspear)
+长柄武器：“渔获”(the catch)，风信之锋(missive Windspear)，沙中伟贤的对答(dialogues of the desert sages)
 弓：掠食者(predator)，落霞(fading twilight)，竭泽(end of the line)，风花之颂(windblume ode)，幽夜华尔兹(mitternachts waltz)，鹮穿之喙(ibis piercer)
 法器：证誓之明瞳(oathsworn eye)，嘟嘟可故事集(dodoco tales)，无垠蔚蓝之歌(ballad of the boundless blue)
 

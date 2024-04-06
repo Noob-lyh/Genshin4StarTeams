@@ -93,23 +93,19 @@ thoma add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.55 em=0 cr=0 cd=0;
 
 ## 夏沃蕾
 
-【通用-超载削抗治疗攻击拐】6命，精5公义的酬报，4宗室充生生，8生命+8充能  
+【纯辅/半输出】6命，精5西风长枪/沙中伟贤的对答，4宗室/4昔时  
+    充生生，8生命+8充能  
+    充/攻火爆，(9+11)双暴+2攻击+2精通+2充能  
 
 ```text
 chevreuse char lvl=90/90 cons=6 talent=9,9,9;
-chevreuse add weapon="rightfulreward" refine=5 lvl=90/90;
-chevreuse add set="noblesseoblige" count=4;
+chevreuse add weapon="favoniuslance/dialoguesofthedesertsages" refine=5 lvl=90/90;
+chevreuse add set="noblesseoblige/songofdayspast" count=4;
+// 纯辅
 chevreuse add stats hp=4780 atk=311 er=0.518 hp%=0.466 hp%=0.466;
 chevreuse add stats hp=0 hp%=0.392 atk=0 atk%=0 def=0 def%=0 er=0.44 em=0 cr=0 cd=0;
-```
-
-【夏沃蕾超载-输出装】6命，精5西风长枪，4宗室攻火爆，(9+11)双暴+2攻击+2精通+2充能  
-
-```text
-chevreuse char lvl=90/90 cons=6 talent=9,9,9;
-chevreuse add weapon="favoniuslance" refine=5 lvl=90/90;
-chevreuse add set="noblesseoblige" count=4;
-chevreuse add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
+// 半输出
+chevreuse add stats hp=4780 atk=311 er=0.518/atk%=0.466 pyro%=0.466 cr=0.311;
 chevreuse add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 ```
 
@@ -123,6 +119,16 @@ gaming add weapon="mailedflower" refine=5 lvl=90/90;
 gaming add set="crimsonwitchofflames" count=4;
 gaming add stats hp=4780 atk=311 atk%=0.466/em=187 pyro%=0.466 cd=0.622;
 gaming add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.363 cd=0.594;
+```
+
+【蒸发/直伤】6命，精5雨裁/究极霸王超级魔剑，4魔女精/攻火暴，(9+11)双爆+2攻击+2精通+2充能  
+
+```text
+gaming char lvl=90/90 cons=6 talent=9,9,9;
+gaming add weapon="rainslasher/ultimateoverlordsmegamagicsword" refine=5 lvl=90/90;
+gaming add set="crimsonwitchofflames" count=4;
+gaming add stats hp=4780 atk=311 em=187/atk%=0.466 pyro%=0.466 cr=0.311;
+gaming add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
 ```
 
 ## 行秋

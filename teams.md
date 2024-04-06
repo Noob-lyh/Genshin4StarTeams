@@ -676,7 +676,7 @@ while 1 {
 
 **评分参考：**  
 
-输出：8 （环境-低，配置-高，练度-中，手部-高）  
+输出：10 （环境-低，配置-高，练度-中，手部-高）  
 生存：8  
 破盾：9  
 成本：8  
@@ -691,7 +691,60 @@ while 1 {
 
 **DPS参考：**  
 
-暂缺  
+0金 5.57w/4.87w (6班/5班，约23秒循环)  
+
+班尼特5/6命，精1原木刀，4宗室/4教官充/攻火暴，(5+7)双暴+6生命+6充能  
+嘉明6命，精5雨裁，4魔女精/攻火暴，(9+11)双爆+2精通+4充能（循环需要，2攻换2充）  
+行秋6命，精7祭礼剑，4宗室攻水暴，(9+11)双暴+6充能  
+砂糖6命，精5讨龙英杰谭，4风套精精精，4精通+6充能  
+
+```text
+bennett char lvl=90/90 cons=5 talent=9,9,9;
+bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
+bennett add set="instructor" count=4;
+bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
+
+gaming char lvl=90/90 cons=6 talent=9,9,9;
+gaming add weapon="rainslasher" refine=5 lvl=90/90;
+gaming add set="crimsonwitchofflames" count=4;
+gaming add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
+gaming add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.22 em=40 cr=0.297 cd=0.726;
+
+xingqiu char lvl=90/90 cons=6 talent=9,9,9;
+xingqiu add weapon="sacrificialsword" refine=7 lvl=90/90;
+xingqiu add set="noblesseoblige" count=4;
+xingqiu add stats hp=4780 atk=311 atk%=0.466 hydro%=0.466 cr=0.311;
+xingqiu add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.297 cd=0.726;
+
+sucrose char lvl=90/90 cons=6 talent=9,9,9;
+sucrose add weapon="thrillingtalesofdragonslayers" refine=5 lvl=90/90;
+sucrose add set="viridescentvenerer" count=4;
+sucrose add stats hp=4780 atk=311 em=187 em=187 em=187;
+sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
+
+active xingqiu;
+while 1 {
+    xingqiu skill, burst, attack, skill, attack:2;
+    set_player_pos(0, -1);
+    bennett skill, burst;
+    sucrose attack, skill;
+    set_player_pos(0, 0);
+    sucrose dash;
+    wait(25);
+    gaming burst, attack;       delay(9);
+    gaming skill, low_plunge, attack; //;   delay(17);
+    gaming skill, low_plunge, attack; //;   delay(17);
+    gaming skill, low_plunge, attack; //;   delay(17);
+    gaming skill, low_plunge, attack; //;   delay(17);
+    gaming skill, low_plunge, attack; //;
+    gaming skill, low_plunge;
+    bennett skill;
+    while !.xingqiu.skill.ready {
+        gaming attack;
+    }
+}
+```
 
 ### 行秋 班尼特 嘉明 菲谢尔
 
@@ -2721,9 +2774,9 @@ while 1{
 
 **队伍简介：**  
 
-最常见的夏沃蕾超载队模板，单雷皇女后台，伤害足操作简单充能压力小。  
+最常见的夏沃蕾超载队模板，单雷皇女后台，伤害足操作简单，火系角色充能压力小（但是皇女单雷需要一些充能副词条）。  
 本质上是经典纯火（三火一风）烟香班+风的改进版，夏沃蕾替换掉一个火系角色，然后把风系替换为菲谢尔增加直伤。  
-带班尼特香菱时是对单伤害最高的0金直伤队，也是最流行的夏沃蕾超载队，下面的介绍也主要针对此队伍。  
+火系角色选择很多，常见的是传统的香班，此外嘉班在高数值的加成下DPS也很高，但是舒适度会下降一些。  
 
 **评分参考：**  
 
@@ -2734,7 +2787,11 @@ while 1{
 
 **手法参考：**  
 
-皇Z班QE蕾QE香QE，班站场，皇视情况续奥兹。  
+班尼特香菱：  
+皇Z班QE皇AAE蕾QE香QE，班站场AAE，皇视情况续奥兹  
+
+班尼特嘉明：
+班EQ皇AAE/Q蕾QE嘉Q(AE)*6  
 
 **视频参考：**  
 
@@ -2746,8 +2803,10 @@ while 1{
 [凛疯1f，4.4深渊下半（丽莎，0金）](https://www.bilibili.com/video/BV1uK421k7nD)  
 [吐籽跑西瓜，4.3深渊上半（菲谢尔，0金）](https://www.bilibili.com/video/BV1Nc411b7Cu)  
 
+班尼特嘉明  
+[JiaHua1023，4.4深渊上半（菲谢尔，0金）](https://www.bilibili.com/video/BV1a4421A7HW)  
+
 其他双火  
-[JiaHua1023，4.4深渊上半（班尼特嘉明+菲谢尔，0金）](https://www.bilibili.com/video/BV1a4421A7HW)  
 [暗胧-，4.4深渊上半（嘉明香菱+菲谢尔，0金）](https://www.bilibili.com/video/BV114421A7og)  
 [胖胖跟班，4.4深渊下半（烟绯香菱+菲谢尔，0金）](https://www.bilibili.com/video/BV1Qu4m1A7Z2)
 [thehander，4.3深渊下半（烟绯香菱+菲谢尔，0金）](https://www.bilibili.com/video/BV12w41177kp)  
@@ -2817,6 +2876,57 @@ while 1 {
     while f() - a < 1260 {
         try_all_skill();
     }
+}
+```
+
+0金 5.60w/5.07w (6班/5班，约18秒轴)  
+
+班尼特5/6命，精1原木刀，4宗室充火暴，(5+7)双暴+6生命+6充能  
+嘉明6命，精5究极霸王超级魔剑，4魔女攻火暴，(9+11)双爆+2攻击+2精通+2充能  
+夏沃蕾6命，精5沙中伟贤的对答，4昔时充火爆，(9+11)双暴+2攻击+4充能（循环需要，2精换2充）  
+菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+4充能（循环需要，2精换2充）  
+
+```text
+bennett char lvl=90/90 cons=5/6 talent=9,9,9;
+bennett add weapon="sapwoodblade" refine=1 lvl=90/90;
+bennett add set="noblesseoblige" count=4;
+bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+bennett add stats hp=0 hp%=0.294 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.165 cd=0.462;
+
+gaming char lvl=90/90 cons=6 talent=9,9,9;
+gaming add weapon="ultimateoverlordsmegamagicsword" refine=5 lvl=90/90;
+gaming add set="crimsonwitchofflames" count=4;
+gaming add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
+gaming add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+chevreuse char lvl=90/90 cons=6 talent=9,9,9;
+chevreuse add weapon="dialoguesofthedesertsages" refine=5 lvl=90/90;
+chevreuse add set="songofdayspast" count=4;
+chevreuse add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+chevreuse add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.22 em=0 cr=0.297 cd=0.726;
+
+fischl char lvl=90/90 cons=6 talent=9,9,9; 
+fischl add weapon="stringless" refine=5 lvl=90/90;
+fischl add set="goldentroupe" count=4;
+fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
+fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.22 em=0 cr=0.297 cd=0.726;
+
+active bennett;
+while 1 {
+    bennett skill, burst;
+    if .fischl.skill.ready {
+      fischl attack:2, skill;
+    } else {
+      fischl attack:2, burst;
+    }
+    chevreuse burst, skill[hold=1], attack;
+    gaming burst, attack;       delay(9);
+    gaming skill, low_plunge, attack; //;   delay(17);
+    gaming skill, low_plunge, attack; //;   delay(17);
+    gaming skill, low_plunge, attack; //;   delay(17);
+    gaming skill, low_plunge, attack; //;   delay(17);
+    gaming skill, low_plunge, attack; //;
+    gaming skill, low_plunge;
 }
 ```
 
