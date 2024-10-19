@@ -1577,6 +1577,83 @@ while 1 {
 另：砂糖换九条，组三雷激化队  
 [Meow-SharkQAQ，4.5深渊下半（绮良良，0金）](https://www.bilibili.com/video/BV1fD421n7wU)  
 
+### 菲谢尔 赛索斯 砂糖 绮良良
+
+**队伍简介：**  
+
+赛索斯版本，理论DPS在几个激化队伍中最高，但操作难度较大。  
+
+**评分参考：**  
+
+输出：9 （环境-高，配置-中，练度-中，手部-中）  
+生存：5  
+破盾：8  
+成本：4  
+
+**手法参考：**  
+
+满命赛索斯，一轮放一个强化重击，对齐菲谢尔轴。  
+
+**视频参考：**  
+
+见四星杯文档  
+
+**DPS参考：**  
+
+0金 5.28w (25秒循环)  
+
+砂糖6命，精5白辰之环，4风套精精精，4精通+6充能  
+赛索斯6命，精5弹弓，4乐团精雷爆，(11+9)双暴+4精通+2充能  
+菲谢尔6命，精5绝弦，4剧团攻雷暴，(9+11)双暴+2攻击+2精通+2充能  
+绮良良6命，精1原木刀，4教官生生生，无副词条  
+
+```text
+fischl char lvl=90/90 cons=6 talent=9,9,9; 
+fischl add weapon="stringless" refine=5 lvl=90/90;
+fischl add set="goldentroupe" count=4;
+fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
+fischl add stats hp=0 hp%=0 atk=0 atk%=0.098 def=0 def%=0 er=0.11 em=40 cr=0.297 cd=0.726;
+
+sethos char lvl=90/90 cons=6 talent=9,9,9;
+sethos add weapon="slingshot" refine=5 lvl=90/90;
+sethos add set="wandererstroupe" count=4;
+sethos add stats hp=4780 atk=311 em=187 electro%=0.466 cd=0.622;
+sethos add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.11 em=80 cr=0.363 cd=0.594;
+
+sucrose char lvl=90/90 cons=6 talent=9,9,9;
+sucrose add weapon="prototypeamber" refine=5 lvl=90/90;
+sucrose add set="viridescentvenerer" count=4;
+sucrose add stats hp=4780 atk=311 em=187 em=187 em=187;
+sucrose add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=80 cr=0 cd=0;
+
+kirara char lvl=90/90 cons=6 talent=9,9,9;
+kirara add weapon="sapwoodblade" refine=1 lvl=90/90;
+kirara add set="instructor" count=4;
+kirara add stats hp=3571 atk=232 hp=0.466 hp=0.466 hp=0.466;
+
+active fischl;
+
+while 1 {
+    fischl skill;
+    kirara skill;
+    sucrose attack,skill;
+    sethos skill,burst,
+           attack:2,walk,
+           attack:2,walk,
+           attack:2,walk,
+           attack:2,walk,
+           attack:2,walk,
+           skill;
+    fischl burst;
+    kirara skill;
+    sucrose attack,skill,burst,attack:3;
+    sethos aim[hold=2]:2,skill;
+    sucrose attack:3,dash,
+            attack:3,dash,
+            attack:3,dash;
+}
+```
+
 ## 2.2 蔓激化（草雷）
 
 不带风的激化队，一般要求以草伤为主。  
