@@ -5,22 +5,28 @@
 注1：部分名称可使用简称，但为了方便翻译和搜索这里基本只使用全称。  
 注2：**武器、圣遗物在代码中只保留小写字母即可，删去空格和引号！！**  
 
+## 须知
+
+下面的角色/武器/圣遗物部分更新至4.7，后面的懒得加了，没什么意义而且很累。这部分需要查英文名直接参考[玉衡杯数据库](https://homdgcat.wiki/gi/char?lang=CH)，将语言切成English就可以查到了，复制到代码中后记得改成小写以及删掉空格和符号。  
+
+可以直接拉到最后面看代码中术语的名词。  
+
 ## 元素及角色
 
 角色按从早到晚实装排序。  
 
 ```text
-火(Pyro)：迪卢克(Diluc)，安柏(Amber)，香菱(Xiangling)，班尼特(Bennett)，可莉(Klee)，辛焱(Xinyan)，胡桃(Hutao)，烟绯(Yanfei)，宵宫(Yoimiya)，托马(Thoma)，迪希雅(Dehya)，林尼(Lyney)，夏沃蕾(Chevreuse)，嘉明(Gaming)
+火(Pyro)：迪卢克(Diluc)，安柏(Amber)，香菱(Xiangling)，班尼特(Bennett)，可莉(Klee)，辛焱(Xinyan)，胡桃(Hutao)，烟绯(Yanfei)，宵宫(Yoimiya)，托马(Thoma)，迪希雅(Dehya)，林尼(Lyney)，夏沃蕾(Chevreuse)，嘉明(Gaming)，阿蕾奇诺(Arlecchino)
 
-水(Hydro)：莫娜(Mona)，芭芭拉(Barbara)，行秋(Xingqiu)，达达利亚(Tartaglia)，珊瑚宫心海(Kokomi)，神里绫人(Ayato)，夜兰(Yelan)，坎蒂丝(Candace)，妮露(Nilou)，那维莱特(Neuvillette)，芙宁娜(Furina)
+水(Hydro)：莫娜(Mona)，芭芭拉(Barbara)，行秋(Xingqiu)，达达利亚(Tartaglia)，珊瑚宫心海(Kokomi)，神里绫人(Ayato)，夜兰(Yelan)，坎蒂丝(Candace)，妮露(Nilou)，那维莱特(Neuvillette)，芙宁娜(Furina)，希格雯(Sigewinne)
 
-雷(Electro)：刻晴(Keqing)，北斗(Beidou)，丽莎(Lisa)，菲谢尔(Fischl)，雷泽(Razor)，雷电将军(Raiden)，九条裟罗(Sara)，八重神子(Yae)，久岐忍(Kuki)，多莉(Dori)，赛诺(Cyno)
+雷(Electro)：刻晴(Keqing)，北斗(Beidou)，丽莎(Lisa)，菲谢尔(Fischl)，雷泽(Razor)，雷电将军(Raiden)，九条裟罗(Sara)，八重神子(Yae)，久岐忍(Kuki)，多莉(Dori)，赛诺(Cyno)，赛索斯(Sethos)，克洛琳德(Clorinde)
 
 冰(Cryo)：七七(Qiqi)，重云(Chongyun)，凯亚(Kaeya)，迪奥娜(Diana)，甘雨(Ganyu)，罗莎莉亚(Rosaria)，优菈(Eula)，神里绫华(Ayaka)，俄洛伊(Aloy)，申鹤(Shenhe)，莱依拉(Layla)，米卡(Mika)，菲米尼(Freminet)，莱欧斯利(Wriothesley)，夏洛蒂(Charlotte)
 
 风(Anemo)：琴(Jean)，砂糖(Sucrose)，温迪(Venti)，魈(Xiao)，万叶(Kazuha)，早柚(Sayu)，鹿野院平藏(Heizou)，珐露珊(Faruzan)，流浪者(Wanderer)，琳妮特(Lynette)，闲云(Xianyun)
 
-岩(Geo)：诺艾尔(Noelle)，凝光(Ningguang)，钟离(Zhongli)，阿贝多(Albedo)，五郎(Gorou)，荒泷一斗(itto)，云堇(YunJin)，娜维娅(Navia)
+岩(Geo)：诺艾尔(Noelle)，凝光(Ningguang)，钟离(Zhongli)，阿贝多(Albedo)，五郎(Gorou)，荒泷一斗(itto)，云堇(YunJin)，娜维娅(Navia)，千织(Chiori)
 
 草(Dendro)：提纳里(Tighnari)，柯莱(Collei)，纳西妲(Nahida)，艾尔海森(Alhaitham)，瑶瑶(YaoYao)，卡维(Kaveh)，白术(Baizhu)，绮良良(Kirara)
 
