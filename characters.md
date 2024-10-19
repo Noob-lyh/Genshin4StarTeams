@@ -420,6 +420,18 @@ razor add stats hp=4780 atk=311 em=187 em=187 em=187;
 razor add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=120 cr=0 cd=0;
 ```
 
+## 赛索斯
+
+【站场激化-弹弓乐团】6命，精5弹弓，4乐团精雷爆，(11+9)双暴+4精通+2充能  
+
+```text
+sethos char lvl=90/90 cons=6 talent=9,9,9;
+sethos add weapon="slingshot" refine=5 lvl=90/90;
+sethos add set="wandererstroupe" count=4;
+sethos add stats hp=4780 atk=311 em=187 electro%=0.466 cd=0.622;
+sethos add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.11 em=80 cr=0.363 cd=0.594;
+```
+
 ## 砂糖
 
 【通用-精通风套驾驶员】6命，精5试作金珀/祭礼残章/讨龙英杰谭，4风套精精精，4精通+6充能  
@@ -573,4 +585,15 @@ yaoyao add weapon="favoniuslance" refine=5 lvl=90/90;
 yaoyao add set="deepwoodmemories" count=4;
 yaoyao add stats hp=4780 atk=311 hp%=0.466 hp%=0.466 heal=0.359;
 yaoyao add stats hp=0 hp%=0 atk=0 atk%=0 def=0 def%=0 er=0.33 em=0 cr=0.33 cd=0;
+```
+
+## 绮良良
+
+【激化盾辅-教官原木刀】6命，精1原木刀，4教官生生生，无副词条  
+
+```text
+kirara char lvl=90/90 cons=6 talent=9,9,9;
+kirara add weapon="sapwoodblade" refine=1 lvl=90/90;
+kirara add set="instructor" count=4;
+kirara add stats hp=3571 atk=232 hp=0.466 hp=0.466 hp=0.466;
 ```
